@@ -13,9 +13,9 @@ function getEvent(payload, cb) {
     });
 }
 
-function editPost(payload, id, cb) {
+function editEvent(payload, id, cb) {
   Agent
-    .fire('post', `${BACKEND_URL}/users/editPost/${id}`)
+    .fire('post', `${BACKEND_URL}/users/editEvent/${id}`)
     .send(payload)
     .end((err, res) => {
       var error = err || res.error ? ServerError(res) : (res.body && res.body.error) ? ServerError(res) : null;
@@ -23,9 +23,9 @@ function editPost(payload, id, cb) {
     });
 }
 
-function addPost(payload, cb) {
+function addEvent(payload, cb) {
   Agent
-    .fire('post', `${BACKEND_URL}/users/postJob`)
+    .fire('post', `${BACKEND_URL}/users/addEvent`)
     .send(payload)
     .end((err, res) => {
       var error = err || res.error ? ServerError(res) : (res.body && res.body.error) ? ServerError(res) : null;
@@ -33,36 +33,20 @@ function addPost(payload, cb) {
     });
 }
 
-function deletePost(id, cb) {
+function deleteEvent(id, cb) {
   Agent
-    .fire('get', `${BACKEND_URL}/users/deletePost/${id}`)
+    .fire('get', `${BACKEND_URL}/users/deleteEvent/${id}`)
     .end((err, res) => {
       var error = err || res.error ? ServerError(res) : (res.body && res.body.error) ? ServerError(res) : null;
       if (typeof cb === 'function') return cb(error, res && res.body);
     });
 }
 
-function repost(id, cb) {
-  Agent
-    .fire('get', `${BACKEND_URL}/users/repost/${id}`)
-    .end((err, res) => {
-      var error = err || res.error ? ServerError(res) : (res.body && res.body.error) ? ServerError(res) : null;
-      if (typeof cb === 'function') return cb(error, res && res.body);
-    });
-}
 
-function myPost(text, cb) {
-  Agent
-    .fire('get', `${BACKEND_URL}/users/ownJob?text=${text}`)
-    .end((err, res) => {
-      var error = err || res.error ? ServerError(res) : (res.body && res.body.error) ? ServerError(res) : null;
-      if (typeof cb === 'function') return cb(error, res && res.body);
-    });
-}
 
 function Search(payload, cb) {
   Agent
-    .fire('get', `${BACKEND_URL}/users/searchJobs?text=${payload}`)
+    .fire('get', `${BACKEND_URL}/users/searchEvent?text=${payload}`)
     .end((err, res) => {
       var error = err || res.error ? ServerError(res) : (res.body && res.body.error) ? ServerError(res) : null;
       if (typeof cb === 'function') return cb(error, res && res.body);
@@ -71,11 +55,9 @@ function Search(payload, cb) {
 
 
 export default {
-  getPost,
-  editPost,
-  addPost,
-  deletePost,
-  repost,
-  myPost,
+  getEvent,
+  editEvent,
+  addEvent,
+  deleteEvent,
   Search
 }
