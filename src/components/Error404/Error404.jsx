@@ -6,9 +6,9 @@ const Eror404 = () => {
 
   return (
     <div>
-
+<h1>AboutUs</h1>
     </div>
   )  
 };
 
-export default Error404;
+export default Eror404;
