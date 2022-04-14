@@ -11,7 +11,7 @@ import Developers from './components/Developers/Developers';
 import NotAuth from './components/NotAuth/NotAuth';
 import Error404 from './components/Error404/Error404';
 import Navbar from './components/Navbar/navbar';
-
+import Team from './components/Team_Confluence/team';
 function App() {
   return (
     <Router>
@@ -20,11 +20,12 @@ function App() {
               <Route exact path="/" key="home" element={<Home/>} />
               <Route exact path="/Sponsors" key="Sponsors"  element={<Sponsors/>} />
               <Route exact path="/Categories" key="Categories" element={<Categories/>} />
-              <Route  path="/Events" key="Events" element={<Events/>}/>
-              <Route  path="/Developers" key="Developers" element={<Developers/>}/>
-              <Route  path="/AboutUs" key="AboutUs" element={<AboutUs/>}/>
-              <Route  path="/NotAuth" key="NotAuth" element={<NotAuth/>}/>
-              <Route  path="/Error404" key="Error404" element={<Error404/>}/>
+              <Route exact path="/Events" key="Events" element={<Events/>}/>
+              <Route exact path="/Developers" key="Developers" element={<Developers/>}/>
+              <Route exact path="/AboutUs" key="AboutUs" element={<AboutUs/>}/>
+              <Route exact path="/NotAuth" key="NotAuth" element={<NotAuth/>}/>
+              <Route exact path="/Error404" key="Error404" element={<Error404/>}/>
+              <Route exact path="/Team" key="Team" element={<Team/>}/>
 
       </Routes>
           </Router>
