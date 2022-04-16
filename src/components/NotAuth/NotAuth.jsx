@@ -6,7 +6,7 @@ const NotAuth = () => {
 
   return (
     <div>
-
+<h1>NotAuth</h1>
     </div>
   )  
 };

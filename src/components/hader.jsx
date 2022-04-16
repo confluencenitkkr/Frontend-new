@@ -1,17 +1,67 @@
-import React from 'react';
+import React from "react";
+import { useState, useEffect } from "react";
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import image1 from "../styles/images/conflu.png"
 import { Modal, ModalBody } from "reactstrap";
-
-import '../../styles/Sponsors.css';
-import image1 from "../../styles/images/conflu.png";
-
-const Sponsors = () => {
+const Header = () => {
+  const [login,setLogin]=useState(false);
+  const [sign,setsign]=useState(false);
+  const google = () => {
+   window.open("http://localhost:5000/auth/google", "_self");
+ };
+ const facebook = () => {
+   window.open("http://localhost:5000/auth/facebook", "_self");
+ };
 
   return (
-<>
-    <Modal
-      isOpen={false}
+    <>
+     <header>
+         <div class="navigation">
+            <nav class="navbar navbar-expand-lg navbar-light">
+               <div class="container">
+                  <a class="navbar-brand" href="index.html"><img class="logo-img" src={image1} alt=""/></a>
+                  <a class="login-out-nav-btn" onClick={e=>{
+                     setLogin(true);
+                  }}>Log in / Sign Up</a>
+                  <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                  <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="navbar-collapse collapse" id="navbarNav">
+                     <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                           <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="/Sponsors">Sponsors</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="/AboutUs">AboutUs</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="privacy.html">Events</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="/Team">Team</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="error-page.html">Developers</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link login-nav-btn" data-bs-toggle="modal" data-bs-target="#getstartedmodal" onClick={e=>{
+                              setLogin(true);
+                           }}>Log in / Sign Up</a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </nav>
+         </div>
+      </header>
+      <Modal
+      isOpen={login}
       toggle={() => {
-        
+        setLogin(false);
+        setsign(false);
       }}
       className="authentication-modal modal-dialog modal-dialog-centered modal-xl"
     >
@@ -65,14 +115,15 @@ const Sponsors = () => {
                     
                     }}
                   >
-                    Send OTP
+                    Login
                   </button>
                 </div>
                 <p>Or Sign in with</p>
                 <ul>
                   <li className="pe-2">
                     <button className="btn" onClick={e => {
-                    
+                    e.preventDefault();
+                    google()
                     }}>
                       {" "}
                       <img
@@ -83,7 +134,7 @@ const Sponsors = () => {
                       Log in with Gmail
                     </button>
                   </li>
-                  <li className="ps-2">
+                  {/* <li className="ps-2">
                     <button className="btn" onClick={e => {
                       e.preventDefault();
                       
@@ -96,7 +147,7 @@ const Sponsors = () => {
                       />
                       Log in with Facebook
                     </button>
-                  </li>
+                  </li> */}
                 </ul>
                 <h5>
                   Don’t have account ?{" "}
@@ -105,9 +156,10 @@ const Sponsors = () => {
                     data-bs-target="#createAccmodal"
                     data-bs-toggle="modal"
                     data-bs-dismiss="modal"
-                    href="javascript:;"
-                    onClick={() => {
-                     
+                    onClick={(e) => {
+                       e.preventDefault();
+                     setsign(true)
+                     setLogin(false);
                     }}
                   >
                     Create now
@@ -119,9 +171,10 @@ const Sponsors = () => {
         </div>
       </div></Modal>
       <Modal
-      isOpen={1}
+      isOpen={sign}
       toggle={() => {
-        
+        setsign(false)
+        setLogin(false);
       }}
       className="authentication-modal modal-dialog modal-dialog-centered modal-xl"
     >
@@ -197,7 +250,6 @@ const Sponsors = () => {
                         className="btn auth-main-btn"
                         onClick={() => {
                           // setmodalstateno(7);
-                          // generateOtpUser();
                         }}
                       >
                         Create Account
@@ -214,107 +266,10 @@ const Sponsors = () => {
        
         </div>
       </div></Modal>
-      </>
 
-  )
+      
+    </>
+  );
 };
 
-export default Sponsors;
-
-            
-  //   <Modal
-  //   isOpen={true}
-  //   toggle={() => {
-      
-  //   }}
-  //   className="authentication-modal modal-dialog modal-dialog-centered modal-xl"
-  // >
-  //   <div className="auth-modal-wrp">
-  //     <div className="row">
-  //     <div className="col-lg-6 p-0">
-  //             <div className="auth-modal-content">
-  //               <div className="w-100">
-  //                 <div className="auth-profile-pic-wrp">
-  //                 <div className="profile-pic-chooose">
-                                
-  //                                 <img
-  //                                   src={`${getProfilePic==""? "./assets/img/profile-picture-icon.png": getProfilePic}`}
-  //                                   className="img img-fluid"
-  //                                   alt=""
-  //                                 />
-  //                                 <h6>Profile Picture</h6>
-  //                                 <input
-  //                                   name="profilePic"
-  //                                   className="hide-input"
-  //                                   type="file"
-  //                                   onChange={(e) => {
-  //                                     // uploadFilesUsingMulter(e, 1);
-  //                                   }}
-  //                                 />
-  //                                 </div>
-  //                 </div>
-  //                 <div className="auth-input-wrp">
-  //                   <div className="row">
-  //                     <div className="col-lg-6">
-  //                       <label for="">First Name</label>
-  //                       <input
-  //                         type="text"
-  //                         // onChange={onChangeUser}
-  //                         className="form-control"
-  //                         name="firstName"
-  //                         placeholder=""
-  //                       />
-  //                     </div>
-  //                     <div className="col-lg-6">
-  //                       <label for="">Last Name</label>
-  //                       <input
-  //                         type="text"
-  //                         // onChange={onChangeUser}
-  //                         className="form-control"
-  //                         name="lastName"
-  //                         placeholder=""
-  //                       />
-  //                     </div>
-  //                     <div className="col-lg-12">
-  //                       <label for="">Email ID</label>
-  //                       <input
-  //                         type="email"
-  //                         className="form-control"
-  //                         onChange={onChangeUser}
-  //                         name="email"
-  //                         placeholder=""
-  //                       />
-  //                     </div>
-  //                     <div className="col-lg-12">
-  //                       <label for="">Mobile No.</label>
-  //                       <input
-  //                         type="string"
-  //                         className="form-control"
-  //                         name="mobileNo"
-  //                         // onChange={onChangeUser}
-  //                         placeholder=""
-  //                       />
-  //                     </div>
-  //                   </div>
-  //                   <button
-  //                     type="submit"
-  //                     className="btn auth-main-btn"
-  //                     onClick={() => {
-  //                       // setmodalstateno(7);
-  //                       // generateOtpUser();
-  //                     }}
-  //                   >
-  //                     Create Account
-  //                   </button>
-  //                 </div>
-  //                 <h5>
-  //                   By signing up , you agree to{" "}
-  //                   <a href="javascript:;">terms and condition</a>{" "}
-  //                   and Borhan <a href="javascript:;">policy</a>
-  //                 </h5>
-  //               </div>
-  //             </div>
-  //           </div>
-     
-  //     </div>
-  //   </div></Modal>
+export default Header;
