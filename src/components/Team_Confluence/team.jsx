@@ -16,45 +16,60 @@ import image11 from "../../styles/images/mad.jpg"
 const Team = () => {
 
   return (
-    <div class="menu">
-  <input type="checkbox" id="toggle" />
+    <>
+    <section class="">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-6">
+               <div class="menu">
+  <input type="checkbox" id="toggle" hidden />
   <label id="show-menu" for="toggle">
-    <div class="btn">
+    <div class="btn1">
       <i class=""><img class="conflu_logo" src={image1}/></i>
       
     </div>
-    <div class="btn">
+    <div class="btn1">
       <i class="material-icons md-36"><img src={image2} class="club_logo"/></i>
     </div>
-    <div class="btn">
+    <div class="btn1">
         <i class="material-icons md-36"><img src={image3} class="club_logo"/></i>
     </div>
-    <div class="btn">
+    <div class="btn1">
         <i class="material-icons md-36"><img src={image4} class="club_logo"/></i>
     </div>
-    <div class="btn">
+    <div class="btn1">
         <i class="material-icons md-36"><img src={image5} class="club_logo"/></i>
     </div>
-    <div class="btn">
+    <div class="btn1">
         <i class="material-icons md-36"><img src={image6} class="club_logo"/></i>
     </div>
-    <div class="btn">
+    <div class="btn1">
         <i class="material-icons md-36"><img src={image7} class="club_logo"/></i>
     </div>
-    <div class="btn">
+    <div class="btn1">
         <i class="material-icons md-36"><img src={image8} class="club_logo"/></i>
     </div>
-    <div class="btn">
+    <div class="btn1">
         <i class="material-icons md-36"><img src={image9} class="club_logo"/></i>
     </div>
-    <div class="btn">
-        <i class="material-icons md-36"><img src={image10} class="club_logo"/></i>
-      </div>
-      <div class="btn">
+   
+      <div class="btn1">
         <i class="material-icons md-36"><img src={image11} class="club_logo"/></i>
+      </div>
+      <div class="btn1">
+        <i class="material-icons md-36"><img src={image10} class="club_logo"/></i>
       </div>
   </label>
 </div>
+               </div>
+               <div class="col-lg-6">
+              <h1>hsbdcjhwsbchjbsdhjcbjhldwbcljbwds</h1>
+                             </div>
+            </div>
+         </div>
+      </section>
+ 
+</>
   )  
 };
 

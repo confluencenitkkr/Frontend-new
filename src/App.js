@@ -12,12 +12,13 @@ import NotAuth from './components/NotAuth/NotAuth';
 import Error404 from './components/Error404/Error404';
 import Navbar from './components/Navbar/navbar';
 import Team from './components/Team_Confluence/team';
+import Header from "./components/hader"
 function App() {
   return (
     <Router>
-      <Navbar></Navbar>
+      <Header></Header>
       <Routes>
-              <Route exact path="/" key="home" element={<Home/>} />
+              <Route exact path="/home" key="home" element={<Home/>} />
               <Route exact path="/Sponsors" key="Sponsors"  element={<Sponsors/>} />
               <Route exact path="/Categories" key="Categories" element={<Categories/>} />
               <Route exact path="/Events" key="Events" element={<Events/>}/>
