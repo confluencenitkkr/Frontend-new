@@ -5,7 +5,7 @@ const BACKEND_URL = config.BACKEND_URL;
 
 function Signup(payload, cb) {
   Agent
-    .fire('post', `${BACKEND_URL}/users/login`)
+    .fire('post', `${BACKEND_URL}/users/Signup`)
     .send(payload)
     .end((err, res) => {
       var error = err || res.error ? ServerError(res) : (res.body && res.body.error) ? ServerError(res) : null;
@@ -15,7 +15,7 @@ function Signup(payload, cb) {
 
 function Login(payload, cb) {
   Agent
-    .fire('post', `${BACKEND_URL}/users/Signup`)
+    .fire('post', `${BACKEND_URL}/users/login`)
     .send(payload)
     .end((err, res) => {
       var error = err || res.error ? ServerError(res) : (res.body && res.body.error) ? ServerError(res) : null;

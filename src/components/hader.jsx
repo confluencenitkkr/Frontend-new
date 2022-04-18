@@ -4,6 +4,11 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import image1 from "../styles/images/a tryst with magic.png"
 import { Modal, ModalBody } from "reactstrap";
 import authAction from "../actions/auth.action";
+import Cookies from 'universal-cookie';
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import Agent from "../actions/super";
+
 const Header = () => {
   const [login,setLogin]=useState(false);
   const [sign,setsign]=useState(false);
@@ -15,16 +20,76 @@ const Header = () => {
   const [name,setname]=useState("");
   const [email,setEmail]=useState("");
   const [email1,setEmail1]=useState("");
+  const [token,setToken]=useState("");
+  const cookies = new Cookies();
   useEffect(()=>{
     fetch()
+    let token=Agent.getToken()?Agent.getToken():"";
+    console.log(token);
+    setToken(token);
+
   },[])
   const fetch=()=>{
+
     authAction.getuser((err,res)=>{
       if(err){
 
       }else{
         console.log(res,"here is respose")
       }
+    })
+  }
+  const log =()=>{
+    if(!email&&!password){
+      toast.warning("ENTER email password")
+      return 
+    }
+    let dataToSend={
+      email:email,
+      password:password
+    }
+    authAction.Login(dataToSend,(err,res)=>{
+      console.log(err,res,"jcjndc")
+    
+          if(res.statusCode==400){
+          toast.warning("user is not found")
+          return
+        }
+        let user=res.data;
+        toast("user login successfully")
+        console.log("here is responsse",res)
+        cookies.set('token',user.token, { path: '/' });
+        setLogin(false);
+        setsign(false);
+      
+    })
+  }
+  const Sign =()=>{
+    if(!email&&!password1&&!name){
+      toast.warning("fill name,email,password",)
+      return
+    }
+    let dataToSend={
+      email:email1,
+      password:password1,
+      rollNo:number,
+      collegeName:collegeName,
+      name:name,
+
+    }
+    console.log(dataToSend,"njnjdnjcdn")
+    authAction.Signup(dataToSend,(err,res)=>{
+      if(err){
+
+      }else{
+        let user=res.data;
+        console.log("here is responsse",res)
+        cookies.set('token',user.token, { path: '/' });
+        toast("signup successfully")
+        setLogin(false);
+        setsign(false);
+        window.location.reload();
+              }
     })
   }
   const google = () => {
@@ -45,12 +110,13 @@ const Header = () => {
     <>
      <header>
          <div class="navigation">
+           
             <nav class="navbar navbar-expand-lg navbar-light">
                <div class="container">
                   <a class="navbar-brand" href="index.html"><img class="logo-img" src={image1} alt=""/></a>
-                  <a class="login-out-nav-btn" onClick={e=>{
+                  {token==""?<a class="login-out-nav-btn" onClick={e=>{
                      setLogin(true);
-                  }}>Log in / Sign Up</a>
+                  }}>Log in / Sign Up</a>:""}
                   <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                   <span class="navbar-toggler-icon"></span>
                   </button>
@@ -60,13 +126,13 @@ const Header = () => {
                            <a class="nav-link " aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                           <a class="nav-link" href="/Sponsors">Sponsors</a>
+                           <a class="nav-link" href="/Sponsors" >Sponsors</a>
                         </li>
                         <li class="nav-item">
                            <a class="nav-link" href="/AboutUs">AboutUs</a>
                         </li>
                         <li class="nav-item">
-                           <a class="nav-link" href="privacy.html">Events</a>
+                           <a class="nav-link" href="/Events">Events</a>
                         </li>
                         <li class="nav-item">
                            <a class="nav-link" href="/Team">Team</a>
@@ -75,9 +141,9 @@ const Header = () => {
                            <a class="nav-link" href="Developers">Developers</a>
                         </li>
                         <li class="nav-item">
-                           <a class="nav-link login-nav-btn" data-bs-toggle="modal" data-bs-target="#getstartedmodal" onClick={e=>{
+                        {token==""?<a class="nav-link login-nav-btn" data-bs-toggle="modal" data-bs-target="#getstartedmodal" onClick={e=>{
                               setLogin(true);
-                           }}>Log in / Sign Up</a>
+                           }}>Log in / Sign Up</a>:""}
                         </li>
                      </ul>
                   </div>
@@ -92,7 +158,7 @@ const Header = () => {
         setsign(false);
       }}
       className="authentication-modal modal-dialog modal-dialog-centered modal-xl"
-    >
+    ><ToastContainer />
       <div className="auth-modal-wrp">
         <div className="row">
           <div className="col-lg-6 p-0">
@@ -150,7 +216,7 @@ const Header = () => {
                     className="btn auth-main-btn"
                     type="button"
                     onClick={() => {
-                    
+                      log();
                     }}
                   >
                     Login
@@ -287,7 +353,7 @@ const Header = () => {
                         <div className="col-lg-12">
                           <label for="">Roll No.</label>
                           <input
-                            type="string"
+                            type="text"
                             className="form-control"
                             name="mobileNo"
                             onChange={e=>{
@@ -301,14 +367,14 @@ const Header = () => {
                         <div className="col-lg-12">
                           <label for="">Password</label>
                           <input
-                            type="string"
+                            type="password"
                             className="form-control"
                             name="password"
                             onChange={e=>{
                               e.preventDefault();
                               setPassword1(e.target.value);
                             }}
-                            value={number}
+                            value={password1}
                             placeholder="password"
                           />
                         </div>
@@ -316,8 +382,9 @@ const Header = () => {
                       <button
                         type="submit"
                         className="btn auth-main-btn"
-                        onClick={() => {
-                          // setmodalstateno(7);
+                        onClick={(e) => {
+                          e.preventDefault();
+                          Sign()
                         }}
                       >
                         Create Account
@@ -333,7 +400,9 @@ const Header = () => {
               </div>
        
         </div>
-      </div></Modal>
+      </div>
+      <ToastContainer />
+      </Modal>
 
       
     </>

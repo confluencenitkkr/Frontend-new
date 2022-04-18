@@ -12,12 +12,6 @@
   padding-left: 30px;
   padding-right: 30px;
 }
-header {
-  display: block;
-}
- header,  .spons-main, section {
-  display: block;
-}
 
 @media (min-width: 68.75em) {.spons-main  .center{
     /* max-width: auto; */
@@ -38,8 +32,7 @@ header {
   /* height:auto;
   width:auto; */
   background-size: cover;
-  /* background-image: url(sponshomepageplane.png); */
-  /* background-size: 100%; */
+
   background-repeat: no-repeat;
   background-position:center;
 }
@@ -106,28 +99,6 @@ header {
 [in-view=fade-right] {
   transition: transform 1s cubic-bezier(0,.7,.1,1),opacity 1s cubic-bezier(.5,0,.2,1);
   will-change: transform,opacity;
-}
-h3 {
-  display: block;
-  font-size: auto;
-  margin-block-start: 0.83em;
-  margin-block-end: 0.83em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-p{
-  display: block;
-  font-size: 1.5em;
-  margin-block-start: 0.83em;
-  margin-block-end: 0.83em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  font-weight: bold;
-  margin-bottom: 50px;
-  margin-left: 50px;
-  color:aliceblue;
 }
 
  .spons-page-title {

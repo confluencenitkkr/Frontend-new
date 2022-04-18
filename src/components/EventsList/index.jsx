@@ -1,14 +1,12 @@
 import React from 'react';
-import { Modal, ModalBody } from "reactstrap";
 
-import '../../styles/Sponsors.css';
-import image1 from "../../styles/images/conflu.png";
+import './index.css';
 
-const Sponsors = () => {
-let background="https://raw.githubusercontent.com/ankitk84/confluence-2022/main/sponsor-bursh-1.png"
+const Events = () => {
+
   return (
-<>
-<div class="bg-drak py-5 ">
+   <>
+   <div class="bg-drak py-5 ">
     <div class="container py-5 downsection">
       <div class="row mb-4">
         <div class="col-lg-5">
@@ -80,11 +78,8 @@ let background="https://raw.githubusercontent.com/ankitk84/confluence-2022/main/
     </div>
     </div>
   
-      </> 
-
-  )
+   </>
+  )  
 };
 
-export default Sponsors;
-
-  
+export default Events;
