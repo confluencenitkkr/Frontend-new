@@ -6,12 +6,21 @@
   flex-direction: column;
   width: 70vw;
 }
+
+.detailsBoxHeading{
+  text-align: center;
+}
+
+.detailsBoxHeading > p{
+  margin-left: auto;
+  font-size: 3rem;
+}
 .details
 {
   /* margin-right: 300px; */
   display: flex;
   justify-content: space-between;
-  height: 100vh;
+  /* height: 100vh; */
   /* width: 70vw; */
   /* background-color: #03A9F4; */
   flex-wrap: wrap;
@@ -21,6 +30,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+  margin-top: 10vh !important;
 }
 
 .teamCardDesc{
@@ -30,6 +40,7 @@
 .teamCardDesc p{
   color: aliceblue;
  text-align: center;
+ margin-left: auto;
 }
 
 .details > div{
@@ -48,8 +59,8 @@
 }
 .photoo
 {
-  height: 100px;
-  width: 100px;
+  height: 150px;
+  width: 150px;
   border-radius:60%;
   position: relative;
 }
@@ -87,7 +98,11 @@ height: 90px;
 border-radius: 70px;
 position: absolute;
 overflow: hidden;
-cursor:pointer;
+cursor: pointer;
+}
+
+.conflu-btn{
+  margin-top: -30px;
 }
 
 .material-icons.md-36 { font-size: 36px; color: #03A9F4 }
@@ -106,30 +121,22 @@ display: flex;
         align-items: center;
 
 box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+cursor: auto;
 
--webkit-transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.logoBtn{
+  cursor: pointer;
 }
 
 .btn1:not(:first-child) {
 opacity: 0;
 -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-z-index: -2;
+z-index: 1;
 
 -webkit-transition: all 0.6s cubic-bezier(.87,-.41,.19,1.44);
 transition: all 0.6s cubic-bezier(.87,-.41,.19,1.44);
 }
-
-.btn1:nth-child(2) {top: 0px;-webkit-transition-delay: 0s;transition-delay: 0s}
-.btn1:nth-child(3) {top: 0px;left:0px;-webkit-transition-delay: 0.1s;transition-delay: 0.1s}
-.btn1:nth-child(4) {left:0px;;-webkit-transition-delay: 0.2s;;transition-delay: 0.2s}
-.btn1:nth-child(5) {top:0px;left:0px;-webkit-transition-delay: 0.3s;transition-delay: 0.3s}
-.btn1:nth-child(6) {top:0px;-webkit-transition-delay: 0.4s;transition-delay: 0.4s}
-.btn1:nth-child(7) {top:0px;left:0px;-webkit-transition-delay: 0.5s;transition-delay: 0.5s}
-.btn1:nth-child(8) {left:0px;-webkit-transition-delay: 0.6s;transition-delay: 0.6s}
-.btn1:nth-child(9) {top:0px;left:0px;-webkit-transition-delay: 0.7s;transition-delay: 0.7s}
-.btn1:nth-child(10) {top:0px;left:0px;-webkit-transition-delay: 0.8s;transition-delay: 0.8s}
-.btn1:nth-child(11) {top:0px;left:0px;-webkit-transition-delay: 0.9s;transition-delay: 0.9s}
 
 input#toggle:checked ~ #show-menu .btn1:nth-child(2) {
 top:-220px;left:10px;opacity:1;-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
@@ -190,7 +197,7 @@ input#toggle:checked ~ #show-menu .btn1 .closeBtn {
 transform: translateY(0px);
 opacity: 1;
 }
-
+ 
 
 @media only screen and (max-width: 768px ) {
   .container1{
@@ -204,7 +211,7 @@ opacity: 1;
   .menu {
     
       margin: 0 auto;
-      margin-left: 38vw;
+      margin-left: 41vw;
   }
    .btn1
   {
@@ -217,6 +224,46 @@ opacity: 1;
       height: 70px;
       width: 70px;
   }
+
+  input#toggle:checked ~ #show-menu .btn1:nth-child(2) {
+    top:-190px;left:0px;opacity:1;-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    }
+    
+    input#toggle:checked ~ #show-menu .btn1:nth-child(3) {
+    top:-60px;left:158px;opacity:1;-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    }
+    
+    input#toggle:checked ~ #show-menu .btn1:nth-child(4) {
+    left:158px;top:40px;opacity:1;-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    }
+    
+    input#toggle:checked ~ #show-menu .btn1:nth-child(5) {
+    top :120px;left:90px;opacity:1;-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    }
+    
+    input#toggle:checked ~ #show-menu .btn1:nth-child(6) {
+    top:160px; left:0px;opacity:1;-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    }
+    
+    input#toggle:checked ~ #show-menu .btn1:nth-child(7) {
+    top:115px;left:-100px;opacity:1;-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    }
+    
+    input#toggle:checked ~ #show-menu .btn1:nth-child(8) {
+    top: 20px;left:-160px;opacity:1;-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    }
+    
+    input#toggle:checked ~ #show-menu .btn1:nth-child(9) {
+    top:-70px;left:-160px;opacity:1;-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    }
+    
+    
+    input#toggle:checked ~ #show-menu .btn1:nth-child(10) {
+      top: -158px;left:-100px;opacity:1;-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    }
+    input#toggle:checked ~ #show-menu .btn1:nth-child(11) {
+      top:-160px;left: 110px;;opacity:1;-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    }
 }
 
 
