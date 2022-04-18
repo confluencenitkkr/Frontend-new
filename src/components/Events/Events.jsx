@@ -1,9 +1,25 @@
-import React from 'react';
-
+import React, { useState, useEffect } from "react";
+import { useParams } from 'react-router-dom'
 import '../../styles/Events.css';
+import eventsActions from "../../actions/events.Actions";
+const Events = (props) => {
+   let { id } = useParams();
+   const [data,setData]=useState([]);
 
-const Events = () => {
+  useEffect(()=>{
+    fetch();
+  },[])
+  const  fetch=()=>{
+    console.log(id)
+    eventsActions.getEventId(id,(err,res)=>{
+      if(err){
 
+      }else{
+        setData(res.data);
+      }
+    })
+
+  }
   return (
     <div class="page-event">
   <div class="cover">
