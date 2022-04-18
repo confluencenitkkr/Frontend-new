@@ -10,6 +10,8 @@ import "react-toastify/dist/ReactToastify.css";
 import Agent from "../actions/super";
 
 const Header = () => {
+  let location = useLocation();
+
   const [login,setLogin]=useState(false);
   const [sign,setsign]=useState(false);
   const [password,setPassword]=useState("");
@@ -94,6 +96,7 @@ const Header = () => {
   }
   const google = () => {
     // let timer: NodeJS.Timeout | null = null;
+    cookies.set('token',"dkcjbkbcwkdjbcjsdbclvsdljhcvlsdvcvsdhjlcvlsdvchvsdlhjcvlsjdhvcjhlsdvcljhvsdhjcvlshdvcljhsdv", { path: '/' });
     const googleLoginURL = "https://nitkkr.herokuapp.com/auth/google";
     const newWindow = window.open(
       googleLoginURL,
@@ -123,22 +126,56 @@ const Header = () => {
                   <div class="navbar-collapse collapse" id="navbarNav">
                      <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                           <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                        <Link
+                    className={`nav-link ${
+                      location.pathname === "/" ? "active" : ""
+                    }`}
+                    aria-current="page"
+                    to="/"
+                  >
+                    Home
+                  </Link>
                         </li>
                         <li class="nav-item">
-                           <a class="nav-link" href="/Sponsors" >Sponsors</a>
+                        <Link
+                    className={`nav-link ${
+                      location.pathname === "/AboutUs" ? "active" : ""
+                    }`}
+                    aria-current="page"
+                    to="/AboutUs"
+                  >
+                    AboutUs
+                  </Link>
                         </li>
                         <li class="nav-item">
-                           <a class="nav-link" href="/AboutUs">AboutUs</a>
+                        <Link className={`nav-link ${ location.pathname === "/Sponsors" ? "active" : ""  }`}aria-current="page" to="/Sponsors"
+                                  >
+                             Sponsors
+                            </Link>
                         </li>
                         <li class="nav-item">
-                           <a class="nav-link" href="/Events">Events</a>
+                        <Link className={`nav-link ${ location.pathname === "/Events" ? "active" : ""  }`}aria-current="page" to="/Events"
+                                  >
+                             Events
+                            </Link>
                         </li>
                         <li class="nav-item">
-                           <a class="nav-link" href="/Team">Team</a>
+                        <Link className={`nav-link ${ location.pathname === "/Team" ? "active" : ""  }`}aria-current="page" to="/Team"
+                                  >
+                             Team
+                            </Link>
                         </li>
                         <li class="nav-item">
-                           <a class="nav-link" href="Developers">Developers</a>
+                        <Link className={`nav-link ${ location.pathname === "/Developers" ? "active" : ""  }`} to="/Developers"
+                                  >
+                             Developers
+                            </Link>
+                        </li>
+                        <li class="nav-item">
+                        <Link className={`nav-link ${ location.pathname === "/categories" ? "active" : ""  }`} to="/categories"
+                                  >
+                             Categories
+                            </Link>
                         </li>
                         <li class="nav-item">
                         {token==""?<a class="nav-link login-nav-btn" data-bs-toggle="modal" data-bs-target="#getstartedmodal" onClick={e=>{

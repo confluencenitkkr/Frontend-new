@@ -27,6 +27,10 @@ function App() {
               <Route exact path="/NotAuth" key="NotAuth" element={<NotAuth/>}/>
               <Route exact path="/Error404" key="Error404" element={<Error404/>}/>
               <Route exact path="/Team" key="Team" element={<Team/>}/>
+              <Route exact path="/categories" key="Team" element={<Categories/>}/>
+              <Route exact path="/EventView:id" key="EventView" element={<Events/>}/>
+
+
       </Routes>
           </Router>
 
