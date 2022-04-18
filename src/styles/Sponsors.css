@@ -1,0 +1,273 @@
+@media (min-width: 61.25em)
+{ .page-header {
+    padding-top:20px;
+    width:auto;
+}
+}
+.page-header {
+  position: relative;
+  width: auto;
+  height: auto;
+  padding-top: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+header {
+  display: block;
+}
+ header,  .spons-main, section {
+  display: block;
+}
+
+@media (min-width: 68.75em) {.spons-main  .center{
+    /* max-width: auto; */
+    min-width: auto;
+}}
+.center {
+  max-width: 980px;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+    /* outline: 1px solid #036cdb!important; */
+}
+.spons-main{
+  /* color: rgba(185,215,255,.5); */
+  line-height: 1;
+  /* background-color:grey; */
+  padding-bottom: 200px;
+  /* height:auto;
+  width:auto; */
+  background-size: cover;
+  /* background-image: url(sponshomepageplane.png); */
+  /* background-size: 100%; */
+  background-repeat: no-repeat;
+  background-position:center;
+}
+/* div {
+  display: block;
+} */
+@media (min-width: 46.25em){.page-header {
+    font-size: 5.625rem;
+}}
+
+.page header .spons-page-title {
+  font-family: California,Times,Georgia,serif;
+  font-weight: 500;
+  color: #fff;
+  font-size: 4rem;
+  line-height: 1.05;
+  -webkit-transform-origin: left top;
+  transform-origin: left top;
+  -webkit-transform: skewY(-11.5deg);
+  transform: skewY(-11.5deg);
+}
+
+ .spons-page-title .suptitle {
+  display: inline-block;
+  background-image: linear-gradient(90deg,#45ffe6,#00b69d);
+ 
+  -webkit-text-fill-color: transparent;
+} 
+ .spons-page-title .suptitle {
+  padding-right: 15px;
+  padding-left: 15px;
+  color: #00b69d;
+  font-size: 1.25rem;
+  line-height: 2;
+  letter-spacing: .07em;
+}
+
+
+@media (min-width: 61.25em){ .spons-page-title {
+    font-size: 5.625rem;
+}}
+ .spons-page-title {
+  font-family: California,Times,Georgia,serif;
+  font-weight: 500;
+  color: #fff;
+  font-size: 4rem;
+  line-height: 1.05;
+  -webkit-transform-origin: left top;
+  transform-origin: left top;
+  -webkit-transform: skewY(-11.5deg);
+  transform: skewY(-11.5deg);
+}
+ .spons-page-title h1{
+  text-shadow: 0 0 42px #2f9d9c;
+}
+
+
+[in-view=fade-rightt] {
+  transition: opacity 1s cubic-bezier(.5,0,.2,1),-webkit-transform 1s cubic-bezier(0,.7,.1,1);
+  transition: transform 1s cubic-bezier(0,.7,.1,1),opacity 1s cubic-bezier(.5,0,.2,1);
+  transition: transform 1s cubic-bezier(0,.7,.1,1),opacity 1s cubic-bezier(.5,0,.2,1),-webkit-transform 1s cubic-bezier(0,.7,.1,1);
+  will-change: transform,opacity;
+}
+[in-view=fade-right] {
+  transition: transform 1s cubic-bezier(0,.7,.1,1),opacity 1s cubic-bezier(.5,0,.2,1);
+  will-change: transform,opacity;
+}
+h3 {
+  display: block;
+  font-size: auto;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+p{
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  margin-bottom: 50px;
+  margin-left: 50px;
+  color:aliceblue;
+}
+
+ .spons-page-title {
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 550;
+    color: #fff;
+    font-size: 4rem;
+    line-height: 1.05;
+    -webkit-transform-origin: left top;
+    transform-origin: left top;
+    -webkit-transform: skewY(-11.5deg);
+    transform: skewY(-11.5deg);
+}
+
+@media (min-width: 61.25em)
+{ .sponsors-group+.sponsors-group {
+    margin-top: 35px;
+}}
+@media (min-width: 61.25em)
+{ .sponsors-group {
+    display: inline-block;
+    width: 100%;
+}}
+[in-view=fade-up] {
+  transition: opacity 1s cubic-bezier(.5,0,.2,1),-webkit-transform 1s cubic-bezier(0,.7,.1,1);
+  transition: transform 1s cubic-bezier(0,.7,.1,1),opacity 1s cubic-bezier(.5,0,.2,1);
+  transition: transform 1s cubic-bezier(0,.7,.1,1),opacity 1s cubic-bezier(.5,0,.2,1),-webkit-transform 1s cubic-bezier(0,.7,.1,1);
+  will-change: transform,opacity;
+}
+
+@media (min-width: 61.25em){section[type=sponsors] .sponsors-group--inline {
+    width: auto;
+    display: inline-block;
+    width: 100%;
+  }}
+  [in-view=fade-up] {
+    transition: opacity 1s cubic-bezier(.5,0,.2,1),-webkit-transform 1s cubic-bezier(0,.7,.1,1);
+    transition: transform 1s cubic-bezier(0,.7,.1,1),opacity 1s cubic-bezier(.5,0,.2,1);
+    transition: transform 1s cubic-bezier(0,.7,.1,1),opacity 1s cubic-bezier(.5,0,.2,1),-webkit-transform 1s cubic-bezier(0,.7,.1,1);
+    will-change: transform,opacity;
+}
+
+@media (max-width: 61.24em)
+{section[type=sponsors] .sponsors-list {
+    margin-bottom: 50px;
+}}
+.sponsors-list {
+  margin-right:17px;
+  margin-left: 17px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  align-self: center;
+}
+@media (min-width: 46.25em){
+[type=button][layout=sponsor], [type=submit][layout=sponsor] {
+    /* height: 154px;
+    width: 154px; */
+    height: 254px;
+    width: 254px;
+}}
+
+.spons-image {
+  height: 154px;
+  width:154px;
+  /*height: 200px;
+  width:200px; */
+  margin-right:auto;
+  margin-left:auto;
+  margin-top: 20px;
+  margin-bottom:25px;
+  
+
+}
+
+
+[type=button][layout=sponsor], [type=submit][layout=sponsor] {
+  background-image: url("https://raw.githubusercontent.com/ankitk84/confluence-2022/main/sponsor-bursh-1.png");
+  /* height: 148px;
+  width: 148px; */
+  height: 148px;
+  width: 148px;
+  position: relative;
+  line-height: 1;
+  z-index: 1;
+}
+/* .sponsors-list a {
+  /* margin-right: 17px; */
+  /* margin-bottom: 34px; */
+  /* margin-left: 17px; 
+} */
+[type=button], [type=submit] {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  border: 0 none;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+}
+.simple-link, a {
+  text-decoration: none;
+}
+.navigation .logo-img {
+    height: 106px !important;
+    object-fit: contain;
+}
+a {
+  cursor: pointer;
+  color: inherit;
+}
+
+.u-visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+a:-webkit-any-link {
+  color: -webkit-link;
+  cursor: pointer;
+}
+.objectfit [type=button][layout=sponsor] img, .objectfit [type=submit][layout=sponsor] img {
+  object-fit: contain;
+}
+[type=button][layout=sponsor] img, [type=submit][layout=sponsor] img {
+  margin: 15%;
+  height: 70%;
+  width: 70%;
+ 
+}
+img {
+  /* display: block; */
+  max-width: 100%;
+ 
+}

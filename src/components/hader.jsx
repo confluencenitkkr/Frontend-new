@@ -1,16 +1,44 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import image1 from "../styles/images/conflu.png"
+import image1 from "../styles/images/a tryst with magic.png"
 import { Modal, ModalBody } from "reactstrap";
+import authAction from "../actions/auth.action";
 const Header = () => {
   const [login,setLogin]=useState(false);
   const [sign,setsign]=useState(false);
+  const [password,setPassword]=useState("");
+  const [password1,setPassword1]=useState("");
+
+  const [number, setNumber] = useState("");
+  const [collegeName, setCollegeName] = useState("");
+  const [name,setname]=useState("");
+  const [email,setEmail]=useState("");
+  const [email1,setEmail1]=useState("");
+  useEffect(()=>{
+    fetch()
+  },[])
+  const fetch=()=>{
+    authAction.getuser((err,res)=>{
+      if(err){
+
+      }else{
+        console.log(res,"here is respose")
+      }
+    })
+  }
   const google = () => {
-   window.open("http://localhost:5000/auth/google", "_self");
+    // let timer: NodeJS.Timeout | null = null;
+    const googleLoginURL = "https://nitkkr.herokuapp.com/auth/google";
+    const newWindow = window.open(
+      googleLoginURL,
+      "_blank",
+      "width=500,height=600"
+    );
+
  };
  const facebook = () => {
-   window.open("http://localhost:5000/auth/facebook", "_self");
+   window.open("https://nitkkr.herokuapp.com/auth/facebook", "_self");
  };
 
   return (
@@ -44,7 +72,7 @@ const Header = () => {
                            <a class="nav-link" href="/Team">Team</a>
                         </li>
                         <li class="nav-item">
-                           <a class="nav-link" href="error-page.html">Developers</a>
+                           <a class="nav-link" href="Developers">Developers</a>
                         </li>
                         <li class="nav-item">
                            <a class="nav-link login-nav-btn" data-bs-toggle="modal" data-bs-target="#getstartedmodal" onClick={e=>{
@@ -70,7 +98,7 @@ const Header = () => {
           <div className="col-lg-6 p-0">
             <div className="auth-modal-artwork">
               <img
-                src="./assets/img/human-right-artwok.png"
+                src=""
                 className="img img-fluid"
                 alt=""
               />
@@ -91,18 +119,28 @@ const Header = () => {
                   <label for="">Enter Email</label>
                   <input
                     type="text"
-                    name="mobileNo"
-                    // onChange={}
+                    name="Email"
+                    onChange={e=>{
+                      e.preventDefault();
+                      console.log(e.target.value)
+                      setEmail(e.target.value);
+                    }}
+                    value={email}
                     className="form-control"
                     placeholder=""
                   />
                     <label for="">Enter password</label>
                   <input
-                    type="text"
+                    type="password"
                     name="mobileNo"
                     // onChange={}
                     className="form-control"
                     placeholder=""
+                    onChange={e=>{
+                      e.preventDefault();
+                      console.log(e.target.value)
+                      setPassword(e.target.value);
+                    }}
                   />
                   <button
                     role="button"
@@ -123,6 +161,7 @@ const Header = () => {
                   <li className="pe-2">
                     <button className="btn" onClick={e => {
                     e.preventDefault();
+                    console.log(e.target.value)
                     google()
                     }}>
                       {" "}
@@ -182,9 +221,9 @@ const Header = () => {
         <div className="row">
         <div className="col-lg-6 p-0">
             <div className="auth-modal-artwork">
-              <img
-                src="./assets/img/human-right-artwok.png"
-                className="img img-fluid"
+              <img 
+                 src=""
+                 className="img img-fluid"
                 alt=""
               />
             </div>
@@ -205,20 +244,26 @@ const Header = () => {
                     <div className="auth-input-wrp">
                       <div className="row">
                         <div className="col-lg-6">
-                          <label for="">First Name</label>
+                          <label for="">Name</label>
                           <input
                             type="text"
-                            // onChange={}
+                            onChange={e=>{
+                              setname(e.target.value);
+                              console.log(e.target.value)
+                            }}
                             className="form-control"
                             name="firstName"
                             placeholder=""
                           />
                         </div>
                         <div className="col-lg-6">
-                          <label for="">Last Name</label>
+                          <label for="">College Name</label>
                           <input
                             type="text"
-                            // onChange={onChangeUser}
+                            onChange={e=>{
+                              setCollegeName(e.target.value);
+                              console.log(e.target.value)
+                            }}
                             className="form-control"
                             name="lastName"
                             placeholder=""
@@ -232,16 +277,39 @@ const Header = () => {
                             // onChange={onChangeUser}
                             name="email"
                             placeholder=""
+                            onChange={e=>{
+                              e.preventDefault();
+                              setEmail1(e.target.value);
+                            }}
+                            value={email1}
                           />
                         </div>
                         <div className="col-lg-12">
-                          <label for="">Mobile No.</label>
+                          <label for="">Roll No.</label>
                           <input
                             type="string"
                             className="form-control"
                             name="mobileNo"
-                            // onChange={onChangeUser}
+                            onChange={e=>{
+                              e.preventDefault();
+                              setNumber(e.target.value);
+                            }}
+                            value={number}
                             placeholder=""
+                          />
+                        </div>
+                        <div className="col-lg-12">
+                          <label for="">Password</label>
+                          <input
+                            type="string"
+                            className="form-control"
+                            name="password"
+                            onChange={e=>{
+                              e.preventDefault();
+                              setPassword1(e.target.value);
+                            }}
+                            value={number}
+                            placeholder="password"
                           />
                         </div>
                       </div>

@@ -1,10 +1,11 @@
 const settings = {
 
-    BACKEND_URL: 'http://localhost:4044',
+    // BACKEND_URL: 'http://localhost:4044',
 
-    // BACKEND_URL: 'http://conluence.herokuapp.com'
+    BACKEND_URL: 'https://nitkkr.herokuapp.com'
 
 }
+
 
 
 export default settings
