@@ -19,7 +19,7 @@
   text-align: center;
   font-size: 48px;
   margin-top: 20px;;
-  transform: rotate(352deg);
+  
 }
 .team-confluence{
   height: 20vh;
@@ -58,6 +58,7 @@
   justify-content: center;
   flex-direction: column;
   margin-top: 10vh !important;
+  
 }
 
 .teamCardDesc{
@@ -76,6 +77,7 @@
 }
 .photoo{
   margin: 0 auto;
+  border: 6px solid #c19a00;
 }
 
 .container1
@@ -87,8 +89,8 @@
 }
 .photoo
 {
-  height: 150px;
-  width: 150px;
+  height: 200px;
+  width: 200px;
   border-radius:60%;
   position: relative;
 }

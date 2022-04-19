@@ -13,21 +13,20 @@ import Error404 from './components/Error404/Error404';
 import Navbar from './components/Navbar/navbar';
 import Team from './components/Team_Confluence/team';
 import Header from "./components/hader"
+import "./styles/Events.css"
 function App() {
   return (
     <Router>
       <Header></Header>
-      <Routes>
+      <Routes>  
               <Route exact path="/" key="home" element={<Home/>} />
               <Route exact path="/Sponsors" key="Sponsors"  element={<Sponsors/>} />
-              <Route exact path="/Categories" key="Categories" element={<Categories/>} />
-              <Route exact path="/Events" key="Events" element={<Events/>}/>
+              <Route exact path="/Events" key="Events" element={<Categories/>}/>
               <Route exact path="/Developers" key="Developers" element={<Developers/>}/>
               <Route exact path="/AboutUs" key="AboutUs" element={<AboutUs/>}/>
               <Route exact path="/NotAuth" key="NotAuth" element={<NotAuth/>}/>
               <Route exact path="/Error404" key="Error404" element={<Error404/>}/>
               <Route exact path="/Team" key="Team" element={<Team/>}/>
-              <Route exact path="/categories" key="Team" element={<Categories/>}/>
               <Route exact path="/EventView/:id" key="EventView" element={<Events/>}/>
 
 

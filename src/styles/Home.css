@@ -3,3 +3,10 @@
     height: 100vh;
     
 }
+
+@media only screen and (max-width: 768px ) {
+    .bg-img{
+        background-position: center;
+        background-size: contain;
+    }
+}

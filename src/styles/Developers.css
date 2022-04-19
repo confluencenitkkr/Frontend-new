@@ -10,6 +10,16 @@
     transition: all 0.3s;
     font-size: 0.9rem;
   }
+
+  .dev-bg{
+    background-image: url('../styles/images/website\ bg.png');
+  background-repeat: no-repeat;
+  margin-top: auto !important;
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+  
+  }
   
   .social-link:hover,
   .social-link:focus {
@@ -21,4 +31,10 @@
       
     margin-top: 30px;
 
+  }
+
+  @media only screen and (max-width: 768px ) {
+    .dev-card{
+      width: 288px;
+    }
   }

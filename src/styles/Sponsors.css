@@ -13,6 +13,16 @@
   padding-right: 30px;
 }
 
+.sponsors-bg{
+  background-image: url('../styles/images/website\ bg.png');
+  background-repeat: no-repeat;
+  margin-top: auto !important;
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+  
+}
+
 @media (min-width: 68.75em) {.spons-main  .center{
     /* max-width: auto; */
     min-width: auto;
@@ -116,6 +126,12 @@
     transform-origin: left top;
     -webkit-transform: skewY(-11.5deg);
     transform: skewY(-11.5deg);
+}
+
+@media only screen and (max-width: 768px ) {
+  .font-head{
+    text-align: center;
+  }
 }
 
 @media (min-width: 61.25em)

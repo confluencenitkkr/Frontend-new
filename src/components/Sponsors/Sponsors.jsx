@@ -8,18 +8,17 @@ const Sponsors = () => {
   let background = "https://raw.githubusercontent.com/ankitk84/confluence-2022/main/sponsor-bursh-1.png"
   return (
     <>
-      <div class="bg-drak py-5 ">
+      <div class="bg-drak py-5 sponsors-bg">
         <div class="container py-5 downsection">
           <div class="row mb-4">
             <div class="col-lg-5">
-              <h2 class="display-4 font-weight-light">Our Sponsors</h2>
-              <p class="font-italic text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              <h2 class="display-4 font-weight-light font-head">Sponsors</h2>
             </div>
           </div>
 
           <div class="row text-center">
           <div className="sponsor-title">
-            <h1>Food Sponsor</h1>
+            <h1>Co-Title Sponsor</h1>
           </div>
             <div class="col-xl-3 col-sm-6 mb-5">
               <div class="sponsor-division">

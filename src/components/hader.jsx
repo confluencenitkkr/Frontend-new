@@ -109,128 +109,77 @@ const Header = () => {
 
   return (
     <>
-      <header>
-        <div class="navigation">
-          <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container">
-              
-              {token == "" ? (
-                <a
-                  class="login-out-nav-btn"
-                  onClick={(e) => {
-                    setLogin(true);
-                  }}
-                >
-                  Log in / Sign Up
-                </a>
-              ) : (
-                ""
-              )}
-              <button
-                class="navbar-toggler"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarNav"
-              >
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="navbar-collapse collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                  <li class="nav-item">
-                    <Link
-                      className={`nav-link ${
-                        location.pathname === "/" ? "active" : ""
-                      }`}
-                      aria-current="page"
-                      to="/"
-                    >
-                      Home
-                    </Link>
-                  </li>
-                  <li class="nav-item">
-                    <Link
-                      className={`nav-link ${
-                        location.pathname === "/AboutUs" ? "active" : ""
-                      }`}
-                      aria-current="page"
-                      to="/AboutUs"
-                    >
-                      AboutUs
-                    </Link>
-                  </li>
-                  <li class="nav-item">
-                    <Link
-                      className={`nav-link ${
-                        location.pathname === "/Sponsors" ? "active" : ""
-                      }`}
-                      aria-current="page"
-                      to="/Sponsors"
-                    >
-                      Sponsors
-                    </Link>
-                  </li>
-                  <li class="nav-item">
-                    <Link
-                      className={`nav-link ${
-                        location.pathname === "/Events" ? "active" : ""
-                      }`}
-                      aria-current="page"
-                      to="/Events"
-                    >
-                      Events
-                    </Link>
-                  </li>
-                  <li class="nav-item">
-                    <Link
-                      className={`nav-link ${
-                        location.pathname === "/Team" ? "active" : ""
-                      }`}
-                      aria-current="page"
-                      to="/Team"
-                    >
-                      Team
-                    </Link>
-                  </li>
-                  <li class="nav-item">
-                    <Link
-                      className={`nav-link ${
-                        location.pathname === "/Developers" ? "active" : ""
-                      }`}
-                      to="/Developers"
-                    >
-                      Developers
-                    </Link>
-                  </li>
-                  <li class="nav-item">
-                    <Link
-                      className={`nav-link ${
-                        location.pathname === "/categories" ? "active" : ""
-                      }`}
-                      to="/categories"
-                    >
-                      Categories
-                    </Link>
-                  </li>
-                  <li class="nav-item">
-                    {token == "" ? (
-                      <a
-                        class="nav-link login-nav-btn"
-                        data-bs-toggle="modal"
-                        data-bs-target="#getstartedmodal"
-                        onClick={(e) => {
-                          setLogin(true);
-                        }}
-                      >
-                        Log in / Sign Up
-                      </a>
-                    ) : (
-                      ""
-                    )}
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-        </div>
+     <header>
+         <div class="navigation">
+           
+            <nav class="navbar navbar-expand-lg navbar-light">
+               <div class="container">
+                  
+                  {token==""?<a class="login-out-nav-btn" onClick={e=>{
+                     setLogin(true);
+                  }}>Log in / Sign Up</a>:""}
+                  <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                  <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="navbar-collapse collapse" id="navbarNav">
+                     <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                        <Link
+                    className={`nav-link ${
+                      location.pathname === "/" ? "active" : ""
+                    }`}
+                    aria-current="page"
+                    to="/"
+                  >
+                    Home
+                  </Link>
+                        </li>
+                        <li class="nav-item">
+                        <Link
+                    className={`nav-link ${
+                      location.pathname === "/AboutUs" ? "active" : ""
+                    }`}
+                    aria-current="page"
+                    to="/AboutUs"
+                  >
+                    AboutUs
+                  </Link>
+                        </li>
+                        <li class="nav-item">
+                        <Link className={`nav-link ${ location.pathname === "/Sponsors" ? "active" : ""  }`}aria-current="page" to="/Sponsors"
+                                  >
+                             Sponsors
+                            </Link>
+                        </li>
+                        <li class="nav-item">
+                        <Link className={`nav-link ${ location.pathname === "/Events" ? "active" : ""  }`}aria-current="page" to="/Events"
+                                  >
+                             Events
+                            </Link>
+                        </li>
+                        <li class="nav-item">
+                        <Link className={`nav-link ${ location.pathname === "/Team" ? "active" : ""  }`}aria-current="page" to="/Team"
+                                  >
+                             Team
+                            </Link>
+                        </li>
+                        <li class="nav-item">
+                        <Link className={`nav-link ${ location.pathname === "/Developers" ? "active" : ""  }`} to="/Developers"
+                                  >
+                             Developers
+                            </Link>
+                        </li>
+                   
+                        <li class="nav-item">
+                        {token==""?<a class="nav-link login-nav-btn" data-bs-toggle="modal" data-bs-target="#getstartedmodal" onClick={e=>{
+                              setLogin(true);
+                           }}>Log in / Sign Up</a>:""}
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </nav>
+         </div>
       </header>
       <Modal
         isOpen={login}

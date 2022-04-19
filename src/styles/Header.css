@@ -5,6 +5,11 @@
     min-width: 100vw;
 }
 
+.navbar-toggler-icon{
+    background-color: #c19a0000;
+    
+}
+
 .nav-item{
     margin-top: 0.5vh;
     margin-bottom: 0.5vh;

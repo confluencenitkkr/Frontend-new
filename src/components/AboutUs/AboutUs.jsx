@@ -17,7 +17,10 @@ const AboutUs = () => {
 					<p>Confluence, the annual cultural Festival of NIT Kurukshetra is a cultural extravaganza beyond
 						words, beyond description. Confluence is the coming together of free spirits, like-minded 
 						zealous youth and a celebration of culture of true artistic genius. 
-						Its urge to deliver the maximum is what makes it one of the most awaited cultural festival.</p>
+						Its urge to deliver the maximum is what makes it one of the most awaited cultural festival.
+						Started in 1991 by a bunch of enthusiastic NITians, now in its 21st edition,
+						 has snowballed to become the largest festival of its kind in North India
+						</p>
 					
 				</div>
 				<div class="social">
