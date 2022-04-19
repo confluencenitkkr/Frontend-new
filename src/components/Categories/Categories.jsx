@@ -1,20 +1,17 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import '../../styles/Categories.css';
-import '../../styles/Developers.css';
+import "../../styles/Categories.css";
+import "../../styles/Developers.css";
 import data from "../../config/usaState.json";
-import eventsActions from '../../actions/events.Actions';
-import Select from 'react-select';
+import eventsActions from "../../actions/events.Actions";
+import Select from "react-select";
 const Categories = () => {
+  const [dataa, setData] = useState([]);
 
-  const [dataa,setData]=useState([]);
-  
-  const [club,setClub]=useState("");
+  const [club, setClub] = useState("");
   useEffect(() => {
     // setData(optionMaker(data.data));
   }, []);
-
- 
 
   const optionMaker = (arr) => {
     let data = [];
@@ -24,11 +21,11 @@ const Categories = () => {
         label: e,
       });
     });
-    console.log(data,'dcsc')
+    console.log(data, "dcsc");
     return data;
   };
   const handleChange = (newValue, actionMeta) => {
-    console.log(newValue)
+    console.log(newValue);
     setClub(newValue.label);
   };
   const history=useNavigate();
@@ -67,29 +64,30 @@ const viewEvent=(id)=>{
             <div class="col-lg-6">
               <div class="common-head">
                 <h2>
-                  CONFLUNECE  <span>EVENTS</span>
+                  CONFLUNECE <span>EVENTS</span>
                 </h2>
               </div>
             </div>
-          
-                <div class="col-lg-6">
-                  <div class="search-wrp">
-                  
-                     <select class="form-select" value={club}  
-                   onChange={e=>{
-                     e.preventDefault()
-                    console.log(e.target.value);
-                    setClub(e.target.value)
-                    fetch1(e.target.value)
-                  }}>
-                    <option selected={true} >Select club</option>
-  { data ? data.data.map((e,index)=>{
-    return (
-      <option value={e}>{e}</option>
-  )
-  }):<option value="something is wrong">something is wrong</option>}  </select>  
 
-{/* </select>  
+            <div class="col-lg-6">
+              <div class="search-wrp">
+                <select
+                  class="form-select"
+                  value={club}
+                  placeholder="Club Name"
+                  onChange={(e) => {
+                    e.preventDefault();
+                    console.log(e.target.value);
+                    setClub(e.target.value);
+                    fetch1(e.target.value);
+                  }}
+                >
+                  {data.data.map((e, index) => {
+                    return <option value={e}>{e}</option>;
+                  })}{" "}
+                </select>
+
+                {/* </select>  
                     {dataa.length > 0 ? (
                 <Select
                   placeholder="Club Name"
@@ -108,13 +106,15 @@ const viewEvent=(id)=>{
                   options={[]}
                 />
               )} */}
-                    <img src="JJN" class="img img-fluid" alt="" />
-                  </div>
-                </div>
-              
+                <img src="JJN" class="img img-fluid" alt="" />
+              </div>
+            </div>
           </div>
           <div class=" ">
-            <div class="accordion container py-5 downsection" id="accordionExample">
+            <div
+              class="accordion container py-5 downsection"
+              id="accordionExample"
+            >
               <div class="row text-center">
           { dataa.length==0?<div class="col-xl-3 col-sm-6 mb-5">
                 <h> NO event found</h>
@@ -132,17 +132,16 @@ const viewEvent=(id)=>{
             
           </div>
                       </div>
-  )
-  })}
-                      
-                  
+                    
+                  );
+                })}
               </div>
             </div>
           </div>
         </div>
       </section>
     </>
-    )
+  );
 };
 
 export default Categories;
