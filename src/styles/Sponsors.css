@@ -43,6 +43,11 @@
     font-size: 5.625rem;
 }}
 
+
+.sponsor-title{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 .page header .spons-page-title {
   font-family: California,Times,Georgia,serif;
   font-weight: 500;

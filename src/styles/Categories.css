@@ -10,6 +10,12 @@
 .common-head h2 span {
     color: #0056D6;
 }
+.cursor{
+    cursor: pointer;
+}
+.bottom-margin{
+    margin-bottom: 5px !important;
+}
 .search-wrp input {
     height: 45px;
     padding-left: 35px;
@@ -37,4 +43,5 @@ section {
 .heloo{
     height: 200px;
     width: 259px;
+    border-radius: 10px;
 }
