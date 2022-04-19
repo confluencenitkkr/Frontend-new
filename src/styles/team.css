@@ -1,10 +1,27 @@
 
 .input1 {position: absolute; display: none}
 
+.teamConfluenceLeft{
+    
+}
+
+.teamText{
+  text-align: center;
+  font-size: 48px;
+  margin-top: 20px;;
+  transform: rotate(352deg);
+}
+.team-confluence{
+  height: 20vh;
+  width: 34vw;
+  /* transform: rotateY(90); */
+}
+
 .detailsBox{
   display: flex;
   flex-direction: column;
   width: 70vw;
+  margin-top: 20px;;
 }
 
 .detailsBoxHeading{
@@ -56,6 +73,7 @@
   display:flex;
   justify-content: center;
   position: relative;
+  margin-top: 15px;
 }
 .photoo
 {
@@ -85,7 +103,7 @@
 .menu {
 margin: 0 auto;
 position: relative;
-top: 47vh;
+top: 30vh;
 margin-left: 15vw;
 width: 25vw;
 float: left;
@@ -200,13 +218,19 @@ opacity: 1;
  
 
 @media only screen and (max-width: 768px ) {
+
+  .team-confluence{
+    height: 20vh;
+    width: 90vw;
+    /* transform: rotateY(90); */
+  }
   .container1{
       display: flex;
       flex-direction: column;
   }
   .detailsBox{
       width: 100vw;
-      margin-top: 100vh;
+      margin-top: 70vh;
   }
   .menu {
     

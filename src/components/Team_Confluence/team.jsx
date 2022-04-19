@@ -14,6 +14,8 @@ import image10 from "../../styles/images/sponsi.jpg"
 import image11 from "../../styles/images/mad.jpg"
 import user from "../../styles/images/user.png"
 
+import teamConflu from '../../styles/images/Team_conflu.png' 
+
 const Team = () => {
 
   const [key, setKey] = useState("Photography")
@@ -180,46 +182,50 @@ const Team = () => {
     <>
       <section class="">
         <div class="container1">
+          <div className='teamConfluenceLeft'>
+            <div className='teamText'>
+              <img src={teamConflu} class="team-confluence"></img>
+            </div>
+            <div class="menu">
+              <input className='input1' type="checkbox" id="toggle" hidden checked />
+              <label id="show-menu" for="toggle">
+                <div class="btn1 conflu-btn">
+                  <i class=""><img class="conflu_logo" src={image1} /></i>
 
-          <div class="menu">
-            <input className='input1' type="checkbox" id="toggle" hidden checked />
-            <label id="show-menu" for="toggle">
-              <div class="btn1 conflu-btn">
-                <i class=""><img class="conflu_logo" src={image1} /></i>
+                </div>
+                <div class="logoBtn btn1">
+                  <i class="material-icons md-36"><img src={image2} class="club_logo" onClick={(e) => { setKey("Photography") }} /></i>
+                </div>
+                <div class="logoBtn btn1">
+                  <i class="material-icons md-36"><img src={image3} class="club_logo" onClick={(e) => { setKey("Colours") }} /></i>
+                </div>
+                <div class="logoBtn btn1">
+                  <i class="material-icons md-36"><img src={image4} class="club_logo" onClick={(e) => { setKey("Elad") }} /></i>
+                </div>
+                <div class="logoBtn btn1">
+                  <i class="material-icons md-36"><img src={image5} class="club_logo" onClick={(e) => { setKey("Fine Arts") }} /></i>
+                </div>
+                <div class="logoBtn btn1">
+                  <i class="material-icons md-36"><img src={image6} class="club_logo" onClick={(e) => { setKey("Hikking and Trekking Club") }} /></i>
+                </div>
+                <div class="logoBtn btn1">
+                  <i class="material-icons md-36"><img src={image7} class="club_logo" onClick={(e) => { setKey("Hlad") }} /></i>
+                </div>
+                <div class="logoBtn btn1">
+                  <i class="material-icons md-36"><img src={image8} class="club_logo" onClick={(e) => { setKey("AVA") }} /></i>
+                </div>
+                <div class="logoBtn btn1">
+                  <i class="material-icons md-36"><img src={image9} class="club_logo" onClick={(e) => { setKey("Spicmacy") }} /></i>
+                </div>
 
-              </div>
-              <div class="logoBtn btn1">
-                <i class="material-icons md-36"><img src={image2} class="club_logo" onClick={(e) => { setKey("Photography") }} /></i>
-              </div>
-              <div class="logoBtn btn1">
-                <i class="material-icons md-36"><img src={image3} class="club_logo" onClick={(e) => { setKey("Colours") }} /></i>
-              </div>
-              <div class="logoBtn btn1">
-                <i class="material-icons md-36"><img src={image4} class="club_logo" onClick={(e) => { setKey("Elad") }} /></i>
-              </div>
-              <div class="logoBtn btn1">
-                <i class="material-icons md-36"><img src={image5} class="club_logo" onClick={(e) => { setKey("Fine Arts") }} /></i>
-              </div>
-              <div class="logoBtn btn1">
-                <i class="material-icons md-36"><img src={image6} class="club_logo" onClick={(e) => { setKey("Hikking and Trekking Club") }} /></i>
-              </div>
-              <div class="logoBtn btn1">
-                <i class="material-icons md-36"><img src={image7} class="club_logo" onClick={(e) => { setKey("Hlad") }} /></i>
-              </div>
-              <div class="logoBtn btn1">
-                <i class="material-icons md-36"><img src={image8} class="club_logo" onClick={(e) => { setKey("AVA") }} /></i>
-              </div>
-              <div class="logoBtn btn1">
-                <i class="material-icons md-36"><img src={image9} class="club_logo" onClick={(e) => { setKey("Spicmacy") }} /></i>
-              </div>
-
-              <div class="logoBtn btn1">
-                <i class="material-icons md-36"><img src={image11} class="club_logo" onClick={(e) => { setKey("MAD") }} /></i>
-              </div>
-              <div class="logoBtn btn1">
-                <i class="material-icons md-36"><img src={image10} class="club_logo" onClick={(e) => { setKey("Sponsership Committee") }} /></i>
-              </div>
-            </label>
+                <div class="logoBtn btn1">
+                  <i class="material-icons md-36"><img src={image11} class="club_logo" onClick={(e) => { setKey("MAD") }} /></i>
+                </div>
+                <div class="logoBtn btn1">
+                  <i class="material-icons md-36"><img src={image10} class="club_logo" onClick={(e) => { setKey("Sponsership Committee") }} /></i>
+                </div>
+              </label>
+            </div>
           </div>
 
           <div class="detailsBox">
