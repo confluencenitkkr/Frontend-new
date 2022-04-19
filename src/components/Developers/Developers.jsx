@@ -10,8 +10,8 @@ const Developers = () => {
     <div class="container py-5 downsection">
       <div class="row mb-4">
         <div class="col-lg-5">
-          <h2 class="display-4 font-weight-light">Our team</h2>
-          <p class="font-italic text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <h2 class="display-4 font-weight-light">Developers</h2>
+          <p class="font-italic text-muted">"Alone we can do so little; together we can do so much." – Helen Keller</p>
         </div>
       </div>
   

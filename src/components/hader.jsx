@@ -171,12 +171,7 @@ const Header = () => {
                              Developers
                             </Link>
                         </li>
-                        <li class="nav-item">
-                        <Link className={`nav-link ${ location.pathname === "/categories" ? "active" : ""  }`} to="/categories"
-                                  >
-                             Categories
-                            </Link>
-                        </li>
+                   
                         <li class="nav-item">
                         {token==""?<a class="nav-link login-nav-btn" data-bs-toggle="modal" data-bs-target="#getstartedmodal" onClick={e=>{
                               setLogin(true);

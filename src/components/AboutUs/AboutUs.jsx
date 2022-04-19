@@ -13,13 +13,14 @@ const AboutUs = () => {
 					<h1>About Us</h1>
 				</div>
 				<div class="content">
-					<h3>Lorem ipsum dolor sit amet, consectetur adipisicing</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat.</p>
+					<h3>Confluence</h3>
+					<p>Confluence, the annual cultural Festival of NIT Kurukshetra is a cultural extravaganza beyond words,
+						 beyond description. Confluence is the coming together of free spirits,
+						  like-minded zealous youth and a celebration of culture of true artistic genius.
+						 Its urge to deliver the maximum is what makes it one of the most awaited cultural festival.
+						 Started in 1991 by a bunch of enthusiastic NITians, now in its 21st edition, has snowballed to become the largest festival of its kind in North India</p>
 					<div class="button">
-						<a href="">Read More</a>
+						<a href="https://www.facebook.com/Conflu/">Know More</a>
 					</div>
 				</div>
 				<div class="social">

@@ -47,6 +47,7 @@ const Categories = () => {
    })
   }
   const fetch1=(text)=>{
+    console.log(text)
    eventsActions.Search(text,(err,res)=>{
      if(err){
      }else{
@@ -74,19 +75,19 @@ const viewEvent=(id)=>{
                 <div class="col-lg-6">
                   <div class="search-wrp">
                   
-                     <select class="form-select" value={club}  placeholder="Club Name"
+                     <select class="form-select" value={club}  
                    onChange={e=>{
                      e.preventDefault()
                     console.log(e.target.value);
                     setClub(e.target.value)
                     fetch1(e.target.value)
-
                   }}>
-  {data.data.map((e,index)=>{
+                    <option selected={true} >Select club</option>
+  { data ? data.data.map((e,index)=>{
     return (
       <option value={e}>{e}</option>
   )
-  })}  </select>  
+  }):<option value="something is wrong">something is wrong</option>}  </select>  
 
 {/* </select>  
                     {dataa.length > 0 ? (
@@ -115,38 +116,15 @@ const viewEvent=(id)=>{
           <div class=" ">
             <div class="accordion container py-5 downsection" id="accordionExample">
               <div class="row text-center">
-              
-                 
-                      <div class="col-xl-3 col-sm-6 mb-5">
-                      <div class=" rounded shadow-sm py-5 px-4"><img src="https://images.pexels.com/photos/2747449/pexels-photo-2747449.jpeg?cs=srgb&dl=pexels-wolfgang-2747449.jpg&fm=jpg" alt="" width="100" class="heloo"/>
-            <h5 class="mb-0  ">eventName</h5>
-            <h5 class="mb-0  ">Venue</h5>
-            <span class="small text-uppercase text-muted">club name </span>
-          
-          </div>
-                      </div>
-                      <div class="col-xl-3 col-sm-6 mb-5">
-                      <div class=" rounded shadow-sm py-5 px-4"><img src="https://media.istockphoto.com/photos/man-speaking-at-a-business-conference-picture-id499517325?b=1&k=20&m=499517325&s=170667a&w=0&h=jMCaZov25c5VR1CP-4axUdJPEKSpBWbzzWAubQS3-oo=" alt="" width="100" class="heloo"/>
-            <h5 class="mb-0  ">eventName</h5>
-            <h5 class="mb-0  ">Venue</h5>
-            <span class="small text-uppercase text-muted">club name </span>
-            
-          </div>
-                      </div>
-                      <div class="col-xl-3 col-sm-6 mb-5">
-                      <div class=" rounded shadow-sm py-5 px-4"><img src="https://bootstrapious.com/i/snippets/sn-about/avatar-4.png" alt="" width="100" class="heloo"/>
-            <h5 class="mb-0  ">eventName</h5>
-            <h5 class="mb-0  ">Venue</h5>
-            <span class="small text-uppercase text-muted">club name </span>
-            
-          </div>
-                      </div>
+          { dataa.length==0?<div class="col-xl-3 col-sm-6 mb-5">
+                <h> NO event found</h>
+              </div>:""}
                       {dataa.map((e,index)=>{
     return (
       <div class="col-xl-3 col-sm-6 mb-5">
                       <div class=" rounded shadow-sm py-5 px-4"><img src="https://bootstrapious.com/i/snippets/sn-about/avatar-4.png" alt="" width="100" class="heloo"/>
             <h5 class="mb-0  ">{e.eventName}</h5>
-            <h5 class="mb-0  ">venue: {e.clubName}</h5>
+            <h5 class="mb-0  ">{e.clubName}</h5>
             <button class="small text-uppercase text-muted" onClick={a=>{
               a.preventDefault();
               viewEvent(e._id)
