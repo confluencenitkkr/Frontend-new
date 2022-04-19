@@ -8,6 +8,7 @@ import Cookies from "universal-cookie";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Agent from "../actions/super";
+import "../../src/styles/Header.css"
 
 const Header = () => {
   let location = useLocation();
@@ -112,9 +113,7 @@ const Header = () => {
         <div class="navigation">
           <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
-              <a class="navbar-brand" href="index.html">
-                <img class="logo-img" src={image1} alt="" />
-              </a>
+              
               {token == "" ? (
                 <a
                   class="login-out-nav-btn"
