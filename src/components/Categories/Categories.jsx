@@ -82,7 +82,9 @@ const viewEvent=(id)=>{
                     fetch1(e.target.value);
                   }}
                 >
+                  <option selected={true} >Select Club</option>
                   {data.data.map((e, index) => {
+
                     return <option value={e}>{e}</option>;
                   })}{" "}
                 </select>
