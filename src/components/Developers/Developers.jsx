@@ -7,15 +7,15 @@ const Developers = () => {
     {
       "name":"Aayush Gupta",
       "image" :"https://i.ibb.co/Qv2jjXw/dcf19c08-1406-4ad7-8047-d8e310884ecc-1-11zon.jpg",
-      "role": "Front-end Developer",
+      "role": "Full STACK DEVELOPER",
       "insta": "https://www.instagram.com/ashu_2305_/?hl=en",
       "linkedin": "https://www.linkedin.com/in/ashu2305/",
       "github":"https://github.com/ashu2305",
     },
     {
       "name":"Ayush Meena",
-      "image" : img,
-      "role": "",
+      "image" :"https://i.ibb.co/D5zp66d/IMG-20211104-152222-575-01.jpg",
+      "role": "Full STACK DEVELOPER",
       "insta": "https://www.instagram.com/ayush_mina/",
       "linkedin": "linkedin.com/in/aayush-meena-729298135/",
       "github":"https://github.com/ayushmina/",
@@ -53,6 +53,14 @@ const Developers = () => {
       "github":"",
     },
     {
+      "name":"Pransu",
+      "image" : "https://i.ibb.co/D8TNqvw/IMG-20220420-WA0130-2-1.jpg",
+      "role": "UI/UX Designer",
+      "insta": "https://instagram.com/pransu65?igshid=YmMyMTA2M2Y=",
+      "linkedin": "https://www.linkedin.com/in/pransu-yadav-a082891b8",
+      "github":"https://github.com/Pransu-code",
+    },
+    {
       "name":"Karan",
       "image" : "https://i.ibb.co/yQbv0fB/IMG-20220420-WA0129.jpg",
       "role": "Front-end Developer",
@@ -68,14 +76,7 @@ const Developers = () => {
       "linkedin": "https://www.linkedin.com/in/ankit-k-1aa4521bb",
       "github":"https://github.com/ankitk84",
     },
-    {
-      "name":"Pransu",
-      "image" : "https://i.ibb.co/BK2sPPS/IMG-20220420-WA0130-1.jpg",
-      "role": "UI/UX Designer",
-      "insta": "https://instagram.com/pransu65?igshid=YmMyMTA2M2Y=",
-      "linkedin": "https://www.linkedin.com/in/pransu-yadav-a082891b8",
-      "github":"https://github.com/Pransu-code",
-    },
+    
   
   ]
 
