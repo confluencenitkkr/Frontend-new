@@ -4,7 +4,7 @@ import "../../styles/Categories.css";
 import "../../styles/Developers.css";
 import data from "../../config/usaState.json";
 import eventsActions from "../../actions/events.Actions";
-import Select from "react-select";
+// import Select from "react-select";
 const Categories = () => {
   const [dataa, setData] = useState([]);
 

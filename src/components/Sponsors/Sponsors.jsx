@@ -1,5 +1,5 @@
 import React from 'react';
-import { Modal, ModalBody } from "reactstrap";
+// import { Modal, ModalBody } from "reactstrap";
 
 import '../../styles/Sponsors.css';
 import image1 from "../../styles/images/conflu.png";
@@ -21,6 +21,7 @@ const Sponsors = () => {
           <div className="sponsor-title">
             <h1>Food Sponsor</h1>
           </div>
+          {/* <div className="subSponsor"> */}
             <div class="col-xl-3 col-sm-6 mb-5">
               <div class="sponsor-division">
                 <div class="spons-image" style={{ backgroundImage: `url(${background})` }}>
@@ -35,18 +36,19 @@ const Sponsors = () => {
 
                 </div>
             </div>
-
             <div class="col-xl-3 col-sm-6 mb-5">
               <div class="sponsor-division">
                 <div class="spons-image" style={{ backgroundImage: `url(${background})` }}>
-                  <a href="http://saisonnumerique.be/" type="button" layout="sponsor" target="_blank" rel="noreferrer noopener">
-                    <span class="u-visually-hidden">Saisons des cultures numériques</span>
-                    <img src="https://www.kikk.be/2017/files/library/Sponsors/02_Founding-partners/04_Media-partners/03_Partners/05_Friends/03_Partners/7_Saisons-numeriques_logo.jpg" alt="Saisons des cultures numériques">
-                    </img>  </a></div>
-                    <div className="sponsor-name">
+                  <a href="http://www.federation-wallonie-bruxelles.be/" type="button" layout="sponsor" target="_blank" rel="noreferrer noopener">
+                    <span class="u-visually-hidden">Federation Wallonie Bruxelles</span>
+                    <img src="https://www.kikk.be/2017/files/library/Sponsors/02_Founding-partners/04_Media-partners/03_Partners/05_Friends/03_Partners/FWB.jpg" alt="Federation Wallonie Bruxelles">
+                    </img></a>
+                </div>
+                <div className="sponsor-name">
                   <h3>Name</h3>
                 </div>
-              </div>
+
+                </div>
             </div>
             <div class="col-xl-3 col-sm-6 mb-5">
               <div class="sponsor-division">
@@ -59,9 +61,9 @@ const Sponsors = () => {
                 <div className="sponsor-name">
                   <h3>Name</h3>
                 </div>
+
                 </div>
             </div>
-
             <div class="col-xl-3 col-sm-6 mb-5">
               <div class="sponsor-division">
                 <div class="spons-image" style={{ backgroundImage: `url(${background})` }}>
@@ -73,33 +75,14 @@ const Sponsors = () => {
                 <div className="sponsor-name">
                   <h3>Name</h3>
                 </div>
-                </div>
-            </div>
-            <div class="col-xl-3 col-sm-6 mb-5">
-              <div class="sponsor-division">
 
-                <div class="spons-image" style={{ backgroundImage: `url(${background})` }}>
-                  <a href="www.bep.be" type="button" layout="sponsor" target="_blank" rel="noreferrer noopener">
-                    <span class="u-visually-hidden">BEP</span>
-                    <img src="https://www.kikk.be/2017/files/library/Sponsors/02_Founding-partners/04_Media-partners/03_Partners/05_Friends/03_Partners/17_BEP_logo.png" alt="BEP">
-                    </img>  </a></div>
-              </div>
-              <div className="sponsor-name">
-                  <h3>Name</h3>
                 </div>
             </div>
-            <div class="col-xl-3 col-sm-6 mb-5">
-              <div class="sponsor-division">
-                <div class="spons-image" style={{ backgroundImage: `url(${background})` }}>
-                  <a href="http://www.trakk.be/" type="button" layout="sponsor" target="_blank" rel="noreferrer noopener">
-                    <span class="u-visually-hidden">Trakk</span>
-                    <img src="https://www.kikk.be/2017/files/library/Sponsors/02_Founding-partners/04_Media-partners/03_Partners/2_Trakk-(noir)_logo.jpg" alt="Trakk">
-                    </img>  </a></div>
-                    <div className="sponsor-name">
-                  <h3>Name</h3>
-                </div>
-                    </div>
-            </div>
+            
+            
+          {/* </div> */}
+
+           
 
           </div>
 
@@ -111,6 +94,7 @@ const Sponsors = () => {
           <div className="sponsor-title">
             <h1>Drinks Sponsor</h1>
           </div>
+          <div class='subSponsor'>
             <div class="col-xl-3 col-sm-6 mb-5">
               <div class="sponsor-division">
                 <div class="spons-image" style={{ backgroundImage: `url(${background})` }}>
@@ -125,72 +109,7 @@ const Sponsors = () => {
 
                 </div>
             </div>
-
-            <div class="col-xl-3 col-sm-6 mb-5">
-              <div class="sponsor-division">
-                <div class="spons-image" style={{ backgroundImage: `url(${background})` }}>
-                  <a href="http://saisonnumerique.be/" type="button" layout="sponsor" target="_blank" rel="noreferrer noopener">
-                    <span class="u-visually-hidden">Saisons des cultures numériques</span>
-                    <img src="https://www.kikk.be/2017/files/library/Sponsors/02_Founding-partners/04_Media-partners/03_Partners/05_Friends/03_Partners/7_Saisons-numeriques_logo.jpg" alt="Saisons des cultures numériques">
-                    </img>  </a></div>
-                    <div className="sponsor-name">
-                  <h3>Name</h3>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-3 col-sm-6 mb-5">
-              <div class="sponsor-division">
-                <div class="spons-image" style={{ backgroundImage: `url(${background})` }}>
-                  <a href="http://www.federation-wallonie-bruxelles.be/" type="button" layout="sponsor" target="_blank" rel="noreferrer noopener">
-                    <span class="u-visually-hidden">Federation Wallonie Bruxelles</span>
-                    <img src="https://www.kikk.be/2017/files/library/Sponsors/02_Founding-partners/04_Media-partners/03_Partners/05_Friends/03_Partners/FWB.jpg" alt="Federation Wallonie Bruxelles">
-                    </img></a>
-                </div>
-                <div className="sponsor-name">
-                  <h3>Name</h3>
-                </div>
-                </div>
-            </div>
-
-            <div class="col-xl-3 col-sm-6 mb-5">
-              <div class="sponsor-division">
-                <div class="spons-image" style={{ backgroundImage: `url(${background})` }}>
-                  <a href="http://www.federation-wallonie-bruxelles.be/" type="button" layout="sponsor" target="_blank" rel="noreferrer noopener">
-                    <span class="u-visually-hidden">Federation Wallonie Bruxelles</span>
-                    <img src="https://www.kikk.be/2017/files/library/Sponsors/02_Founding-partners/04_Media-partners/03_Partners/05_Friends/03_Partners/FWB.jpg" alt="Federation Wallonie Bruxelles">
-                    </img></a>
-                </div>
-                <div className="sponsor-name">
-                  <h3>Name</h3>
-                </div>
-                </div>
-            </div>
-            <div class="col-xl-3 col-sm-6 mb-5">
-              <div class="sponsor-division">
-
-                <div class="spons-image" style={{ backgroundImage: `url(${background})` }}>
-                  <a href="www.bep.be" type="button" layout="sponsor" target="_blank" rel="noreferrer noopener">
-                    <span class="u-visually-hidden">BEP</span>
-                    <img src="https://www.kikk.be/2017/files/library/Sponsors/02_Founding-partners/04_Media-partners/03_Partners/05_Friends/03_Partners/17_BEP_logo.png" alt="BEP">
-                    </img>  </a></div>
-              </div>
-              <div className="sponsor-name">
-                  <h3>Name</h3>
-                </div>
-            </div>
-            <div class="col-xl-3 col-sm-6 mb-5">
-              <div class="sponsor-division">
-                <div class="spons-image" style={{ backgroundImage: `url(${background})` }}>
-                  <a href="http://www.trakk.be/" type="button" layout="sponsor" target="_blank" rel="noreferrer noopener">
-                    <span class="u-visually-hidden">Trakk</span>
-                    <img src="https://www.kikk.be/2017/files/library/Sponsors/02_Founding-partners/04_Media-partners/03_Partners/2_Trakk-(noir)_logo.jpg" alt="Trakk">
-                    </img>  </a></div>
-                    <div className="sponsor-name">
-                  <h3>Name</h3>
-                </div>
-                    </div>
-            </div>
-
+          </div>
           </div>
         </div>
       </div>

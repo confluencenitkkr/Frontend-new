@@ -42,7 +42,11 @@
 @media (min-width: 46.25em){.page-header {
     font-size: 5.625rem;
 }}
-
+.subSponsor{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 
 .sponsor-title{
   margin-top: 20px;
@@ -181,6 +185,8 @@
   
 
 }
+
+
 
 
 [type=button][layout=sponsor], [type=submit][layout=sponsor] {
