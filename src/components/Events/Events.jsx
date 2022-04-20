@@ -5,7 +5,7 @@ import eventsActions from "../../actions/events.Actions";
 const Events = (props) => {
    let { id } = useParams();
    const [data,setData]=useState([]);
-
+const image="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGV2ZW50fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" 
   useEffect(()=>{
     fetch();
   },[])
@@ -15,6 +15,7 @@ const Events = (props) => {
       if(err){
 
       }else{
+        console.log(res.data);
         setData(res.data);
       }
     })
@@ -38,25 +39,25 @@ const Events = (props) => {
                 <td>
                   <div class="month">April</div>
                   <div class="month-date-devider"></div>
-                  <div class="date">27</div>
+                  <div class="date">{data.date?data.date.slice(-2):22}</div>
                 </td>
-                <td class="title">DASTAAN - a tribute to Rekha</td>
+                <td class="title">{data.eventName}</td>
               </tr>
             </table>
           </div>
           <div class="col-lg-5 sec-2">
-            <img src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGV2ZW50fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" />
+            <img src={image}/>
           </div>
           <div class="col-lg-5 sec-3">
-            <div class="title">DASTAAN - a tribute to Rekha</div>
+            <div class="title">{data.eventName}</div>
             <div class="venue">
               <table>
                 <tr>
                   <td><i class="fa fa-map-marker"></i></td>
                   <td>
-                    <div>Gyan Manch</div>
+                    <div>{data.venue}</div>
                     <div class="dim-color">
-                      <a href="https://www.google.co.in" target="blank">Get Directions</a>
+                      {/* <a href="https://www.google.co.in" target="blank">Get Directions</a> */}
                     </div>
                   </td>
                 </tr>
@@ -67,13 +68,16 @@ const Events = (props) => {
                 <tr>
                   <td><i class="fa fa-clock-o"></i></td>
                   <td>
-                    <div>Saturday, Jan 27, 2018 at 5:30 PM</div>
+                    <div>{data.date} at {data.time?data.time:"11:00 AM"}</div>
                     <div data-livestamp="1517054400" class="dim-color"></div>
                   </td>
                 </tr>
               </table>
             </div>
-            <div class="sort-story">"For a woman to be complete, she has to be a blend of Paro & Chandramukhi. I feel that I am that woman." - Rekha</div>
+            <div class="sort-story"> cooridnator:  {data.cooridnatorName} /  {data.cooridnatorName1}  <br/>
+            phone NO:  {data.cooridnatorNumber} /  {data.cooridnatorNumber}<br/>
+
+             </div>
             <div class="group-of-btn">
               <a href="https://www.google.com" target="blank" class="btn book-ticket">Book Your Entry Pass</a>
             </div>
@@ -123,12 +127,15 @@ const Events = (props) => {
                 </tr>
               </table>
             </div>
-            <div class="sort-story">"For a woman to be complete, she has to be a blend of Paro & Chandramukhi. I feel that I am that woman." - Rekha "For a woman to be complete, she has to be a blend of Paro & Chandramukhi. I feel that I am that woman." - Rekha "For a woman to be complete, she has to be a blend of Paro & Chandramukhi. I feel that I am that woman." - Rekha"For a woman to be complete, she has to be a blend of Paro & Chandramukhi. I feel that I am that woman." - Rekha"For a woman to be complete, she has to be a blend of Paro & Chandramukhi. I feel that I am that woman." - Rekha"For a woman to be complete, she has to be a blend of Paro & Chandramukhi. I feel that I am that woman." - Rekha"For a woman to be complete, she has to be a blend of Paro & Chandramukhi. I feel that I am that woman." - Rekha"For a woman to be complete, she has to be a blend of Paro & Chandramukhi. I feel that I am that woman." - Rekha"For a woman to be complete, she has to be a blend of Paro & Chandramukhi. I feel that I am that woman." - Rekha"For a woman to be complete, she has to be a blend of Paro & Chandramukhi. I feel that I am that woman." - Rekha"For a woman to be complete, she has to be a blend of Paro & Chandramukhi. I feel that I am that woman." - Rekha"For a woman to be complete, she has to be a blend of Paro & Chandramukhi. I feel that I am that woman." - Rekha"For a woman to be complete, she has to be a blend of Paro & Chandramukhi. I feel that I am that woman." - Rekha</div>
+            <div class="sort-story">
+              {data.description}
+
+                  </div>
             <div class="group-of-btn">
               <a href="https://www.google.com" target="blank" class="btn book-ticket">Book Your Entry Pass</a>
             </div>          </div>
           <div class="col-lg-6 sec-3">
-            <div class="title">Events Name</div>
+            <div class="title">{data.eventName}</div>
             <div class="venue">
               <table>
                 <tr>
@@ -154,7 +161,8 @@ const Events = (props) => {
                 </tr>
               </table>
             </div>
-            <div class="sort-story">"For a woman to be complete, she has to be a blend of Paro & Chandramukhi. I feel that I am that woman." - Rekha</div>
+            <div class="sort-story">{data.rule}
+</div>
             <div class="group-of-btn">
               <a href="https://www.google.com" target="blank" class="btn book-ticket">Book Your Entry Pass</a>
             </div>

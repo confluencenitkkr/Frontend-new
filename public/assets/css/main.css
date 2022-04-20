@@ -1074,7 +1074,12 @@ footer {
 .authentication-modal .modal-content {
 	border-radius: 15px;
 }
-
+.blackok{
+	background-color: black !important;
+}
+.blackok div {
+	background-color: black !important;
+}
 .authentication-modal .modal-body {
 	padding: 0;
 	overflow: hidden;

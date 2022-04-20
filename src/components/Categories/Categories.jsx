@@ -28,33 +28,34 @@ const Categories = () => {
     console.log(newValue);
     setClub(newValue.label);
   };
-  const history = useNavigate();
-  useEffect(() => {
-    fetch();
-    console.log("hello");
-  }, []);
-  const fetch = () => {
-    let text = "";
-    eventsActions.getEvent(text, (err, res) => {
-      if (err) {
-      } else {
-        setData(res.data);
-        console.log(res);
-      }
-    });
-  };
-  const fetch1 = (text) => {
-    eventsActions.Search(text, (err, res) => {
-      if (err) {
-      } else {
-        setData(res.data);
-        console.log(res);
-      }
-    });
-  };
-  const viewEvent = (id) => {
-    history(`/EventView/${id}`);
-  };
+  const history=useNavigate();
+  useEffect(()=>{
+   fetch();
+   console.log("hello")
+  },[])
+  const fetch=()=>{
+    let text="";
+   eventsActions.getEvent(text,(err,res)=>{
+     if(err){
+     }else{
+       setData(res.data);
+       console.log(res)
+     }
+   })
+  }
+  const fetch1=(text)=>{
+    console.log(text)
+   eventsActions.Search(text,(err,res)=>{
+     if(err){
+     }else{
+       setData(res.data);
+       console.log(res)
+     }
+   })
+  }
+const viewEvent=(id)=>{
+  history(`/EventView/${id}`)
+}
   return (
     <>
       <section class="search-result-wrp">
@@ -81,7 +82,9 @@ const Categories = () => {
                     fetch1(e.target.value);
                   }}
                 >
+                  <option selected={true} >Select Club</option>
                   {data.data.map((e, index) => {
+
                     return <option value={e}>{e}</option>;
                   })}{" "}
                 </select>
@@ -115,32 +118,23 @@ const Categories = () => {
               id="accordionExample"
             >
               <div class="row text-center">
-                
-                
-                
-                {dataa.map((e, index) => {
-                  return (
-                    <div class="col-xl-3 col-sm-6 mb-5">
-                      <div class=" rounded shadow-sm py-5 px-4">
-                        <img
-                          src="https://bootstrapious.com/i/snippets/sn-about/avatar-4.png"
-                          alt=""
-                          width="100"
-                          class="heloo bottom-margin"
-                        />
-                        <h5 class="mb-0 bottom-margin">{e.eventName}</h5>
-                        <h6 class="mb-0 bottom-margin">{e.clubName}</h6>
-                        <div
-                          class="small text-uppercase text-muted cursor"
-                          onClick={(a) => {
-                            a.preventDefault();
-                            viewEvent(e._id);
-                          }}
-                        >
-                          Read More
-                        </div>
+          { dataa.length==0?<div class="col-xl-3 col-sm-6 mb-5">
+                <h> NO event found</h>
+              </div>:""}
+                      {dataa.map((e,index)=>{
+    return (
+      <div class="col-xl-3 col-sm-6 mb-5">
+                      <div class=" rounded shadow-sm py-5 px-4"><img src="https://bootstrapious.com/i/snippets/sn-about/avatar-4.png" alt="" width="100" class="heloo"/>
+            <h5 class="mb-0  ">{e.eventName}</h5>
+            <h5 class="mb-0  ">{e.clubName}</h5>
+            <button class="small text-uppercase text-muted" onClick={a=>{
+              a.preventDefault();
+              viewEvent(e._id)
+            }}>more Details</button>
+            
+          </div>
                       </div>
-                    </div>
+                    
                   );
                 })}
               </div>
