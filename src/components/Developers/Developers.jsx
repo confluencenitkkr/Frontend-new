@@ -6,8 +6,8 @@ const Developers = () => {
   const developers=[
     {
       "name":"Aayush Gupta",
-      "image" :img,
-      "role": "",
+      "image" :"https://i.ibb.co/Qv2jjXw/dcf19c08-1406-4ad7-8047-d8e310884ecc-1-11zon.jpg",
+      "role": "Front-end Developer",
       "insta": "https://www.instagram.com/ashu_2305_/?hl=en",
       "linkedin": "https://www.linkedin.com/in/ashu2305/",
       "github":"https://github.com/ashu2305",
@@ -27,6 +27,14 @@ const Developers = () => {
       "insta": "https://www.instagram.com/inzamam_chowdhury/",
       "linkedin": "https://www.linkedin.com/in/inzamam-chowdhury/",
       "github":"https://github.com/inzamam2021",
+    },
+    {
+      "name":"Meenakshi",
+      "image" : "https://i.ibb.co/hgDMcgQ/IMG-20220421-WA0019-1.jpg",
+      "role": "Front-end Developer",
+      "insta": "https://www.instagram.com/meenakshi_suthar_08/",
+      "linkedin": "https://www.linkedin.com/in/meenakshi-suthar-921967229/",
+      "github":"https://github.com/meenakshisuthar/meenakshisuthar",
     },
     {
       "name":"Lakshay",
@@ -87,7 +95,7 @@ const Developers = () => {
           <div class="bg-white rounded shadow-sm py-5 px-4"><img src={e.image} alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"/>
             <h5 class="mb-0  text-dark">{e.name}</h5><span class="small text-uppercase text-muted">{e.role}</span>
             <ul class="social mb-0 list-inline mt-3">
-              <li class="list-inline-item"><a href={e.github} class="social-link"><i class='fab fa-facebook-f'></i></a></li>
+              <li class="list-inline-item"><a href={e.github} class="social-link"><i class='bi bi-github'></i></a></li>
               <li class="list-inline-item"><a href={e.insta} class="social-link"><i class="bi bi-instagram"></i></a></li>
               <li class="list-inline-item"><a href={e.linkedin} class="social-link"><i class="bi bi-linkedin"></i></a></li>
             </ul>
