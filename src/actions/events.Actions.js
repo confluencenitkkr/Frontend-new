@@ -14,6 +14,14 @@ function getEvent(text, cb) {
       if (typeof cb === 'function') return cb(error, res && res.body);
     });
 }
+function getSponsor(cb) {
+  Agent
+    .fire('get', `${BACKEND_URL}/users/getSponsor`)
+    .end((err, res) => {
+      var error = err || res.error ? ServerError(res) : (res.body && res.body.error) ? ServerError(res) : null;
+      if (typeof cb === 'function') return cb(error, res && res.body);
+    });
+}
 
 function getEventId(id, cb) {
   Agent
@@ -37,5 +45,6 @@ function Search(payload, cb) {
 export default {
   getEvent,
   Search,
-  getEventId
+  getEventId,
+  getSponsor
 }

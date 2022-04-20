@@ -1,10 +1,25 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Modal, ModalBody } from "reactstrap";
 
 import '../../styles/Sponsors.css';
 import image1 from "../../styles/images/conflu.png";
+import eventsActions from '../../actions/events.Actions';
 
 const Sponsors = () => {
+  const [list,setList]=useState([]);
+  useEffect(()=>{
+    fetch();
+  },[])
+  const fetch=()=>{
+    eventsActions.getSponsor((err,res)=>{
+      if(err){
+
+      }else{
+        console.log(res);
+        setList(res.data);
+      }
+    })
+  }
   let background = "https://raw.githubusercontent.com/ankitk84/confluence-2022/main/sponsor-bursh-1.png"
 
   const sponsors = [
