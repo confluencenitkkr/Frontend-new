@@ -112,7 +112,14 @@
 	width: 80vw;;
 }
 .aftermovie{
-	margin-top: 111vh;
+	margin-top: 77vh;
+}
+
+.about-container .socialmedia i
+{
+	color:#a52a2a;
+	font-size: 30px;
+	padding:0px 10px;
 }
 
 }
