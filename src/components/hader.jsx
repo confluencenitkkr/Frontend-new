@@ -169,17 +169,7 @@ const Header = () => {
                     Home
                   </Link>
                         </li>
-                        <li class="nav-item">
-                        <Link
-                    className={`nav-link ${
-                      location.pathname === "/AboutUs" ? "active" : ""
-                    }`}
-                    aria-current="page"
-                    to="/AboutUs"
-                  >
-                    AboutUs
-                  </Link>
-                        </li>
+                      
                         <li class="nav-item">
                         <Link className={`nav-link ${ location.pathname === "/Sponsors" ? "active" : ""  }`}aria-current="page" to="/Sponsors"
                                   >
@@ -204,6 +194,17 @@ const Header = () => {
                              Developers
                             </Link>
                             
+                        </li>
+                        <li class="nav-item">
+                        <Link
+                    className={`nav-link ${
+                      location.pathname === "/AboutUs" ? "active" : ""
+                    }`}
+                    aria-current="page"
+                    to="/AboutUs"
+                  >
+                    AboutUs
+                  </Link>
                         </li>
                    
                         <li class="nav-item ">

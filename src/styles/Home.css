@@ -3,10 +3,41 @@
     height: 100vh;
     
 }
-
+@media only screen   
+and (min-device-width : 768px)   
+and (max-device-width : 1600px)  {
+    .earth {
+        margin-top: 73px;
+        background-color: #000;
+        background-image: url("./video1.gif");
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: cover !important;
+        background-size: contain;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        width: 100vw;
+    }
+}
 @media only screen and (max-width: 768px ) {
     .bg-img{
         background-position: center;
         background-size: contain;
+    }
+  
+    .earth {
+        /* margin-top: 56px !important; */
+        background-color: #000;
+        background-image: url("./video2.gif")!important;
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: cover !important;
+        background-size: contain;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        width: 100vw;
+     
     }
 }

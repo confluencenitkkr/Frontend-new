@@ -132,7 +132,7 @@ const viewEvent=(id)=>{
                       <div class=" rounded shadow-sm py-5 px-4"><img src="https://i.ibb.co/kJ0cp1x/a-tryst-with-magic.png" alt="" width="100" class="heloo"/>
             <h5 class="mb-0 card-name ">{e.eventName}</h5>
             <h5 class="mb-0 card-name ">{e.clubName}</h5>
-            <div class="small text-uppercase text-muted card-name" style={{cursor : "pointer"}} onClick={a=>{
+            <div class="small text-uppercase text-red card-name" style={{cursor : "pointer"}} onClick={a=>{
               a.preventDefault();
               viewEvent(e._id)
             }}>Read More</div>

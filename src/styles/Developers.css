@@ -10,7 +10,9 @@
     transition: all 0.3s;
     font-size: 0.9rem;
   }
-
+  .text-red{
+    color: red;
+  }
   .dev-bg{
     background-image: url('../styles/images/website\ bg.png');
   background-repeat: no-repeat;

@@ -1,24 +1,24 @@
 import React from 'react';
-
+import img from "../../styles/images/ayuhh.jpg"
 import '../../styles/Developers.css';
 
 const Developers = () => {
   const developers=[
     {
       "name":"Aayush Gupta",
-      "image" : "",
+      "image" :img,
       "role": "",
-      "insta": "",
-      "linkedin": "",
-      "github":"",
+      "insta": "https://www.instagram.com/ashu_2305_/?hl=en",
+      "linkedin": "https://www.linkedin.com/in/ashu2305/",
+      "github":"https://github.com/ashu2305",
     },
     {
-      "name":"Ayush",
-      "image" : "",
+      "name":"Ayush Meena",
+      "image" : img,
       "role": "",
-      "insta": "",
-      "linkedin": "",
-      "github":"",
+      "insta": "https://www.instagram.com/ayush_mina/",
+      "linkedin": "linkedin.com/in/aayush-meena-729298135/",
+      "github":"https://github.com/ayushmina/",
     },
     {
       "name":"Inzamam",
@@ -35,6 +35,14 @@ const Developers = () => {
       "insta": "https://www.instagram.com/lakshay_._rose/",
       "linkedin": "https://www.linkedin.com/in/lakshay-rose-514518206/",
       "github":"https://github.com/Daemon25",
+    },
+    {
+      "name":"Dev Bansal",
+      "image" : "https://i.ibb.co/jvffFhZ/IMG20210116210210-00-01-1-compressed.jpg",
+      "role": "UI/UX Designer",
+      "insta": "https://instagram.com/devbansal76?igshid=YmMyMTA2M2Y=",
+      "linkedin": "https://www.linkedin.com/in/dev-bansal-753061209",
+      "github":"",
     },
     {
       "name":"Karan",
@@ -60,14 +68,7 @@ const Developers = () => {
       "linkedin": "https://www.linkedin.com/in/pransu-yadav-a082891b8",
       "github":"https://github.com/Pransu-code",
     },
-    {
-      "name":"Dev Bansal",
-      "image" : "https://i.ibb.co/jvffFhZ/IMG20210116210210-00-01-1-compressed.jpg",
-      "role": "UI/UX Designer",
-      "insta": "https://instagram.com/devbansal76?igshid=YmMyMTA2M2Y=",
-      "linkedin": "https://www.linkedin.com/in/dev-bansal-753061209",
-      "github":"",
-    },
+  
   ]
 
   return (
@@ -80,49 +81,23 @@ const Developers = () => {
       </div>
   
       <div class="row text-center" style={{justifyContent: "center"}}>
-       
-        <div class="col-xl-3 col-sm-6 mb-5 dev-card">
-          <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://bootstrapious.com/i/snippets/sn-about/avatar-4.png" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"/>
-            <h5 class="mb-0  text-dark">Manuella Nevoresky</h5><span class="small text-uppercase text-muted">CEO - Founder</span>
+       {developers.length>0?developers.map((e,index)=>{
+         return(
+          <div class="col-xl-3 col-sm-6 mb-5 dev-card">
+          <div class="bg-white rounded shadow-sm py-5 px-4"><img src={e.image} alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"/>
+            <h5 class="mb-0  text-dark">{e.name}</h5><span class="small text-uppercase text-muted">{e.role}</span>
             <ul class="social mb-0 list-inline mt-3">
-              <li class="list-inline-item"><a href="#" class="social-link"><i class='fab fa-facebook-f'></i></a></li>
-              <li class="list-inline-item"><a href="#" class="social-link"><i class="bi bi-instagram"></i></a></li>
-              <li class="list-inline-item"><a href="#" class="social-link"><i class="bi bi-linkedin"></i></a></li>
+              <li class="list-inline-item"><a href={e.github} class="social-link"><i class='fab fa-facebook-f'></i></a></li>
+              <li class="list-inline-item"><a href={e.insta} class="social-link"><i class="bi bi-instagram"></i></a></li>
+              <li class="list-inline-item"><a href={e.linkedin} class="social-link"><i class="bi bi-linkedin"></i></a></li>
             </ul>
           </div>
         </div>
+         )
+       }):""
+
+       }
         
-        <div class="col-xl-3 col-sm-6 mb-5 dev-card">
-          <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://bootstrapious.com/i/snippets/sn-about/avatar-3.png" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"/>
-            <h5 class="mb-0 text-dark">Samuel Hardy</h5><span class="small text-uppercase text-muted">CEO - Founder</span>
-            <ul class="social mb-0 list-inline mt-3">
-            <li class="list-inline-item"><a href="#" class="social-link"><i class='fab fa-facebook-f'></i></a></li>
-              <li class="list-inline-item"><a href="#" class="social-link"><i class="bi bi-instagram"></i></a></li>
-              <li class="list-inline-item"><a href="#" class="social-link"><i class="bi bi-linkedin"></i></a></li>            </ul>
-          </div>
-        </div>
-        
-        <div class="col-xl-3 col-sm-6 mb-5 dev-card">
-          <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://bootstrapious.com/i/snippets/sn-about/avatar-2.png" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"/>
-            <h5 class="mb-0  text-dark">Tom Sunderland</h5><span class="small text-uppercase text-muted">CEO - Founder</span>
-            <ul class="social mb-0 list-inline mt-3">
-            <li class="list-inline-item"><a href="#" class="social-link"><i class='fab fa-facebook-f'></i></a></li>
-              <li class="list-inline-item"><a href="#" class="social-link"><i class="bi bi-instagram"></i></a></li>
-              <li class="list-inline-item"><a href="#" class="social-link"><i class="bi bi-linkedin"></i></a></li>            </ul>
-          </div>
-        </div>
-        
-        <div class="col-xl-3 col-sm-6 mb-5 dev-card">
-          <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://bootstrapious.com/i/snippets/sn-about/avatar-1.png" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"/>
-            <h5 class="mb-0  text-dark">John Tarly</h5><span class="small text-uppercase text-muted">CEO - Founder</span>
-            <ul class="social mb-0 list-inline mt-3">
-            <li class="list-inline-item"><a href="#" class="social-link"><i class='fab fa-facebook-f'></i></a></li>
-              <li class="list-inline-item"><a href="#" class="social-link"><i class="bi bi-instagram"></i></a></li>
-              <li class="list-inline-item"><a href="#" class="social-link"><i class="bi bi-linkedin"></i></a></li>            </ul>
-          </div>
-        </div>
-       
-  
       </div>
     </div>
   </div>
