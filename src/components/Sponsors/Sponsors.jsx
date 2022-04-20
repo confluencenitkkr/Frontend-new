@@ -35,12 +35,7 @@ const Sponsors = () => {
       image : "https://www.kikk.be/2017/files/library/Sponsors/02_Founding-partners/04_Media-partners/03_Partners/05_Friends/03_Partners/FWB.jpg",
       redirectURL : "google.com"
     },
-    {
-      name : "Lakshay",
-      role : "Co Title",
-      image : "https://www.kikk.be/2017/files/library/Sponsors/02_Founding-partners/04_Media-partners/03_Partners/05_Friends/03_Partners/FWB.jpg",
-      redirectURL : "google.com"
-    },
+    
     {
       name : "Lakshay",
       role : "Other",

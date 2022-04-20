@@ -206,14 +206,14 @@ const Header = () => {
                             
                         </li>
                    
-                        <li class="nav-item blackok">
+                        <li class="nav-item ">
                         {token==null?<a class="nav-link login-nav-btn" data-bs-toggle="modal" data-bs-target="#getstartedmodal" onClick={e=>{
                               setLogin(true);
                            }}>Log in / Sign Up</a>: <GoogleLogout
                            clientId={CLIENT_ID}
                            buttonText="Logout"
                            onLogoutSuccess={logout}
-                           className="nav-link login-nav-btn blackok"
+                           className="nav-link login-nav-btn "
                          >
                          </GoogleLogout>}
                         </li>
