@@ -39,7 +39,7 @@ const image="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?ixlib=
                 <td>
                   <div class="month">April</div>
                   <div class="month-date-devider"></div>
-                  <div class="date">{data?.date?.substring(8,10)}</div>
+                  <div class="date">{data.date?data.date.slice(-2):22}</div>
                 </td>
                 <td class="title">{data.eventName}</td>
               </tr>
