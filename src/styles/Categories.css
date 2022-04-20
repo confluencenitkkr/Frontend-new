@@ -11,6 +11,9 @@
     padding-top: 10vh;
     
 }
+.rounded{
+    border:1px solid;
+}
 .search-result-wrp{
     background-image: url('../styles/images/website\ bg.png');
     background-repeat: no-repeat;

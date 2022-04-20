@@ -1,7 +1,7 @@
 .navigation{
     background-color: #c19a00d6 !important;
     border-radius: 0px 0px 20px 20px;
-    position: fixed !important;
+    /* position: fixed !important; */
     min-width: 100vw;
 }
 

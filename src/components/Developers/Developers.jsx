@@ -3,7 +3,72 @@ import React from 'react';
 import '../../styles/Developers.css';
 
 const Developers = () => {
-  
+  const developers=[
+    {
+      "name":"Aayush Gupta",
+      "image" : "",
+      "role": "",
+      "insta": "",
+      "linkedin": "",
+      "github":"",
+    },
+    {
+      "name":"Ayush",
+      "image" : "",
+      "role": "",
+      "insta": "",
+      "linkedin": "",
+      "github":"",
+    },
+    {
+      "name":"Inzamam",
+      "image" : "",
+      "role": "",
+      "insta": "",
+      "linkedin": "",
+      "github":"",
+    },
+    {
+      "name":"Lakshay",
+      "image" : "",
+      "role": "",
+      "insta": "",
+      "linkedin": "",
+      "github":"",
+    },
+    {
+      "name":"Karan",
+      "image" : "",
+      "role": "",
+      "insta": "",
+      "linkedin": "",
+      "github":"",
+    },
+    {
+      "name":"Ankit",
+      "image" : "",
+      "role": "",
+      "insta": "",
+      "linkedin": "",
+      "github":"",
+    },
+    {
+      "name":"Pransu",
+      "image" : "",
+      "role": "",
+      "insta": "",
+      "linkedin": "",
+      "github":"",
+    },
+    {
+      "name":"Dev Bansal",
+      "image" : "",
+      "role": "",
+      "insta": "",
+      "linkedin": "",
+      "github":"",
+    },
+  ]
 
   return (
     <div class="bg-drak py-5 dev-bg">

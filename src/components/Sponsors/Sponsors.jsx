@@ -29,16 +29,11 @@ const Sponsors = () => {
       image : "https://www.kikk.be/2017/files/library/Sponsors/02_Founding-partners/04_Media-partners/03_Partners/05_Friends/03_Partners/FWB.jpg",
       redirectURL : "google.com"
     },
-    {
-      name : "Lakshay",
-      role : "Title",
-      image : "https://www.kikk.be/2017/files/library/Sponsors/02_Founding-partners/04_Media-partners/03_Partners/05_Friends/03_Partners/FWB.jpg",
-      redirectURL : "google.com"
-    },
+    
     
     {
       name : "Lakshay",
-      role : "Other",
+      role : "Food",
       image : "https://www.kikk.be/2017/files/library/Sponsors/02_Founding-partners/04_Media-partners/03_Partners/05_Friends/03_Partners/FWB.jpg",
       redirectURL : "google.com"
     },
@@ -50,7 +45,7 @@ const Sponsors = () => {
   let coTitleSponsor = [];
   let otherSponsor = [];
 
-  sponsors.map((e) => {
+  list.map((e) => {
     if(e.role==="Title"){
       titleSponsor.push(e);
     }else if(e.role==="Co Title"){
@@ -83,7 +78,7 @@ const Sponsors = () => {
 
           {titleSponsor?.map((e) => {
             return(
-            <div class="col-xl-3 col-sm-6 mb-5">
+            <div class="col-xl-3 col-sm-6 mb-5 justify-content-center widthfull" >
             <div class="sponsor-division">
               <div class="spons-image" style={{ backgroundImage: `url(${background})` }}>
                 <a href={e.redirectURL} type="button" layout="sponsor" target="_blank" rel="noreferrer noopener">
@@ -117,7 +112,7 @@ const Sponsors = () => {
 
           {coTitleSponsor?.map((e) => {
             return(
-            <div class="col-xl-3 col-sm-6 mb-5">
+            <div class="col-xl-3 col-sm-6 mb-5  justify-content-center widthfull">
             <div class="sponsor-division">
               <div class="spons-image" style={{ backgroundImage: `url(${background})` }}>
                 <a href={e.redirectURL} type="button" layout="sponsor" target="_blank" rel="noreferrer noopener">
@@ -149,7 +144,7 @@ const Sponsors = () => {
 
           {otherSponsor?.map((e) => {
             return(
-            <div class="col-xl-3 col-sm-6 mb-5">
+            <div class="col-xl-3 col-sm-6 mb-5  justify-content-center widthfull">
             <div class="sponsor-division">
               <div class="spons-image" style={{ backgroundImage: `url(${background})` }}>
                 <a href={e.redirectURL} type="button" layout="sponsor" target="_blank" rel="noreferrer noopener">
@@ -159,6 +154,7 @@ const Sponsors = () => {
               </div>
               <div className="sponsor-name">
                 <h3>{e.name}</h3>
+                <h4>{e.role} Sponsor</h4>
               </div>
 
               </div>

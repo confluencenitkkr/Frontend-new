@@ -49,6 +49,11 @@
 /* div {
   display: block;
 } */
+
+.widthfull{
+  width: 100vw;;
+
+}
 @media (min-width: 46.25em){.page-header {
     font-size: 5.625rem;
 }}

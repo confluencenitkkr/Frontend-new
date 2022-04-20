@@ -9,6 +9,7 @@ const AboutUs = () => {
 	<div className="about-container">
 		<div className="aboutus">
 			<div className="content">
+				<p class="font-head">About Us</p>
 			Confluence, the annual cultural Festival of NIT Kurukshetra is a cultural extravaganza beyond
 				words, beyond description. Confluence is the coming together of free spirits, like-minded 
 	 			zealous youth and a celebration of culture of true artistic genius. 

@@ -79,7 +79,7 @@ const image="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?ixlib=
 
              </div>
             <div class="group-of-btn">
-              <a href="https://www.google.com" target="blank" class="btn book-ticket">Book Your Entry Pass</a>
+              <a target="blank" class="btn book-ticket" onClick={() =>{}}>Register</a>
             </div>
           </div>
         </div>

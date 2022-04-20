@@ -11,7 +11,7 @@ import Agent from "../actions/super";
 import "../../src/styles/Header.css"
 import { GoogleLogin, GoogleLogout } from "react-google-login";
 
-
+import welcomepng from '../styles/images/welcome.png'
 const Header = () => {
   let location = useLocation();
   const CLIENT_ID ="192073990165-k8uk1edbbhb0lm03lqb7ikvf3ibqotr5.apps.googleusercontent.com";
@@ -237,7 +237,7 @@ const Header = () => {
           <div className="row">
             <div className="col-lg-6 p-0">
               <div className="auth-modal-artwork">
-                <img src="" className="img img-fluid" alt="" />
+                <img src={welcomepng} className="img img-fluid" alt="" />
               </div>
             </div>
             <div className="col-lg-6 p-0">

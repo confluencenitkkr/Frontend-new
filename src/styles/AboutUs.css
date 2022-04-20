@@ -2,6 +2,7 @@
 
 .about-container
 {
+	/* background-image: url(images/bg_f.png); */
 	background-color: black;
 	min-height: 100vh;
 	
@@ -27,7 +28,7 @@
 	height: 250px;
 	width: 40%;
 	margin-left: 260px;
-	margin-top:0px;
+	margin-top:50px;
 }
 
 .magic-hand
@@ -109,6 +110,9 @@
 .afterMovie-frame{
 	height: 30vh;
 	width: 80vw;;
+}
+.aftermovie{
+	margin-top: 40vh;
 }
 
 }
