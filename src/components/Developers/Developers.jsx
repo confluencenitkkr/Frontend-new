@@ -23,7 +23,7 @@ const Developers = () => {
     {
       "name":"Inzamam",
       "image" : "",
-      "role": "",
+      "role": "Front-end",
       "insta": "",
       "linkedin": "",
       "github":"",
