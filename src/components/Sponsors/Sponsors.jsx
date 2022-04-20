@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import { Modal, ModalBody } from "reactstrap";
+import React from 'react';
+// import { Modal, ModalBody } from "reactstrap";
 
 import '../../styles/Sponsors.css';
 import image1 from "../../styles/images/conflu.png";
