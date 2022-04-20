@@ -130,6 +130,7 @@
 	/* background-size:100% ; 
 	background-size: cover;
 	background-position: center;
+	background-color: black !important;
 	width: 100%;
 	min-height:100vh;
 }

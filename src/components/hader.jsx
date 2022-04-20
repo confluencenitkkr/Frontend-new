@@ -8,6 +8,7 @@ import Cookies from "universal-cookie";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Agent from "../actions/super";
+import "../../src/styles/Header.css"
 import { GoogleLogin, GoogleLogout } from "react-google-login";
 
 
@@ -148,7 +149,7 @@ const Header = () => {
            
             <nav class="navbar navbar-expand-lg navbar-light">
                <div class="container">
-                  <a class="navbar-brand" href="index.html"><img class="logo-img" src={image1} alt=""/></a>
+                  
                   {token==""?<a class="login-out-nav-btn" onClick={e=>{
                      setLogin(true);
                   }}>Log in / Sign Up</a>:""}
@@ -205,14 +206,14 @@ const Header = () => {
                             
                         </li>
                    
-                        <li class="nav-item blackok">
+                        <li class="nav-item ">
                         {token==null?<a class="nav-link login-nav-btn" data-bs-toggle="modal" data-bs-target="#getstartedmodal" onClick={e=>{
                               setLogin(true);
                            }}>Log in / Sign Up</a>: <GoogleLogout
                            clientId={CLIENT_ID}
                            buttonText="Logout"
                            onLogoutSuccess={logout}
-                           className="nav-link login-nav-btn blackok"
+                           className="nav-link login-nav-btn "
                          >
                          </GoogleLogout>}
                         </li>

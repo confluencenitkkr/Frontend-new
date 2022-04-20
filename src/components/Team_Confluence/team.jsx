@@ -184,7 +184,7 @@ const Team = () => {
         <div class="container1">
           <div className='teamConfluenceLeft'>
             <div className='teamText'>
-              <img src={teamConflu} class="team-confluence"></img>
+              <h1 className='font-head'>Team Confluence</h1>
             </div>
             <div class="menu">
               <input className='input1' type="checkbox" id="toggle" hidden checked />

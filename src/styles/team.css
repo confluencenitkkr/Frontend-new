@@ -5,11 +5,21 @@
     
 }
 
+.container1{
+  background-image: url('../styles/images/website\ bg.png');
+  background-repeat: no-repeat;
+  margin-top: auto !important;
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+  padding-top: 10vh !important;
+}
+
 .teamText{
   text-align: center;
   font-size: 48px;
   margin-top: 20px;;
-  transform: rotate(352deg);
+  
 }
 .team-confluence{
   height: 20vh;
@@ -48,6 +58,7 @@
   justify-content: center;
   flex-direction: column;
   margin-top: 10vh !important;
+  
 }
 
 .teamCardDesc{
@@ -66,6 +77,7 @@
 }
 .photoo{
   margin: 0 auto;
+  border: 6px solid #c19a00;
 }
 
 .container1
@@ -77,8 +89,8 @@
 }
 .photoo
 {
-  height: 150px;
-  width: 150px;
+  height: 200px;
+  width: 200px;
   border-radius:60%;
   position: relative;
 }
@@ -145,6 +157,10 @@ cursor: auto;
 
 .logoBtn{
   cursor: pointer;
+}
+
+.logoBtn:hover{
+  
 }
 
 .btn1:not(:first-child) {
@@ -219,6 +235,9 @@ opacity: 1;
 
 @media only screen and (max-width: 768px ) {
 
+  .container1{
+    padding-top: 5vh !important;
+  }
   .team-confluence{
     height: 20vh;
     width: 90vw;

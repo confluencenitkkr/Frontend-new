@@ -21,83 +21,84 @@ const Sponsors = () => {
     })
   }
   let background = "https://raw.githubusercontent.com/ankitk84/confluence-2022/main/sponsor-bursh-1.png"
+
+  const sponsors = [
+    {
+      name : "Lakshay",
+      role : "Title",
+      image : "https://www.kikk.be/2017/files/library/Sponsors/02_Founding-partners/04_Media-partners/03_Partners/05_Friends/03_Partners/FWB.jpg",
+      redirectURL : "google.com"
+    },
+    {
+      name : "Lakshay",
+      role : "Title",
+      image : "https://www.kikk.be/2017/files/library/Sponsors/02_Founding-partners/04_Media-partners/03_Partners/05_Friends/03_Partners/FWB.jpg",
+      redirectURL : "google.com"
+    },
+    
+    {
+      name : "Lakshay",
+      role : "Other",
+      image : "https://www.kikk.be/2017/files/library/Sponsors/02_Founding-partners/04_Media-partners/03_Partners/05_Friends/03_Partners/FWB.jpg",
+      redirectURL : "google.com"
+    },
+    
+    
+  ]
+
+  let titleSponsor = [];
+  let coTitleSponsor = [];
+  let otherSponsor = [];
+
+  sponsors.map((e) => {
+    if(e.role==="Title"){
+      titleSponsor.push(e);
+    }else if(e.role==="Co Title"){
+      coTitleSponsor.push(e);
+    }else{
+      otherSponsor.push(e);
+    }
+  })
+
   return (
     <>
-      <div class="bg-drak py-5 ">
+      <div class="bg-drak py-5 sponsors-bg">
         <div class="container py-5 downsection">
           <div class="row mb-4">
             <div class="col-lg-5">
-              <h2 class="display-4 font-weight-light">Our Sponsors</h2>
-              <p class="font-italic text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              <h2 class="display-4 font-weight-light font-head">Sponsors</h2>
             </div>
           </div>
 
           <div class="row text-center">
-          <div className="sponsor-title">
-            <h1>Food Sponsor</h1>
+          
+
+          {titleSponsor.length!==0? 
+          <>
+            <div className="sponsor-title">
+            <h1>Title Sponsor</h1>
+            </div>
+          </>:
+          <></>}
+
+          {titleSponsor?.map((e) => {
+            return(
+            <div class="col-xl-3 col-sm-6 mb-5">
+            <div class="sponsor-division">
+              <div class="spons-image" style={{ backgroundImage: `url(${background})` }}>
+                <a href={e.redirectURL} type="button" layout="sponsor" target="_blank" rel="noreferrer noopener">
+                  <span class="u-visually-hidden">{e.name}</span>
+                  <img src={e.image} alt={e.name}>
+                  </img></a>
+              </div>
+              <div className="sponsor-name">
+                <h3>{e.name}</h3>
+              </div>
+
+              </div>
           </div>
-          {/* <div className="subSponsor"> */}
-            <div class="col-xl-3 col-sm-6 mb-5">
-              <div class="sponsor-division">
-                <div class="spons-image" style={{ backgroundImage: `url(${background})` }}>
-                  <a href="http://www.federation-wallonie-bruxelles.be/" type="button" layout="sponsor" target="_blank" rel="noreferrer noopener">
-                    <span class="u-visually-hidden">Federation Wallonie Bruxelles</span>
-                    <img src="https://www.kikk.be/2017/files/library/Sponsors/02_Founding-partners/04_Media-partners/03_Partners/05_Friends/03_Partners/FWB.jpg" alt="Federation Wallonie Bruxelles">
-                    </img></a>
-                </div>
-                <div className="sponsor-name">
-                  <h3>Name</h3>
-                </div>
-
-                </div>
-            </div>
-            <div class="col-xl-3 col-sm-6 mb-5">
-              <div class="sponsor-division">
-                <div class="spons-image" style={{ backgroundImage: `url(${background})` }}>
-                  <a href="http://www.federation-wallonie-bruxelles.be/" type="button" layout="sponsor" target="_blank" rel="noreferrer noopener">
-                    <span class="u-visually-hidden">Federation Wallonie Bruxelles</span>
-                    <img src="https://www.kikk.be/2017/files/library/Sponsors/02_Founding-partners/04_Media-partners/03_Partners/05_Friends/03_Partners/FWB.jpg" alt="Federation Wallonie Bruxelles">
-                    </img></a>
-                </div>
-                <div className="sponsor-name">
-                  <h3>Name</h3>
-                </div>
-
-                </div>
-            </div>
-            <div class="col-xl-3 col-sm-6 mb-5">
-              <div class="sponsor-division">
-                <div class="spons-image" style={{ backgroundImage: `url(${background})` }}>
-                  <a href="http://www.federation-wallonie-bruxelles.be/" type="button" layout="sponsor" target="_blank" rel="noreferrer noopener">
-                    <span class="u-visually-hidden">Federation Wallonie Bruxelles</span>
-                    <img src="https://www.kikk.be/2017/files/library/Sponsors/02_Founding-partners/04_Media-partners/03_Partners/05_Friends/03_Partners/FWB.jpg" alt="Federation Wallonie Bruxelles">
-                    </img></a>
-                </div>
-                <div className="sponsor-name">
-                  <h3>Name</h3>
-                </div>
-
-                </div>
-            </div>
-            <div class="col-xl-3 col-sm-6 mb-5">
-              <div class="sponsor-division">
-                <div class="spons-image" style={{ backgroundImage: `url(${background})` }}>
-                  <a href="http://www.federation-wallonie-bruxelles.be/" type="button" layout="sponsor" target="_blank" rel="noreferrer noopener">
-                    <span class="u-visually-hidden">Federation Wallonie Bruxelles</span>
-                    <img src="https://www.kikk.be/2017/files/library/Sponsors/02_Founding-partners/04_Media-partners/03_Partners/05_Friends/03_Partners/FWB.jpg" alt="Federation Wallonie Bruxelles">
-                    </img></a>
-                </div>
-                <div className="sponsor-name">
-                  <h3>Name</h3>
-                </div>
-
-                </div>
-            </div>
-            
-            
-          {/* </div> */}
-
-           
+          )
+          })}
 
           </div>
 
@@ -106,26 +107,68 @@ const Sponsors = () => {
 
 
           <div class="row text-center">
-          <div className="sponsor-title">
-            <h1>Drinks Sponsor</h1>
-          </div>
-          <div class='subSponsor'>
-            <div class="col-xl-3 col-sm-6 mb-5">
-              <div class="sponsor-division">
-                <div class="spons-image" style={{ backgroundImage: `url(${background})` }}>
-                  <a href="http://www.federation-wallonie-bruxelles.be/" type="button" layout="sponsor" target="_blank" rel="noreferrer noopener">
-                    <span class="u-visually-hidden">Federation Wallonie Bruxelles</span>
-                    <img src="https://www.kikk.be/2017/files/library/Sponsors/02_Founding-partners/04_Media-partners/03_Partners/05_Friends/03_Partners/FWB.jpg" alt="Federation Wallonie Bruxelles">
-                    </img></a>
-                </div>
-                <div className="sponsor-name">
-                  <h3>Name</h3>
-                </div>
-
-                </div>
+          {coTitleSponsor.length!==0? 
+          <>
+            <div className="sponsor-title">
+            <h1>Co-Title Sponsor</h1>
             </div>
+          </>:
+          <></>}
+
+          {coTitleSponsor?.map((e) => {
+            return(
+            <div class="col-xl-3 col-sm-6 mb-5">
+            <div class="sponsor-division">
+              <div class="spons-image" style={{ backgroundImage: `url(${background})` }}>
+                <a href={e.redirectURL} type="button" layout="sponsor" target="_blank" rel="noreferrer noopener">
+                  <span class="u-visually-hidden">{e.name}</span>
+                  <img src={e.image} alt={e.name}>
+                  </img></a>
+              </div>
+              <div className="sponsor-name">
+                <h3>{e.name}</h3>
+              </div>
+
+              </div>
           </div>
+          )
+          })}
+
           </div>
+
+
+
+          <div class="row text-center">
+          {otherSponsor.length!==0? 
+          <>
+            <div className="sponsor-title">
+            <h1>Other Sponsors</h1>
+            </div>
+          </>:
+          <></>}
+
+          {otherSponsor?.map((e) => {
+            return(
+            <div class="col-xl-3 col-sm-6 mb-5">
+            <div class="sponsor-division">
+              <div class="spons-image" style={{ backgroundImage: `url(${background})` }}>
+                <a href={e.redirectURL} type="button" layout="sponsor" target="_blank" rel="noreferrer noopener">
+                  <span class="u-visually-hidden">{e.name}</span>
+                  <img src={e.image} alt={e.name}>
+                  </img></a>
+              </div>
+              <div className="sponsor-name">
+                <h3>{e.name}</h3>
+              </div>
+
+              </div>
+          </div>
+          )
+          })}
+
+          </div>
+
+
         </div>
       </div>
 

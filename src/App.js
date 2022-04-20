@@ -18,8 +18,8 @@ function App() {
   return (
     <Router>
       <Header></Header>
-      <Routes>
-              <Route exact path="/home" key="home" element={<Home/>} />
+      <Routes>  
+              <Route exact path="/" key="home" element={<Home/>} />
               <Route exact path="/Sponsors" key="Sponsors"  element={<Sponsors/>} />
               <Route exact path="/Events" key="Events" element={<Categories/>}/>
               <Route exact path="/Developers" key="Developers" element={<Developers/>}/>

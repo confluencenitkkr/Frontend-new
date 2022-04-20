@@ -1,0 +1,39 @@
+.navigation{
+    background-color: #c19a00d6 !important;
+    border-radius: 0px 0px 20px 20px;
+    position: fixed !important;
+    min-width: 100vw;
+}
+
+.navbar-toggler-icon{
+    background-color: #c19a0000;
+    
+}
+
+.nav-item{
+    margin-top: 0.5vh;
+    margin-bottom: 0.5vh;
+}
+
+.nav-link{
+    color: black !important;
+    font-size: 1.1rem !important;
+    font-weight: 700 !important;
+}
+
+.nav-link:hover{
+    color:purple !important;
+}
+
+.active{
+    color:purple !important;
+}
+
+.nav-link.login-nav-btn{
+    background-color: rgba(255, 204, 0, 0) !important;
+    color: black !important;
+}
+
+.nav-link.login-nav-btn:hover{
+    color: purple !important;
+}

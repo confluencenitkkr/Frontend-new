@@ -1,13 +1,18 @@
 import React from 'react';
 
 import '../../styles/Home.css';
+import bg from "../../styles/images/Witch Home Page.png"
 
 const Home = () => {
 
   return (
-    <div>
-<h1>Home</h1>
-    </div>
+    <>
+    <div className="home-page">
+      <div className="home-bg">
+        <img src={bg} className="bg-img"></img>
+      </div>
+      </div>
+    </>
   )  
 };
 

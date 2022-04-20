@@ -74,7 +74,7 @@ const image="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?ixlib=
                 </tr>
               </table>
             </div>
-            <div class="sort-story"> cooridnator:  {data.cooridnatorName} /  {data.cooridnatorName1}  <br/>
+            <div class="sort-story"> cooridnator:  {data.cooridnatorName} /  {data.cooridnatorName2}  <br/>
             phone NO:  {data.cooridnatorNumber} /  {data.cooridnatorNumber}<br/>
 
              </div>
@@ -131,9 +131,10 @@ const image="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?ixlib=
               {data.description}
 
                   </div>
-            <div class="group-of-btn">
+            {/* <div class="group-of-btn">
               <a href="https://www.google.com" target="blank" class="btn book-ticket">Book Your Entry Pass</a>
-            </div>          </div>
+            </div>           */}
+            </div>
           <div class="col-lg-6 sec-3">
             <div class="title">{data.eventName}</div>
             <div class="venue">
@@ -161,11 +162,18 @@ const image="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?ixlib=
                 </tr>
               </table>
             </div>
-            <div class="sort-story">{data.rule}
+            <div class="sort-story"><p>{
+              /* data.rule?(data.rule).replaceAll(/\n/g, "<br />"):console.log("data.rule is null") */
+              data.rule && data.rule.split("\n").map((e) => {
+                return (
+                  <p>{e}</p>
+                )
+              })
+            }</p>
 </div>
-            <div class="group-of-btn">
+            {/* <div class="group-of-btn">
               <a href="https://www.google.com" target="blank" class="btn book-ticket">Book Your Entry Pass</a>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
