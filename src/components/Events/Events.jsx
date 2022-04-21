@@ -75,7 +75,7 @@ const image="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?ixlib=
               </table>
             </div>
             <div class="sort-story"> cooridnator:  {data.cooridnatorName} /  {data.cooridnatorName2}  <br/>
-            phone NO:  {data.cooridnatorNumber} /  {data.cooridnatorNumber}<br/>
+            phone No:  {data.cooridnatorNumber} /  {data.cooridnatorNumber}<br/>
 
              </div>
             <div class="group-of-btn">

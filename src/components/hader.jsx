@@ -27,6 +27,7 @@ const Header = () => {
   const [email, setEmail] = useState("");
   const [email1, setEmail1] = useState("");
   const [token, setToken] = useState(null);
+  const [show, setShow] = useState(false)
   const cookies = new Cookies();
   useEffect(() => {
     fetch();
@@ -43,7 +44,10 @@ const Header = () => {
       }
     });
   };
-
+  const handleNavClick = () => {
+    // console.log("hello asdfg");
+    setShow(false);
+  };
 
   const responseGoogleSuccess =async (response) => {
     console.log(response);
@@ -153,10 +157,11 @@ const Header = () => {
                   {token==""?<a class="login-out-nav-btn" onClick={e=>{
                      setLogin(true);
                   }}>Log in / Sign Up</a>:""}
-                  <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                  <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav" onClick={() => setShow(!show)}>
                   <span class="navbar-toggler-icon"></span>
                   </button>
-                  <div class="navbar-collapse collapse" id="navbarNav">
+                  {/* <div class="navbar-collapse collapse" id="navbarNav"> */}
+                  <div   className={`collapse navbar-collapse  ${show ? "show" : ""}` } id="navbarNav">
                      <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
                         <Link
@@ -171,25 +176,25 @@ const Header = () => {
                         </li>
                       
                         <li class="nav-item">
-                        <Link className={`nav-link ${ location.pathname === "/Sponsors" ? "active" : ""  }`}aria-current="page" to="/Sponsors"
+                        <Link className={`nav-link ${ location.pathname === "/Sponsors" ? "active" : ""  }`}aria-current="page" to="/Sponsors" onClick={handleNavClick}
                                   >
                              Sponsors
                             </Link>
                         </li>
                         <li class="nav-item">
-                        <Link className={`nav-link ${ location.pathname === "/Events" ? "active" : ""  }`}aria-current="page" to="/Events"
+                        <Link className={`nav-link ${ location.pathname === "/Events" ? "active" : ""  }`}aria-current="page" to="/Events" onClick={handleNavClick}
                                   >
                              Events
                             </Link>
                         </li>
                         <li class="nav-item">
-                        <Link className={`nav-link ${ location.pathname === "/Team" ? "active" : ""  }`}aria-current="page" to="/Team"
+                        <Link className={`nav-link ${ location.pathname === "/Team" ? "active" : ""  }`}aria-current="page" to="/Team" onClick={handleNavClick}
                                   >
                              Team
                             </Link>
                         </li>
                         <li class="nav-item">
-                        <Link className={`nav-link ${ location.pathname === "/Developers" ? "active" : ""  }`} to="/Developers"
+                        <Link className={`nav-link ${ location.pathname === "/Developers" ? "active" : ""  }`} to="/Developers" onClick={handleNavClick}
                                   >
                              Developers
                             </Link>
@@ -201,20 +206,20 @@ const Header = () => {
                       location.pathname === "/AboutUs" ? "active" : ""
                     }`}
                     aria-current="page"
-                    to="/AboutUs"
+                    to="/AboutUs" onClick={handleNavClick}
                   >
                     AboutUs
                   </Link>
                         </li>
                    
-                        <li class="nav-item ">
+                        <li class="nav-item " onClick={handleNavClick}>
                         {token==null?<a class="nav-link login-nav-btn" data-bs-toggle="modal" data-bs-target="#getstartedmodal" onClick={e=>{
                               setLogin(true);
                            }}>Log in / Sign Up</a>: <GoogleLogout
                            clientId={CLIENT_ID}
                            buttonText="Logout"
                            onLogoutSuccess={logout}
-                           className="nav-link login-nav-btn "
+                           className="nav-link login-nav-btn " 
                          >
                          </GoogleLogout>}
                         </li>

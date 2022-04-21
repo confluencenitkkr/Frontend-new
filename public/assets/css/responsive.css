@@ -44,7 +44,7 @@
 	}
 	.navigation .navbar-collapse {
 		border-radius: 7px;
-		background: #ffffff;
+		background: #ab820e;
 		max-height: 400px;
 		left: 0;
 		padding: 10px 30px 20px 50px;
@@ -116,10 +116,11 @@
 	}
 
 	.navigation .navbar-collapse {
-		top: 85px !important;
+		top: 38px !important;
 		height: 100vh !important;
 		max-height: 100vh;
 		padding-left: 25px;
+		position: fixed;
 	}
 
 	.navigation .navbar-collapse li {
