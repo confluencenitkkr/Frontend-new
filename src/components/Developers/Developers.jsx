@@ -76,6 +76,14 @@ const Developers = () => {
       "linkedin": "https://www.linkedin.com/in/ankit-k-1aa4521bb",
       "github":"https://github.com/ankitk84",
     },
+    {
+      "name":"Raghav Garg",
+      "image" : "https://i.ibb.co/jMBdMPp/2440ba39-56fe-414c-a24d-096a0f5df586-11zon-1.jpg",
+      "role": "Front-end Developer",
+      "insta": "https://www.instagram.com/raghav_garg04",
+      "linkedin": "https://www.linkedin.com/in/raghav-garg-66356a220",
+      "github":"https://github.com/raghav0407",
+    },
     
   
   ]
