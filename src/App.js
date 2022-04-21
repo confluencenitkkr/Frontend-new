@@ -1,6 +1,6 @@
 import './App.css';
 
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route,Navigate } from "react-router-dom";
 
 import AboutUs from './components/AboutUs/AboutUs';
 import Home from './components/Home/Home';
@@ -28,7 +28,7 @@ function App() {
               <Route exact path="/Error404" key="Error404" element={<Error404/>}/>
               <Route exact path="/Team" key="Team" element={<Team/>}/>
               <Route exact path="/EventView/:id" key="EventView" element={<Events/>}/>
-
+              <Route path="*" element={<Navigate to="/" />} />
 
       </Routes>
           </Router>
