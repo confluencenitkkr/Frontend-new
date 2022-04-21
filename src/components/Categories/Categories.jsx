@@ -66,7 +66,7 @@ const viewEvent=(id)=>{
             <div class="col-lg-6">
               <div class="common-head">
                 <h2 className="font-head" style={{fontSize: "3.5rem"}}>
-                  CONFLUNECE <span className="font-head" style={{fontSize: "3.5rem"}}>EVENTS</span>
+                  CONFLUENCE <span className="font-head" style={{fontSize: "3.5rem"}}>EVENTS</span>
                 </h2>
               </div>
             </div>
