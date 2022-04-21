@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import '../../styles/team.css';
 import image1 from "../../styles/images/conflu.png"
-import image2 from "../../styles/images/photog.jpg"
+import image2 from "../../styles/images/photo.jpg"
 import image3 from "../../styles/images/colours.jpg"
 import image4 from "../../styles/images/elad.jpg"
 import image5 from "../../styles/images/fa.jpg"
@@ -57,14 +57,14 @@ const Team = () => {
         designation: "Secretary"
       },
       {
-        url: "",
+        url: "https://i.ibb.co/mhKtqDh/IMG-20220421-WA0046-1.jpg",
         name: "Shubham Goyal",
         designation: "Secretary"
       },
     ],
     "Colours": [
       {
-        url: "",
+        url: "https://i.ibb.co/FbC8vS5/Square-Pic-20220419-01015491-Saurabh-Pandey-11zon.jpg",
         name: "Surabh Pandey",
         designation: "Secretary"
       },
