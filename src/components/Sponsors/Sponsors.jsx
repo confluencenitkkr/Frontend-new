@@ -144,7 +144,7 @@ const Sponsors = () => {
 
           {otherSponsor?.map((e) => {
             return(
-            <div class="col-xl-3 col-sm-6 mb-5  justify-content-center widthfull">
+            <div class="col-xl-3 col-sm-6 mb-5  ">
             <div class="sponsor-division">
               <div class="spons-image" style={{ backgroundImage: `url(${background})` }}>
                 <a href={e.redirectURL} type="button" layout="sponsor" target="_blank" rel="noreferrer noopener">
