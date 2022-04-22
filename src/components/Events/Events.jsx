@@ -78,9 +78,9 @@ const image="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?ixlib=
             phone No:  {data.cooridnatorNumber} /  {data.cooridnatorNumber}<br/>
 
              </div>
-            <div class="group-of-btn">
+            {/* <div class="group-of-btn">
               <a target="blank" class="btn book-ticket" onClick={() =>{}}>Register</a>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
