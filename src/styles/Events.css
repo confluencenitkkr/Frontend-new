@@ -127,6 +127,21 @@
  .page-event .page-heading::first-letter {
 	 color: #db2d8e;
 }
+.register{
+	text-align: center;
+	margin-top: 5vh;
+	
+
+}
+.register-btn{
+	background-color: #db2d8e;
+	padding: 0.8rem;
+	font-size: 1.2rem;
+	font-weight: bold;
+	color: #fff !important;
+	text-transform: uppercase;
+}
+
  @media (min-width: 992px) {
 	 .upcoming-event-list .event-block .sec-1 table .title {
 		 display: none;
