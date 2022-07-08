@@ -7,7 +7,7 @@ import eventsActions from "../../actions/events.Actions";
 // import Select from "react-select";
 const Categories = () => {
   const [dataa, setData] = useState([]);
-  const[load, setLoad] = useState(false);
+  const [load, setLoad] = useState(false);
   const [club, setClub] = useState("");
   useEffect(() => {
     // setData(optionMaker(data.data));
@@ -28,36 +28,36 @@ const Categories = () => {
     console.log(newValue);
     setClub(newValue.label);
   };
-  const history=useNavigate();
-  useEffect(()=>{
+  const history = useNavigate();
+  useEffect(() => {
     setLoad(true);
-   fetch();
-   console.log("hello")
-  },[])
-  const fetch=()=>{
-    let text="";
-   eventsActions.getEvent(text,(err,res)=>{
-     if(err){
-     }else{
-       setData(res.data);
-       setLoad(false);
-       console.log(res)
-     }
-   })
+    fetch();
+    console.log("hello")
+  }, [])
+  const fetch = () => {
+    let text = "";
+    eventsActions.getEvent(text, (err, res) => {
+      if (err) {
+      } else {
+        setData(res.data);
+        setLoad(false);
+        console.log(res)
+      }
+    })
   }
-  const fetch1=(text)=>{
+  const fetch1 = (text) => {
     console.log(text)
-   eventsActions.Search(text,(err,res)=>{
-     if(err){
-     }else{
-       setData(res.data);
-       console.log(res)
-     }
-   })
+    eventsActions.Search(text, (err, res) => {
+      if (err) {
+      } else {
+        setData(res.data);
+        console.log(res)
+      }
+    })
   }
-const viewEvent=(id)=>{
-  history(`/EventView/${id}`)
-}
+  const viewEvent = (id) => {
+    history(`/EventView/${id}`)
+  }
   return (
     <>
       <section class="search-result-wrp">
@@ -65,8 +65,8 @@ const viewEvent=(id)=>{
           <div class="row text-center">
             <div class="col-lg-6">
               <div class="common-head">
-                <h2 className="font-head" style={{fontSize: "3.5rem"}}>
-                  CONFLUENCE <span className="font-head" style={{fontSize: "3.5rem"}}>EVENTS</span>
+                <h2 className="font-head" style={{ fontSize: "3.5rem" }}>
+                  CONFLUENCE <span className="font-head" style={{ fontSize: "3.5rem" }}>EVENTS</span>
                 </h2>
               </div>
             </div>
@@ -120,26 +120,26 @@ const viewEvent=(id)=>{
               id="accordionExample"
             >
               <div class="row text-center">
-          { dataa.length==0 && load==false?<div class="col-xl-3 col-sm-6 mb-5 justify-content-center widthfull" style={{display: "flex", justifyContent: "center", textAlign: "center"}}>
-                <h1 style={{textAlign: "center"}}> NO event found</h1>
-              </div>:""}
-              {load==true?<div class="col-xl-3 col-sm-6 mb-5 justify-content-center widthfull" style={{display: "flex", justifyContent: "center", textAlign: "center"}}>
-                <h1 style={{textAlign: "center"}}> LOADING</h1>
-              </div>:""}
-                      {dataa.map((e,index)=>{
-    return (
-      <div class="col-xl-3 col-sm-6 mb-5 ">
-                      <div class=" rounded shadow-sm py-5 px-4"><img src="https://i.ibb.co/kJ0cp1x/a-tryst-with-magic.png" alt="" width="100" class="heloo"/>
-            <h5 class="mb-0 card-name ">{e.eventName}</h5>
-            <h5 class="mb-0 card-name ">{e.clubName}</h5>
-            <div class="small text-uppercase text-red card-name" style={{cursor : "pointer"}} onClick={a=>{
-              a.preventDefault();
-              viewEvent(e._id)
-            }}>Read More</div>
-            
-          </div>
+                {dataa.length == 0 && load == false ? <div class="col-xl-3 col-sm-6 mb-5 justify-content-center widthfull" style={{ display: "flex", justifyContent: "center", textAlign: "center" }}>
+                  <h1 style={{ textAlign: "center" }}> NO event found</h1>
+                </div> : ""}
+                {load == true ? <div class="col-xl-3 col-sm-6 mb-5 justify-content-center widthfull" style={{ display: "flex", justifyContent: "center", textAlign: "center" }}>
+                  <h1 style={{ textAlign: "center" }}> LOADING</h1>
+                </div> : ""}
+                {dataa.map((e, index) => {
+                  return (
+                    <div class="col-xl-3 col-sm-6 mb-5 " style={{ cursor: "pointer" }} onClick={a => {
+                      a.preventDefault();
+                      viewEvent(e._id);
+                    }}>
+                      <div class=" rounded shadow-sm py-5 px-4"><img src="https://i.ibb.co/kJ0cp1x/a-tryst-with-magic.png" alt="" width="100" class="heloo" />
+                        <h5 class="mb-0 card-name ">{e.eventName}</h5>
+                        <h5 class="mb-0 card-name ">{e.clubName}</h5>
+                        <div class="small text-uppercase text-red card-name" style={{ cursor: "pointer" }}>Read More</div>
+
                       </div>
-                    
+                    </div>
+
                   );
                 })}
               </div>

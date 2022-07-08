@@ -24,6 +24,7 @@
 }
 .card-name{
     margin-top: 2vh;
+    box-sizing: content-box;
 }
 .common-head h2 span {
     color: #0056D6;
@@ -66,5 +67,8 @@ section {
 @media only screen and (max-width: 768px ) {
     .categories-page{
         padding-top: 5vh;
+    }
+    .card-name{
+        font-size: 1rem;
     }
 }
