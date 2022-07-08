@@ -1,5 +1,5 @@
 .navigation{
-    background-color: #c19a00d6 !important;
+    background-color: #000000 !important;
     border-radius: 0px 0px 20px 20px;
     /* position: fixed !important; */
     min-width: 100vw;
@@ -18,24 +18,24 @@
 }
 
 .nav-link{
-    color: black !important;
+    color: rgb(136, 136, 136) !important;
     font-size: 1.1rem !important;
     font-weight: 700 !important;
 }
 
 .nav-link:hover{
-    color:purple !important;
+    color:rgb(255, 255, 255) !important;
 }
 
 .active{
-    color:purple !important;
+    color:rgb(255, 255, 255) !important;
 }
 
 .nav-link.login-nav-btn{
-    background-color: rgba(255, 204, 0, 0) !important;
-    color: black !important;
+    background-color: rgb(0, 0, 0) !important;
+    color: rgb(136, 136, 136) !important;
 }
 
 .nav-link.login-nav-btn:hover{
-    color: purple !important;
+    color: rgb(255, 255, 255) !important;
 }

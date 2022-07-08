@@ -60,7 +60,7 @@ const Categories = () => {
   }
   return (
     <>
-      <section class="search-result-wrp">
+      <section class="">
         <div class="container categories-page">
           <div class="row text-center">
             <div class="col-lg-6">
@@ -132,7 +132,7 @@ const Categories = () => {
                       a.preventDefault();
                       viewEvent(e._id);
                     }}>
-                      <div class=" rounded shadow-sm py-5 px-4"><img src="https://i.ibb.co/kJ0cp1x/a-tryst-with-magic.png" alt="" width="100" class="heloo" />
+                      <div class="shadow-sm py-5 px-4"><img src="https://i.ibb.co/kJ0cp1x/a-tryst-with-magic.png" alt="" width="100" class="heloo" />
                         <h5 class="mb-0 card-name ">{e.eventName}</h5>
                         <h5 class="mb-0 card-name ">{e.clubName}</h5>
                         <div class="small text-uppercase text-red card-name" style={{ cursor: "pointer" }}>Read More</div>
