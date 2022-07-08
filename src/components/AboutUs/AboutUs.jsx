@@ -36,13 +36,16 @@ const AboutUs = () => {
 
 		
 
-		<div className="socialmedia">
+
+        <div className="socialmedia">
 		<p>Connect Us Through</p>
 		<div>
-					<a href="https://www.facebook.com/Conflu/"><i class="fab fa-facebook-f"></i></a>
-	 				<a href="https://twitter.com/confluencenit"><i class="fab fa-twitter"></i></a>
-	 				<a href="https://www.instagram.com/confluence.nitkkr/?hl=en"><i class="fab fa-instagram"></i></a>
+					<a href="https://www.facebook.com/Conflu/"><img src="fb.png" alt=""/></a>
+	 				<a href="https://www.instagram.com/confluence.nitkkr/?hl=en"><img src="insta.png" alt=""/></a>
 		</div>
+		
+
+
 		</div> 
 
 

@@ -63,6 +63,16 @@
 	flex-direction: column;
 	align-items: center;
 }
+.socialmedia img{
+	width: 40px;
+	height: 40px;
+	margin: 5px 20px;
+	border: 0;
+	border-radius: 25%;
+}
+.socialmedia img:hover{
+   box-shadow: 2px 2px 30px 1px rgb(221, 243, 116)
+}
 
 .about-container .socialmedia i
 {

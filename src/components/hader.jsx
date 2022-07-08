@@ -9,7 +9,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Agent from "../actions/super";
 import "../../src/styles/Header.css"
-import { GoogleLogin, GoogleLogout } from "react-google-login";
+// import { GoogleLogin, GoogleLogout } from "react-google-login";
 
 import welcomepng from '../styles/images/welcome.png'
 const Header = () => {
@@ -212,7 +212,7 @@ const Header = () => {
                   </Link>
                         </li>
                    
-                        <li class="nav-item " onClick={handleNavClick}>
+                        {/* <li class="nav-item " onClick={handleNavClick}>
                         {token==null?<a class="nav-link login-nav-btn" data-bs-toggle="modal" data-bs-target="#getstartedmodal" onClick={e=>{
                               setLogin(true);
                            }}>Log in / Sign Up</a>: <GoogleLogout
@@ -222,7 +222,7 @@ const Header = () => {
                            className="nav-link login-nav-btn " 
                          >
                          </GoogleLogout>}
-                        </li>
+                        </li> */}
                       
                      </ul>
                   </div>
@@ -298,14 +298,14 @@ const Header = () => {
                   <ul>
                     <li className="pe-2">
                      
-                          <GoogleLogin
+                          {/* <GoogleLogin
                     clientId={CLIENT_ID}
               buttonText="Sign In with Google"
               onSuccess={responseGoogleSuccess}
               onFailure={responseGoogleError}
               isSignedIn={true}
               cookiePolicy={"single_host_origin"}
-            />
+            /> */}
                     </li>
                   </ul>
                   <h5>
