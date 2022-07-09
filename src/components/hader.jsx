@@ -8,13 +8,14 @@ import Cookies from "universal-cookie";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Agent from "../actions/super";
-import "../../src/styles/Header.css"
+import "../../src/styles/Header.css";
 // import { GoogleLogin, GoogleLogout } from "react-google-login";
 
-import welcomepng from '../styles/images/welcome.png'
+import welcomepng from "../styles/images/welcome.png";
 const Header = () => {
   let location = useLocation();
-  const CLIENT_ID ="192073990165-k8uk1edbbhb0lm03lqb7ikvf3ibqotr5.apps.googleusercontent.com";
+  const CLIENT_ID =
+    "192073990165-k8uk1edbbhb0lm03lqb7ikvf3ibqotr5.apps.googleusercontent.com";
 
   const [login, setLogin] = useState(false);
   const [sign, setsign] = useState(false);
@@ -27,11 +28,11 @@ const Header = () => {
   const [email, setEmail] = useState("");
   const [email1, setEmail1] = useState("");
   const [token, setToken] = useState(null);
-  const [show, setShow] = useState(false)
+  const [show, setShow] = useState(false);
   const cookies = new Cookies();
   useEffect(() => {
     fetch();
-    let token = Agent.getToken() ? Agent.getToken() :null;
+    let token = Agent.getToken() ? Agent.getToken() : null;
     console.log(Agent.getToken());
     console.log(token);
     setToken(token);
@@ -49,35 +50,31 @@ const Header = () => {
     setShow(false);
   };
 
-  const responseGoogleSuccess =async (response) => {
+  const responseGoogleSuccess = async (response) => {
     console.log(response);
     let userInfo = {
       name: response.profileObj.name,
       emailId: response.profileObj.email,
     };
-    let data=response.profileObj;
-    console.log(data,"ksdhcbsdbc")
-    authAction.googleLoginSignup(data,(err,res)=>{
-      if(err){
-  
-      }else{
+    let data = response.profileObj;
+    console.log(data, "ksdhcbsdbc");
+    authAction.googleLoginSignup(data, (err, res) => {
+      if (err) {
+      } else {
         cookies.set("token", data.token, { path: "/" });
         window.location.reload();
-        }
-    })
-  
-  
+      }
+    });
   };
-  
+
   const responseGoogleError = (response) => {
     console.log(response);
   };
-  
+
   const logout = (response) => {
     Agent.removeSession();
     console.log(response);
     window.location.reload();
-
   };
   const log = () => {
     if (!email && !password) {
@@ -148,71 +145,121 @@ const Header = () => {
 
   return (
     <>
-     <header>
-         <div class="navigation">
-           
-            <nav class="navbar navbar-expand-lg navbar-light">
-               <div class="container">
-                  
-                  {token==""?<a class="login-out-nav-btn" onClick={e=>{
-                     setLogin(true);
-                  }}>Log in / Sign Up</a>:""}
-                  <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav" onClick={() => setShow(!show)}>
-                  <span class="navbar-toggler-icon"></span>
-                  </button>
-                  {/* <div class="navbar-collapse collapse" id="navbarNav"> */}
-                  <div   className={`collapse navbar-collapse  ${show ? "show" : ""}` } id="navbarNav">
-                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                        <Link
-                    className={`nav-link ${
-                      location.pathname === "/" ? "active" : ""
-                    }`}
-                    aria-current="page"
-                    to="/"
-                  >
-                    Home
-                  </Link>
-                        </li>
-                      
-                        <li class="nav-item">
-                        <Link className={`nav-link ${ location.pathname === "/Sponsors" ? "active" : ""  }`}aria-current="page" to="/Sponsors" onClick={handleNavClick}
-                                  >
-                             Sponsors
-                            </Link>
-                        </li>
-                        <li class="nav-item">
-                        <Link className={`nav-link ${ location.pathname === "/Events" ? "active" : ""  }`}aria-current="page" to="/Events" onClick={handleNavClick}
-                                  >
-                             Events
-                            </Link>
-                        </li>
-                        <li class="nav-item">
-                        <Link className={`nav-link ${ location.pathname === "/Team" ? "active" : ""  }`}aria-current="page" to="/Team" onClick={handleNavClick}
-                                  >
-                             Team
-                            </Link>
-                        </li>
-                        <li class="nav-item">
-                        <Link className={`nav-link ${ location.pathname === "/Developers" ? "active" : ""  }`} to="/Developers" onClick={handleNavClick}
-                                  >
-                             Developers
-                            </Link>
-                            
-                        </li>
-                        <li class="nav-item">
-                        <Link
-                    className={`nav-link ${
-                      location.pathname === "/AboutUs" ? "active" : ""
-                    }`}
-                    aria-current="page"
-                    to="/AboutUs" onClick={handleNavClick}
-                  >
-                    AboutUs
-                  </Link>
-                        </li>
-                   
-                        {/* <li class="nav-item " onClick={handleNavClick}>
+      <header>
+        <div class="navigation">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+              {token == "" ? (
+                <a
+                  class="login-out-nav-btn"
+                  onClick={(e) => {
+                    setLogin(true);
+                  }}
+                >
+                  Log in / Sign Up
+                </a>
+              ) : (
+                ""
+              )}
+              <button
+                class="navbar-toggler"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                onClick={() => setShow(!show)}
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              {/* <div class="navbar-collapse collapse" id="navbarNav"> */}
+              <div
+                className={`collapse navbar-collapse  ${show ? "show" : ""}`}
+                id="navbarNav"
+              >
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <Link
+                      className={`nav-link ${
+                        location.pathname === "/" ? "active" : ""
+                      }`}
+                      aria-current="page"
+                      to="/"
+                    >
+                      Home
+                    </Link>
+                  </li>
+
+                  <li class="nav-item">
+                    <Link
+                      className={`nav-link ${
+                        location.pathname === "/Sponsors" ? "active" : ""
+                      }`}
+                      aria-current="page"
+                      to="/Sponsors"
+                      onClick={handleNavClick}
+                    >
+                      Sponsors
+                    </Link>
+                  </li>
+                  <li class="nav-item">
+                    <Link
+                      className={`nav-link ${
+                        location.pathname === "/ClubInfo" ? "active" : ""
+                      }`}
+                      aria-current="page"
+                      to="/ClubInfo"
+                      onClick={handleNavClick}
+                    >
+                      ClubInfo
+                    </Link>
+                  </li>
+                  <li class="nav-item">
+                    <Link
+                      className={`nav-link ${
+                        location.pathname === "/Events" ? "active" : ""
+                      }`}
+                      aria-current="page"
+                      to="/Events"
+                      onClick={handleNavClick}
+                    >
+                      Events
+                    </Link>
+                  </li>
+                  <li class="nav-item">
+                    <Link
+                      className={`nav-link ${
+                        location.pathname === "/Team" ? "active" : ""
+                      }`}
+                      aria-current="page"
+                      to="/Team"
+                      onClick={handleNavClick}
+                    >
+                      Team
+                    </Link>
+                  </li>
+                  <li class="nav-item">
+                    <Link
+                      className={`nav-link ${
+                        location.pathname === "/Developers" ? "active" : ""
+                      }`}
+                      to="/Developers"
+                      onClick={handleNavClick}
+                    >
+                      Developers
+                    </Link>
+                  </li>
+                  <li class="nav-item">
+                    <Link
+                      className={`nav-link ${
+                        location.pathname === "/AboutUs" ? "active" : ""
+                      }`}
+                      aria-current="page"
+                      to="/AboutUs"
+                      onClick={handleNavClick}
+                    >
+                      AboutUs
+                    </Link>
+                  </li>
+
+                  {/* <li class="nav-item " onClick={handleNavClick}>
                         {token==null?<a class="nav-link login-nav-btn" data-bs-toggle="modal" data-bs-target="#getstartedmodal" onClick={e=>{
                               setLogin(true);
                            }}>Log in / Sign Up</a>: <GoogleLogout
@@ -223,12 +270,11 @@ const Header = () => {
                          >
                          </GoogleLogout>}
                         </li> */}
-                      
-                     </ul>
-                  </div>
-               </div>
-            </nav>
-         </div>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
       </header>
       <Modal
         isOpen={login}
@@ -297,8 +343,7 @@ const Header = () => {
                   <p>Or Sign in with</p>
                   <ul>
                     <li className="pe-2">
-                     
-                          {/* <GoogleLogin
+                      {/* <GoogleLogin
                     clientId={CLIENT_ID}
               buttonText="Sign In with Google"
               onSuccess={responseGoogleSuccess}
