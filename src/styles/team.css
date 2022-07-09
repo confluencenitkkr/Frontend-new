@@ -1,17 +1,7 @@
 
 .input1 {position: absolute; display: none}
 
-.teamConfluenceLeft{
-    
-}
-
 .container1{
-  background-image: url('../styles/images/website\ bg.png');
-  background-repeat: no-repeat;
-  margin-top: auto !important;
-  min-height: 100vh;
-  background-position: center;
-  background-size: cover;
   padding-top: 10vh !important;
 }
 

@@ -11,17 +11,6 @@
     padding-top: 10vh;
     
 }
-.rounded{
-    border:1px solid;
-}
-.search-result-wrp{
-    background-image: url('../styles/images/website\ bg.png');
-    background-repeat: no-repeat;
-    margin-top: auto !important;
-    min-height: 100vh;
-    background-position: center;
-    background-size: cover;
-}
 .card-name{
     margin-top: 2vh;
     box-sizing: content-box;

@@ -13,15 +13,6 @@
   .text-red{
     color: red;
   }
-  .dev-bg{
-    background-image: url('../styles/images/website\ bg.png');
-  background-repeat: no-repeat;
-  margin-top: auto !important;
-  min-height: 100vh;
-  background-position: center;
-  background-size: cover;
-  
-  }
   
   .social-link:hover,
   .social-link:focus {
