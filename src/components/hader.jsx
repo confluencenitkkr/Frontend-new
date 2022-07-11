@@ -162,7 +162,7 @@ const Header = () => {
                 ""
               )}
               <button
-                class="navbar-toggler"
+                class="navbar-toggler navbar-dark"
                 data-bs-toggle="collapse"
                 data-bs-target="#navbarNav"
                 onClick={() => setShow(!show)}
@@ -182,6 +182,7 @@ const Header = () => {
                       }`}
                       aria-current="page"
                       to="/"
+                      onClick={handleNavClick}
                     >
                       Home
                     </Link>
