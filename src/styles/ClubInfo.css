@@ -1,0 +1,185 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap'); */
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
+@import url("https://fonts.googleapis.com/css?family=Varela+Round");
+@font-face {
+  font-family: "Telefon Black";
+  src: url("https://raw.githubusercontent.com/arnabmunshi/fontface/master/TelefonBlack/Telefon-Black.woff2")
+      format("woff2"),
+    url("https://raw.githubusercontent.com/arnabmunshi/fontface/master/TelefonBlack/Telefon-Black.woff")
+      format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+
+.clubinfo-container {
+  /* background-image: url(images/bg_f.png); */
+  background-color: black;
+  min-height: 100vh;
+}
+
+.clubinfous {
+  display: inline-flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.content-clubinfo {
+  height: 100%px;
+  width: 90%;
+  margin-left: 78px;
+  margin-top: 60px;
+}
+
+.post-image {
+  height: 300px;
+  width: 300px;
+  position: relative;
+  float: right;
+  padding-left: 20px;
+  margin: 20px 12px 3px 4px;
+}
+
+/*post*/
+
+.post-heading {
+  font-family: TelefonBlack;
+  font-size: 30px;
+  padding-left: 30px;
+  padding-top: 30px;
+}
+
+.post-content {
+  font-family: Poppins;
+  font-size: 16px;
+  padding-left: 30px;
+  padding-top: 30px;
+  text-align: justify;
+}
+
+/* .post-image {
+  height: 300px;
+  width: 300px;
+  float: left;
+  margin: 0px 12px 0px 400px;
+} */
+/* .post-image {
+  height: 250px;
+  width: 40%;
+  margin-left: 260px;
+  margin-top: 50px;
+}
+
+.club-image {
+  height: 400px;
+  width: 600px;
+  position: relative;
+  bottom: 80px;
+} */
+/* img.border {
+  border: 6px solid #eee7df;
+}
+
+img.alignleft {
+  float: right;
+  margin-left: 25px;
+}
+
+img.alignright {
+  float: right;
+}
+
+img.aligncenter {
+  margin: 0px auto;
+} */
+/* 
+.aftermovie {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20vh;
+  align-items: center;
+}
+
+.afterMovie-frame {
+  height: 70vh;
+  width: 80vw;
+}
+
+.socialmedia {
+  width: 100%;
+  padding: 10px 10px 30px 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.socialmedia img {
+  width: 40px;
+  height: 40px;
+  margin: 5px 20px;
+  border: 0;
+  border-radius: 25%;
+}
+.socialmedia img:hover {
+  box-shadow: 2px 2px 30px 1px rgb(221, 243, 116);
+}
+
+.about-container .socialmedia i {
+  color: #a52a2a;
+  font-size: 30px;
+  padding: 0px 10px;
+}
+.about-container .social i:hover {
+  color: #3d3d3d;
+} */
+
+@media screen and (max-width: 990px) {
+  .clubinfo-container {
+    min-height: 100vh;
+  }
+  .about-image-clubinfo {
+    display: none;
+  }
+
+  .content-clubinfo {
+    width: 100%;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  .post-image {
+    height: 200px;
+
+    width: 200px;
+    margin-top: 35px;
+  }
+  .post-heading {
+    width: 100%;
+  }
+  /* .photographyclub {
+    flex-flow: row wrap;
+  }
+ 
+
+
+  /* 
+  .socialmedia {
+    width: 100%;
+    margin-left: 0 !important;
+
+    padding: 10px 10px 30px 10px;
+    position: relative;
+    /* bottom: 50px; 
+    margin: 0 auto;
+  }
+  .afterMovie-frame {
+    height: 30vh;
+    width: 80vw;
+  }
+  .aftermovie {
+    margin-top: 77vh;
+  }
+
+  .about-container .socialmedia i {
+    color: #a52a2a;
+    font-size: 30px;
+    padding: 0px 10px;
+  } */
+}

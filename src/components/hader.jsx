@@ -145,72 +145,122 @@ const Header = () => {
 
   return (
     <>
-     <header>
-         <div class="navigation">
-           
-            <nav class="navbar navbar-expand-lg navbar-light">
-               <div class="container">
-                  
-                  {token==""?<a class="login-out-nav-btn" onClick={e=>{
-                     setLogin(true);
-                  }}>Log in / Sign Up</a>:""}
-                  <button class="navbar-toggler navbar-dark" data-bs-toggle="collapse" data-bs-target="#navbarNav" onClick={() => setShow(!show)}>
-                  <span class="navbar-toggler-icon "></span>
-                  </button>
-                  {/* <div class="navbar-collapse collapse" id="navbarNav"> */}
-                  <div   className={`collapse navbar-collapse  ${show ? "show" : ""}` } id="navbarNav">
-                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                        <Link
-                    className={`nav-link ${
-                      location.pathname === "/" ? "active" : ""
-                    }`}
-                    aria-current="page"
-                    to="/"
-                    onClick={handleNavClick}
-                  >
-                    Home
-                  </Link>
-                        </li>
-                      
-                        <li class="nav-item">
-                        <Link className={`nav-link ${ location.pathname === "/Sponsors" ? "active" : ""  }`}aria-current="page" to="/Sponsors" onClick={handleNavClick}
-                                  >
-                             Sponsors
-                            </Link>
-                        </li>
-                        <li class="nav-item">
-                        <Link className={`nav-link ${ location.pathname === "/Events" ? "active" : ""  }`}aria-current="page" to="/Events" onClick={handleNavClick}
-                                  >
-                             Events
-                            </Link>
-                        </li>
-                        <li class="nav-item">
-                        <Link className={`nav-link ${ location.pathname === "/Team" ? "active" : ""  }`}aria-current="page" to="/Team" onClick={handleNavClick}
-                                  >
-                             Team
-                            </Link>
-                        </li>
-                        <li class="nav-item">
-                        <Link className={`nav-link ${ location.pathname === "/Developers" ? "active" : ""  }`} to="/Developers" onClick={handleNavClick}
-                                  >
-                             Developers
-                            </Link>
-                            
-                        </li>
-                        <li class="nav-item">
-                        <Link
-                    className={`nav-link ${
-                      location.pathname === "/AboutUs" ? "active" : ""
-                    }`}
-                    aria-current="page"
-                    to="/AboutUs" onClick={handleNavClick}
-                  >
-                    AboutUs
-                  </Link>
-                        </li>
-                   
-                        {/* <li class="nav-item " onClick={handleNavClick}>
+      <header>
+        <div class="navigation">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+              {token == "" ? (
+                <a
+                  class="login-out-nav-btn"
+                  onClick={(e) => {
+                    setLogin(true);
+                  }}
+                >
+                  Log in / Sign Up
+                </a>
+              ) : (
+                ""
+              )}
+              <button
+                class="navbar-toggler navbar-dark"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                onClick={() => setShow(!show)}
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              {/* <div class="navbar-collapse collapse" id="navbarNav"> */}
+              <div
+                className={`collapse navbar-collapse  ${show ? "show" : ""}`}
+                id="navbarNav"
+              >
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <Link
+                      className={`nav-link ${
+                        location.pathname === "/" ? "active" : ""
+                      }`}
+                      aria-current="page"
+                      to="/"
+                      onClick={handleNavClick}
+                    >
+                      Home
+                    </Link>
+                  </li>
+
+                  <li class="nav-item">
+                    <Link
+                      className={`nav-link ${
+                        location.pathname === "/Sponsors" ? "active" : ""
+                      }`}
+                      aria-current="page"
+                      to="/Sponsors"
+                      onClick={handleNavClick}
+                    >
+                      Sponsors
+                    </Link>
+                  </li>
+                  <li class="nav-item">
+                    <Link
+                      className={`nav-link ${
+                        location.pathname === "/ClubInfo" ? "active" : ""
+                      }`}
+                      aria-current="page"
+                      to="/ClubInfo"
+                      onClick={handleNavClick}
+                    >
+                      ClubInfo
+                    </Link>
+                  </li>
+                  <li class="nav-item">
+                    <Link
+                      className={`nav-link ${
+                        location.pathname === "/Events" ? "active" : ""
+                      }`}
+                      aria-current="page"
+                      to="/Events"
+                      onClick={handleNavClick}
+                    >
+                      Events
+                    </Link>
+                  </li>
+                  <li class="nav-item">
+                    <Link
+                      className={`nav-link ${
+                        location.pathname === "/Team" ? "active" : ""
+                      }`}
+                      aria-current="page"
+                      to="/Team"
+                      onClick={handleNavClick}
+                    >
+                      Team
+                    </Link>
+                  </li>
+                  <li class="nav-item">
+                    <Link
+                      className={`nav-link ${
+                        location.pathname === "/Developers" ? "active" : ""
+                      }`}
+                      to="/Developers"
+                      onClick={handleNavClick}
+                    >
+                      Developers
+                    </Link>
+                  </li>
+                  <li class="nav-item">
+                    <Link
+                      className={`nav-link ${
+                        location.pathname === "/AboutUs" ? "active" : ""
+                      }`}
+                      aria-current="page"
+                      to="/AboutUs"
+                      onClick={handleNavClick}
+                    >
+                      AboutUs
+                    </Link>
+                  </li>
+
+                  {/* <li class="nav-item " onClick={handleNavClick}>
                         {token==null?<a class="nav-link login-nav-btn" data-bs-toggle="modal" data-bs-target="#getstartedmodal" onClick={e=>{
                               setLogin(true);
                            }}>Log in / Sign Up</a>: <GoogleLogout
