@@ -21,6 +21,14 @@ const Developers = () => {
       "github":"https://github.com/ayushmina/",
     },
     {
+      "name":"Lakshay",
+      "image" : "https://i.ibb.co/9nzJrWR/4dfabe32-2ea6-4246-b807-623a370f97bc-1.jpg",
+      "role": "Full Stack Developer",
+      "insta": "https://www.instagram.com/lakshay_._rose/",
+      "linkedin": "https://www.linkedin.com/in/lakshay-rose-514518206/",
+      "github":"https://github.com/Daemon25",
+    },
+    {
       "name":"Inzamam",
       "image" : "https://i.ibb.co/X72VN1x/Screenshot-20220420-183930-01-compressed.jpg",
       "role": "Front-end Developer",
@@ -36,14 +44,7 @@ const Developers = () => {
       "linkedin": "https://www.linkedin.com/in/meenakshi-suthar-921967229/",
       "github":"https://github.com/meenakshisuthar/meenakshisuthar",
     },
-    {
-      "name":"Lakshay",
-      "image" : "https://i.ibb.co/9nzJrWR/4dfabe32-2ea6-4246-b807-623a370f97bc-1.jpg",
-      "role": "Front-end Developer",
-      "insta": "https://www.instagram.com/lakshay_._rose/",
-      "linkedin": "https://www.linkedin.com/in/lakshay-rose-514518206/",
-      "github":"https://github.com/Daemon25",
-    },
+    
     {
       "name":"Dev Bansal",
       "image" : "https://i.ibb.co/jvffFhZ/IMG20210116210210-00-01-1-compressed.jpg",

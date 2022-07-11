@@ -157,8 +157,8 @@ const Header = () => {
                   {token==""?<a class="login-out-nav-btn" onClick={e=>{
                      setLogin(true);
                   }}>Log in / Sign Up</a>:""}
-                  <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav" onClick={() => setShow(!show)}>
-                  <span class="navbar-toggler-icon"></span>
+                  <button class="navbar-toggler navbar-dark" data-bs-toggle="collapse" data-bs-target="#navbarNav" onClick={() => setShow(!show)}>
+                  <span class="navbar-toggler-icon "></span>
                   </button>
                   {/* <div class="navbar-collapse collapse" id="navbarNav"> */}
                   <div   className={`collapse navbar-collapse  ${show ? "show" : ""}` } id="navbarNav">
@@ -170,6 +170,7 @@ const Header = () => {
                     }`}
                     aria-current="page"
                     to="/"
+                    onClick={handleNavClick}
                   >
                     Home
                   </Link>

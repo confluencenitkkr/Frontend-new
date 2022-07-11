@@ -6,10 +6,12 @@
     position: fixed;
 }
 
-
 .navbar-toggler-icon{
-    background-color: #c19a0000;
-    
+    background-color: #000000 !important;
+}
+
+.navbar-collapse{
+    background-color: #000000 !important;
 }
 
 .nav-item{
