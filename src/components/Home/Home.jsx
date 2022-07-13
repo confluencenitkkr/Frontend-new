@@ -58,7 +58,7 @@ const Home = () => {
                     <div class="highlight-info">
                         <h3 class="highlight-title">2019 Highlights</h3>
 
-                        <a href="https://www.youtube.com/templatemo" class="bi-youtube highlight-icon"></a>
+                        <a href="https://www.youtube.com/watch?v=FXyHDBMVAgA&ab_channel=ConfluenceNITKurukshetra" class="bi-youtube highlight-icon"></a>
                     </div>
                 </div>
             </div>
@@ -70,7 +70,7 @@ const Home = () => {
                     <div class="highlight-info">
                         <h3 class="highlight-title">2020 Highlights</h3>
 
-                        <a href="https://www.youtube.com/templatemo" class="bi-youtube highlight-icon"></a>
+                        <a href="https://www.youtube.com/watch?v=FXyHDBMVAgA&ab_channel=ConfluenceNITKurukshetra" class="bi-youtube highlight-icon"></a>
                     </div>
                 </div>
             </div>
@@ -82,7 +82,7 @@ const Home = () => {
                     <div class="highlight-info">
                         <h3 class="highlight-title">2021 Highlights</h3>
 
-                        <a href="https://www.youtube.com/templatemo" class="bi-youtube highlight-icon"></a>
+                        <a href="https://www.youtube.com/watch?v=FXyHDBMVAgA&ab_channel=ConfluenceNITKurukshetra" class="bi-youtube highlight-icon"></a>
                     </div>
                 </div>
             </div>
