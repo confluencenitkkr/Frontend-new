@@ -23,15 +23,15 @@ const Home = () => {
             <div class="col-lg-5 col-12 m-auto">
                 <div class="hero-text">
 
-                    <h1 class="text-white mb-4"><u class="text-info">Leadership</u> Conference 2022</h1>
+                    {/* <h1 class="text-white mb-4"><u class="text-info">Confluence</u> 2022</h1> */}
 
-                    <div class="d-flex justify-content-center align-items-center">
+                    {/* <div class="d-flex justify-content-center align-items-center">
                         <span class="date-text">July 12 to 18, 2022</span>
 
                         <span class="location-text">Times Square, NY</span>
-                    </div>
+                    </div> */}
 
-                    <a href="#section_2" class="custom-link bi-arrow-down arrow-icon"></a>
+                    {/* <a href="#section_2" class="custom-link bi-arrow-down arrow-icon"></a> */}
                 </div>
             </div>
         </div>
@@ -39,7 +39,7 @@ const Home = () => {
 
     <div class="video-wrap">
         <video autoPlay={true} loop={true} muted={true} class="custom-video" >
-            <source src="videos/pexels-pavel-danilyuk-8716790.mp4" type="video/mp4" />
+            <source src="videos/5Daystogo.mp4" type="video/mp4" />
 
             Your browser does not support the video tag.
         </video>
@@ -56,9 +56,9 @@ const Home = () => {
                     <img src="images/highlight/alexandre-pellaes-6vAjp0pscX0-unsplash.jpg" class="highlight-image img-fluid" alt=""/>
 
                     <div class="highlight-info">
-                        <h3 class="highlight-title">2019 Highlights</h3>
+                        <h3 class="highlight-title">2018 Highlights</h3>
 
-                        <a href="https://www.youtube.com/watch?v=FXyHDBMVAgA&ab_channel=ConfluenceNITKurukshetra" class="bi-youtube highlight-icon"></a>
+                        <a href="https://www.youtube.com/watch?v=UwAkTLY9-r0&ab_channel=ConfluenceNITKurukshetra" class="bi-youtube highlight-icon"></a>
                     </div>
                 </div>
             </div>
@@ -68,9 +68,9 @@ const Home = () => {
                     <img src="images/highlight/miguel-henriques--8atMWER8bI-unsplash.jpg" class="highlight-image img-fluid" alt=""/>
 
                     <div class="highlight-info">
-                        <h3 class="highlight-title">2020 Highlights</h3>
+                        <h3 class="highlight-title">2019 Highlights</h3>
 
-                        <a href="https://www.youtube.com/watch?v=FXyHDBMVAgA&ab_channel=ConfluenceNITKurukshetra" class="bi-youtube highlight-icon"></a>
+                        <a href="https://www.youtube.com/watch?v=FXyHDBMVAgA" class="bi-youtube highlight-icon"></a>
                     </div>
                 </div>
             </div>
@@ -80,9 +80,9 @@ const Home = () => {
                     <img src="images/highlight/jakob-dalbjorn-cuKJre3nyYc-unsplash.jpg" class="highlight-image img-fluid" alt=""/>
 
                     <div class="highlight-info">
-                        <h3 class="highlight-title">2021 Highlights</h3>
+                        <h3 class="highlight-title">2022 Highlights</h3>
 
-                        <a href="https://www.youtube.com/watch?v=FXyHDBMVAgA&ab_channel=ConfluenceNITKurukshetra" class="bi-youtube highlight-icon"></a>
+                        <a href="https://www.youtube.com/watch?v=IZ3SLDNCauQ&t=56s&ab_channel=ConfluenceNITKurukshetra" class="bi-youtube highlight-icon"></a>
                     </div>
                 </div>
             </div>
@@ -122,7 +122,7 @@ const Home = () => {
 
                     <img src="images/avatar/pretty-smiling-joyfully-female-with-fair-hair-dressed-casually-looking-with-satisfaction.jpg" class="img-fluid avatar-image avatar-image-left" alt=""/>
 
-                    <p class="d-inline">120+ People are attending with us</p>
+                    <p class="d-inline">20K+ People are attending with us</p>
                 </div>
             </div>
 
@@ -581,7 +581,7 @@ const Home = () => {
     </div>
 </section>
 
-<section class="pricing section-padding" >
+{/* <section class="pricing section-padding" >
     <div class="container">
         <div class="row">
 
@@ -684,7 +684,7 @@ const Home = () => {
 
         </div>
     </div>
-</section>
+</section> */}
 
 <section class="venue section-padding" >
     <div class="container">
@@ -703,26 +703,26 @@ const Home = () => {
                 <div class="venue-thumb bg-white shadow-lg">
                     
                     <div class="venue-info-title">
-                        <h2 class="text-white mb-0">Times Square</h2>
+                        <h2 class="text-white mb-0">NIT KKR</h2>
                     </div>
 
                     <div class="venue-info-body">
                         <h4 class="d-flex">
                             <i class="bi-geo-alt me-2"></i> 
-                            <span>102 South. 7th Street, New York, NY 10036, USA</span>
+                            <h style={{color:"black"}}>WRX8+355, NIT, Mirzapur Part, Haryana 136119</h>
                         </h4>
 
                         <h5 class="mt-4 mb-3">
-                            <a href="mailto:hello@yourgmail.com">
+                            <a href="mailto:studentsclubs@nitkkr.ac.in">
                                 <i class="bi-envelope me-2"></i>
-                                hi@company.com
+                                studentsclubs@nitkkr.ac.in
                             </a>
                         </h5>
 
                         <h5 class="mb-0">
                             <a href="tel: 305-240-9671">
                                 <i class="bi-telephone me-2"></i>
-                                010-020-0340
+                                9462850766
                             </a>
                         </h5>
                     </div>

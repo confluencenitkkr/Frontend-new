@@ -449,7 +449,7 @@ strong {
 }
 
 .highlight-title {
-  color: var(--white-color);
+  color: white;
   transition: opacity 1s;
   margin-bottom: 0;
 }
