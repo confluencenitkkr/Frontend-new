@@ -45,7 +45,26 @@ const ClubInfo = () => {
               dedicated and creative are the best fit for our club, in addition
               to those who have a prior knowledge in photography, videography,
               designing or editing.
+              <br />
+              <br />
+              Follow us at :
             </p>
+            <div className="clubinfo-icons-colors">
+              <ul className="clubinfo-icons-colors">
+                <li>
+                  {" "}
+                  <a href="https://www.facebook.com/PhotographyNITkkr">
+                    <i class="bi bi-facebook"></i>
+                  </a>
+                </li>
+                <li>
+                  {" "}
+                  <a href="https://www.instagram.com/photog.nitkkr/">
+                    <i class="bi bi-instagram"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
 
           <div className="Spicmacay-club">
@@ -68,7 +87,26 @@ const ClubInfo = () => {
               and enhance their pre-acquired skills. It also organizes various
               workshops where famous and approachable artists are invited to
               learn more and improve.
+              <br />
+              <br />
+              Follow us at :
             </p>
+            <div className="clubinfo-icons-colors">
+              <ul className="clubinfo-icons-colors">
+                <li>
+                  {" "}
+                  <a href="https://www.facebook.com/spicmacaynitkkr">
+                    <i class="bi bi-facebook"></i>
+                  </a>
+                </li>
+                <li>
+                  {" "}
+                  <a href=" https://www.instagram.com/spicmacaynitkkr/">
+                    <i class="bi bi-instagram"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
 
           <div className="Sponsorship-club">
@@ -82,14 +120,32 @@ const ClubInfo = () => {
               various cultural events held across the year in college and more
               specifically with respect to Confluence. This committee ensures
               proper fund flow and success of North India's biggest cultural
-              fest, Confluence!
-              The Sponsorship Committee mainly focuses on directing the sponsors
-              of Confluence into the right direction in accordance with the
-              various cultural events held across the year in college and more
-              specifically with respect to Confluence. This committee ensures
-              proper fund flow and success of North India's biggest cultural
-              fest, Confluence!
+              fest, Confluence! The Sponsorship Committee mainly focuses on
+              directing the sponsors of Confluence into the right direction in
+              accordance with the various cultural events held across the year
+              in college and more specifically with respect to Confluence. This
+              committee ensures proper fund flow and success of North India's
+              biggest cultural fest, Confluence!
+              <br />
+              <br />
+              Follow us at :
             </p>
+            <div className="clubinfo-icons-colors">
+              <ul className="clubinfo-icons-colors">
+                <li>
+                  {" "}
+                  <a href="https://www.facebook.com/PhotographyNITkkr">
+                    <i class="bi bi-facebook"></i>
+                  </a>
+                </li>
+                <li>
+                  {" "}
+                  <a href="https://www.facebook.com/PhotographyNITkkr">
+                    <i class="bi bi-instagram"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
 
           <div className="PG-club">
@@ -118,7 +174,26 @@ const ClubInfo = () => {
               job opportunity. Everyone is equally important to us be it a
               secretary or a member thus we invite you to join our club and
               experience indelible moments of your life.
+              <br />
+              <br />
+              Follow us at :
             </p>
+            <div className="clubinfo-icons-colors">
+              <ul className="clubinfo-icons-colors">
+                <li>
+                  {" "}
+                  <a href="">
+                    <i class="bi bi-facebook"></i>
+                  </a>
+                </li>
+                <li>
+                  {" "}
+                  <a href="">
+                    <i class="bi bi-instagram"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
 
           <div className="ELAD-club">
@@ -139,7 +214,26 @@ const ClubInfo = () => {
               encourages its members to read more and explore a variety of
               genres and titles. All in all, it's the best place for anyone with
               a knack of reading, debating, quizzing, anchoring, writing, etc.
+              <br />
+              <br />
+              Follow us at :
             </p>
+            <div className="clubinfo-icons-colors">
+              <ul className="clubinfo-icons-colors">
+                <li>
+                  {" "}
+                  <a href="https://www.facebook.com/eladnitkkr">
+                    <i class="bi bi-facebook"></i>
+                  </a>
+                </li>
+                <li>
+                  {" "}
+                  <a href="https://www.instagram.com/eladnitkkr/">
+                    <i class="bi bi-instagram"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
 
           <div className="AVA-club">
@@ -165,7 +259,26 @@ const ClubInfo = () => {
               their talents. It also aims to provide sufficient guidance to the
               students and help them to show their talent in the world of Music
               and Lights.
+              <br />
+              <br />
+              Follow us at :
             </p>
+            <div className="clubinfo-icons-colors">
+              <ul className="clubinfo-icons-colors">
+                <li>
+                  {" "}
+                  <a href="https://www.facebook.com/AVANITKKR">
+                    <i class="bi bi-facebook"></i>
+                  </a>
+                </li>
+                <li>
+                  {" "}
+                  <a href="https://www.instagram.com/ava.nitkkr/">
+                    <i class="bi bi-instagram"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
 
           <div className="FA-club">
@@ -184,7 +297,26 @@ const ClubInfo = () => {
               We decorate the walls of NIT with magnificent artworks, and during
               the festival, we organize a platform ART GALLERY, where artists
               may present their work. It is not a club, but rather a FAM ily .
+              <br />
+              <br />
+              Follow us at :
             </p>
+            <div className="clubinfo-icons-colors">
+              <ul className="clubinfo-icons-colors">
+                <li>
+                  {" "}
+                  <a href="https://www.facebook.com/faclubnitk">
+                    <i class="bi bi-facebook"></i>
+                  </a>
+                </li>
+                <li>
+                  {" "}
+                  <a href="https://www.instagram.com/fineartsclub.nitkkr/">
+                    <i class="bi bi-instagram"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
 
           <div className="Colors-club">
@@ -202,7 +334,26 @@ const ClubInfo = () => {
               Kurukshetra with how they perceive mental health and react to it.
               Together, let's unbox the colours of our life and value each
               colour equally!
+              <br />
+              <br />
+              Follow us at :
             </p>
+            <div className="clubinfo-icons-colors">
+              <ul className="clubinfo-icons-colors">
+                <li>
+                  {" "}
+                  <a href="">
+                    <i class="bi bi-facebook"></i>
+                  </a>
+                </li>
+                <li>
+                  {" "}
+                  <a href="https://www.instagram.com/colours.nitkkr/">
+                    <i class="bi bi-instagram"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
 
           <div className="HLAD-club">
@@ -223,7 +374,27 @@ const ClubInfo = () => {
               जी, शकील आज़मी जी, अंकिता सिंह जी, अज़हर इक़बाल जी, सम्पत सरल जी
               जैसे कई मशहूर एवं दिग्गज कवियों व कवियित्रीयों को पिछले कुछ वर्षों
               में आमंत्रित किया जा चुका है।
+              <br />
+              <br />
+              Follow us at :
             </p>
+
+            <div className="clubinfo-icons-hlad">
+              <ul className="clubinfo-icons-hlad">
+                <li>
+                  {" "}
+                  <a href="https://www.facebook.com/hladcnitkkr">
+                    <i class="bi bi-facebook"></i>
+                  </a>
+                </li>
+                <li>
+                  {" "}
+                  <a href="https://www.instagram.com/hlad_nitkkr/">
+                    <i class="bi bi-instagram"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
 
           <div className="MAD-club">
@@ -235,38 +406,75 @@ const ClubInfo = () => {
               Music, dance and dramatics are the soul of any delectable event
               and Music and Dramatics Club of NIT Kurukshetra plays a pivotal
               role in orchestrating numerous such events that take place during
-              year-long fests and pre-show festivities. Do you dance, sing or
-              act? If yes, we will give you the stage and opportunity to
-              shine—be it as a solo artist or as a group of talented
-              individuals—we set an event for everyone. Some of our flagship
-              events are- 1.Mr. and Miss. Fresher 2. Western Dance (Groove
-              Armada) 3. Folk Dance 4. Solo
-              Dance(Break-a-leg)(Western+Classical) 5. Duet Dance (Two-to-Tango)
-              6. Stage Play (Ekanki) 7. Street Play (Nukkad) 8. Mime 9. Mono
-              Acting (Fourth Wall) 10. Battle Of Bands (BOB) 11. Duet Singing
-              (Duet) 12. Solo Singing (Western+Classical) (Nightingale's Melody)
-              13. Instrumental Solo (Moonlight Sonata) 14. Choreo Nite 15. Libas
-              (Fashion Show) 16. Beyond Asylum (Stand-up) 17. Campus Diaries 18.
-              Best of 2k19 19. Independence Day 20. Republic Day NIT Kurukshetra
-              has always provided grounds for cultural festivities and MAD has
-              been the backbone for the same. MAD ensures that all the intra and
-              inter college fests including confluence, the second largest
-              cultural fest of north India, are executed efficiently. Our tasks
-              include, but are not limited to- Event and Stage Management
-              Hospitality External Publicity and participation Internal
-              Publicity and Participation Sponsorship Preparation of Items for
-              Inauguration and Valedictory functions Results and Records You may
-              find us behind the stage, juggling things in order to make sure
-              that they don't fall and the event doesn't go off the track but we
-              don’t always work behind the curtains. We also coordinate with
-              various other colleges for publicity and participation. To say the
-              least, we do the ESM (Event Stage Management), EP(External
-              Publicity) and manage all the things that are part of the hustle
-              behind a successful cultural fest. For regular updates about the
-              cultural events of NIT Kurukshetra follow us at:
+              year-long fests and pre-show festivities. <br />
+              Do you dance, sing or act? If yes, we will give you the stage and
+              opportunity to shine—be it as a solo artist or as a group of
+              talented individuals—we set an event for everyone. <br />
+              Some of our flagship events are-
+              <br />
+              <br />
+              Mr. and Miss. Fresher
+              <br />
+              Western Dance (Groove Armada)
+              <br />
+              Solo Dance(Break-a-leg)(Western+Classical)
+              <br />
+              Stage Play (Ekanki)
+              <br /> Street Play (Nukkad)
+              <br /> Battle Of Bands (BOB)
+              <br /> Libas (Fashion Show)
+              <br /> Beyond Asylum (Stand-up)
+              <br /> Campus Diaries
+              <br /> Independence Day
+              <br /> Republic Day
+              <br />
+              <br /> NIT Kurukshetra has always provided grounds for cultural
+              festivities and MAD has been the backbone for the same. MAD
+              ensures that all the intra and inter college fests including
+              confluence, the second largest cultural fest of north India, are
+              executed efficiently. Our tasks include, but are not limited to-
+              Event and Stage Management Hospitality External Publicity and
+              participation Internal Publicity and Participation Sponsorship
+              Preparation of Items for Inauguration and Valedictory functions
+              Results and Records You may find us behind the stage, juggling
+              things in order to make sure that they don't fall and the event
+              doesn't go off the track but we don’t always work behind the
+              curtains. We also coordinate with various other colleges for
+              publicity and participation.
+              <br /> To say the least, we do the ESM (Event Stage Management),
+              EP(External Publicity) and manage all the things that are part of
+              the hustle behind a successful cultural fest. <br />
+              <br/>
+              Follow us at:
+              <br />
+              <br />
+              <div className="clubinfo-icons">
+                <ul className="clubinfo-icons">
+                  <li>
+                    {" "}
+                    <a href="https://www.facebook.com/MadNitkkr/">
+                      <i class="bi bi-facebook"></i>
+                    </a>
+                  </li>
+                  <li>
+                    {" "}
+                    <a href=" https://www.instagram.com/mad.nitkkr/">
+                      <i class="bi bi-instagram"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              {/* <br />
               https://www.facebook.com/MadNitkkr/
-              https://www.instagram.com/mad.nitkkr/ To know more, follow us at:
-              https://www.facebook.com/Conflu/
+              <br />
+              <br />
+              https://www.instagram.com/mad.nitkkr/
+              <br />
+              <br />
+              To know more, follow us at:
+              <br />
+              <br />
+              https://www.facebook.com/Conflu/ <br /> */}
             </p>
           </div>
         </div>
