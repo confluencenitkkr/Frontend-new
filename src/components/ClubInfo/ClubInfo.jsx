@@ -87,6 +87,7 @@ const ClubInfo = () => {
               and enhance their pre-acquired skills. It also organizes various
               workshops where famous and approachable artists are invited to
               learn more and improve.
+              
               <br />
               <br />
               Follow us at :
