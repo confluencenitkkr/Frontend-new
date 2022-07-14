@@ -29,7 +29,11 @@
   margin-top: 60px;
 }
 
-.post-image {
+/*IMAGES*/
+.Photography-club {
+  padding-top: 80px;
+}
+.post-image-Photog {
   height: 300px;
   width: 300px;
   position: relative;
@@ -38,7 +42,81 @@
   margin: 20px 12px 3px 4px;
 }
 
-/*post*/
+.post-image-spic {
+  height: 300px;
+  width: 300px;
+  position: relative;
+  float: right;
+  padding-left: 20px;
+  margin: 1px 12px 3px 4px;
+}
+.post-image-sponsor {
+  height: 300px;
+  width: 300px;
+  position: relative;
+  float: right;
+  padding-left: 20px;
+  margin: 0px 10px 30px 4px;
+}
+.post-image-pg {
+  height: 300px;
+  width: 300px;
+  position: relative;
+  float: right;
+  padding-left: 20px;
+  margin: 20px 10px 30px 4px;
+}
+.post-image-elad {
+  height: 300px;
+  width: 300px;
+  position: relative;
+  float: right;
+  padding-left: 20px;
+  margin: 0px 10px 30px 4px;
+}
+
+.post-image-ava {
+  height: 300px;
+  width: 300px;
+  position: relative;
+  float: right;
+  padding-left: 20px;
+  margin: 10px 10px 30px 4px;
+}
+.post-image-mad {
+  height: 300px;
+  width: 300px;
+  position: relative;
+  float: right;
+  padding-left: 20px;
+  margin: 150px 10px 30px 4px;
+}
+.post-image-hlad {
+  height: 300px;
+  width: 300px;
+  position: relative;
+  float: right;
+  padding-left: 20px;
+  margin: 20px 10px 30px 4px;
+}
+
+.post-image-colors {
+  height: 300px;
+  width: 300px;
+  position: relative;
+  float: right;
+  padding-left: 20px;
+  margin: -10px 10px 30px 4px;
+}
+
+.post-image-fa {
+  height: 300px;
+  width: 300px;
+  position: relative;
+  float: right;
+  padding-left: 20px;
+  margin: 10px 10px 30px 4px;
+}
 
 .post-heading {
   font-family: TelefonBlack;
@@ -47,14 +125,96 @@
   padding-top: 30px;
 }
 
-.post-content {
+/*post*/
+
+.post-content-Photog {
   font-family: Poppins;
   font-size: 16px;
   padding-left: 30px;
   padding-top: 30px;
+  padding-bottom: 150px;
   text-align: justify;
 }
-
+.post-content-spic {
+  font-family: Poppins;
+  font-size: 16px;
+  padding-left: 30px;
+  padding-top: 30px;
+  padding-bottom: 150px;
+  text-align: justify;
+}
+.post-content-sponsor {
+  font-family: Poppins;
+  font-size: 16px;
+  padding-left: 30px;
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-bottom: 150px;
+  text-align: justify;
+}
+.post-content-pg {
+  font-family: Poppins;
+  font-size: 16px;
+  padding-left: 30px;
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-bottom: 150px;
+  text-align: justify;
+}
+.post-content-elad {
+  font-family: Poppins;
+  font-size: 16px;
+  padding-left: 30px;
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-bottom: 150px;
+  text-align: justify;
+}
+.post-content-ava {
+  font-family: Poppins;
+  font-size: 16px;
+  padding-left: 30px;
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-bottom: 150px;
+  text-align: justify;
+}
+.post-content-fa {
+  font-family: Poppins;
+  font-size: 16px;
+  padding-left: 30px;
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-bottom: 150px;
+  text-align: justify;
+}
+.post-content-hlad {
+  font-family: Poppins;
+  font-size: 16px;
+  padding-left: 30px;
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 150px;
+  text-align: justify;
+}
+.post-content-mad {
+  font-family: Poppins;
+  font-size: 16px;
+  padding-left: 30px;
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-bottom: 150px;
+  text-align: justify;
+}
+.post-content-colors {
+  font-family: Poppins;
+  font-size: 16px;
+  padding-left: 30px;
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-bottom: 150px;
+  text-align: justify;
+}
 /* .post-image {
   height: 300px;
   width: 300px;
@@ -131,24 +291,152 @@ img.aligncenter {
   color: #3d3d3d;
 } */
 
+.clubinfo-icons i {
+  color: white;
+  margin-right: 30px;
+}
+.clubinfo-icons i:hover {
+  background-color: rgb(92, 89, 89);
+ 
+}
+
+.clubinfo-icons ul li {
+  display: inline-block;
+}
+
+.clubinfo-icons-hlad {
+  margin-top: -130px;
+  margin-bottom: 100px;
+}
+.clubinfo-icons-hlad i {
+  color: white;
+  margin-right: 30px;
+}
+.clubinfo-icons-hlad i:hover {
+  background-color: rgb(92, 89, 89);
+ 
+}
+
+.clubinfo-icons-hlad ul li {
+  display: inline-block;
+}
+
+
+.clubinfo-icons-colors {
+  margin-top: -130px;
+  margin-bottom: 100px;
+}
+.clubinfo-icons-colors i {
+  color: white;
+  margin-right: 30px;
+}
+.clubinfo-icons-colors i:hover {
+  background-color: rgb(92, 89, 89);
+ 
+}
+
+.clubinfo-icons-colors ul li {
+  display: inline-block;
+}
+
+
+
+
+
 @media screen and (max-width: 990px) {
   .clubinfo-container {
     min-height: 100vh;
+    width: 110%;
   }
   .about-image-clubinfo {
     display: none;
   }
 
   .content-clubinfo {
-    width: 100%;
-    margin-left: 25px;
-    margin-right: 25px;
+    width: 90%;
+    height: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
   }
-  .post-image {
+  .post-image-Photog {
     height: 200px;
 
     width: 200px;
-    margin-top: 35px;
+    margin-top: 30px;
+    margin-right: 0px;
+    margin-bottom: -20px;
+  }
+  .post-image-spic {
+    height: 200px;
+
+    width: 200px;
+    margin-top: 30px;
+    margin-right: 0px;
+    margin-bottom: -20px;
+  }
+  .post-image-pg {
+    height: 200px;
+
+    width: 200px;
+    margin-top: 30px;
+    margin-right: 0px;
+    margin-bottom: -20px;
+  }
+  .post-image-sponsor {
+    height: 200px;
+
+    width: 200px;
+    margin-top: 30px;
+    margin-right: 0px;
+    margin-bottom: -20px;
+  }
+  .post-image-ava {
+    height: 200px;
+
+    width: 200px;
+    margin-top: 30px;
+    margin-right: 0px;
+    margin-bottom: -20px;
+  }
+  .post-image-fa {
+    height: 200px;
+
+    width: 200px;
+    margin-top: 30px;
+    margin-right: 0px;
+    margin-bottom: -20px;
+  }
+  .post-image-elad {
+    height: 200px;
+
+    width: 200px;
+    margin-top: 30px;
+    margin-right: 0px;
+    margin-bottom: -20px;
+  }
+  .post-image-hlad {
+    height: 200px;
+
+    width: 200px;
+    margin-top: 30px;
+    margin-left: 0px;
+    margin-bottom: 20px;
+  }
+  .post-image-mad {
+    height: 200px;
+
+    width: 200px;
+    margin-top: 30px;
+    margin-left: 0px;
+    margin-bottom: -20px;
+  }
+  .post-image-colors {
+    height: 200px;
+
+    width: 200px;
+    margin-top: 30px;
+    margin-right: 0px;
+    margin-bottom: -20px;
   }
   .post-heading {
     width: 100%;
