@@ -248,7 +248,7 @@ a {
   width: 1px;
 }
 a:-webkit-any-link {
-  color: -webkit-link;
+  color: #000000;
   cursor: pointer;
 }
 .objectfit [type=button][layout=sponsor] img, .objectfit [type=submit][layout=sponsor] img {

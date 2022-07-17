@@ -1,5 +1,5 @@
 .navigation{
-    background-color: #000000 !important;
+    background-color: #151c39 !important;
     /* border-radius: 0px 0px 20px 20px; */
     /* position: fixed !important; */
     min-width: 100vw;
@@ -7,11 +7,11 @@
 }
 
 .navbar-toggler-icon{
-    background-color: #000000 !important;
+    background-color: #151c39 !important;
 }
 
 .navbar-collapse{
-    background-color: #000000 !important;
+    background-color: #151c39 !important;
 }
 
 .nav-item{

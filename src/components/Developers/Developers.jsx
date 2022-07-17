@@ -5,15 +5,7 @@ import '../../styles/Developers.css';
 const Developers = () => {
   const developers=[
     {
-      "name":"Aayush Gupta",
-      "image" :"https://i.ibb.co/Qv2jjXw/dcf19c08-1406-4ad7-8047-d8e310884ecc-1-11zon.jpg",
-      "role": "Full STACK DEVELOPER",
-      "insta": "https://www.instagram.com/ashu_2305_/?hl=en",
-      "linkedin": "https://www.linkedin.com/in/ashu2305/",
-      "github":"https://github.com/ashu2305",
-    },
-    {
-      "name":"Ayush Meena",
+      "name":"Ayush ",
       "image" :"https://i.ibb.co/D5zp66d/IMG-20211104-152222-575-01.jpg",
       "role": "Full STACK DEVELOPER",
       "insta": "https://www.instagram.com/ayush_mina/",
@@ -27,14 +19,6 @@ const Developers = () => {
       "insta": "https://www.instagram.com/lakshay_._rose/",
       "linkedin": "https://www.linkedin.com/in/lakshay-rose-514518206/",
       "github":"https://github.com/Daemon25",
-    },
-    {
-      "name":"Inzamam",
-      "image" : "https://i.ibb.co/X72VN1x/Screenshot-20220420-183930-01-compressed.jpg",
-      "role": "Front-end Developer",
-      "insta": "https://www.instagram.com/inzamam_chowdhury/",
-      "linkedin": "https://www.linkedin.com/in/inzamam-chowdhury/",
-      "github":"https://github.com/inzamam2021",
     },
     {
       "name":"Meenakshi",
@@ -60,14 +44,6 @@ const Developers = () => {
       "insta": "https://instagram.com/pransu65?igshid=YmMyMTA2M2Y=",
       "linkedin": "https://www.linkedin.com/in/pransu-yadav-a082891b8",
       "github":"https://github.com/Pransu-code",
-    },
-    {
-      "name":"Karan",
-      "image" : "https://i.ibb.co/yQbv0fB/IMG-20220420-WA0129.jpg",
-      "role": "Front-end Developer",
-      "insta": "https://instagram.com/karan_gupta_17?igshid=YmMyMTA2M2Y=",
-      "linkedin": "https://www.linkedin.com/in/karan-gupta-97571b202/",
-      "github":"https://github.com/guptakaran9896",
     },
     {
       "name":"Ankit",

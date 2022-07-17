@@ -3,11 +3,18 @@
 .about-container
 {
 	/* background-image: url(images/bg_f.png); */
-	background-color: black;
+	/* background-color: #273053; */
 	min-height: 100vh;
 	
 }
 
+.aftermovie1
+{
+	display: flex;
+	flex-direction: column;
+	margin-top: 20vh;
+	align-items: center;
+}
 
 .aboutus
 {
@@ -123,6 +130,9 @@
 }
 .aftermovie{
 	margin-top: 77vh;
+}
+.aftermovie1{
+	
 }
 
 .about-container .socialmedia i

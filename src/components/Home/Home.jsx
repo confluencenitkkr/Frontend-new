@@ -97,7 +97,7 @@ const Home = () => {
         <div class="row">
 
             <div class="col-lg-10 col-12">
-                <h2 class="mb-4">Our <u class="text-info">Story</u></h2>
+                <h2 class="mb-4">Our <u class="text-info">Events</u></h2>
             </div>
 
             <div class="col-lg-6 col-12">
@@ -137,7 +137,7 @@ const Home = () => {
 
             <div class="col-lg-6 col-12 d-flex flex-column justify-content-center align-items-center">
                 <div class="speakers-text-info">
-                    <h2 class="mb-4">Our <u class="text-info">Speakers</u></h2>
+                    <h2 class="mb-4">Our <u class="text-info">Events</u></h2>
 
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut dolore</p>
                 </div>
@@ -145,23 +145,23 @@ const Home = () => {
 
             <div class="col-lg-6 col-12">
                 <div class="speakers-thumb">
-                    <img src="images/avatar/happy-asian-man-standing-with-arms-crossed-grey-wall.jpg" class="img-fluid speakers-image" alt=""/>
+                    <img src="images/avatar/startnight.jpg" class="img-fluid speakers-image" alt=""/>
 
                     <small class="speakers-featured-text">Featured</small>
 
                     <div class="speakers-info">
 
-                        <h5 class="speakers-title mb-0">Logan Wilson</h5>
+                        <h5 class="speakers-title mb-0">Star Night </h5>
 
-                        <p class="speakers-text mb-0">CEO / Founder</p>
+                        <p class="speakers-text mb-0"></p>
 
-                        <ul class="social-icon">
+                        {/* <ul class="social-icon">
                             <li><a href="#" class="social-icon-link bi-facebook"></a></li>
 
                             <li><a href="#" class="social-icon-link bi-instagram"></a></li>
 
                             <li><a href="#" class="social-icon-link bi-google"></a></li>
-                        </ul>
+                        </ul> */}
                     </div>
                 </div>
             </div>
@@ -170,48 +170,48 @@ const Home = () => {
                 <div class="row">
                     <div class="col-lg-3 col-md-6 col-12">
                         <div class="speakers-thumb speakers-thumb-small">
-                            <img src="images/avatar/portrait-good-looking-brunette-young-asian-woman.jpg" class="img-fluid speakers-image" alt=""/>
+                            <img src="images/avatar/kavjli.jpg" class="img-fluid speakers-image" alt=""/>
 
                             <div class="speakers-info">
-                                <h5 class="speakers-title mb-0">Natalie</h5>
+                                <h5 class="speakers-title mb-0">Kavyanjali</h5>
 
-                                <p class="speakers-text mb-0">Event Planner</p>
+                                {/* <p class="speakers-text mb-0">Event Planner</p>
 
                                 <ul class="social-icon">
                                     <li><a href="#" class="social-icon-link bi-facebook"></a></li>
 
                                     <li><a href="#" class="social-icon-link bi-instagram"></a></li>
-                                </ul>
+                                </ul> */}
                             </div>
                         </div>
                     </div>
 
                     <div class="col-lg-3 col-md-6 col-12">
                         <div class="speakers-thumb speakers-thumb-small">
-                            <img src="images/avatar/senior-man-white-sweater-eyeglasses.jpg" class="img-fluid speakers-image" alt=""/>
+                            <img src="images/avatar/folkdance.jpg" class="img-fluid speakers-image" alt=""/>
 
                             <div class="speakers-info">
-                                <h5 class="speakers-title mb-0">Thomas</h5>
+                                <h5 class="speakers-title mb-0">Folk Dance</h5>
 
-                                <p class="speakers-text mb-0">Startup Coach</p>
+                                {/* <p class="speakers-text mb-0">Startup Coach</p>
 
                                 <ul class="social-icon">
                                     <li><a href="#" class="social-icon-link bi-instagram"></a></li>
 
                                     <li><a href="#" class="social-icon-link bi-whatsapp"></a></li>
-                                </ul>
+                                </ul> */}
                             </div>
                         </div>
                     </div>
 
                     <div class="col-lg-3 col-md-6 col-12">
                         <div class="speakers-thumb speakers-thumb-small">
-                            <img src="images/avatar/pretty-smiling-joyfully-female-with-fair-hair-dressed-casually-looking-with-satisfaction.jpg" class="img-fluid speakers-image" alt=""/>
+                            <img src="images/avatar/chore.jpg" class="img-fluid speakers-image" alt=""/>
 
                             <div class="speakers-info">
-                                <h5 class="speakers-title mb-0">Isabella</h5>
+                                <h5 class="speakers-title mb-0">Choreography</h5>
 
-                                <p class="speakers-text mb-0">Event Manager</p>
+                                {/* <p class="speakers-text mb-0">Event Manager</p>
 
                                 <ul class="social-icon">
                                     <li><a href="#" class="social-icon-link bi-facebook"></a></li>
@@ -219,25 +219,25 @@ const Home = () => {
                                     <li><a href="#" class="social-icon-link bi-instagram"></a></li>
 
                                     <li><a href="#" class="social-icon-link bi-whatsapp"></a></li>
-                                </ul>
+                                </ul> */}
                             </div>
                         </div>
                     </div>
 
                     <div class="col-lg-3 col-md-6 col-12">
                         <div class="speakers-thumb speakers-thumb-small">
-                            <img src="images/avatar/indoor-shot-beautiful-happy-african-american-woman-smiling-cheerfully-keeping-her-arms-folded-relaxing-indoors-after-morning-lectures-university.jpg" class="img-fluid speakers-image" alt=""/>
+                            <img src="images/avatar/dance.jpg" class="img-fluid speakers-image" alt=""/>
 
                             <div class="speakers-info">
-                                <h5 class="speakers-title mb-0">Samantha</h5>
+                                <h5 class="speakers-title mb-0">Groove Armada</h5>
 
-                                <p class="speakers-text mb-0">Top Level Speaker</p>
+                                {/* <p class="speakers-text mb-0">Top Level Speaker</p>
 
                                 <ul class="social-icon">
                                     <li><a href="#" class="social-icon-link bi-instagram"></a></li>
 
                                     <li><a href="#" class="social-icon-link bi-whatsapp"></a></li>
-                                </ul>
+                                </ul> */}
                             </div>
                         </div>
                     </div>

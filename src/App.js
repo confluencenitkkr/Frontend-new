@@ -19,7 +19,12 @@ import Error404 from "./components/Error404/Error404";
 import Navbar from "./components/Navbar/navbar";
 import Team from "./components/Team_Confluence/team";
 import Header from "./components/hader";
+import Gallery from "./components/Gallery";
 import "./styles/Events.css";
+import "./styles/css/main.css";
+// import "./styles/css/bootstrap.min.css";
+import "./styles/css/responsive.css";
+
 function App() {
   return (
     <Router>
@@ -35,6 +40,8 @@ function App() {
           key="Developers"
           element={<Developers />}
         />
+        <Route exact path="/gallery" key="gallery" element={<Gallery />} />
+
         <Route exact path="/AboutUs" key="AboutUs" element={<AboutUs />} />
         <Route exact path="/NotAuth" key="NotAuth" element={<NotAuth />} />
         <Route exact path="/Error404" key="Error404" element={<Error404 />} />

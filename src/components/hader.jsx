@@ -187,7 +187,18 @@ const Header = () => {
                       Home
                     </Link>
                   </li>
-
+                  <li class="nav-item">
+                    <Link
+                      className={`nav-link ${
+                        location.pathname === "/gallery" ? "active" : ""
+                      }`}
+                      aria-current="page"
+                      to="/gallery"
+                      onClick={handleNavClick}
+                    >
+                      Gallery
+                    </Link>
+                  </li>
                   <li class="nav-item">
                     <Link
                       className={`nav-link ${
@@ -198,18 +209,6 @@ const Header = () => {
                       onClick={handleNavClick}
                     >
                       Sponsors
-                    </Link>
-                  </li>
-                  <li class="nav-item">
-                    <Link
-                      className={`nav-link ${
-                        location.pathname === "/ClubInfo" ? "active" : ""
-                      }`}
-                      aria-current="page"
-                      to="/ClubInfo"
-                      onClick={handleNavClick}
-                    >
-                      ClubInfo
                     </Link>
                   </li>
                   <li class="nav-item">
@@ -239,12 +238,13 @@ const Header = () => {
                   <li class="nav-item">
                     <Link
                       className={`nav-link ${
-                        location.pathname === "/Developers" ? "active" : ""
+                        location.pathname === "/ClubInfo" ? "active" : ""
                       }`}
-                      to="/Developers"
+                      aria-current="page"
+                      to="/ClubInfo"
                       onClick={handleNavClick}
                     >
-                      Developers
+                      ClubInfo
                     </Link>
                   </li>
                   <li class="nav-item">
@@ -259,18 +259,17 @@ const Header = () => {
                       AboutUs
                     </Link>
                   </li>
-
-                  {/* <li class="nav-item " onClick={handleNavClick}>
-                        {token==null?<a class="nav-link login-nav-btn" data-bs-toggle="modal" data-bs-target="#getstartedmodal" onClick={e=>{
-                              setLogin(true);
-                           }}>Log in / Sign Up</a>: <GoogleLogout
-                           clientId={CLIENT_ID}
-                           buttonText="Logout"
-                           onLogoutSuccess={logout}
-                           className="nav-link login-nav-btn " 
-                         >
-                         </GoogleLogout>}
-                        </li> */}
+                  <li class="nav-item">
+                    <Link
+                      className={`nav-link ${
+                        location.pathname === "/Developers" ? "active" : ""
+                      }`}
+                      to="/Developers"
+                      onClick={handleNavClick}
+                    >
+                      Developers
+                    </Link>
+                  </li>
                 </ul>
               </div>
             </div>
