@@ -39,7 +39,7 @@ const Home = () => {
 
     <div class="video-wrap">
         <video autoPlay={true} loop={true} muted={true} class="custom-video" >
-            <source src="videos/5Daystogo.mp4" type="video/mp4" />
+            <source src="images/avatar/confluewebsite.mp4" type="video/mp4" />
 
             Your browser does not support the video tag.
         </video>
@@ -185,7 +185,6 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
-
                     <div class="col-lg-3 col-md-6 col-12">
                         <div class="speakers-thumb speakers-thumb-small">
                             <img src="images/avatar/folkdance.jpg" class="img-fluid speakers-image" alt=""/>
