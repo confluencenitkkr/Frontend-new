@@ -43,3 +43,19 @@ and (max-device-width : 1600px)  {
      
     }
 }
+
+.faculties{
+    padding-top: 0 !important;
+}
+
+.faculty-card{
+    width: 20rem;
+    border-radius: 20px 20px 20px 20px !important;
+    padding: 0% !important;
+    background-color: #000;
+}
+
+.fc-img{
+    width: 100%;
+    height: 18rem;
+}
