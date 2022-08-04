@@ -31,6 +31,14 @@ function getEventId(id, cb) {
       if (typeof cb === 'function') return cb(error, res && res.body);
     });
 }
+function getImage(cb) {
+  Agent
+    .fire('get', `${BACKEND_URL}/users/getImage`)
+    .end((err, res) => {
+      var error = err || res.error ? ServerError(res) : (res.body && res.body.error) ? ServerError(res) : null;
+      if (typeof cb === 'function') return cb(error, res && res.body);
+    });
+}
 
 function Search(payload, cb) {
   Agent
@@ -46,5 +54,6 @@ export default {
   getEvent,
   Search,
   getEventId,
-  getSponsor
+  getSponsor,
+  getImage
 }

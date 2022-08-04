@@ -1,7 +1,30 @@
+import { eventWrapper } from "@testing-library/user-event/dist/utils";
 import React, { useState, Component, useEffect } from "react";
+import action from "../../actions/events.Actions";
 import "./gallery.css"
 const Gallery = (props) => {
-  
+    const [images,setimages]=useState([]);
+    const [flag,setFlag]=useState(false);
+
+  const getImage=async ()=>{
+    action.getImage((err,res)=>{
+        if(err){
+
+        }else{
+            setimages(res.data);
+        }
+    })
+  }
+  const loadMOre=()=>{
+    if(flag){
+        setimages([]);
+        setFlag(false);
+    }else{
+        setFlag(true);
+        getImage();
+    }
+   
+  }
   return (
    <>    
    {/* <div id="video-container">
@@ -60,146 +83,139 @@ const Gallery = (props) => {
 <div class="grid-portfolio" id="portfolio">
    <div class="container">
        <div class="row">
-           <div class="col-md-4 col-sm-6">
+       <div class="col-md-4 col-sm-6">
                <div class="portfolio-item">
                    <div class="thumb">
-                       <a href="images/avatar/soloacting.jpg" data-lightbox="image-1"><div class="hover-effect">
-                           <div class="hover-content">
-                               <h1>Biodiesel <em>squid</em></h1>
-                               <p>Awesome Subtittle Goes Here</p>
-                           </div>
-                       </div></a>
+                       <a href="images/avatar/kavjli.jpg"  data-lightbox="image-1">
                        <div class="image">
-                           <img src="images/avatar/soloacting.jpg" />
+                           <img src="images/avatar/kavjli.jpg" alt="pic" />
                        </div>
+                       </a>
                    </div>
                </div>
            </div>
            <div class="col-md-4 col-sm-6">
                <div class="portfolio-item">
                    <div class="thumb">
-                       <a href="images/avatar/chore.jpg" data-lightbox="image-1"><div class="hover-effect">
-                           <div class="hover-content">
-                               <h1>raclette <em>taxidermy</em></h1>
-                               <p>Awesome Subtittle Goes Here</p>
-                           </div>
-                       </div></a>
+                       <a href="images/avatar/startnight.jpg" data-lightbox="image-1">
+                        
                        <div class="image">
-                           <img src="images/avatar/chore.jpg"/>
+                           <img src="images/avatar/startnight.jpg"   alt="pic" />
                        </div>
+                       </a>
                    </div>
                </div>
            </div>
            <div class="col-md-4 col-sm-6">
                <div class="portfolio-item">
                    <div class="thumb">
-                       <a href="images/avatar/dance.jpg" data-lightbox="image-1"><div class="hover-effect">
-                           <div class="hover-content">
-                               <h1>humblebrag <em>brunch</em></h1>
-                               <p>Awesome Subtittle Goes Here</p>
-                           </div>
-                       </div></a>
+                       <a href="images/avatar/start.jpg" data-lightbox="image-1">
+                      
                        <div class="image">
-                           <img src="images/avatar/dance.jpg"/>
+                           <img src="images/avatar/start.jpg" alt="pic"/>
                        </div>
+                       </a>
+                   </div>
+               </div>
+           </div>
+           
+           <div class="col-md-4 col-sm-6">
+               <div class="portfolio-item">
+                   <div class="thumb">
+                       <a href="images/avatar/chore.jpg"  data-lightbox="image-1">
+                        
+                       <div class="image">
+                           <img src="images/avatar/chore.jpg" alt="pic" />
+                       </div>
+                       </a>
                    </div>
                </div>
            </div>
            <div class="col-md-4 col-sm-6">
                <div class="portfolio-item">
                    <div class="thumb">
-                       <a href="images/avatar/folkdance.jpg" data-lightbox="image-1"><div class="hover-effect">
-                           <div class="hover-content">
-                               <h1>Succulents <em>chambray</em></h1>
-                               <p>Awesome Subtittle Goes Here</p>
-                           </div>
-                       </div></a>
+                       <a href="images/avatar/dance.jpg" data-lightbox="image-1">
                        <div class="image">
-                           <img src="images/avatar/folkdance.jpg"/>
+                           <img src="images/avatar/dance.jpg" alt="pic" />
                        </div>
+                       </a>
                    </div>
                </div>
            </div>
            <div class="col-md-4 col-sm-6">
                <div class="portfolio-item">
                    <div class="thumb">
-                       <a href="images/avatar/IMG_0407.jpg" data-lightbox="image-1"><div class="hover-effect">
-                           <div class="hover-content">
-                               <h1>freegan <em>aesthetic</em></h1>
-                               <p>Awesome Subtittle Goes Here</p>
-                           </div>
-                       </div></a>
+                       <a href="images/avatar/folkdance.jpg"  data-lightbox="image-1">
                        <div class="image">
-                           <img src="images/avatar/IMG_0407.jpg"/>
+                           <img src="images/avatar/folkdance.jpg" alt="pic" />
                        </div>
+                       </a>
                    </div>
                </div>
            </div>
            <div class="col-md-4 col-sm-6">
                <div class="portfolio-item">
                    <div class="thumb">
-                       <a href="images/avatar/kavjli.jpg" data-lightbox="image-1"><div class="hover-effect">
-                           <div class="hover-content">
-                               <h1>taiyaki <em>vegan</em></h1>
-                               <p>Awesome Subtittle Goes Here</p>
-                           </div>
-                       </div></a>
+                       <a href="images/avatar/groovearmadanitkkr.jpg"  data-lightbox="image-1">
                        <div class="image">
-                           <img src="images/avatar/kavjli.jpg"/>
+                           <img src="images/avatar/groovearmadanitkkr.jpg" alt="pic" />
                        </div>
+                       </a>
                    </div>
                </div>
            </div>
            <div class="col-md-4 col-sm-6">
                <div class="portfolio-item">
                    <div class="thumb">
-                       <a href="images/avatar/startnight.jpg" data-lightbox="image-1"><div class="hover-effect">
-                           <div class="hover-content">
-                               <h1>Thundercats <em>santo</em></h1>
-                               <p>Awesome Subtittle Goes Here</p>
-                           </div>
-                       </div></a>
+                       <a href="images/avatar/IMG_0407.jpg"  data-lightbox="image-1">
+                       
                        <div class="image">
-                           <img src="images/avatar/startnight.jpg"/>
+                           <img src="images/avatar/IMG_0407.jpg" alt="pic" />
                        </div>
+                       </a>
                    </div>
                </div>
            </div>
            <div class="col-md-4 col-sm-6">
                <div class="portfolio-item">
                    <div class="thumb">
-                       <a href="images/avatar/start.jpg" data-lightbox="image-1"><div class="hover-effect">
-                           <div class="hover-content">
-                               <h1>wayfarers <em>yuccie</em></h1>
-                               <p>Awesome Subtittle Goes Here</p>
-                           </div>
-                       </div></a>
+                       <a href="images/avatar/soloacting.jpg"  data-lightbox="image-1">
                        <div class="image">
-                           <img src="images/avatar/start.jpg"/>
+                           <img src="images/avatar/soloacting.jpg" alt="pic" />
                        </div>
+                       </a>
                    </div>
                </div>
            </div>
-           <div class="col-md-4 col-sm-6">
-               <div class="portfolio-item">
-                   <div class="thumb">
-                       <a href="images/avatar/pic2.jpg" data-lightbox="image-1"><div class="hover-effect">
-                           <div class="hover-content">
-                               <h1>disrupt <em>street</em></h1>
-                               <p>Awesome Subtittle Goes Here</p>
-                           </div>
-                       </div></a>
-                       <div class="image">
-                           <img src="images/avatar/pic2.jpg" />
-                       </div>
-                   </div>
-               </div>
-           </div>
+       
+           {images.length>0?images.map(e=>{
+            return(
+                <>
+                    
+                    <div class="col-md-4 col-sm-6">
+                    <a href={e.imageUrl} data-lightbox="image-1">
+            <div class="portfolio-item">
+                <div class="thumb">
+                    
+                      
+                    <div class="image">
+                        <img src={e.imageUrl} alt="pic"/>
+                    </div>
+                </div>
+            </div>
+            </a>
+        </div>
+                </>
+            )
+           }):""}
        </div>
        <div class="row">
            <div class="col-md-12">
                <div class="load-more-button">
-                   <a href="#">Load More</a>
+                   <a  onClick={(e)=>{
+                    e.preventDefault();
+                    loadMOre();
+                   }}>{flag?"Hide":"Load More"}</a>
                </div>
            </div>
        </div>

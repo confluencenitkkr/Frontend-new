@@ -6,7 +6,9 @@ https://templatemo.com/tm-575-leadership-event
 
 */
 
-
+.blackfont{
+  color: #000000;
+}
 /*---------------------------------------
   CUSTOM PROPERTIES ( VARIABLES )             
 -----------------------------------------*/
@@ -455,7 +457,7 @@ strong {
 }
 
 .highlight-icon {
-  color: var(--highlight-icon-color);
+  color: var(--highlight-icon-color) !important;
   font-size: var(--h1-font-size);
   opacity: 0;
   transition: transform 1s;

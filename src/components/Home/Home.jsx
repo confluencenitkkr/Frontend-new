@@ -97,7 +97,7 @@ const Home = () => {
         <div class="row">
 
             <div class="col-lg-10 col-12">
-                <h2 class="mb-4">Our <u class="text-info">Events</u></h2>
+                <h2 class="mb-4"  >Our <u class="text-info">Events</u></h2>
             </div>
 
             <div class="col-lg-6 col-12">
@@ -137,7 +137,7 @@ const Home = () => {
 
             <div class="col-lg-6 col-12 d-flex flex-column justify-content-center align-items-center">
                 <div class="speakers-text-info">
-                    <h2 class="mb-4">Our <u class="text-info">Events</u></h2>
+                    <h2 class="mb-4" style={{color: "black"}}>Our <u class="text-info">Events</u></h2>
 
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut dolore</p>
                 </div>
