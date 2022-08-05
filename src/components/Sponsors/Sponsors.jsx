@@ -75,22 +75,14 @@ const Sponsors = () => {
            <div class="row text-center justify-content-md-center ">
             {titleSponsor?.map((e) => {
               return (
-<<<<<<< HEAD
-                <div class="col-xl-3 col-sm-6 mb-5 justify-content-center ">
-=======
                 <div class="col-xl-3 col-sm-6 mb-5 justify-content-center">
->>>>>>> 0690e9b4c79badb2dc047a0eabd4313d92b90bcc
                   <div class="sponsor-division">
                     <div
                       class="spons-image"
                       style={{ backgroundImage: `url(${background})` }}
                     >
                       <a
-<<<<<<< HEAD
-                        href={e.reDirectURL}
-=======
                         href={e.reDirectUrl}
->>>>>>> 0690e9b4c79badb2dc047a0eabd4313d92b90bcc
                         type="button"
                         layout="sponsor"
                         target="_blank"
@@ -180,11 +172,7 @@ const Sponsors = () => {
                     </div>
                     <div className="sponsor-name">
                       <h3>{e.name}</h3>
-<<<<<<< HEAD
                       {/* <h4>{e.role} Sponsor</h4> */}
-=======
-                      {/* <h4>{e.role}</h4> */}
->>>>>>> 0690e9b4c79badb2dc047a0eabd4313d92b90bcc
                     </div>
                   </div>
                 </div>

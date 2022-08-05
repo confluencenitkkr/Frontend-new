@@ -23,17 +23,17 @@ const Team = () => {
     Photography: [
       {
         url: "https://i.ibb.co/4pCDJSL/Vamsi-Naidu-Duvvana-4124.jpg",
-        name: "Vamsi Naidu Duvvana",
+        name: "Ayush",
         designation: "Secretary",
       },
       {
         url: "https://i.ibb.co/XxD4c0w/Jayant2005-CS1.jpg",
-        name: "Jayant Kumar Naik",
+        name: "Suman ",
         designation: "Secretary",
       },
       {
         url: "https://i.ibb.co/Gp9bKfD/Ishita-Kamboj.jpg",
-        name: "Ishita Kamboj",
+        name: "Sagar",
         designation: "Secretary",
       },
     ],
@@ -76,7 +76,7 @@ const Team = () => {
     "Fine Arts": [
       {
         url: "https://res.cloudinary.com/dmwoknpni/image/upload/v1659689247/Conflu%20Secy/FA/Picsart_22-07-09_20-46-39-104_-_harshit_kumar_rph9sc.jpg",
-        name: "",
+        name: "Harshit Kumar",
         designation: "Secretary",
       },
       {
@@ -86,12 +86,12 @@ const Team = () => {
       },
       {
         url: "https://res.cloudinary.com/dmwoknpni/image/upload/v1659689241/Conflu%20Secy/FA/IMG_20220218_111746824_-_harshit_kumar_eehhzq.jpg",
-        name: "",
+        name: "Harshit Kumar",
         designation: "Secretary",
       },
       {
         url: "https://res.cloudinary.com/dmwoknpni/image/upload/v1659689238/Conflu%20Secy/FA/IMG-20220709-WA0009_-_harshit_kumar_d7nu3v.jpg",
-        name: "",
+        name: "Chetan Verna",
         designation: "Secretary",
       },
     ],
@@ -186,7 +186,7 @@ const Team = () => {
       },
       {
         url: "https://res.cloudinary.com/dmwoknpni/image/upload/v1659689247/Conflu%20Secy/Sponsorship/IMG_8458_-_Priyam_Thakuria.JPG_sxdwlz.jpg",
-        name: "",
+        name: "Priyam Thakuria",
         designation: "Secretary",
       },
       {
@@ -196,12 +196,12 @@ const Team = () => {
       },
       {
         url: "https://res.cloudinary.com/dmwoknpni/image/upload/v1659689266/Conflu%20Secy/Sponsorship/IMG20220703184552_-_Priyam_Thakuria_brz5vj.jpg",
-        name: "",
+        name: "Vivek Kumar Pandey",
         designation: "Secretary",
       },
       {
         url: "https://res.cloudinary.com/dmwoknpni/image/upload/v1659689273/Conflu%20Secy/Sponsorship/IMG_20220709_165645_-_Priyam_Thakuria_mpz9wg.jpg",
-        name: "",
+        name: "Madhur Panjeta",
         designation: "Secretary",
       },
     ],

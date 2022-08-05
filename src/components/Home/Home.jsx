@@ -653,121 +653,19 @@ const Home = () => {
                             <div class="col-lg-7 col-12">
                                 <h2 class="text-white mb-4">Become an <u class="text-info">event speaker?</u></h2>
 
-                                <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut dolore</p>
+                                {/* <p class="text-white">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut dolore
+                                    </p> */}
                             </div>
 
                             <div class="col-lg-3 col-12 ms-lg-auto mt-4 mt-lg-0">
-                                <a href="#section_5" class="custom-btn btn">Register Today</a>
+                                <a href="/" class="custom-btn btn">Register Today</a>
                             </div>
 
                         </div>
                     </div>
                 </section>
 
-                {/* <section class="pricing section-padding" >
-    <div class="container">
-        <div class="row">
-
-            <div class="col-lg-10 col-12 text-center mx-auto mb-5">
-                <h2>Get Your <u class="text-info">Tickets</u></h2>
-            </div>
-
-            <div class="col-lg-4 col-md-6 col-12 mb-5 mb-lg-0">
-                <div class="pricing-thumb bg-white shadow-lg">                                
-                    <div class="pricing-title-wrap d-flex align-items-center">
-
-                        <h4 class="pricing-title text-white mb-0">Early Bird</h4>
-
-                        <h5 class="pricing-small-title text-white mb-0 ms-auto">$640</h5>
-                    </div>
-
-                    <div class="pricing-body">
-                        <p>
-                            <i class="bi-cup me-2"></i> All-Day Coffee + Snacks
-                        </p>
-
-                        <p>
-                            <i class="bi-controller me-2"></i> After Party
-                        </p>
-
-                        <p>
-                            <i class="bi-chat-square me-2"></i> 24/7 Support
-                        </p>
-
-                        <div class="border-bottom pb-3 mb-4"></div>
-
-                        <p>Quick group meetings for multiple teams</p>
-
-                        <a class="custom-btn btn mt-3" href="#">Buy Tickets</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 col-12 mb-5 mb-lg-0">
-                <div class="pricing-thumb bg-white shadow-lg">                                
-                    <div class="pricing-title-wrap d-flex align-items-center">
-
-                        <h4 class="pricing-title text-white mb-0">Gold</h4>
-
-                        <h5 class="pricing-small-title text-white mb-0 ms-auto">$840</h5>
-                    </div>
-
-                    <div class="pricing-body">
-                        <p>
-                            <i class="bi-cup me-2"></i> All-Day Coffee + Snacks
-                        </p>
-
-                        <p>
-                            <i class="bi-boombox me-2"></i> Group Meetings + After Party
-                        </p>
-
-                        <p>
-                            <i class="bi-chat-square me-2"></i> 24/7 Support + Instant Chats
-                        </p>
-
-                        <div class="border-bottom pb-3 mb-4"></div>
-
-                        <p>Quick group meetings for multiple teams</p>
-
-                        <a class="custom-btn btn mt-3" href="#">Buy Tickets</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 col-12">
-                <div class="pricing-thumb bg-white shadow-lg">                                
-                    <div class="pricing-title-wrap d-flex align-items-center">
-
-                        <h4 class="pricing-title text-white mb-0">Platinum</h4>
-
-                        <h5 class="pricing-small-title text-white mb-0 ms-auto">$1,240</h5>
-                    </div>
-
-                    <div class="pricing-body">
-                        <p>
-                            <i class="bi-cash me-2"></i> Cashback $200
-                        </p>
-
-                        <p>
-                            <i class="bi-boombox me-2"></i> Private Meetings + After Party
-                        </p>
-
-                        <p>
-                            <i class="bi-chat-square me-2"></i> 24/7 Support + Instant Chats
-                        </p>
-
-                        <div class="border-bottom pb-3 mb-4"></div>
-
-                        <p>group talks and private chats for multiple teams</p>
-
-                        <a class="custom-btn btn mt-3" href="#">Buy Tickets</a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section> */}
 
                 <section class="venue section-padding" >
                     <div class="container">
@@ -778,7 +676,6 @@ const Home = () => {
                             </div>
 
                             <div class="col-lg-6 col-12">
-                                {/* <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2254.659149332004!2d76.81532307825445!3d29.946852386264155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390e3f51801954b5%3A0x14d79f026b1ae4ec!2sNational%20Institute%20of%20Technology%2C%20Kurukshetra!5e0!3m2!1sen!2sin!4v1657652808076!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> */}
                                 <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2254.659149332004!2d76.81532307825445!3d29.946852386264155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390e3f51801954b5%3A0x14d79f026b1ae4ec!2sNational%20Institute%20of%20Technology%2C%20Kurukshetra!5e0!3m2!1sen!2sin!4v1657652808076!5m2!1sen!2sin" width="100%" height="371.59" allowfullscreen="" loading="lazy"></iframe>
                             </div>
 

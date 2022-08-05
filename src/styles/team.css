@@ -2,6 +2,7 @@
 .input1 {position: absolute; display: none}
 
 .container1{
+  margin-bottom: 200px;
   padding-top: 10vh !important;
 }
 

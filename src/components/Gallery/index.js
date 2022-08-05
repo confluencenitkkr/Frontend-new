@@ -86,7 +86,7 @@ const Gallery = (props) => {
        <div class="col-md-4 col-sm-6">
                <div class="portfolio-item">
                    <div class="thumb">
-                       <a href="images/avatar/kavjli.jpg"  data-lightbox="image-1">
+                       <a target="_blank" href="images/avatar/kavjli.jpg"  data-lightbox="image-1">
                        <div class="image">
                            <img src="images/avatar/kavjli.jpg" alt="pic" />
                        </div>
@@ -97,7 +97,7 @@ const Gallery = (props) => {
            <div class="col-md-4 col-sm-6">
                <div class="portfolio-item">
                    <div class="thumb">
-                       <a href="images/avatar/startnight.jpg" data-lightbox="image-1">
+                       <a target="_blank" href="images/avatar/startnight.jpg" data-lightbox="image-1">
                         
                        <div class="image">
                            <img src="images/avatar/startnight.jpg"   alt="pic" />
@@ -109,7 +109,7 @@ const Gallery = (props) => {
            <div class="col-md-4 col-sm-6">
                <div class="portfolio-item">
                    <div class="thumb">
-                       <a href="images/avatar/start.jpg" data-lightbox="image-1">
+                       <a target="_blank" href="images/avatar/start.jpg" data-lightbox="image-1">
                       
                        <div class="image">
                            <img src="images/avatar/start.jpg" alt="pic"/>
@@ -122,7 +122,7 @@ const Gallery = (props) => {
            <div class="col-md-4 col-sm-6">
                <div class="portfolio-item">
                    <div class="thumb">
-                       <a href="images/avatar/chore.jpg"  data-lightbox="image-1">
+                       <a target="_blank" href="images/avatar/chore.jpg"  data-lightbox="image-1">
                         
                        <div class="image">
                            <img src="images/avatar/chore.jpg" alt="pic" />
@@ -134,7 +134,7 @@ const Gallery = (props) => {
            <div class="col-md-4 col-sm-6">
                <div class="portfolio-item">
                    <div class="thumb">
-                       <a href="images/avatar/dance.jpg" data-lightbox="image-1">
+                       <a target="_blank" href="images/avatar/dance.jpg" data-lightbox="image-1">
                        <div class="image">
                            <img src="images/avatar/dance.jpg" alt="pic" />
                        </div>
@@ -145,7 +145,7 @@ const Gallery = (props) => {
            <div class="col-md-4 col-sm-6">
                <div class="portfolio-item">
                    <div class="thumb">
-                       <a href="images/avatar/folkdance.jpg"  data-lightbox="image-1">
+                       <a target="_blank" href="images/avatar/folkdance.jpg"  data-lightbox="image-1">
                        <div class="image">
                            <img src="images/avatar/folkdance.jpg" alt="pic" />
                        </div>
@@ -156,7 +156,7 @@ const Gallery = (props) => {
            <div class="col-md-4 col-sm-6">
                <div class="portfolio-item">
                    <div class="thumb">
-                       <a href="images/avatar/groovearmadanitkkr.jpg"  data-lightbox="image-1">
+                       <a target="_blank" href="images/avatar/groovearmadanitkkr.jpg"  data-lightbox="image-1">
                        <div class="image">
                            <img src="images/avatar/groovearmadanitkkr.jpg" alt="pic" />
                        </div>
@@ -167,7 +167,7 @@ const Gallery = (props) => {
            <div class="col-md-4 col-sm-6">
                <div class="portfolio-item">
                    <div class="thumb">
-                       <a href="images/avatar/IMG_0407.jpg"  data-lightbox="image-1">
+                       <a target="_blank" href="images/avatar/IMG_0407.jpg"  data-lightbox="image-1">
                        
                        <div class="image">
                            <img src="images/avatar/IMG_0407.jpg" alt="pic" />
@@ -179,7 +179,7 @@ const Gallery = (props) => {
            <div class="col-md-4 col-sm-6">
                <div class="portfolio-item">
                    <div class="thumb">
-                       <a href="images/avatar/soloacting.jpg"  data-lightbox="image-1">
+                       <a target="_blank" href="images/avatar/soloacting.jpg"  data-lightbox="image-1">
                        <div class="image">
                            <img src="images/avatar/soloacting.jpg" alt="pic" />
                        </div>
@@ -193,7 +193,7 @@ const Gallery = (props) => {
                 <>
                     
                     <div class="col-md-4 col-sm-6">
-                    <a href={e.imageUrl} data-lightbox="image-1">
+                    <a target="_blank" href={e.imageUrl} data-lightbox="image-1">
             <div class="portfolio-item">
                 <div class="thumb">
                     

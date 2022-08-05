@@ -9,18 +9,16 @@ const Footerr = () => {
 
                     <div class="col-lg-12 col-12 border-bottom pb-5 mb-5">
                         <div class="d-flex">
-                            <a href="index.html" class="navbar-brand">
+                            <a href="/" class="navbar-brand">
                             <img class="logo-img-footer" src="images/avatar/logo.png" alt="logo"/>
                             </a>
 
                             <ul class="social-icon ms-auto">
-                                <li><a href="#" class="social-icon-link bi-facebook"></a></li>
+                                <li><a target="_blank" href="https://www.facebook.com/Conflu/" class="social-icon-link bi-facebook"></a></li>
 
-                                <li><a href="#" class="social-icon-link bi-instagram"></a></li>
+                                <li><a target="_blank" href="https://www.instagram.com/confluence.nitkkr/?hl=en" class="social-icon-link bi-instagram"></a></li>
 
-                                <li><a href="#" class="social-icon-link bi-whatsapp"></a></li>
-
-                                <li><a href="#" class="social-icon-link bi-youtube"></a></li>
+                                <li><a target="_blank" href="https://www.youtube.com/c/ConfluenceNITKurukshetra" class="social-icon-link bi-youtube"></a></li>
                             </ul>
                         </div>
                     </div>
