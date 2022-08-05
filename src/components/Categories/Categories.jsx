@@ -62,7 +62,7 @@ const Categories = () => {
     <>
       <section class="">
         <div class="container categories-page">
-          <div class="row text-center">
+          <div class="row mt-5  text-center">
             <div class="col-lg-6">
               <div class="common-head">
                 <h2 className="font-head" style={{ fontSize: "3.5rem" }}>

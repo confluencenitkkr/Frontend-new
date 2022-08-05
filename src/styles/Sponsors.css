@@ -228,10 +228,10 @@
 .simple-link, a {
   text-decoration: none;
 }
-.navigation .logo-img {
+/* .navigation .logo-img {
     height: 106px !important;
     object-fit: contain;
-}
+} */
 a {
   cursor: pointer;
   color: inherit;
@@ -264,4 +264,8 @@ img {
   /* display: block; */
   max-width: 100%;
  
+}
+.logo-img-footer{
+  width: 84px;
+  height: -webkit-fill-available;
 }

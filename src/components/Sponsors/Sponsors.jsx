@@ -64,27 +64,25 @@ const Sponsors = () => {
             </div>
           </div>
 
-          <div class="row text-center">
-            {titleSponsor.length !== 0 ? (
-              <>
+          <div class="row text-center  ">
+           
                 <div className="sponsor-title">
                   <h1>Title Sponsor</h1>
                 </div>
-              </>
-            ) : (
-              <></>
-            )}
-
+        
+           
+            </div>
+           <div class="row text-center justify-content-md-center ">
             {titleSponsor?.map((e) => {
               return (
-                <div class="col-xl-3 col-sm-6 mb-5 justify-content-center widthfull">
+                <div class="col-xl-3 col-sm-6 mb-5 justify-content-center ">
                   <div class="sponsor-division">
                     <div
                       class="spons-image"
                       style={{ backgroundImage: `url(${background})` }}
                     >
                       <a
-                        href={e.redirectURL}
+                        href={e.reDirectURL}
                         type="button"
                         layout="sponsor"
                         target="_blank"
@@ -103,7 +101,7 @@ const Sponsors = () => {
             })}
           </div>
 
-          <div class="row text-center">
+          <div class="row text-center justify-content-md-center">
             {coTitleSponsor.length !== 0 ? (
               <>
                 <div className="sponsor-title">
@@ -116,7 +114,7 @@ const Sponsors = () => {
 
             {coTitleSponsor?.map((e) => {
               return (
-                <div class="col-xl-3 col-sm-6 mb-5  justify-content-center widthfull">
+                <div class="col-xl-3 col-sm-6 mb-5  justify-content-md-center widthfull">
                   <div class="sponsor-division">
                     <div
                       class="spons-image"
@@ -142,7 +140,7 @@ const Sponsors = () => {
             })}
           </div>
 
-          <div class="row text-center">
+          <div class="row text-center justify-content-md-center">
             {otherSponsor.length !== 0 ? (
               <>
                 <div className="sponsor-title">
@@ -174,7 +172,7 @@ const Sponsors = () => {
                     </div>
                     <div className="sponsor-name">
                       <h3>{e.name}</h3>
-                      <h4>{e.role} Sponsor</h4>
+                      {/* <h4>{e.role} Sponsor</h4> */}
                     </div>
                   </div>
                 </div>

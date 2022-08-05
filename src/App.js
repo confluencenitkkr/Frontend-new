@@ -16,7 +16,7 @@ import Events from "./components/Events/Events";
 import Developers from "./components/Developers/Developers";
 import NotAuth from "./components/NotAuth/NotAuth";
 import Error404 from "./components/Error404/Error404";
-import Navbar from "./components/Navbar/navbar";
+// import Navbar from "./components/Footerr/footerr";
 import Team from "./components/Team_Confluence/team";
 import Header from "./components/hader";
 import Gallery from "./components/Gallery";
@@ -24,9 +24,11 @@ import "./styles/Events.css";
 import "./styles/css/main.css";
 // import "./styles/css/bootstrap.min.css";
 import "./styles/css/responsive.css";
+import Footerr from "./components/Footerr/footerr";
 
 function App() {
   return (
+    <>
     <Router>
       <Header></Header>
       <Routes>
@@ -55,6 +57,8 @@ function App() {
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </Router>
+    <Footerr></Footerr>
+    </>
   );
 }
 

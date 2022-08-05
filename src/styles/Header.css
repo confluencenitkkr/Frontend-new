@@ -3,7 +3,7 @@
     /* border-radius: 0px 0px 20px 20px; */
     /* position: fixed !important; */
     min-width: 100vw;
-    position: fixed;
+    position: fixed !important;
 }
 
 .navbar-toggler-icon{
@@ -22,7 +22,7 @@
 .nav-link{
     color: rgb(136, 136, 136) !important;
     font-size: 1.1rem !important;
-    font-weight: 700 !important;
+    font-weight: 200 !important;
 }
 
 .nav-link:hover{
