@@ -663,7 +663,7 @@ const Home = () => {
                     <div class="row border-bottom pb-5 mb-5">
                       <div class="col-lg-4 col-12">
                         <img
-                          src="images/avatar/moon.jpg"
+                          src="images/avatar/dance.jpg"
                           class="schedule-image img-fluid"
                           alt=""
                         />
