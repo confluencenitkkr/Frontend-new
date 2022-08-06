@@ -108,19 +108,25 @@ const Home = () => {
             <div class="row">
               <div class="col-lg-10 col-12">
                 <h2 class="mb-4">
-                  Our <u class="text-info">Events</u>
+                  <u class="text-info">Confluence</u>
                 </h2>
               </div>
 
               <div class="col-lg-6 col-12">
-                <h3 class="mb-3">
-                  The importance of Leadership Conference in 2022
-                </h3>
+                <h3 class="mb-3"></h3>
 
                 <p>
-                  Leadership Event is one-page Bootstrap v5.1.3 CSS layout for
-                  your website. Thank you for choosing TemplateMo website where
-                  you can instantly download free CSS templates at no cost.
+                  <li>
+                    Footfall of more than 15000 students from more than 60
+                    colleges.
+                  </li>
+                  <li>
+                    {" "}
+                    Appearance of popular Star’s and famous personalities as
+                    Guests and performers.
+                  </li>
+                  <li>Inter college competitions ( Dancing and singing).</li>
+                  <li>Major Highlights by the Sponsors of confluence.</li>
                 </p>
 
                 <a
@@ -137,8 +143,9 @@ const Home = () => {
 
               <div class="col-lg-6 col-12 mt-5 mt-lg-0">
                 <h4>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut dolore
+                  North India’s biggest cultural Fest.
+                  <br />
+                  Confluence is Four-day long event started in 1991.
                 </h4>
 
                 <div class="avatar-group border-top py-5 mt-5">
@@ -160,13 +167,13 @@ const Home = () => {
                     alt=""
                   />
 
-                  <img
+                  {/* <img
                     src="images/avatar/pretty-smiling-joyfully-female-with-fair-hair-dressed-casually-looking-with-satisfaction.jpg"
                     class="img-fluid avatar-image avatar-image-left"
                     alt=""
-                  />
+                  /> */}
 
-                  <p class="d-inline">20K+ People are attending with us</p>
+                  <p class="d-inline">15K+ People are attending with us</p>
                 </div>
               </div>
             </div>

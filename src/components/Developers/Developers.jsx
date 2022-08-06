@@ -22,6 +22,15 @@ const Developers = () => {
       github: "https://github.com/Daemon25",
     },
     {
+      name: "Abhishek Kumar",
+      image:
+        "https://res.cloudinary.com/dmwoknpni/image/upload/v1659725808/img_gjpmmz.jpg",
+      role: "Full Stack Developer",
+      insta: "https://www.instagram.com/abhi_05_30/",
+      linkedin: "https://www.linkedin.com/in/abhii30/",
+      github: "https://github.com/abhii30",
+    },
+    {
       name: "Meenakshi",
       image: "https://i.ibb.co/hgDMcgQ/IMG-20220421-WA0019-1.jpg",
       role: "Front-end Developer",
@@ -46,15 +55,6 @@ const Developers = () => {
       insta: "https://instagram.com/pransu65?igshid=YmMyMTA2M2Y=",
       linkedin: "https://www.linkedin.com/in/pransu-yadav-a082891b8",
       github: "https://github.com/Pransu-code",
-    },
-    {
-      name: "Abhishek Kumar",
-      image:
-        "https://res.cloudinary.com/dmwoknpni/image/upload/v1659725808/img_gjpmmz.jpg",
-      role: "Full Stack Developer",
-      insta: "https://www.instagram.com/abhi_05_30/",
-      linkedin: "https://www.linkedin.com/in/abhii30/",
-      github: "https://github.com/abhii30",
     },
     {
       name: "Ankit",
