@@ -560,7 +560,7 @@ const Home = () => {
                     <div class="row border-bottom pb-5 mb-5">
                       <div class="col-lg-4 col-12">
                         <img
-                          src="images/schedule/people-smiling-while-conference-room.jpg"
+                          src="images/avatar/folkdance.jpg"
                           class="schedule-image img-fluid"
                           alt=""
                         />
@@ -608,7 +608,7 @@ const Home = () => {
                     <div class="row">
                       <div class="col-lg-4 col-12">
                         <img
-                          src="images/schedule/jason-goodman-bzqU01v-G54-unsplash.jpg"
+                          src="images/avatar/chore.jpg"
                           class="schedule-image img-fluid"
                           alt=""
                         />
@@ -663,7 +663,7 @@ const Home = () => {
                     <div class="row border-bottom pb-5 mb-5">
                       <div class="col-lg-4 col-12">
                         <img
-                          src="images/schedule/people-smiling-while-conference-room.jpg"
+                          src="images/avatar/dance.jpg"
                           class="schedule-image img-fluid"
                           alt=""
                         />
@@ -766,7 +766,7 @@ const Home = () => {
                     <div class="row">
                       <div class="col-lg-4 col-12">
                         <img
-                          src="images/schedule/jeshoots-com-TWRCH-GaKr4-unsplash.jpg"
+                          src="images/avatar/start.jpg"
                           class="schedule-image img-fluid"
                           alt=""
                         />
