@@ -48,6 +48,15 @@ const Developers = () => {
       github: "https://github.com/Pransu-code",
     },
     {
+      name: "Abhishek Kumar",
+      image:
+        "https://res.cloudinary.com/dmwoknpni/image/upload/v1659725808/img_gjpmmz.jpg",
+      role: "Full Stack Developer",
+      insta: "https://www.instagram.com/abhi_05_30/",
+      linkedin: "https://www.linkedin.com/in/abhii30/",
+      github: "https://github.com/abhii30",
+    },
+    {
       name: "Ankit",
       image:
         "https://i.ibb.co/rdWtMK2/4154ba60-d0ee-4cd2-b97d-1d1b5d58c650.jpg",
@@ -65,15 +74,6 @@ const Developers = () => {
       insta: "https://www.instagram.com/raghav_garg04",
       linkedin: "https://www.linkedin.com/in/raghav-garg-66356a220",
       github: "https://github.com/raghav0407",
-    },
-    {
-      name: "Abhishek Kumar",
-      image:
-        "https://res.cloudinary.com/dmwoknpni/image/upload/v1659725808/img_gjpmmz.jpg",
-      role: "Full Stack Developer",
-      insta: "https://www.instagram.com/abhi_05_30/",
-      linkedin: "https://www.linkedin.com/in/abhii30/",
-      github: "https://github.com/abhii30",
     },
   ];
 
