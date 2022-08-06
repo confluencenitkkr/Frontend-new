@@ -560,7 +560,7 @@ const Home = () => {
                     <div class="row border-bottom pb-5 mb-5">
                       <div class="col-lg-4 col-12">
                         <img
-                          src="images/schedule/people-smiling-while-conference-room.jpg"
+                          src="images/avatar/folkdance.jpg"
                           class="schedule-image img-fluid"
                           alt=""
                         />
@@ -608,7 +608,7 @@ const Home = () => {
                     <div class="row">
                       <div class="col-lg-4 col-12">
                         <img
-                          src="images/schedule/jason-goodman-bzqU01v-G54-unsplash.jpg"
+                          src="images/avatar/IMG_6460.jpg"
                           class="schedule-image img-fluid"
                           alt=""
                         />
@@ -663,7 +663,7 @@ const Home = () => {
                     <div class="row border-bottom pb-5 mb-5">
                       <div class="col-lg-4 col-12">
                         <img
-                          src="images/schedule/people-smiling-while-conference-room.jpg"
+                          src="images/avatar/moon.jpg"
                           class="schedule-image img-fluid"
                           alt=""
                         />
@@ -766,7 +766,7 @@ const Home = () => {
                     <div class="row">
                       <div class="col-lg-4 col-12">
                         <img
-                          src="images/schedule/jeshoots-com-TWRCH-GaKr4-unsplash.jpg"
+                          src="https://res.cloudinary.com/dryfxhged/image/upload/v1659555261/confluence/dce9xeymckj0ljm5mi9c.jpg"
                           class="schedule-image img-fluid"
                           alt=""
                         />
@@ -804,7 +804,7 @@ const Home = () => {
           </div>
         </section>
 
-        <section className="faculties section-padding">
+        {/* <section className="faculties section-padding">
           <div className="container">
             <div class="row align-items-center justify-content-center">
               <div class="col-lg-12 col-12">
@@ -949,7 +949,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         <section class="call-to-action section-padding">
           <div class="container">
