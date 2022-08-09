@@ -3,7 +3,7 @@ import React from "react";
 import "../../styles/ClubInfo.css";
 import img1 from "../../styles/images/photo.jpg";
 import img2 from "../../styles/images/SPIC-clubinfo.jpg";
-import img3 from "../../styles/images/photo.jpg";
+import img3 from "../../styles/images/sponsi.jpg";
 import img4 from "../../styles/images/PG-clubinfo.jpg";
 import img5 from "../../styles/images/ELAD-clubinfo.jpg";
 import img6 from "../../styles/images/AVA-clubinfo.png";
@@ -87,7 +87,6 @@ const ClubInfo = () => {
               and enhance their pre-acquired skills. It also organizes various
               workshops where famous and approachable artists are invited to
               learn more and improve.
-              
               <br />
               <br />
               Follow us at :
@@ -358,7 +357,7 @@ const ClubInfo = () => {
           </div>
 
           <div className="HLAD-club">
-            <h2 class="post-heading">HLAD</h2>
+            <h2 class="post-heading">हिन्दी साहित्यिक एवं वाद-विवाद समिति</h2>
             <div className="post-image-hlad">
               <img src={img9}></img>
             </div>
@@ -445,7 +444,7 @@ const ClubInfo = () => {
               <br /> To say the least, we do the ESM (Event Stage Management),
               EP(External Publicity) and manage all the things that are part of
               the hustle behind a successful cultural fest. <br />
-              <br/>
+              <br />
               Follow us at:
               <br />
               <br />

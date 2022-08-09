@@ -467,14 +467,17 @@ const Home = () => {
                       </div>
 
                       <div class="col-lg-8 col-12 mt-3 mt-lg-0">
-                        <h4 class="mb-2">Kavyanjali</h4>
+                        <h4 class="mb-2">काव्यांजलि</h4>
 
                         <p>
-                          It is one of the biggest Poetic and shayari Nights in
-                          kurukshetra Performed by historical legends in the
-                          field of shayari and poems. With the huge footfall of
-                          more than 1000’s of audience in OAT of Nit Kurukshetra
-                          it became one of the magical nights.
+                          काव्यांजलि (एक शाम प्रेम, हास्य और गज़लों के नाम), एक
+                          ऐसी शाम जहां हर अहसास लफ़्ज़ों में बया होता है, जहां
+                          हर ज़ुबान पर सिर्फ वाह होता है। यहां शिरकत करने आते है
+                          देश के विश्व प्रसिद्ध कवि/कवयित्री और उनको सुनने के
+                          लिए मौजूद होती है, उत्साह और जोश से भरी हजारों की
+                          भीड़। <br /><br/>
+                          कवि/शायर - शकील आज़मी जी, अज़हर इक़बाल जी, अंकिता सिंह
+                          जी, वरुण आनंद जी, संदीप जी
                         </p>
 
                         <div class="d-flex align-items-center mt-4">
@@ -493,12 +496,12 @@ const Home = () => {
 
                           <span class="mx-3 mx-lg-5">
                             <i class="bi-clock me-2"></i>
-                            06:00- 08:00 PM
+                            7:00 pm
                           </span>
 
                           <span class="mx-1 mx-lg-5">
                             <i class="bi-layout-sidebar me-2"></i>
-                            OAT
+                            ओएटी
                           </span>
                         </div>
                       </div>

@@ -178,14 +178,14 @@ const Team = () => {
         designation: "Secretary",
       },
     ],
-    "Sponsership Committee": [
+    "Sponsorship Committee": [
       {
         url: "https://res.cloudinary.com/dmwoknpni/image/upload/v1659689246/Conflu%20Secy/Sponsorship/aryan.JPG_mhqu45.jpg",
         name: "Aryan Kabra",
         designation: "Secretary",
       },
       {
-        url: "https://res.cloudinary.com/dmwoknpni/image/upload/v1659689247/Conflu%20Secy/Sponsorship/IMG_8458_-_Priyam_Thakuria.JPG_sxdwlz.jpg",
+        url: "https://res.cloudinary.com/dmwoknpni/image/upload/v1659689273/Conflu%20Secy/Sponsorship/IMG_20220709_165645_-_Priyam_Thakuria_mpz9wg.jpg",
         name: "Priyam Thakuria",
         designation: "Secretary",
       },
@@ -200,7 +200,7 @@ const Team = () => {
         designation: "Secretary",
       },
       {
-        url: "https://res.cloudinary.com/dmwoknpni/image/upload/v1659689273/Conflu%20Secy/Sponsorship/IMG_20220709_165645_-_Priyam_Thakuria_mpz9wg.jpg",
+        url: "https://res.cloudinary.com/dmwoknpni/image/upload/v1659689247/Conflu%20Secy/Sponsorship/IMG_8458_-_Priyam_Thakuria.JPG_sxdwlz.jpg",
         name: "Madhur Panjeta",
         designation: "Secretary",
       },
@@ -335,7 +335,7 @@ const Team = () => {
                       src={image10}
                       class="club_logo"
                       onClick={(e) => {
-                        setKey("Sponsership Committee");
+                        setKey("Sponsorship Committee");
                       }}
                     />
                   </i>
