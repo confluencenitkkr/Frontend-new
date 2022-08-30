@@ -22,17 +22,17 @@ const Team = () => {
   const clubInfo = {
     Photography: [
       {
-        url: "https://i.ibb.co/4pCDJSL/Vamsi-Naidu-Duvvana-4124.jpg",
+        url: "images/avatar/aayushmina.jpg",
         name: "Ayush",
         designation: "Secretary",
       },
       {
-        url: "https://i.ibb.co/XxD4c0w/Jayant2005-CS1.jpg",
+        url: "https://t3.ftcdn.net/jpg/03/46/83/96/360_F_346839683_6nAPzbhpSkIpb8pmAwufkC7c5eD7wYws.jpg",
         name: "Suman ",
         designation: "Secretary",
       },
       {
-        url: "https://i.ibb.co/Gp9bKfD/Ishita-Kamboj.jpg",
+        url: "images/avatar/sagar.jpg",
         name: "Sagar",
         designation: "Secretary",
       },
