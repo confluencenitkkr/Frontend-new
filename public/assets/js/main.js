@@ -1,5 +1,3 @@
-
-
 // // admin sidebar js
 
 // $(document).ready(function () {
@@ -19,7 +17,6 @@
 // 		$(".navigation").removeClass("headersticky");
 // 	}
 // });
-
 
 // //our experts owl-careousal js start
 
@@ -130,7 +127,6 @@
 // });
 
 // // Star animation css
-
 
 // var star = $(".star");
 

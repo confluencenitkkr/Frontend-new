@@ -100,8 +100,8 @@ footer {
 .navigation {
 	background: rgb(0, 0, 0);
 	padding: 5px;
-	position: relative;
-	z-index: 9;
+	position: fixed;
+	z-index: 15;
 }
 
 .navigation .logo-img {
