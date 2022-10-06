@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import Tilt from "react-parallax-tilt";
 import "../../styles/Categories.css";
 import "../../styles/Developers.css";
 import data from "../../config/usaState.json";
 import eventsActions from "../../actions/events.Actions";
+import logo from "../../styles/images/photog.jpg";
 // import Select from "react-select";
 const Categories = () => {
   const [dataa, setData] = useState([]);
@@ -32,8 +34,8 @@ const Categories = () => {
   useEffect(() => {
     setLoad(true);
     fetch();
-    console.log("hello")
-  }, [])
+    console.log("hello");
+  }, []);
   const fetch = () => {
     let text = "";
     eventsActions.getEvent(text, (err, res) => {
@@ -41,23 +43,23 @@ const Categories = () => {
       } else {
         setData(res.data);
         setLoad(false);
-        console.log(res)
+        console.log(res);
       }
-    })
-  }
+    });
+  };
   const fetch1 = (text) => {
-    console.log(text)
+    console.log(text);
     eventsActions.Search(text, (err, res) => {
       if (err) {
       } else {
         setData(res.data);
-        console.log(res)
+        console.log(res);
       }
-    })
-  }
+    });
+  };
   const viewEvent = (id) => {
-    history(`/EventView/${id}`)
-  }
+    history(`/EventView/${id}`);
+  };
   return (
     <>
       <section class="">
@@ -66,7 +68,10 @@ const Categories = () => {
             <div class="col-lg-6">
               <div class="common-head">
                 <h2 className="font-head" style={{ fontSize: "3.5rem" }}>
-                  CONFLUENCE <span className="font-head" style={{ fontSize: "3.5rem" }}>EVENTS</span>
+                  CONFLUENCE{" "}
+                  <span className="font-head" style={{ fontSize: "3.5rem" }}>
+                    EVENTS
+                  </span>
                 </h2>
               </div>
             </div>
@@ -84,9 +89,8 @@ const Categories = () => {
                     fetch1(e.target.value);
                   }}
                 >
-                  <option selected={true} >Select Club</option>
+                  <option selected={true}>Select Club</option>
                   {data.data.map((e, index) => {
-
                     return <option value={e}>{e}</option>;
                   })}{" "}
                 </select>
@@ -120,26 +124,68 @@ const Categories = () => {
               id="accordionExample"
             >
               <div class="row text-center">
-                {dataa.length == 0 && load == false ? <div class="col-xl-3 col-sm-6 mb-5 justify-content-center widthfull" style={{ display: "flex", justifyContent: "center", textAlign: "center" }}>
-                  <h1 style={{ textAlign: "center" }}> NO event found</h1>
-                </div> : ""}
-                {load == true ? <div class="col-xl-3 col-sm-6 mb-5 justify-content-center widthfull" style={{ display: "flex", justifyContent: "center", textAlign: "center" }}>
-                  <h1 style={{ textAlign: "center" }}> LOADING</h1>
-                </div> : ""}
+                {dataa.length == 0 && load == false ? (
+                  <div
+                    class="col-xl-3 col-sm-6 mb-5 justify-content-center widthfull"
+                    style={{
+                      display: "flex",
+                      justifyContent: "center",
+                      textAlign: "center",
+                    }}
+                  >
+                    <h1 style={{ textAlign: "center" }}> NO event found</h1>
+                  </div>
+                ) : (
+                  ""
+                )}
+                {load == true ? (
+                  <div
+                    class="col-xl-3 col-sm-6 mb-5 justify-content-center widthfull"
+                    style={{
+                      display: "flex",
+                      justifyContent: "center",
+                      textAlign: "center",
+                    }}
+                  >
+                    <h1 style={{ textAlign: "center" }}> LOADING</h1>
+                  </div>
+                ) : (
+                  ""
+                )}
                 {dataa.map((e, index) => {
                   return (
-                    <div class="col-xl-3 col-sm-6 mb-5 " style={{ cursor: "pointer" }} onClick={a => {
-                      a.preventDefault();
-                      viewEvent(e._id);
-                    }}>
-                      <div class="shadow-sm py-5 px-4"><img src="https://i.ibb.co/kJ0cp1x/a-tryst-with-magic.png" alt="" width="100" class="heloo" />
-                        <h5 class="mb-0 card-name ">{e.eventName}</h5>
-                        <h5 class="mb-0 card-name ">{e.clubName}</h5>
-                        <div class="small text-uppercase text-red card-name" style={{ cursor: "pointer" }}>Read More</div>
-
-                      </div>
+                    <div
+                      class="col-xl-3 col-sm-6 mb-5 "
+                      style={{ cursor: "pointer" }}
+                      onClick={(a) => {
+                        a.preventDefault();
+                        viewEvent(e._id);
+                      }}
+                    >
+                      <Tilt
+                        className="parallax-effect"
+                        glareMaxOpacity={0.9}
+                        tiltMaxAngleX={30}
+                        tiltMaxAngleY={30}
+                        perspective={800}
+                        gyroscope={true}
+                        transitionSpeed={1000}
+                      >
+                        {/* <div class="event-list"> */}
+                        <img
+                          src="https://i.ibb.co/kJ0cp1x/a-tryst-with-magic.png"
+                          alt=""
+                          width="100"
+                          class="heloo"
+                        />
+                        <img src={logo} alt="" className="inner-element" />
+                        <div class="card-name ">{e.eventName}</div>
+                        {/* <div class="read-more" style={{ cursor: "pointer" }}>
+                          Read More
+                        </div> */}
+                        {/* </div> */}
+                      </Tilt>
                     </div>
-
                   );
                 })}
               </div>

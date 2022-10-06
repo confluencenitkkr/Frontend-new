@@ -3,6 +3,7 @@
     /* border-radius: 0px 0px 20px 20px; */
     /* position: fixed !important; */
     min-width: 100vw;
+    z-index: 20;
     position: fixed !important;
 }
 

@@ -30,23 +30,20 @@ const Header = () => {
   const [token, setToken] = useState(null);
   const [show, setShow] = useState(false);
   const cookies = new Cookies();
+
   useEffect(() => {
     fetch();
     let token = Agent.getToken() ? Agent.getToken() : null;
-    console.log(Agent.getToken());
-    console.log(token);
     setToken(token);
-  }, []);
+  }, [show]);
   const fetch = () => {
     authAction.getuser((err, res) => {
       if (err) {
       } else {
-        console.log(res, "here is respose");
       }
     });
   };
   const handleNavClick = () => {
-    // console.log("hello asdfg");
     setShow(false);
   };
 
@@ -149,9 +146,8 @@ const Header = () => {
         <div class="navigation">
           <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
-            <a class="navbar-brand" href="index.html">
-              <img class="logo-img" src="images/avatar/logo.png" alt="logo"/>
-
+              <a class="navbar-brand" href="index.html">
+                <img class="logo-img" src="images/avatar/logo.png" alt="logo" />
               </a>
               {token == "" ? (
                 <a
@@ -191,6 +187,32 @@ const Header = () => {
                       Home
                     </Link>
                   </li>
+                 
+                  {/* <li class="nav-item">
+                    <Link
+                      className={`nav-link ${
+                        location.pathname === "/Sponsors" ? "active" : ""
+                      }`}
+                      aria-current="page"
+                      to="/Sponsors"
+                      onClick={handleNavClick}
+                    >
+                      Sponsors
+                    </Link>
+                  </li> */}
+                  <li class="nav-item">
+                    <Link
+                      className={`nav-link ${
+                        location.pathname === "/Schedule" ? "active" : ""
+                      }`}
+                      aria-current="page"
+                      to="/Schedule"
+                      onClick={handleNavClick}
+                    >
+                      Featured
+                    </Link>
+                  </li>
+                 
                   <li class="nav-item">
                     <Link
                       className={`nav-link ${
@@ -201,18 +223,6 @@ const Header = () => {
                       onClick={handleNavClick}
                     >
                       Gallery
-                    </Link>
-                  </li>
-                  <li class="nav-item">
-                    <Link
-                      className={`nav-link ${
-                        location.pathname === "/Sponsors" ? "active" : ""
-                      }`}
-                      aria-current="page"
-                      to="/Sponsors"
-                      onClick={handleNavClick}
-                    >
-                      Sponsors
                     </Link>
                   </li>
                   <li class="nav-item">
@@ -239,18 +249,7 @@ const Header = () => {
                       Team
                     </Link>
                   </li>
-                  <li class="nav-item">
-                    <Link
-                      className={`nav-link ${
-                        location.pathname === "/ClubInfo" ? "active" : ""
-                      }`}
-                      aria-current="page"
-                      to="/ClubInfo"
-                      onClick={handleNavClick}
-                    >
-                      ClubInfo
-                    </Link>
-                  </li>
+                  
                   <li class="nav-item">
                     <Link
                       className={`nav-link ${
