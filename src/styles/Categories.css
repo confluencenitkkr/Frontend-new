@@ -12,14 +12,8 @@
 }
 .card-name {
   position: relative;
-  bottom: 15%;
-  /* height: 51px;
-  display: flex;
-  justify-content: center;
-  align-items: center; */
-  /* margin-top: 35px; */
+  bottom: 12%;
   font-size: 17px;
-  /* box-sizing: content-box;*/
   color: black;
 }
 .event-list {
@@ -38,7 +32,7 @@
   font-size: 13px;
   color: #0056d6;
   position: relative;
-  bottom: 15%;
+  bottom: 12%;
 }
 .common-head h2 span {
   color: #0056d6;
@@ -88,9 +82,10 @@ section {
 }
 
 .parallax-effect {
+  border-radius: 4px;
   background-color: white;
   width: 80%;
-  height: 90%;
+  height: 100%;
   padding: 2%;
   /* margin: 3%; */
   transform-style: preserve-3d;

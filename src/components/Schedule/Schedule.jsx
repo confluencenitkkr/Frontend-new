@@ -60,8 +60,8 @@ const Schedule = () => {
       <div id="mainContainerSche">
         <div className="timeline-container" id="timeline-1">
           <div className="timeline-header">
-            <h2 className="timeline-header__title">Schedules</h2>
-            <h3 className="timeline-header__subtitle">For the confluence</h3>
+            <h2 className="timeline-header__title">Featured Events</h2>
+            <h3 className="timeline-header__subtitle">Of the confluence</h3>
           </div>
 
           <div className="timeline">

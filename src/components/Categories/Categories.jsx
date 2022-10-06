@@ -180,9 +180,9 @@ const Categories = () => {
                         />
                         <img src={logo} alt="" className="inner-element" />
                         <div class="card-name ">{e.eventName}</div>
-                        <div class="read-more" style={{ cursor: "pointer" }}>
+                        {/* <div class="read-more" style={{ cursor: "pointer" }}>
                           Read More
-                        </div>
+                        </div> */}
                         {/* </div> */}
                       </Tilt>
                     </div>

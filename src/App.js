@@ -28,12 +28,14 @@ import Footerr from "./components/Footerr/footerr";
 
 function App() {
   return (
-    <>
+    <div style={{
+      cursor:"default"
+    }}>
       <Router>
         <Header></Header>
         <Routes>
           <Route exact path="/" key="home" element={<Home />} />
-          <Route exact path="/Sponsors" key="Sponsors" element={<Sponsors />} />
+          {/* <Route exact path="/Sponsors" key="Sponsors" element={<Sponsors />} /> */}
           <Route exact path="/Schedule" key="Schedule" element={<Schedule />} />
           <Route exact path="/Events" key="Events" element={<Categories />} />
           <Route
@@ -58,7 +60,7 @@ function App() {
         </Routes>
       </Router>
       {/* <Footerr></Footerr> */}
-    </>
+    </div>
   );
 }
 

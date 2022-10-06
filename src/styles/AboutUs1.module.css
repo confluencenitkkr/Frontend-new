@@ -25,6 +25,15 @@
   transition: 1s opacity;
 }
 
+.parallax_effect {
+  border-radius: 4px;
+  width: 40vw;
+  max-width: 460px;
+  height: 78vh;
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+}
+
 .stopfade {
   opacity: .5;
 }
@@ -35,15 +44,13 @@
   background: rgba(0, 0, 0, 0.3);
   color: white;
   padding: 3vh 3.5vw;
-  /* width: 33%; */
-  min-width: 250px;
-  
+  min-width: 300px;
+
   width: 40vw;
   max-width: 460px;
   margin-right: 4vw;
-  margin-top: 25vh;
+  margin-top: 20vh;
   margin-bottom: 25vh;
-  /* margin: 2rem; */
   float: right;
   font-size: 3vw;
   border-radius: 5px;
@@ -55,6 +62,7 @@
   text-transform: uppercase;
   margin-top: 0;
   letter-spacing: .3rem;
+  transform: translateZ(40px);
 }
 
 
@@ -73,5 +81,10 @@
 @media screen and (max-width: 768px) {
   .h1_text{
     font-size: 32px;
+  }
+
+  .pol{
+    margin-top: 12vh;
+    /* width: ; */
   }
 }

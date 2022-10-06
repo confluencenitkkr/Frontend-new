@@ -190,6 +190,32 @@ const Header = () => {
                       Home
                     </Link>
                   </li>
+                 
+                  {/* <li class="nav-item">
+                    <Link
+                      className={`nav-link ${
+                        location.pathname === "/Sponsors" ? "active" : ""
+                      }`}
+                      aria-current="page"
+                      to="/Sponsors"
+                      onClick={handleNavClick}
+                    >
+                      Sponsors
+                    </Link>
+                  </li> */}
+                  <li class="nav-item">
+                    <Link
+                      className={`nav-link ${
+                        location.pathname === "/Schedule" ? "active" : ""
+                      }`}
+                      aria-current="page"
+                      to="/Schedule"
+                      onClick={handleNavClick}
+                    >
+                      Featured
+                    </Link>
+                  </li>
+                 
                   <li class="nav-item">
                     <Link
                       className={`nav-link ${
@@ -200,18 +226,6 @@ const Header = () => {
                       onClick={handleNavClick}
                     >
                       Gallery
-                    </Link>
-                  </li>
-                  <li class="nav-item">
-                    <Link
-                      className={`nav-link ${
-                        location.pathname === "/Sponsors" ? "active" : ""
-                      }`}
-                      aria-current="page"
-                      to="/Sponsors"
-                      onClick={handleNavClick}
-                    >
-                      Sponsors
                     </Link>
                   </li>
                   <li class="nav-item">
@@ -238,18 +252,7 @@ const Header = () => {
                       Team
                     </Link>
                   </li>
-                  <li class="nav-item">
-                    <Link
-                      className={`nav-link ${
-                        location.pathname === "/Schedule" ? "active" : ""
-                      }`}
-                      aria-current="page"
-                      to="/Schedule"
-                      onClick={handleNavClick}
-                    >
-                      Schedule
-                    </Link>
-                  </li>
+                  
                   <li class="nav-item">
                     <Link
                       className={`nav-link ${
