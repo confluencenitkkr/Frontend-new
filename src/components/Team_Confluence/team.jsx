@@ -114,8 +114,8 @@ const Team = () => {
     radius = getRadius(aEle.length);
 
     ground = document.getElementById("ground");
-    ground.style.width = radius * 3 + "vw";
-    ground.style.height = radius * 3 + "vh";
+    ground.style.width = radius * 3 + "px";
+    ground.style.height = radius * 3 + "px";
   };
 
   const init = (delayTime) => {
@@ -155,26 +155,6 @@ const Team = () => {
               )
             })
           }
-          {/* <img
-            src="https://images.pexels.com/photos/1391498/pexels-photo-1391498.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-            alt=""
-          />
-          <img
-            src="https://images.pexels.com/photos/1382731/pexels-photo-1382731.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-            alt=""
-          />
-          <img
-            src="https://images.pexels.com/photos/1758144/pexels-photo-1758144.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-            alt=""
-          />
-          <img
-            src="https://images.pexels.com/photos/1382734/pexels-photo-1382734.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-            alt=""
-          />
-          <img
-            src="https://images.pexels.com/photos/1462636/pexels-photo-1462636.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-            alt=""
-          /> */}
         </div>
         <div id="ground" className={classes.ground}></div>
       </div>
