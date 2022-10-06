@@ -788,14 +788,6 @@ input#toggle:checked ~ #show-menu .btn1 .closeBtn {
   );
 }
 
-@media (min-width: 768px) {
-  .spin_container {
-    height: 46vh;
-    width: 30vw;
-  }
-}
-
-
 @keyframes spin {
   from {
     transform: rotateY(0deg);
