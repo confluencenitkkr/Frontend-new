@@ -703,7 +703,10 @@ width:5rem;
      /* "name duration timingFunction delay iterationCount direction fillMode playState" */
 
     animation: spin;
-    animation-duration: 45s;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
 }
 
 .drag_container img {
