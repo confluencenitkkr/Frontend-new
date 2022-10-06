@@ -149,9 +149,8 @@ const Header = () => {
         <div class="navigation">
           <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
-            <a class="navbar-brand" href="index.html">
-              <img class="logo-img" src="images/avatar/logo.png" alt="logo"/>
-
+              <a class="navbar-brand" href="index.html">
+                <img class="logo-img" src="images/avatar/logo.png" alt="logo" />
               </a>
               {token == "" ? (
                 <a

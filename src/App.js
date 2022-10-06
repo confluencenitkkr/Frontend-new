@@ -1,5 +1,4 @@
 import "./App.css";
-
 import {
   BrowserRouter as Router,
   Routes,
@@ -19,7 +18,7 @@ import Error404 from "./components/Error404/Error404";
 // import Navbar from "./components/Footerr/footerr";
 import Team from "./components/Team_Confluence/team";
 import Header from "./components/hader";
-import Gallery from "./components/Gallery";
+import Gallery from "./components/Gallery/Gallery";
 import "./styles/Events.css";
 import "./styles/css/main.css";
 // import "./styles/css/bootstrap.min.css";
@@ -29,35 +28,35 @@ import Footerr from "./components/Footerr/footerr";
 function App() {
   return (
     <>
-    <Router>
-      <Header></Header>
-      <Routes>
-        <Route exact path="/" key="home" element={<Home />} />
-        <Route exact path="/Sponsors" key="Sponsors" element={<Sponsors />} />
-        <Route exact path="/ClubInfo" key="ClubInfo" element={<ClubInfo />} />
-        <Route exact path="/Events" key="Events" element={<Categories />} />
-        <Route
-          exact
-          path="/Developers"
-          key="Developers"
-          element={<Developers />}
-        />
-        <Route exact path="/gallery" key="gallery" element={<Gallery />} />
+      <Router>
+        <Header></Header>
+        <Routes>
+          <Route exact path="/" key="home" element={<Home />} />
+          <Route exact path="/Sponsors" key="Sponsors" element={<Sponsors />} />
+          <Route exact path="/ClubInfo" key="ClubInfo" element={<ClubInfo />} />
+          <Route exact path="/Events" key="Events" element={<Categories />} />
+          <Route
+            exact
+            path="/Developers"
+            key="Developers"
+            element={<Developers />}
+          />
+          <Route exact path="/gallery" key="gallery" element={<Gallery />} />
 
-        <Route exact path="/AboutUs" key="AboutUs" element={<AboutUs />} />
-        <Route exact path="/NotAuth" key="NotAuth" element={<NotAuth />} />
-        <Route exact path="/Error404" key="Error404" element={<Error404 />} />
-        <Route exact path="/Team" key="Team" element={<Team />} />
-        <Route
-          exact
-          path="/EventView/:id"
-          key="EventView"
-          element={<Events />}
-        />
-        <Route path="*" element={<Navigate to="/" />} />
-      </Routes>
-    </Router>
-    <Footerr></Footerr>
+          <Route exact path="/AboutUs" key="AboutUs" element={<AboutUs />} />
+          <Route exact path="/NotAuth" key="NotAuth" element={<NotAuth />} />
+          <Route exact path="/Error404" key="Error404" element={<Error404 />} />
+          <Route exact path="/Team" key="Team" element={<Team />} />
+          <Route
+            exact
+            path="/EventView/:id"
+            key="EventView"
+            element={<Events />}
+          />
+          <Route path="*" element={<Navigate to="/" />} />
+        </Routes>
+      </Router>
+      <Footerr></Footerr>
     </>
   );
 }
