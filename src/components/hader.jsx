@@ -30,23 +30,20 @@ const Header = () => {
   const [token, setToken] = useState(null);
   const [show, setShow] = useState(false);
   const cookies = new Cookies();
+
   useEffect(() => {
     fetch();
     let token = Agent.getToken() ? Agent.getToken() : null;
-    console.log(Agent.getToken());
-    console.log(token);
     setToken(token);
-  }, []);
+  }, [show]);
   const fetch = () => {
     authAction.getuser((err, res) => {
       if (err) {
       } else {
-        console.log(res, "here is respose");
       }
     });
   };
   const handleNavClick = () => {
-    // console.log("hello asdfg");
     setShow(false);
   };
 
