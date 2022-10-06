@@ -88,25 +88,19 @@ const items = [
 
 const Team = () => {
   const [carouselItems, setCarouselItems] = useState(items);
-  const [teamData, setData] = useState([]);
+  const [teamData, setData] = useState(item['photog']);
 
   // You can change global variables here:
   let radius = 240; // how big of the radius
-  let imgWidth = 120; // width of images (unit: px)
-  let imgHeight = 170; // height of images (unit: px)
   let odrag, ospin, aImg, aEle, ground;
-  const [length, setlength] = useState(5);
 
   useEffect(() => {
-    setData(item["photog"]);
-
-    setTimeout(init, 500);
+    setTimeout(init, 0);
 
     rotationHandler();
-  }, []);
+  }, [teamData]);
 
   function ayuhs(data) {
-    console.log(data);
     setData(data);
   }
 
@@ -116,15 +110,12 @@ const Team = () => {
     aImg = ospin.getElementsByTagName("img");
     aEle = [...aImg];
 
-    ospin.style.width = imgWidth + "px";
-    ospin.style.height = imgHeight + "px";
-
     // Size of ground - depend on radius
     radius = getRadius(aEle.length);
 
     ground = document.getElementById("ground");
-    ground.style.width = radius * 3 + "px";
-    ground.style.height = radius * 3 + "px";
+    ground.style.width = radius * 3 + "vw";
+    ground.style.height = radius * 3 + "vh";
   };
 
   const init = (delayTime) => {
@@ -143,13 +134,13 @@ const Team = () => {
   const getRadius = (val) => {
     switch (val) {
       case 2:
-        return "70";
-      case 3:
         return "90";
-      case 4:
-        return "110";
-      case 5:
+      case 3:
         return "150";
+      case 4:
+        return "180";
+      case 5:
+        return "220";
     }
   };
 
@@ -157,7 +148,14 @@ const Team = () => {
     <div className={classes.main_container}>
       <div id="drag_container" className={classes.drag_container}>
         <div id="spin_container" className={classes.spin_container}>
-          <img
+          {
+            teamData.map((data, index) => {
+              return (
+                <img src={data.url} key={index}/>
+              )
+            })
+          }
+          {/* <img
             src="https://images.pexels.com/photos/1391498/pexels-photo-1391498.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
             alt=""
           />
@@ -176,7 +174,7 @@ const Team = () => {
           <img
             src="https://images.pexels.com/photos/1462636/pexels-photo-1462636.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
             alt=""
-          />
+          /> */}
         </div>
         <div id="ground" className={classes.ground}></div>
       </div>
