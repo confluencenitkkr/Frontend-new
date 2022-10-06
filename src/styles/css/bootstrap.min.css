@@ -52,7 +52,7 @@ body {
     font-weight: 400;
     line-height: 1.5;
     color: #ffffff;
-    background-color: #273053;
+    background-color: #efecdb;
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: transparent
 }
@@ -8284,7 +8284,7 @@ fieldset:disabled .btn {
 }
 
 .bg-dark {
-    background-color: #212529 !important
+    background-color: #efecdb !important
 }
 
 .bg-body {
