@@ -1,7 +1,7 @@
 import { eventWrapper } from "@testing-library/user-event/dist/utils";
 import React, { useState, Component, useEffect } from "react";
 import action from "../../actions/events.Actions";
-import "./gallery.css"
+import "./gallery.module.css"
 const Gallery = (props) => {
     const [images,setimages]=useState([]);
     const [flag,setFlag]=useState(false);

@@ -1,5 +1,4 @@
 import "./App.css";
-
 import {
   BrowserRouter as Router,
   Routes,
@@ -19,7 +18,7 @@ import Error404 from "./components/Error404/Error404";
 // import Navbar from "./components/Footerr/footerr";
 import Team from "./components/Team_Confluence/team";
 import Header from "./components/hader";
-import Gallery from "./components/Gallery";
+import Gallery from "./components/Gallery/Gallery";
 import "./styles/Events.css";
 import "./styles/css/main.css";
 // import "./styles/css/bootstrap.min.css";
@@ -59,7 +58,6 @@ function App() {
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </Router>
-      {/* <Footerr></Footerr> */}
     </div>
   );
 }
