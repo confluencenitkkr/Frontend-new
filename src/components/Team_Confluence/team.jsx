@@ -120,93 +120,95 @@ const Team = () => {
  
   return (
     <>
-        <div className="team_section_main">
-      <div className="team_section2">
-        <div className="team_body">
-          <figure className="team_icon-cards mt-3">
-            <div className="team_icon-cards__content">
-              {
-                
-                teamData.length>0?teamData.map((item,index)=>{
-                  return(
-                    <>
+    <div className="team_section_main">
+  <div className="team_section2">
+    <div className="team_body">
+      <figure className="team_icon-cards mt-3">
+        <div className="team_icon-cards__content">
+          {
+            
+            teamData.length>0?teamData.map((item,index)=>{
+              return(
+                <>
+                 
+                <div className="team_icon-cards__item d-flex  align-items-center justify-content-center">
                      
-                    <div className="team_icon-cards__item d-flex  align-items-center justify-content-center">
-                         
-                   <div className="team_secyimage">
-                  <img src={item.url} />
-                  <div className="team_secyname">
-                    {item.name}
-                  </div>
-                  
-                  </div>
-                
-                
+               <div className="team_secyimage">
+              <img src={item.url} />
+              <div className="team_secyname">
+                {item.name}
               </div>
-                    </>
-                  )
-                }):''
-              }
               
-              
-            </div>
-          </figure>
-        </div>
-
-      </div>
-      <div className="team_swiper">
-      <Swiper
-        
-        grabCursor={true}
-        navigation={true}
-
-        // autoplay={{
-        //   delay: 1000,
+              </div>
+            
+            
+          </div>
+                </>
+              )
+            }):''
+          }
           
-        // }}
-        modules={[FreeMode,Autoplay,Navigation]} 
-        className="mySwiper"
-        breakpoints={{
-          0: {
-            slidesPerView: 2,
-            spaceBetween: 5,
-          },
-          480: {
-            slidesPerView: 3,
-            spaceBetween: 5,
-          },
-          768: {
-            slidesPerView: 3,
-            spaceBetween: 5,
-          },
-          1024: {
-            slidesPerView: 2,
-            spaceBetween: 5,
-          },
-          1280: {
-            slidesPerView: 5,
-            spaceBetween: 5,
-          },
-        }}
-      >
-        {carouselItems.map((t, index) => {
-              return (
-                <SwiperSlide className = "team_slider_card">
-                
-                <Card 
-                key={t.copy + index}
-                icon={t.imageurl}
-                copy={t.clubname}
-                changeTeam={ayuhs}
-              />
-                    </SwiperSlide>
-                                  );
-                                })}
-       </Swiper>
-       </div>
-       </div>
+          
+        </div>
+      </figure>
+    </div>
+
+  </div>
+  <div>
+    <div>
+  <Swiper
+    
+    grabCursor={true}
+    navigation={true}
+
+    // autoplay={{
+    //   delay: 1000,
       
-    </>
+    // }}
+    modules={[FreeMode,Autoplay,Navigation]} 
+    className="mySwiper"
+    breakpoints={{
+      0: {
+        slidesPerView: 2,
+        spaceBetween: 5,
+      },
+      480: {
+        slidesPerView: 3,
+        spaceBetween: 5,
+      },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 5,
+      },
+      1024: {
+        slidesPerView: 2,
+        spaceBetween: 5,
+      },
+      1280: {
+        slidesPerView: 5,
+        spaceBetween: 5,
+      },
+    }}
+  >
+    {carouselItems.map((t, index) => {
+          return (
+            <SwiperSlide >
+            
+            <Card 
+            key={t.copy + index}
+            icon={t.imageurl}
+            copy={t.clubname}
+            changeTeam={ayuhs}
+          />
+                </SwiperSlide>
+                              );
+                            })}
+   </Swiper>
+   </div>
+   </div>
+   </div>
+  
+</>
   );
 };
 
