@@ -5,11 +5,13 @@ import bg from "../../styles/images/photo.jpg";
 
 const Schedule = () => {
   const imgArr = [
-    "images/avatar/s.jpg",
+    "images/avatar/s_bg.jpg",
     "images/avatar/k.jpg",
     "images/avatar/f.jpg",
     "images/avatar/c.jpg",
-    "images/avatar/d.jpg",
+    "images/avatar/g.jpg",
+    "images/avatar/l.jpg",
+    "images/avatar/n.jpg",
   ];
 
   const classAddHandler = () => {
@@ -17,8 +19,7 @@ const Schedule = () => {
     let selector = document.getElementsByClassName("timeline-item");
     selector[0].classList.add("timeline-item--active");
 
-    main_container.style.backgroundImage =
-      "url('images/avatar/startnight.jpg')";
+    main_container.style.backgroundImage = "url('images/avatar/s_bg.jpg')";
 
     main_container.style.backgroundSize = "cover";
     main_container.style.backgroundPosition = "center";
@@ -76,11 +77,7 @@ const Schedule = () => {
                   <li>Nikhil D'souza</li>
                   <li>The Local Train</li>
                   <li>Jassi Gill and Babbal Rai</li>
-                  <li>Maadhyam</li>
-                  <li>Mustafa Zaid</li>
-                  <li>Euphoria, among many others</li>
-                  With Open Air Theatre brimming with audience, experience the
-                  leisure of grooving to the live beats.
+                  With Open Air Theatre brimming with audience.
                 </p>
               </div>
             </div>
@@ -94,10 +91,7 @@ const Schedule = () => {
                   जहां हर अहसास लफ़्ज़ों में बया होता है, जहां हर ज़ुबान पर
                   सिर्फ वाह होता है। यहां शिरकत करने आते है देश के विश्व
                   प्रसिद्ध कवि/कवयित्री और उनको सुनने के लिए मौजूद होती है,
-                  उत्साह और जोश से भरी हजारों की भीड़। <br />
-                  <br />
-                  कवि/शायर - शकील आज़मी जी, अज़हर इक़बाल जी, अंकिता सिंह जी,
-                  वरुण आनंद जी, संदीप जी
+                  उत्साह और जोश से भरी हजारों की भीड़।
                 </p>
               </div>
             </div>
@@ -131,7 +125,7 @@ const Schedule = () => {
             </div>
             <div className="timeline-item" data-text="DAY 4">
               <div className="timeline__content">
-                <img className="timeline__img" src="images/avatar/d.jpg" />
+                <img className="timeline__img" src="images/avatar/g.jpg" />
                 <h2 className="timeline__content-title">Groove Armada</h2>
                 <p className="timeline__content-desc">
                   Its a Major Group dance competition based on Hip Hop
@@ -145,7 +139,7 @@ const Schedule = () => {
 
             <div className="timeline-item" data-text="DAY 4">
               <div className="timeline__content">
-                <img className="timeline__img" src="images/avatar/d.jpg" />
+                <img className="timeline__img" src="images/avatar/l.jpg" />
                 <h2 className="timeline__content-title">LIBAS</h2>
                 <p className="timeline__content-desc">
                   Its a Major Group dance competition based on Hip Hop
@@ -157,9 +151,9 @@ const Schedule = () => {
               </div>
             </div>
 
-            <div className="timeline-item" data-text="DAY 4">
+            {/* <div className="timeline-item" data-text="DAY 4">
               <div className="timeline__content">
-                <img className="timeline__img" src="images/avatar/d.jpg" />
+                <img className="timeline__img" src="images/avatar/d_bg.jpg" />
                 <h2 className="timeline__content-title">LIME LIGHT</h2>
                 <p className="timeline__content-desc">
                   For all the budding fashion photographers,this is the event to
@@ -173,7 +167,7 @@ const Schedule = () => {
 
             <div className="timeline-item" data-text="DAY 4">
               <div className="timeline__content">
-                <img className="timeline__img" src="images/avatar/d.jpg" />
+                <img className="timeline__img" src="images/avatar/d_bg.jpg" />
                 <h2 className="timeline__content-title">Battle of Bands</h2>
                 <p className="timeline__content-desc">
                   Its a Major Group dance competition based on Hip Hop
@@ -187,7 +181,7 @@ const Schedule = () => {
 
             <div className="timeline-item" data-text="DAY 4">
               <div className="timeline__content">
-                <img className="timeline__img" src="images/avatar/d.jpg" />
+                <img className="timeline__img" src="images/avatar/d_bg.jpg" />
                 <h2 className="timeline__content-title">Cinematography</h2>
                 <p className="timeline__content-desc">
                   Bring out the director in you in this short film making event
@@ -196,11 +190,11 @@ const Schedule = () => {
                   immense external participation
                 </p>
               </div>
-            </div>
+            </div> */}
 
             <div className="timeline-item" data-text="DAY 4">
               <div className="timeline__content">
-                <img className="timeline__img" src="images/avatar/d.jpg" />
+                <img className="timeline__img" src="images/avatar/n.jpg" />
                 <h2 className="timeline__content-title">Nukkad Dance</h2>
                 <p className="timeline__content-desc">
                   Its a Major Group dance competition based on Hip Hop
