@@ -422,13 +422,13 @@ input#toggle:checked ~ #show-menu .btn1 .closeBtn {
 }
 .team_icon-cards__item:nth-child(2) {
   /* background: #f87949; */
-  transform: rotateY(120deg) translateZ(40vw);
+  transform: rotateY(90deg) translateZ(40vw);
   box-shadow: #212121;
   height: 250px;
 }
 .team_icon-cards__item:nth-child(3) {
-  /* background: #fbab48; */
-  transform: rotateY(240deg) translateZ(40vw);
+  /*     */
+  transform: rotateY(180deg) translateZ(40vw);
   /* box-shadow: 5px 5px 5px #212121; */
   height: 250px;
 }
