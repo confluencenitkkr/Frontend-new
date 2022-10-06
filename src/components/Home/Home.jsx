@@ -26,7 +26,7 @@ const Home = () => {
             </div>
           </div> */}
 
-          <div class="video-wrap">
+          {/* <div class="video-wrap">
             <video
               autoPlay={true}
               loop={true}
@@ -36,7 +36,7 @@ const Home = () => {
               <source src="images/avatar/confluewebsite.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
-          </div>
+          </div> */}
         </section>
       </main>
     </>
