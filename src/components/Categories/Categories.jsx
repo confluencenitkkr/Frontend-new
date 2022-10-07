@@ -6,14 +6,18 @@ import "../../styles/Developers.css";
 import data from "../../config/usaState.json";
 import eventsActions from "../../actions/events.Actions";
 import logo from "../../styles/images/photog.jpg";
-// import Select from "react-select";
+
+
 const Categories = () => {
   const [dataa, setData] = useState([]);
   const [load, setLoad] = useState(false);
   const [club, setClub] = useState("");
+
   useEffect(() => {
-    // setData(optionMaker(data.data));
-  }, []);
+      let main_container = document.getElementById("category_main_container");
+      main_container.style.background =
+        'url("/images/bgMedia/bg.jpg") 50% repeat';
+    }, []);
 
   const optionMaker = (arr) => {
     let data = [];
@@ -62,16 +66,13 @@ const Categories = () => {
   };
   return (
     <>
-      <section class="">
+      <section class="" id="category_main_container">
         <div class="container categories-page">
-          <div class="row mt-5  text-center">
+          <div class="row mt-5">
             <div class="col-lg-6">
               <div class="common-head">
-                <h2 className="font-head" style={{ fontSize: "3.5rem" }}>
-                  CONFLUENCE{" "}
-                  <span className="font-head" style={{ fontSize: "3.5rem" }}>
-                    EVENTS
-                  </span>
+                <h2 className="font-head">
+                  Confluence Events
                 </h2>
               </div>
             </div>
@@ -155,7 +156,7 @@ const Categories = () => {
                 {dataa.map((e, index) => {
                   return (
                     <div
-                      class="col-xl-3 col-sm-6 mb-5 "
+                      class="col-xl-3 col-sm-6 mb-5 card_container"
                       style={{ cursor: "pointer" }}
                       onClick={(a) => {
                         a.preventDefault();

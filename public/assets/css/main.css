@@ -2631,3 +2631,15 @@ footer {
 	width: 100%;
 	text-align: right;
 }
+
+.parallax-effect {
+	background : url("../../images/bgMedia/paperBg.jpg");
+  }
+
+  #bgMedia_123:before {
+	background: url('../../images/bgMedia/paperBg.jpg');
+	object-fit: cover;
+	/* background : url("../../images/bgMedia/bg.jpg"); */
+
+  }
+

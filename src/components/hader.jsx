@@ -161,7 +161,7 @@ const Header = () => {
           <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
               <a class="navbar-brand" href="index.html">
-                <img class="logo-img" src="images/avatar/logo.png" alt="logo" />
+                <img class="logo-img" src="images/bgMedia/logo.png" alt="logo" /> 
               </a>
               {token == "" ? (
                 <a
@@ -201,7 +201,7 @@ const Header = () => {
                     </Link>
                   </li>
                  
-                  {/* <li class="nav-item">
+                  <li class="nav-item">
                     <Link
                       className={`nav-link ${
                         location.pathname === "/Sponsors" ? "active" : ""
@@ -212,7 +212,7 @@ const Header = () => {
                     >
                       Sponsors
                     </Link>
-                  </li> */}
+                  </li>
                   <li class="nav-item">
                     <Link
                       className={`nav-link ${

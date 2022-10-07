@@ -7,14 +7,31 @@
   width: 100%;
   margin-left: auto;
 }
+
+.font-head{
+  font-size: 3.5rem;
+  font-family: 'Lobster', cursive;
+  color: #c04e3eeb;
+}
+
+
 .categories-page {
   padding-top: 10vh;
+  min-height: 100vh;
 }
 .card-name {
   position: relative;
   bottom: 12%;
   font-size: 17px;
   color: black;
+  /* font-family: 'Sacramento', cursive; */
+  
+font-family: 'Lobster', cursive;
+}
+
+.card_container::after{
+  content: "";
+  background: rgba(0, 0, 0, 0) linear-gradient(rgba(39, 48, 83, 0.1) 0%, rgb(109 37 27) 100%) repeat scroll 0% 0%;
 }
 .event-list {
   box-shadow: 0 0 10px grey;
@@ -34,9 +51,7 @@
   position: relative;
   bottom: 12%;
 }
-.common-head h2 span {
-  color: #0056d6;
-}
+
 .cursor {
   cursor: pointer;
 }

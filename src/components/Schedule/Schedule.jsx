@@ -45,7 +45,7 @@ const Schedule = () => {
         item.classList.remove("timeline-item--active");
       }
 
-      sum += height - 20;
+      sum += height;
     }
   };
 
