@@ -2,11 +2,11 @@
 }
 
 .hero {
-    height: 100vh;
-    width: 100vw;
+    position: relative;
+    height: calc(90vh - 84px);
   }
   
-  /* .hero::after {
+  .hero::after {
     content: "";
     background: rgba(0, 0, 0, 0) linear-gradient(rgba(39, 48, 83, 0.1) 0%, rgb(39, 48, 83) 100%) repeat scroll 0% 0%;
     position: absolute;
@@ -16,7 +16,7 @@
     left: 0;
     margin-bottom: -5px;
   }
-   */
+  
   .hero-text {
     position: absolute;
     z-index: 2;
@@ -32,7 +32,7 @@
   }
   
   .video-wrap {
-    z-index: -200;
+    z-index: -100;
   }
   
   .custom-video {
@@ -44,10 +44,10 @@
     height: 100%;
   }
 
-.bgMedia{
-  width: 100vw;
+.bg-img{
+    width: 100vw;
     height: 100vh;
-    background: #efe8d2;
+    
 }
 
 

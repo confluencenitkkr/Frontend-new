@@ -1,19 +1,13 @@
 import React, { useEffect, useState } from "react";
 
-import classes from "../../styles/Home.module.css";
+import "../../styles/Home.css";
 import bg from "../../styles/images/photo.jpg";
-import "../../styles/templatemo-leadership-event.css"
-
+import "../../styles/templatemo-leadership-event.css";
 const Home = () => {
-
-  useEffect(() => {
-    let main_container = document.getElementById("home_main_container");
-    main_container.style.background = 'url("/images/bgMedia/bg.jpg") 50% repeat'
-  }, [])
   return (
     <>
       <main className="home_main_main">
-        <section className={classes.hero} id="home_main_container">
+        <section class="hero" id="home_main_container">
           {/* <div class="container">
             <div class="row">
               <div class="col-lg-5 col-12 m-auto">
@@ -32,7 +26,7 @@ const Home = () => {
             </div>
           </div> */}
 
-          {/* <div class="video-wrap">
+          <div class="video-wrap">
             <video
               autoPlay={true}
               loop={true}
@@ -42,7 +36,7 @@ const Home = () => {
               <source src="images/avatar/confluewebsite.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
-          </div> */}
+          </div>
         </section>
       </main>
     </>
