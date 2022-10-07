@@ -5,27 +5,6 @@ import classes from "./gallery.module.css";
 import Navbar from "../../components/hader";
 
 const Gallery = (props) => {
-  const [images, setimages] = useState([]);
-  const [flag, setFlag] = useState(false);
-
-  const getImage = async () => {
-    action.getImage((err, res) => {
-      if (err) {
-      } else {
-        setimages(res.data);
-      }
-    });
-  };
-  const loadMOre = () => {
-    if (flag) {
-      setimages([]);
-      setFlag(false);
-    } else {
-      setFlag(true);
-      getImage();
-    }
-  };
-
   let img_wrapper_slow = [classes.img_wrapper, classes.slow].join(" ");
   let img_wrapper_slow1 = [classes.img_wrapper, classes.slow1].join(" ");
 
@@ -41,12 +20,15 @@ const Gallery = (props) => {
 
   let img_wrapper_faster1 = [classes.img_wrapper, classes.faster1].join(" ");
   let img_wrapper_faster2 = [classes.img_wrapper, classes.faster2].join(" ");
-  let img_wrapper_faster3 = [classes.img_wrapper, classes.faster3].join(" ");
 
+  useEffect(() => {
+    let main_container = document.getElementById("gallery_external");
+    main_container.style.background = 'url("/images/bgMedia/bg.jpg") 50% repeat'
+  }, [])
   return (
     <>
       <Navbar></Navbar>
-      <div class={classes.external}>
+      <div class={classes.external} id="gallery_external">
         <div class={classes.horizontal_scroll_wrapper}>
           <div class={img_wrapper_slow}>
             <a
