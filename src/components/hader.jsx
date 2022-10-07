@@ -12,6 +12,7 @@ import "../../src/styles/Header.css";
 // import { GoogleLogin, GoogleLogout } from "react-google-login";
 
 import welcomepng from "../styles/images/welcome.png";
+
 const Header = () => {
   let location = useLocation();
   const CLIENT_ID =
@@ -35,7 +36,13 @@ const Header = () => {
     fetch();
     let token = Agent.getToken() ? Agent.getToken() : null;
     setToken(token);
+
+      // let main_container = document.getElementById("navigation_maincontainer");
+      // main_container.style.background = 'url("/images/bgMedia/paperDesign.png") 50% bottom no-repeat';
+      // main_container.style.backgroundSize = 
+
   }, [show]);
+
   const fetch = () => {
     authAction.getuser((err, res) => {
       if (err) {
@@ -140,10 +147,17 @@ const Header = () => {
     window.open("https://nitkkr.herokuapp.com/auth/facebook", "_self");
   };
 
+  let navbarBg = location.pathname === "/" ? (
+    <div className="bgMedia1">
+          <img src="/images/bgMedia/paperDesign.png" alt=""/>
+          </div>
+  ) : null
+
   return (
     <>
       <header>
-        <div class="navigation">
+        <div class="navigation" id="navigation_maincontainer">
+          {navbarBg}
           <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
               <a class="navbar-brand" href="index.html">
@@ -169,7 +183,6 @@ const Header = () => {
               >
                 <span class="navbar-toggler-icon"></span>
               </button>
-              {/* <div class="navbar-collapse collapse" id="navbarNav"> */}
               <div
                 className={`collapse navbar-collapse  ${show ? "show" : ""}`}
                 id="navbarNav"
@@ -279,225 +292,218 @@ const Header = () => {
           </nav>
         </div>
       </header>
-      <Modal
-        isOpen={login}
-        toggle={() => {
-          setLogin(false);
-          setsign(false);
-        }}
-        className="authentication-modal modal-dialog modal-dialog-centered modal-xl"
-      >
-        <ToastContainer />
-        <div className="auth-modal-wrp">
-          <div className="row">
-            <div className="col-lg-6 p-0">
-              <div className="auth-modal-artwork">
-                <img src={welcomepng} className="img img-fluid" alt="" />
-              </div>
-            </div>
-            <div className="col-lg-6 p-0">
-              <div className="auth-modal-content">
-                <div className="w-100">
-                  <div className="auth-modal-logo">
-                    <img src={image1} className="img img-fluid" alt="" />
-                  </div>
-                  <h2>Please Sign in to Confluence</h2>
-                  <div className="auth-input-wrp">
-                    <label for="">Enter Email</label>
-                    <input
-                      type="text"
-                      name="Email"
-                      onChange={(e) => {
-                        e.preventDefault();
-                        console.log(e.target.value);
-                        setEmail(e.target.value);
-                      }}
-                      value={email}
-                      className="form-control"
-                      placeholder=""
-                    />
-                    <label for="">Enter password</label>
-                    <input
-                      type="password"
-                      name="mobileNo"
-                      // onChange={}
-                      className="form-control"
-                      placeholder=""
-                      onChange={(e) => {
-                        e.preventDefault();
-                        console.log(e.target.value);
-                        setPassword(e.target.value);
-                      }}
-                    />
-                    <button
-                      role="button"
-                      data-bs-target="#verifyOTPmodal"
-                      data-bs-toggle="modal"
-                      data-bs-dismiss="modal"
-                      className="btn auth-main-btn"
-                      type="button"
-                      onClick={() => {
-                        log();
-                      }}
-                    >
-                      Login
-                    </button>
-                  </div>
-                  <p>Or Sign in with</p>
-                  <ul>
-                    <li className="pe-2">
-                      {/* <GoogleLogin
-                    clientId={CLIENT_ID}
-              buttonText="Sign In with Google"
-              onSuccess={responseGoogleSuccess}
-              onFailure={responseGoogleError}
-              isSignedIn={true}
-              cookiePolicy={"single_host_origin"}
-            /> */}
-                    </li>
-                  </ul>
-                  <h5>
-                    Don’t have account ?{" "}
-                    <a
-                      role="button"
-                      data-bs-target="#createAccmodal"
-                      data-bs-toggle="modal"
-                      data-bs-dismiss="modal"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        setsign(true);
-                        setLogin(false);
-                      }}
-                    >
-                      Create now
-                    </a>
-                  </h5>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </Modal>
-      <Modal
-        isOpen={sign}
-        toggle={() => {
-          setsign(false);
-          setLogin(false);
-        }}
-        className="authentication-modal modal-dialog modal-dialog-centered modal-xl"
-      >
-        <div className="auth-modal-wrp">
-          <div className="row">
-            <div className="col-lg-6 p-0">
-              <div className="auth-modal-artwork">
-                <img src="" className="img img-fluid" alt="" />
-              </div>
-            </div>
-            <div className="col-lg-6 p-0">
-              <div className="auth-modal-content">
-                <div className="w-100">
-                  <div className="auth-profile-pic-wrp">
-                    <div className="profile-pic-chooose">
-                      <img src={image1} className="img img-fluid" alt="" />
-                    </div>
-                  </div>
-                  <div className="auth-input-wrp">
-                    <div className="row">
-                      <div className="col-lg-6">
-                        <label for="">Name</label>
-                        <input
-                          type="text"
-                          onChange={(e) => {
-                            setname(e.target.value);
-                            console.log(e.target.value);
-                          }}
-                          className="form-control"
-                          name="firstName"
-                          placeholder=""
-                        />
-                      </div>
-                      <div className="col-lg-6">
-                        <label for="">College Name</label>
-                        <input
-                          type="text"
-                          onChange={(e) => {
-                            setCollegeName(e.target.value);
-                            console.log(e.target.value);
-                          }}
-                          className="form-control"
-                          name="lastName"
-                          placeholder=""
-                        />
-                      </div>
-                      <div className="col-lg-12">
-                        <label for="">Email ID</label>
-                        <input
-                          type="email"
-                          className="form-control"
-                          // onChange={onChangeUser}
-                          name="email"
-                          placeholder=""
-                          onChange={(e) => {
-                            e.preventDefault();
-                            setEmail1(e.target.value);
-                          }}
-                          value={email1}
-                        />
-                      </div>
-                      <div className="col-lg-12">
-                        <label for="">Roll No.</label>
-                        <input
-                          type="text"
-                          className="form-control"
-                          name="mobileNo"
-                          onChange={(e) => {
-                            e.preventDefault();
-                            setNumber(e.target.value);
-                          }}
-                          value={number}
-                          placeholder=""
-                        />
-                      </div>
-                      <div className="col-lg-12">
-                        <label for="">Password</label>
-                        <input
-                          type="password"
-                          className="form-control"
-                          name="password"
-                          onChange={(e) => {
-                            e.preventDefault();
-                            setPassword1(e.target.value);
-                          }}
-                          value={password1}
-                          placeholder="password"
-                        />
-                      </div>
-                    </div>
-                    <button
-                      type="submit"
-                      className="btn auth-main-btn"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        Sign();
-                      }}
-                    >
-                      Create Account
-                    </button>
-                  </div>
-                  <h5>
-                    By signing up , you agree to{" "}
-                    <a href="javascript:;">terms and condition</a> and Borhan{" "}
-                    <a href="javascript:;">policy</a>
-                  </h5>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <ToastContainer />
-      </Modal>
     </>
   );
 };
 
 export default Header;
+
+// <Modal
+// isOpen={login}
+// toggle={() => {
+//   setLogin(false);
+//   setsign(false);
+// }}
+// className="authentication-modal modal-dialog modal-dialog-centered modal-xl"
+// >
+// <ToastContainer />
+// <div className="auth-modal-wrp">
+//   <div className="row">
+//     <div className="col-lg-6 p-0">
+//       <div className="auth-modal-artwork">
+//         <img src={welcomepng} className="img img-fluid" alt="" />
+//       </div>
+//     </div>
+//     <div className="col-lg-6 p-0">
+//       <div className="auth-modal-content">
+//         <div className="w-100">
+//           <div className="auth-modal-logo">
+//             <img src={image1} className="img img-fluid" alt="" />
+//           </div>
+//           <h2>Please Sign in to Confluence</h2>
+//           <div className="auth-input-wrp">
+//             <label for="">Enter Email</label>
+//             <input
+//               type="text"
+//               name="Email"
+//               onChange={(e) => {
+//                 e.preventDefault();
+//                 console.log(e.target.value);
+//                 setEmail(e.target.value);
+//               }}
+//               value={email}
+//               className="form-control"
+//               placeholder=""
+//             />
+//             <label for="">Enter password</label>
+//             <input
+//               type="password"
+//               name="mobileNo"
+//               // onChange={}
+//               className="form-control"
+//               placeholder=""
+//               onChange={(e) => {
+//                 e.preventDefault();
+//                 console.log(e.target.value);
+//                 setPassword(e.target.value);
+//               }}
+//             />
+//             <button
+//               role="button"
+//               data-bs-target="#verifyOTPmodal"
+//               data-bs-toggle="modal"
+//               data-bs-dismiss="modal"
+//               className="btn auth-main-btn"
+//               type="button"
+//               onClick={() => {
+//                 log();
+//               }}
+//             >
+//               Login
+//             </button>
+//           </div>
+//           <p>Or Sign in with</p>
+//           <ul>
+//             <li className="pe-2">
+//             </li>
+//           </ul>
+//           <h5>
+//             Don’t have account ?{" "}
+//             <a
+//               role="button"
+//               data-bs-target="#createAccmodal"
+//               data-bs-toggle="modal"
+//               data-bs-dismiss="modal"
+//               onClick={(e) => {
+//                 e.preventDefault();
+//                 setsign(true);
+//                 setLogin(false);
+//               }}
+//             >
+//               Create now
+//             </a>
+//           </h5>
+//         </div>
+//       </div>
+//     </div>
+//   </div>
+// </div>
+// </Modal>
+// <Modal
+// isOpen={sign}
+// toggle={() => {
+//   setsign(false);
+//   setLogin(false);
+// }}
+// className="authentication-modal modal-dialog modal-dialog-centered modal-xl"
+// >
+// <div className="auth-modal-wrp">
+//   <div className="row">
+//     <div className="col-lg-6 p-0">
+//       <div className="auth-modal-artwork">
+//         <img src="" className="img img-fluid" alt="" />
+//       </div>
+//     </div>
+//     <div className="col-lg-6 p-0">
+//       <div className="auth-modal-content">
+//         <div className="w-100">
+//           <div className="auth-profile-pic-wrp">
+//             <div className="profile-pic-chooose">
+//               <img src={image1} className="img img-fluid" alt="" />
+//             </div>
+//           </div>
+//           <div className="auth-input-wrp">
+//             <div className="row">
+//               <div className="col-lg-6">
+//                 <label for="">Name</label>
+//                 <input
+//                   type="text"
+//                   onChange={(e) => {
+//                     setname(e.target.value);
+//                     console.log(e.target.value);
+//                   }}
+//                   className="form-control"
+//                   name="firstName"
+//                   placeholder=""
+//                 />
+//               </div>
+//               <div className="col-lg-6">
+//                 <label for="">College Name</label>
+//                 <input
+//                   type="text"
+//                   onChange={(e) => {
+//                     setCollegeName(e.target.value);
+//                     console.log(e.target.value);
+//                   }}
+//                   className="form-control"
+//                   name="lastName"
+//                   placeholder=""
+//                 />
+//               </div>
+//               <div className="col-lg-12">
+//                 <label for="">Email ID</label>
+//                 <input
+//                   type="email"
+//                   className="form-control"
+//                   // onChange={onChangeUser}
+//                   name="email"
+//                   placeholder=""
+//                   onChange={(e) => {
+//                     e.preventDefault();
+//                     setEmail1(e.target.value);
+//                   }}
+//                   value={email1}
+//                 />
+//               </div>
+//               <div className="col-lg-12">
+//                 <label for="">Roll No.</label>
+//                 <input
+//                   type="text"
+//                   className="form-control"
+//                   name="mobileNo"
+//                   onChange={(e) => {
+//                     e.preventDefault();
+//                     setNumber(e.target.value);
+//                   }}
+//                   value={number}
+//                   placeholder=""
+//                 />
+//               </div>
+//               <div className="col-lg-12">
+//                 <label for="">Password</label>
+//                 <input
+//                   type="password"
+//                   className="form-control"
+//                   name="password"
+//                   onChange={(e) => {
+//                     e.preventDefault();
+//                     setPassword1(e.target.value);
+//                   }}
+//                   value={password1}
+//                   placeholder="password"
+//                 />
+//               </div>
+//             </div>
+//             <button
+//               type="submit"
+//               className="btn auth-main-btn"
+//               onClick={(e) => {
+//                 e.preventDefault();
+//                 Sign();
+//               }}
+//             >
+//               Create Account
+//             </button>
+//           </div>
+//           <h5>
+//             By signing up , you agree to{" "}
+//             <a href="javascript:;">terms and condition</a> and Borhan{" "}
+//             <a href="javascript:;">policy</a>
+//           </h5>
+//         </div>
+//       </div>
+//     </div>
+//   </div>
+// </div>
+// <ToastContainer />
+// </Modal>

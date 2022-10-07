@@ -8,7 +8,7 @@ body {
 }
 .navbar {
   
-    background-color: #151c39;
+    background-color: #b95143;
 }
 .call-to-action {
 	/* background-image: url('../../images/terren-hurst-blgOFmPIlr0-unsplash.jpg'); */
@@ -103,7 +103,6 @@ footer {
 /* homepage css start */
 
 .navigation {
-	background: rgb(0, 0, 0);
 	padding: 5px;
 	position: relative;
 	z-index: 15;

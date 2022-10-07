@@ -5,26 +5,11 @@ import classes from "./gallery.module.css";
 import Navbar from "../../components/hader";
 
 const Gallery = (props) => {
-  const [images, setimages] = useState([]);
-  const [flag, setFlag] = useState(false);
-
-  const getImage = async () => {
-    action.getImage((err, res) => {
-      if (err) {
-      } else {
-        setimages(res.data);
-      }
-    });
-  };
-  const loadMOre = () => {
-    if (flag) {
-      setimages([]);
-      setFlag(false);
-    } else {
-      setFlag(true);
-      getImage();
-    }
-  };
+  useEffect(() => {
+    let main_container = document.getElementById("gallery_mainContainer");
+    main_container.style.background =
+      'url("/images/bgMedia/bg.jpg") 50% repeat';
+  });
 
   let img_wrapper_slow = [classes.img_wrapper, classes.slow].join(" ");
   let img_wrapper_slow1 = [classes.img_wrapper, classes.slow1].join(" ");
@@ -47,7 +32,7 @@ const Gallery = (props) => {
     <>
       <Navbar></Navbar>
       <div class={classes.external}>
-        <div class={classes.horizontal_scroll_wrapper}>
+        <div class={classes.horizontal_scroll_wrapper} id="gallery_mainContainer">
           <div class={img_wrapper_slow}>
             <a
               href="https://altphotos.com/photo/stylish-parisian-cafe-terrace-279/"

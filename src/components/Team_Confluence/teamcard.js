@@ -1,5 +1,6 @@
 import image4 from "../../styles/images/elad.jpg";
 import image7 from "../../styles/images/hlad.jpg";
+
 const items = {
     photog: [
       {
