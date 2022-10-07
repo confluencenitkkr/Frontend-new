@@ -4,6 +4,11 @@ import "../../styles/Home.css";
 import bg from "../../styles/images/photo.jpg";
 import "../../styles/templatemo-leadership-event.css";
 const Home = () => {
+
+  useEffect(() => {
+    let main_container = document.getElementById("home_main_container");
+    main_container.style.background = 'url("/images/bgMedia/bg.jpg") 50% repeat'
+  }, [])
   return (
     <>
       <main className="home_main_main">
