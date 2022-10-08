@@ -27,7 +27,7 @@ const Gallery = (props) => {
   let img_wrapper_faster1 = [classes.img_wrapper, classes.faster1].join(" ");
   let img_wrapper_faster2 = [classes.img_wrapper, classes.faster2].join(" ");
   let img_wrapper_faster3 = [classes.img_wrapper, classes.faster3].join(" ");
-
+   
   return (
     <>
       <Navbar></Navbar>
@@ -40,20 +40,20 @@ const Gallery = (props) => {
               rel="noopener"
             >
               <img
-                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/74321/paris-cafe-terrace.jpg"
+                src="images/Gallery/img1.jpg"
                 alt=""
               />
             </a>
           </div>
 
-          <div class={img_wrapper_slow1}>
+          <div class={classes.img_wrapper}>
             <a
               href="https://altphotos.com/photo/clocks-shop-exposition-window-reflecting-the-streets-277/"
               target="_blank"
               rel="noopener"
             >
               <img
-                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/74321/windowshopclock.jpg"
+                src="images/Gallery/img2.jpg"
                 alt=""
               />
             </a>
@@ -66,7 +66,7 @@ const Gallery = (props) => {
               rel="noopener"
             >
               <img
-                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/74321/swanduckriver.jpg"
+                src="images/Gallery/img3.jpg"
                 alt=""
               />
             </a>
@@ -79,7 +79,7 @@ const Gallery = (props) => {
               rel="noopener"
             >
               <img
-                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/74321/cafe-terrace.jpg"
+                src="images/Gallery/img4.jpg"
                 alt=""
               />
             </a>
@@ -92,7 +92,7 @@ const Gallery = (props) => {
               rel="noopener"
             >
               <img
-                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/74321/paris-seine-boat.jpg"
+                src="images/Gallery/img5.jpg"
                 alt=""
               />
             </a>
@@ -105,7 +105,7 @@ const Gallery = (props) => {
               rel="noopener"
             >
               <img
-                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/74321/old-man-river.jpg"
+                src="images/Gallery/img6.jpg"
                 alt=""
               />
             </a>
@@ -118,7 +118,7 @@ const Gallery = (props) => {
               rel="noopener"
             >
               <img
-                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/74321/cafe-table-street.jpg"
+                src="images/Gallery/img7.jpg"
                 alt=""
               />
             </a>
@@ -131,7 +131,7 @@ const Gallery = (props) => {
               rel="noopener"
             >
               <img
-                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/74321/street-scene-people.jpg"
+                src="images/Gallery/img8.jpg"
                 alt=""
               />
             </a>
@@ -144,7 +144,7 @@ const Gallery = (props) => {
               rel="noopener"
             >
               <img
-                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/74321/notre-dame-river-boat.jpg"
+                src="images/Gallery/img9.jpg"
                 alt=""
               />
             </a>
@@ -156,7 +156,7 @@ const Gallery = (props) => {
               rel="noopener"
             >
               <img
-                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/74321/antiquedollboy.jpg"
+                src="images/Gallery/img10.jpg"
                 alt=""
               />
             </a>
@@ -168,7 +168,115 @@ const Gallery = (props) => {
               rel="noopener"
             >
               <img
-                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/74321/shop-window-reflection.jpg"
+                src="images/Gallery/img11.jpg"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class={img_wrapper_slow3}>
+            <a
+              href="https://altphotos.com/photo/skulls-decoration-in-a-shop-window-331/"
+              target="_blank"
+              rel="noopener"
+            >
+              <img
+                src="images/Gallery/img12.jpg"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class={img_wrapper_faster2}>
+            <a
+              href="https://altphotos.com/photo/skulls-decoration-in-a-shop-window-331/"
+              target="_blank"
+              rel="noopener"
+            >
+              <img
+                src="images/Gallery/img13.jpg"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class={img_wrapper_faster1}>
+            <a
+              href="https://altphotos.com/photo/skulls-decoration-in-a-shop-window-331/"
+              target="_blank"
+              rel="noopener"
+            >
+              <img
+                src="images/Gallery/img14.jpg"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class={img_wrapper_slow1}>
+            <a
+              href="https://altphotos.com/photo/skulls-decoration-in-a-shop-window-331/"
+              target="_blank"
+              rel="noopener"
+            >
+              <img
+                src="images/Gallery/img15.jpg"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class={img_wrapper_slow2}>
+            <a
+              href="https://altphotos.com/photo/skulls-decoration-in-a-shop-window-331/"
+              target="_blank"
+              rel="noopener"
+            >
+              <img
+                src="images/Gallery/img16.jpg"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class={img_wrapper_faster}>
+            <a
+              href="https://altphotos.com/photo/skulls-decoration-in-a-shop-window-331/"
+              target="_blank"
+              rel="noopener"
+            >
+              <img
+                src="images/Gallery/img17.jpg"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class={img_wrapper_faster3}>
+            <a
+              href="https://altphotos.com/photo/skulls-decoration-in-a-shop-window-331/"
+              target="_blank"
+              rel="noopener"
+            >
+              <img
+                src="images/Gallery/img18.jpg"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class={img_wrapper_slow5}>
+            <a
+              href="https://altphotos.com/photo/skulls-decoration-in-a-shop-window-331/"
+              target="_blank"
+              rel="noopener"
+            >
+              <img
+                src="images/Gallery/img19.jpg"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class={img_wrapper_slow1}>
+            <a
+              href="https://altphotos.com/photo/skulls-decoration-in-a-shop-window-331/"
+              target="_blank"
+              rel="noopener"
+            >
+              <img
+                src="images/Gallery/img20.jpg"
                 alt=""
               />
             </a>
