@@ -2635,7 +2635,7 @@ footer {
 .parallax-effect {
 	background : url("../../images/bgMedia/paperBg.jpg");
   }
-
+  
   #bgMedia_123:before {
 	background: url('../../images/bgMedia/paperBg.jpg');
 	object-fit: cover;
