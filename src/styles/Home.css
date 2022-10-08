@@ -1,6 +1,12 @@
 .home_main_main{
 }
 
+.back_img_home{
+  height: 100vh;
+  width: 100vw;
+  z-index: 1000;
+}
+
 .hero {
     position: relative;
     height: 99.9vh;
