@@ -201,18 +201,7 @@ const Header = () => {
                     </Link>
                   </li>
                  
-                  <li class="nav-item">
-                    <Link
-                      className={`nav-link ${
-                        location.pathname === "/Sponsors" ? "active" : ""
-                      }`}
-                      aria-current="page"
-                      to="/Sponsors"
-                      onClick={handleNavClick}
-                    >
-                      Sponsors
-                    </Link>
-                  </li>
+                  
                   <li class="nav-item">
                     <Link
                       className={`nav-link ${
@@ -250,7 +239,21 @@ const Header = () => {
                       Events
                     </Link>
                   </li>
+
                   <li class="nav-item">
+                    <Link
+                      className={`nav-link ${
+                        location.pathname === "/Sponsors" ? "active" : ""
+                      }`}
+                      aria-current="page"
+                      to="/Sponsors"
+                      onClick={handleNavClick}
+                    >
+                      Sponsors
+                    </Link>
+                  </li>
+
+                  {/* <li class="nav-item">
                     <Link
                       className={`nav-link ${
                         location.pathname === "/Team" ? "active" : ""
@@ -261,7 +264,7 @@ const Header = () => {
                     >
                       Team
                     </Link>
-                  </li>
+                  </li> */}
                   
                   <li class="nav-item">
                     <Link

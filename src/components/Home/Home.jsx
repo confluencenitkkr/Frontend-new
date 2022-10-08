@@ -12,6 +12,12 @@ const Home = () => {
     <>
       <main className="home_main_main">
         <section class="hero" id="home_main_container">
+          <img
+            src="/images/bgMedia/homepage.png"
+            alt=""
+            className="back_img_home"
+          />
+
           {/* <div class="container">
             <div class="row">
               <div class="col-lg-5 col-12 m-auto">
