@@ -1,4 +1,4 @@
-import classes from "./App.module.css";
+import "./App.css";
 import React, { useEffect, useState } from "react";
 
 import {
@@ -36,7 +36,7 @@ function App() {
   });
 
   return (
-    <div className={classes.main_container} id="main_container_app">
+    <div className="main_container_app1" id="main_container_app">
       <Router>
         {/* <Header></Header> */}
         <Navbar></Navbar>
