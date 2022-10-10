@@ -2,7 +2,7 @@ import { eventWrapper } from "@testing-library/user-event/dist/utils";
 import React, { useState, Component, useEffect } from "react";
 import action from "../../actions/events.Actions";
 import "./gallery.css";
-import Navbar from "../../components/hader";
+import Navbar from "../hader";
 
 const Gallery = (props) => {
   useEffect(() => {

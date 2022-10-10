@@ -27,7 +27,6 @@ const Categories = () => {
         label: e,
       });
     });
-    console.log(data, "dcsc");
     return data;
   };
   const handleChange = (newValue, actionMeta) => {
@@ -38,7 +37,6 @@ const Categories = () => {
   useEffect(() => {
     setLoad(true);
     fetch();
-    console.log("hello");
   }, []);
   const fetch = () => {
     let text = "";
