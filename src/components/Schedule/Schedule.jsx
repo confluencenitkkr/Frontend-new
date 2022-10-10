@@ -1,7 +1,5 @@
 import React, { useEffect } from "react";
-
 import "../../styles/Schedule.css";
-import bg from "../../styles/images/photo.jpg";
 
 const Schedule = () => {
   const imgArr = [
@@ -83,7 +81,7 @@ const Schedule = () => {
                 </p>
               </div>
             </div>
-            <div className="timeline-item" data-text="DAY 2">
+            <div className="timeline-item special_timeline" data-text="DAY 2">
               <div className="timeline__content">
                 <div className="img_wrapper_schedule">
                   <img className="timeline__img" src="images/avatar/k.jpg" />

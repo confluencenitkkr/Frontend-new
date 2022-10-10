@@ -14,7 +14,6 @@ const Navbar = () => {
   useEffect(() => {
     let main_container = document.getElementById("main_container_navbar_pro");
     let social_media = document.getElementById("social_media_navbar_pro");
-    console.log(showMediaIcons);
 
     if (showMediaIcons) {
       main_container.classList.add("sidebar");
@@ -40,21 +39,17 @@ const Navbar = () => {
       <Backdrop backdropClicked={backdropClicked} isBackdrop={isBackdrop} />
 
       <nav className="main_container_navbar_pro" id="main_container_navbar_pro">
+        {/* <img src="/images/bgMedia/logo.png" alt="" className="nav_logo_img_pro"/> */}
         <img
           src="/images/bgMedia/paperDesign.png"
           alt=""
           className="nav_img_paper_pro"
         />
         <img src="/images/bgMedia/ribbon.png" className="nav_img_navbar_pro" />
+        <p className="sidebar_heading_nav">Confluence</p>
         <div className="navItem1_navbar_pro">
-          <NavLink
-            to="/"
-            // className={url === "" ? "active" : ""}
-          >
-            Home
-          </NavLink>
+          <NavLink to="/">Home</NavLink>
           <NavLink to="/Gallery">Gallery</NavLink>
-
           <NavLink to="/Featured">Featured</NavLink>
           <NavLink to="/Sponsors">Sponsors</NavLink>
           {/* <NavLink

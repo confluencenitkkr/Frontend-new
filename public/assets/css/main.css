@@ -2637,7 +2637,7 @@ footer {
   }
   
   #bgMedia_123:before {
-	background: url('../../images/bgMedia/paperBg.jpg');
+	/* background: url('../../images/bgMedia/paperBg.jpg'); */
 	object-fit: cover;
 	/* background : url("../../images/bgMedia/bg.jpg"); */
 
