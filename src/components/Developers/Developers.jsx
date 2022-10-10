@@ -80,13 +80,13 @@ const Developers = () => {
   return (
     <div class="bg-drak py-5 ">
       <div class="container py-5 downsection">
-        <div class="row mb-4">
-          <div class="col-lg-5">
+        <div class="row mt-4">
+          <div class="col-lg-6">
             <h2 class="display-4 font-weight-light font-head">Developers</h2>
           </div>
         </div>
 
-        <div class="row text-center" style={{ justifyContent: "center" }}>
+        <div class="row text-center mt-5" style={{ justifyContent: "center" }}>
           {developers.length > 0
             ? developers.map((e, index) => {
                 return (

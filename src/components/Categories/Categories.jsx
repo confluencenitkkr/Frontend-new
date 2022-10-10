@@ -68,7 +68,7 @@ const Categories = () => {
     <>
       <section class="" id="category_main_container">
         <div class="container categories-page">
-          <div class="row mt-5">
+          <div class="row mt-4">
             <div class="col-lg-6">
               <div class="common-head">
                 <h2 className="font-head">
@@ -90,7 +90,7 @@ const Categories = () => {
                     fetch1(e.target.value);
                   }}
                 >
-                  <option selected={true}>Select Club</option>
+                  <option selected>Select Club</option>
                   {data.data.map((e, index) => {
                     return <option value={e}>{e}</option>;
                   })}{" "}
@@ -121,7 +121,7 @@ const Categories = () => {
           </div>
           <div class=" ">
             <div
-              class="accordion container py-5 downsection"
+              class="accordion container py-5"
               id="accordionExample"
             >
               <div class="row text-center">

@@ -1,4 +1,6 @@
-import "./App.css";
+import classes from "./App.module.css";
+import React, { useEffect, useState } from "react";
+
 import {
   BrowserRouter as Router,
   Routes,
@@ -23,19 +25,25 @@ import "./styles/Events.css";
 import "./styles/css/main.css";
 // import "./styles/css/bootstrap.min.css";
 import "./styles/css/responsive.css";
-import Footerr from "./components/Footerr/footerr";
+import Navbar from './components/navbar'
 
 function App() {
+
+  useEffect(() => {
+    let main_container = document.getElementById("main_container_app");
+    main_container.style.background =
+      'url("/images/bgMedia/bg.jpg") 50% repeat';
+  });
+
   return (
-    <div style={{
-      cursor:"default"
-    }}>
+    <div className={classes.main_container} id="main_container_app">
       <Router>
-        <Header></Header>
+        {/* <Header></Header> */}
+        <Navbar></Navbar>
         <Routes>
           <Route exact path="/" key="home" element={<Home />} />
           <Route exact path="/Sponsors" key="Sponsors" element={<Sponsors />} />
-          <Route exact path="/Schedule" key="Schedule" element={<Schedule />} />
+          <Route exact path="/Featured" key="Featured" element={<Schedule />} />
           <Route exact path="/Events" key="Events" element={<Categories />} />
           <Route
             exact
