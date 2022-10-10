@@ -7,7 +7,7 @@ import bg2_1 from "./bg2_1.webm";
 const AboutUs = () => {
   return (
     <div className="about_us_main">
-      <video id="bgvid" className="vid" playsinline autoPlay muted loop>
+      <video id="bgvid" className="vid_about_us" playsinline autoPlay muted loop>
         <source src={bg2} type="video/mp4" className="sourcee" />
         <source src={bg2_1} type="video/webm" className="sourcee" />
       </video>
