@@ -43,23 +43,20 @@
 		overflow-x: hidden !important;
 	}
 	.navigation .navbar-collapse {
-		border-radius: 7px;
-		background: #ab820e;
-		max-height: 400px;
-		left: 0;
+		background: linear-gradient(rgb(113 36 26) 100%, rgba(39, 48, 83, 0.1) 0%) repeat scroll 0% 0%;
+		left: 5px;
 		padding: 10px 30px 20px 50px;
-		position: absolute;
 		z-index: 99;
-		top: 50px;
-		width: calc(100% + 20px);
 		overflow: auto;
 		border: medium none;
 		-webkit-box-shadow: 0 10px 30px 5px rgba(1, 164, 121, .06);
 		-moz-box-shadow: 0 10px 30px 5px rgba(1, 164, 121, .06);
 		box-shadow: 0 10px 30px 5px rgba(1, 164, 121, .06);
-		left: -10px !important;
-		top: 70px;
+		width: 60vw;
+		height: 100vh;
+		/* transition: all ease 1s; */
 	}
+
 	.navigation .nav-item {
 		margin-left: 0;
 		text-align: left;
@@ -117,8 +114,6 @@
 
 	.navigation .navbar-collapse {
 		top: 87px !important;
-		height: 100vh !important;
-		max-height: 100vh;
 		padding-left: 25px;
 		position: fixed;
 	}

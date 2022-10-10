@@ -30,7 +30,6 @@ const Gallery = (props) => {
    
   return (
     <>
-      <Navbar></Navbar>
       <div class={classes.external}>
         <div class={classes.horizontal_scroll_wrapper} id="gallery_mainContainer">
           <div class={img_wrapper_slow}>

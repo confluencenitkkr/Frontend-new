@@ -9,6 +9,17 @@
   z-index: 10;
 }
 
+.img_wrapper_schedule{
+  padding: 1vh;
+  color: #fff;
+  background: white;
+  filter: saturate(50%) sepia(20%) hue-rotate(5deg);
+  cursor: pointer;
+}
+
+.img_wrapper_schedule:hover{
+  filter: none;
+}
 
 #bgMedia_123{
 	position: fixed;
@@ -135,9 +146,9 @@
   transition: 0.3s all 0.2s;
   opacity: 1;
 }
-.timeline-item--active .timeline__content-title {
+/* .timeline-item--active .timeline__content-title {
   margin: -50px 0 20px 0;
-}
+} */
 @media only screen and (max-width: 767px) {
   .timeline-item {
     align-self: baseline !important;

@@ -58,7 +58,7 @@ const Sponsors = () => {
     <>
       <div class="bg-drak py-5">
         <div class="container py-5 downsection">
-          <div class="row mb-4">
+          <div class="row mt-4">
             <div class="col-lg-5">
               <h2 class="display-4 font-weight-light font-head">Sponsors</h2>
             </div>

@@ -2,21 +2,21 @@ import React, { useEffect, useState } from "react";
 import "../../styles/Home.css";
 
 const Home = () => {
-  useEffect(() => {
-    let main_container = document.getElementById("home_main_container");
-    main_container.style.background =
-      'url("/images/bgMedia/bg.jpg") 50% repeat';
-  });
+  // useEffect(() => {
+  //   let main_container = document.getElementById("home_main_container");
+  //   main_container.style.background =
+  //     'url("/images/bgMedia/bg.jpg") 50% repeat';
+  // });
 
   return (
     <>
       <main className="home_main_main">
         <section class="hero" id="home_main_container">
-          <img
+          {/* <img
             src="/images/bgMedia/homepage.png"
             alt=""
             className="back_img_home"
-          />
+          /> */}
 
           {/* <div class="container">
             <div class="row">

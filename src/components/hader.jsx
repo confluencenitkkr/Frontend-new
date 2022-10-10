@@ -147,7 +147,7 @@ const Header = () => {
     window.open("https://nitkkr.herokuapp.com/auth/facebook", "_self");
   };
 
-  let navbarBg = location.pathname === "/" ? (
+  let navbarBg = location.pathname != "/Schedule" ? (
     <div className="bgMedia1">
           <img src="/images/bgMedia/paperDesign.png" alt=""/>
           </div>
