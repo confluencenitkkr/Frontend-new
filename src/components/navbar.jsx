@@ -19,15 +19,15 @@ const Navbar = () => {
     if (showMediaIcons) {
       main_container.classList.add("sidebar");
       social_media.classList.add("active_navbar");
-    } else{
+    } else {
       main_container.classList.remove("sidebar");
       social_media.classList.remove("active_navbar");
     }
-  }, [showMediaIcons, isBackdrop])
+  }, [showMediaIcons, isBackdrop]);
 
   const navbarHandler = () => {
     setShowMediaIcons((show) => !show);
-    setIsBackdrop((backdrop) => !backdrop)
+    setIsBackdrop((backdrop) => !backdrop);
   };
 
   const backdropClicked = () => {
@@ -40,59 +40,39 @@ const Navbar = () => {
       <Backdrop backdropClicked={backdropClicked} isBackdrop={isBackdrop} />
 
       <nav className="main_container_navbar_pro" id="main_container_navbar_pro">
-        <img src="/images/bgMedia/paperDesign.png" alt="" className="nav_img_paper_pro"/>
+        <img
+          src="/images/bgMedia/paperDesign.png"
+          alt=""
+          className="nav_img_paper_pro"
+        />
         <img src="/images/bgMedia/ribbon.png" className="nav_img_navbar_pro" />
         <div className="navItem1_navbar_pro">
-          <NavLink to="/" className={url === "" ? "active" : ""}>
+          <NavLink
+            to="/"
+            // className={url === "" ? "active" : ""}
+          >
             Home
           </NavLink>
-          <NavLink
-            to="/Gallery"
-            className={url === "Gallery" ? "active" : ""}
-          >
-            Gallery
-          </NavLink>
-          
-          <NavLink
-            to="/Featured"
-            className={url === "Featured" ? "active" : ""}
-          >
-            Featured
-          </NavLink>
-          <NavLink
-            to="/Sponsors"
-            className={url === "Sponsors" ? "active" : ""}
-          >
-            Sponsors
-          </NavLink>
+          <NavLink to="/Gallery">Gallery</NavLink>
+
+          <NavLink to="/Featured">Featured</NavLink>
+          <NavLink to="/Sponsors">Sponsors</NavLink>
           {/* <NavLink
             to="/Team"
-            className={url === "Team" ? "active" : ""}
           >
             Team
           </NavLink> */}
-          <NavLink
-            to="/Events"
-            className={url === "Events" ? "active" : ""}
-          >
-            Events
-          </NavLink>
+          <NavLink to="/Events">Events</NavLink>
 
-          <NavLink
-            to="/AboutUs"
-            className={url === "AboutUs" ? "active" : ""}
-          >
-            AboutUs
-          </NavLink>
-          <NavLink
-            to="/Developers"
-            className={url === "Developers" ? "active" : ""}
-          >
-            Developers
-          </NavLink>
+          <NavLink to="/AboutUs">AboutUs</NavLink>
+          <NavLink to="/Developers">Developers</NavLink>
         </div>
       </nav>
-      <div className="social_media_navbar_pro" id ="social_media_navbar_pro" onClick={() => navbarHandler()}>
+      <div
+        className="social_media_navbar_pro"
+        id="social_media_navbar_pro"
+        onClick={() => navbarHandler()}
+      >
         <img src="/images/bgMedia/ribbon_drop.png" alt="" />
       </div>
     </>
