@@ -18,7 +18,7 @@ const Gallery = (props) => {
           <div className="img_wrapper slow">
             <a>
               <img
-                src="images/Gallery/img1.jpg"
+                src="https://res.cloudinary.com/dryfxhged/image/upload/v1665440372/public/images/edu2onozhtxwh2l8ulec.jpg"
                 alt=""
               />
             </a>
@@ -27,7 +27,7 @@ const Gallery = (props) => {
           <div className="img_wrapper">
             <a>
               <img
-                src="images/Gallery/img2.jpg"
+                src="https://res.cloudinary.com/dryfxhged/image/upload/v1665440374/public/images/t80phroos9lcj3xqixp6.jpg"
                 alt=""
               />
             </a>
@@ -36,7 +36,7 @@ const Gallery = (props) => {
           <div className="img_wrapper slow2">
             <a>
               <img
-                src="images/Gallery/img3.jpg"
+                src="https://res.cloudinary.com/dryfxhged/image/upload/v1665440376/public/images/uvfqr2s34kvqbodrqjta.jpg"
                 alt=""
               />
             </a>
@@ -45,7 +45,7 @@ const Gallery = (props) => {
           <div className="img_wrapper">
             <a>
               <img
-                src="images/Gallery/img4.jpg"
+                src="https://res.cloudinary.com/dryfxhged/image/upload/v1665440376/public/images/whkn0lubec41nbrlqshp.jpg"
                 alt=""
               />
             </a>
@@ -54,7 +54,7 @@ const Gallery = (props) => {
           <div className="img_wrapper slow3">
             <a>
               <img
-                src="images/Gallery/img5.jpg"
+                src="https://res.cloudinary.com/dryfxhged/image/upload/v1665440377/public/images/ydlv9fbrpxrowz44oxgw.jpg"
                 alt=""
               />
             </a>
@@ -63,7 +63,7 @@ const Gallery = (props) => {
           <div className="img_wrapper faster">
             <a>
               <img
-                src="images/Gallery/img6.jpg"
+                src="https://res.cloudinary.com/dryfxhged/image/upload/v1665440372/public/images/cwfaf2lylypzqilnxlva.jpg"
                 alt=""
               />
             </a>
@@ -72,7 +72,7 @@ const Gallery = (props) => {
           <div className="img_wrapper slow4">
             <a>
               <img
-                src="images/Gallery/img7.jpg"
+                src="https://res.cloudinary.com/dryfxhged/image/upload/v1665440372/public/images/iwrxajblwqupwojirfnj.jpg"
                 alt=""
               />
             </a>
@@ -81,7 +81,7 @@ const Gallery = (props) => {
           <div className="img_wrapper">
             <a>
               <img
-                src="images/Gallery/img8.jpg"
+                src="https://res.cloudinary.com/dryfxhged/image/upload/v1665440372/public/images/ffvsqimsseajngf1xasv.jpg"
                 alt=""
               />
             </a>
@@ -90,7 +90,7 @@ const Gallery = (props) => {
           <div className="img_wrapper slow5">
             <a>
               <img
-                src="images/Gallery/img9.jpg"
+                src="https://res.cloudinary.com/dryfxhged/image/upload/v1665440380/public/images/kd8jesodilkho5o8u0fy.jpg"
                 alt=""
               />
             </a>
@@ -98,7 +98,7 @@ const Gallery = (props) => {
           <div className="img_wrapper faster">
             <a>
               <img
-                src="images/Gallery/img10.jpg"
+                src="https://res.cloudinary.com/dryfxhged/image/upload/v1665440381/public/images/nm903tdtgm99st7o7pu2.jpg"
                 alt=""
               />
             </a>
@@ -106,7 +106,7 @@ const Gallery = (props) => {
           <div className="img_wrapper faster2">
             <a>
               <img
-                src="images/Gallery/img11.jpg"
+                src="https://res.cloudinary.com/dryfxhged/image/upload/v1665440379/public/images/knacivoyylzfkjfoqr3o.jpg"
                 alt=""
               />
             </a>
@@ -114,7 +114,7 @@ const Gallery = (props) => {
           <div className="img_wrapper slow3">
             <a>
               <img
-                src="images/Gallery/img12.jpg"
+                src="https://res.cloudinary.com/dryfxhged/image/upload/v1665440382/public/images/tkwfba7vk3yrkg8psbz7.jpg"
                 alt=""
               />
             </a>
@@ -122,7 +122,7 @@ const Gallery = (props) => {
           <div className="img_wrapper faster2">
             <a>
               <img
-                src="images/Gallery/img13.jpg"
+                src="https://res.cloudinary.com/dryfxhged/image/upload/v1665440372/public/images/drpifivy2omvlry0d4uy.jpg"
                 alt=""
               />
             </a>
@@ -130,7 +130,7 @@ const Gallery = (props) => {
           <div className="img_wrapper faster1">
             <a>
               <img
-                src="images/Gallery/img14.jpg"
+                src="https://res.cloudinary.com/dryfxhged/image/upload/v1665440382/public/images/ilogjaooj51xalh8q9kt.jpg"
                 alt=""
               />
             </a>
@@ -138,7 +138,7 @@ const Gallery = (props) => {
           <div className="img_wrapper slow1">
             <a>
               <img
-                src="images/Gallery/img15.jpg"
+                src="https://res.cloudinary.com/dryfxhged/image/upload/v1665440385/public/images/mkkoho6my4yonz5j9mpb.jpg"
                 alt=""
               />
             </a>
@@ -146,7 +146,7 @@ const Gallery = (props) => {
           <div className="img_wrapper slow2">
             <a>
               <img
-                src="images/Gallery/img16.jpg"
+                src="https://res.cloudinary.com/dryfxhged/image/upload/v1665440384/public/images/pnqkjsl5ievzk22f5gnh.jpg"
                 alt=""
               />
             </a>
@@ -154,7 +154,7 @@ const Gallery = (props) => {
           <div className="img_wrapper faster">
             <a>
               <img
-                src="images/Gallery/img17.jpg"
+                src="https://res.cloudinary.com/dryfxhged/image/upload/v1665440385/public/images/tydmrb3uj2wbctehrove.jpg"
                 alt=""
               />
             </a>
@@ -162,7 +162,7 @@ const Gallery = (props) => {
           <div className="img_wrapper faster3">
             <a>
               <img
-                src="images/Gallery/img18.jpg"
+                src="images/avatar/img18.jpg"
                 alt=""
               />
             </a>
@@ -170,7 +170,7 @@ const Gallery = (props) => {
           <div className="img_wrapper slow5">
             <a>
               <img
-                src="images/Gallery/img19.jpg"
+                src="https://res.cloudinary.com/dryfxhged/image/upload/v1665440377/public/images/ydlv9fbrpxrowz44oxgw.jpg"
                 alt=""
               />
             </a>
@@ -178,7 +178,7 @@ const Gallery = (props) => {
           <div className="img_wrapper slow1">
             <a>
               <img
-                src="images/Gallery/img20.jpg"
+                src="https://res.cloudinary.com/dryfxhged/image/upload/v1665440376/public/images/uvfqr2s34kvqbodrqjta.jpg"
                 alt=""
               />
             </a>
