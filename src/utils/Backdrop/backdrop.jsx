@@ -1,10 +1,10 @@
 import React from "react";
-import classes from '../Backdrop/backdrop.module.css'
+import '../Backdrop/backdrop.css'
 
 const backdrop = (props) => {
 
   return (
-    <div className={classes.backdrop} onClick={props.backdropClicked} style={{
+    <div className="backdrop_pro_backdrop" onClick={props.backdropClicked} style={{
         display : props.isBackdrop ? 'block' : 'none'
     }}>
 

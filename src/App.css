@@ -3,7 +3,7 @@
   src: url('./Rambors.woff') format('woff');
   }
 
-.main_container{
+.main_container_app1{
     cursor:"default";
     min-height: 100vh;
     min-width: 100vw;
