@@ -13,13 +13,13 @@ const AboutUs = () => {
       </video>
 
       <Tilt
-        className="parallax_effect}
+        className="parallax_effect"
         glareMaxOpacity={0.9}
         tiltMaxAngleX={15}
         tiltMaxAngleY={15}
         perspective={800}
         gyroscope={true}
-        transitionSpeed={1000}"
+        transitionSpeed={1000}
       >
       <div id="polina" className="pol">
         <h1 className="h1_text">About Us</h1>

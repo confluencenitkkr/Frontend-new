@@ -14,7 +14,6 @@ const Sponsors = () => {
     eventsActions.getSponsor((err, res) => {
       if (err) {
       } else {
-        console.log(res);
         setList(res.data);
       }
     });

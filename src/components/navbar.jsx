@@ -14,6 +14,7 @@ const Navbar = () => {
   useEffect(() => {
     let main_container = document.getElementById("main_container_navbar_pro");
     let social_media = document.getElementById("social_media_navbar_pro");
+    console.log(showMediaIcons);
 
     if (showMediaIcons) {
       main_container.classList.add("sidebar");
@@ -22,7 +23,7 @@ const Navbar = () => {
       main_container.classList.remove("sidebar");
       social_media.classList.remove("active_navbar");
     }
-  }, [showMediaIcons])
+  }, [showMediaIcons, isBackdrop])
 
   const navbarHandler = () => {
     setShowMediaIcons((show) => !show);
