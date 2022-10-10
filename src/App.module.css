@@ -1,5 +1,11 @@
+@font-face { 
+  font-family: 'Rambors';
+  src: url('./Rambors.woff') format('woff');
+  }
+
 .main_container{
     cursor:"default";
     min-height: 100vh;
     min-width: 100vw;
+    font-family: Rambors;
 }

@@ -212,7 +212,7 @@ const Schedule = () => {
                   <img className="timeline__img" src="images/avatar/n.jpg" />
                 </div>
 
-                <h2 className="timeline__content-title">Nukkad Dance</h2>
+                <h2 className="timeline__content-title">Nukkad Natak</h2>
                 <p className="timeline__content-desc">
                   Its a Major Group dance competition based on Hip Hop
                   theme.Over years Groove Armada has become established as one
