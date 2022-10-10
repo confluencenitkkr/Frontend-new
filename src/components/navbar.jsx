@@ -5,23 +5,25 @@ import Backdrop from "../utils/Backdrop/backdrop";
 
 const Navbar = () => {
   const [showMediaIcons, setShowMediaIcons] = useState(false);
+  const [isBackdrop, setIsBackdrop] = useState(false);
+
   let main_class = [classes.main_container];
+  let navbar_style = [classes.social_media];
   let url = window.location.href.split("/");
   url = url[url.length - 1];
 
   if (showMediaIcons) {
     main_class.push(classes.sidebar);
+    navbar_style.push(classes.active_navbar);
   }
 
   const navbarHandler = () => {
     setShowMediaIcons((show) => !show);
-    setIsBackdrop(true);
+    setIsBackdrop((backdrop) => !backdrop)
   };
 
-  const [isBackdrop, setIsBackdrop] = useState(false);
-
   const backdropClicked = () => {
-    setIsBackdrop(false);
+    setIsBackdrop((show) => !show);
     setShowMediaIcons(false);
   };
 
@@ -81,7 +83,7 @@ const Navbar = () => {
           </NavLink>
         </div>
       </nav>
-      <div className={classes.social_media} onClick={() => navbarHandler()}>
+      <div className={navbar_style.join(' ')} onClick={() => navbarHandler()}>
         <img src="/images/bgMedia/ribbon_drop.png" alt="" />
       </div>
     </>

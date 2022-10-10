@@ -47,6 +47,14 @@ const Home = () => {
               Your browser does not support the video tag.
             </video>
           </div> */}
+
+          {/* <div  className="flickering_home" >
+          <div id="text">
+            <h1>
+              O<span id="offset">P</span>EN
+            </h1>
+          </div>
+          </div> */}
         </section>
       </main>
     </>

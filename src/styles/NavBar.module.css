@@ -15,9 +15,9 @@
     justify-content: center;
 
     position: fixed;
-    transition: width 0.5s;
-    -webkit-transition: width 0.5s;
-    -moz-transition: width 0.5s;
+    transition: width 0.4s;
+    -webkit-transition: width 0.4s;
+    -moz-transition: width 0.4s;
 
     z-index: 99;
     font-family: Poppins,sans-serif;
@@ -75,6 +75,7 @@
     right: 2vw;
     top: 2vh;
     transform: rotate(90deg);
+    transition: all ease 0.1s;
   }
 
   .social_media img{
@@ -128,7 +129,13 @@
       height: 100vh;
       width: 60vw;
       opacity: 1;
-      z-index: 100;
+      z-index: 102;
+      right: 0;
+    }
+
+    .active_navbar{
+      right: 55vw;
+      transition: all ease 0.4s;
     }
   
     .sidebar a {
@@ -136,7 +143,7 @@
     }
   
     .sidebar img {
-      height: 9vh;
+      height: 9.5vh;
       min-height: 40px;
       width: auto;
     }
@@ -157,7 +164,7 @@
   
     .social_media {
       display: flex;
-      z-index: 99;
+      z-index: 101;
     }
   }
   

@@ -12,7 +12,7 @@ const AboutUs = () => {
         <source src={bg2_1} type="video/webm" className={classes.sourcee} />
       </video>
 
-      <Tilt
+      {/* <Tilt
         className={classes.parallax_effect}
         glareMaxOpacity={0.9}
         tiltMaxAngleX={15}
@@ -20,22 +20,21 @@ const AboutUs = () => {
         perspective={800}
         gyroscope={true}
         transitionSpeed={1000}
-      >
-        <div id="polina" className={classes.pol}>
-          <h1 className={classes.h1_text}>About Us</h1>
-          <p className={classes.p_text}>
-            Confluence, the annual cultural Festival of NIT Kurukshetra is a
-            cultural extravaganza beyond words, beyond description. Confluence
-            is the coming together of free spirits, like-minded zealous youth
-            and a celebration of culture of true artistic genius. Its urge to
-            deliver the maximum is what makes it one of the most awaited
-            cultural festival.
-          </p>
-        </div>
-      </Tilt>
+      > */}
+      <div id="polina" className={classes.pol}>
+        <h1 className={classes.h1_text}>About Us</h1>
+        <p className={classes.p_text}>
+          Confluence, the annual cultural Festival of NIT Kurukshetra is a
+          cultural extravaganza beyond words, beyond description. Confluence is
+          the coming together of free spirits, like-minded zealous youth and a
+          celebration of culture of true artistic genius. Its urge to deliver
+          the maximum is what makes it one of the most awaited cultural
+          festival. Team Confluence is a group of clubs - Photog, ELAD, HLAD,
+          Colours, Spic, MAD, Sponsy, FineArts, HTC and AVA.
+        </p>
+      </div>
+      {/* </Tilt> */}
     </div>
-
-    
   );
 };
 
