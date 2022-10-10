@@ -39,6 +39,7 @@ const Navbar = () => {
       <Backdrop backdropClicked={backdropClicked} isBackdrop={isBackdrop} />
 
       <nav className="main_container_navbar_pro" id="main_container_navbar_pro">
+        <img src="/images/bgMedia/paperDesign.png" alt="" className="nav_img_paper_pro"/>
         <img src="/images/bgMedia/ribbon.png" className="nav_img_navbar_pro" />
         <div className="navItem1_navbar_pro">
           <NavLink to="/" className={url === "" ? "active" : ""}>

@@ -9,3 +9,10 @@
     min-width: 100vw;
     font-family: Rambors;
 }
+
+@media screen and (max-width: 400px) {
+  .main_container_app1 {
+    height: 120vh;
+    width: 120vw;
+  }
+}
