@@ -48,19 +48,19 @@ const Navbar = () => {
         <img src="/images/bgMedia/ribbon.png" className="nav_img_navbar_pro" />
         <p className="sidebar_heading_nav">Confluence</p>
         <div className="navItem1_navbar_pro">
-          <NavLink to="/">Home</NavLink>
-          <NavLink to="/Gallery">Gallery</NavLink>
-          <NavLink to="/Featured">Featured</NavLink>
-          <NavLink to="/Sponsors">Sponsors</NavLink>
+          <NavLink to="/" onClick={() => navbarHandler()}>Home</NavLink>
+          <NavLink to="/Gallery" onClick={() => navbarHandler()}>Gallery</NavLink>
+          <NavLink to="/Featured" onClick={() => navbarHandler()}>Featured</NavLink>
+          <NavLink to="/Sponsors" onClick={() => navbarHandler()}>Sponsors</NavLink>
           {/* <NavLink
             to="/Team"
           >
             Team
           </NavLink> */}
-          <NavLink to="/Events">Events</NavLink>
+          <NavLink to="/Events" onClick={() => navbarHandler()}>Events</NavLink>
 
-          <NavLink to="/AboutUs">AboutUs</NavLink>
-          <NavLink to="/Developers">Developers</NavLink>
+          <NavLink to="/AboutUs" onClick={() => navbarHandler()}>AboutUs</NavLink>
+          <NavLink to="/Developers" onClick={() => navbarHandler()}>Developers</NavLink>
         </div>
       </nav>
       <div
