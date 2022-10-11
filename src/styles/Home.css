@@ -4,6 +4,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
+}
+
+.home_circle_img_pro{
+  position: absolute;
+  right: -28vw;
+  top: 16vh;
+  height: 80vh;
+  animation: circle_rotation 30s infinite forwards;
 }
 
 #text {
@@ -53,6 +62,19 @@
   margin-right: 7%;
   font-size: 4vw;
 }
+
+
+@keyframes circle_rotation{
+  0%{
+    transform: rotateZ(0deg);
+  }
+
+  100%{
+    transform: rotateZ(360deg);
+
+  }
+}
+
 
 @keyframes text-flicker {
   0% {

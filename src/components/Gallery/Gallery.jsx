@@ -78,7 +78,7 @@ const Gallery = (props) => {
             </a>
           </div>
 
-          <div className="img_wrapper">
+          <div className="img_wrapper slow5">
             <a>
               <img
                 src="https://res.cloudinary.com/dryfxhged/image/upload/v1665440372/public/images/ffvsqimsseajngf1xasv.jpg"
@@ -95,7 +95,7 @@ const Gallery = (props) => {
               />
             </a>
           </div>
-          <div className="img_wrapper faster">
+          <div className="img_wrapper faster1">
             <a>
               <img
                 src="https://res.cloudinary.com/dryfxhged/image/upload/v1665440381/public/images/nm903tdtgm99st7o7pu2.jpg"
@@ -103,7 +103,7 @@ const Gallery = (props) => {
               />
             </a>
           </div>
-          <div className="img_wrapper faster2">
+          <div className="img_wrapper slow2">
             <a>
               <img
                 src="https://res.cloudinary.com/dryfxhged/image/upload/v1665440379/public/images/knacivoyylzfkjfoqr3o.jpg"
@@ -127,7 +127,7 @@ const Gallery = (props) => {
               />
             </a>
           </div>
-          <div className="img_wrapper faster1">
+          <div className="img_wrapper slow3">
             <a>
               <img
                 src="https://res.cloudinary.com/dryfxhged/image/upload/v1665440382/public/images/ilogjaooj51xalh8q9kt.jpg"
@@ -135,7 +135,7 @@ const Gallery = (props) => {
               />
             </a>
           </div>
-          <div className="img_wrapper slow1">
+          <div className="img_wrapper">
             <a>
               <img
                 src="https://res.cloudinary.com/dryfxhged/image/upload/v1665440385/public/images/mkkoho6my4yonz5j9mpb.jpg"
@@ -171,14 +171,6 @@ const Gallery = (props) => {
             <a>
               <img
                 src="https://res.cloudinary.com/dryfxhged/image/upload/v1665440377/public/images/ydlv9fbrpxrowz44oxgw.jpg"
-                alt=""
-              />
-            </a>
-          </div>
-          <div className="img_wrapper slow1">
-            <a>
-              <img
-                src="https://res.cloudinary.com/dryfxhged/image/upload/v1665440376/public/images/uvfqr2s34kvqbodrqjta.jpg"
                 alt=""
               />
             </a>
