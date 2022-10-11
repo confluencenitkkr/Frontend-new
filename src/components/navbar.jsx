@@ -34,6 +34,12 @@ const Navbar = () => {
     setShowMediaIcons(false);
   };
 
+  const clickNavbar = () => {
+    if(showMediaIcons){
+      navbarHandler();
+    }
+  }
+
   return (
     <>
       <Backdrop backdropClicked={backdropClicked} isBackdrop={isBackdrop} />
@@ -48,19 +54,14 @@ const Navbar = () => {
         <img src="/images/bgMedia/ribbon.png" className="nav_img_navbar_pro" />
         <p className="sidebar_heading_nav">Confluence</p>
         <div className="navItem1_navbar_pro">
-          <NavLink to="/" onClick={() => navbarHandler()}>Home</NavLink>
-          <NavLink to="/Gallery" onClick={() => navbarHandler()}>Gallery</NavLink>
-          <NavLink to="/Featured" onClick={() => navbarHandler()}>Featured</NavLink>
-          <NavLink to="/Sponsors" onClick={() => navbarHandler()}>Sponsors</NavLink>
-          {/* <NavLink
-            to="/Team"
-          >
-            Team
-          </NavLink> */}
-          <NavLink to="/Events" onClick={() => navbarHandler()}>Events</NavLink>
+          <NavLink to="/" onClick={() => clickNavbar()}>Home</NavLink>
+          <NavLink to="/Gallery" onClick={() => clickNavbar()}>Gallery</NavLink>
+          <NavLink to="/Featured" onClick={() => clickNavbar()}>Featured</NavLink>
+          <NavLink to="/Sponsors" onClick={() => clickNavbar()}>Sponsors</NavLink>
+          <NavLink to="/Events" onClick={() => clickNavbar()}>Events</NavLink>
 
-          <NavLink to="/AboutUs" onClick={() => navbarHandler()}>AboutUs</NavLink>
-          <NavLink to="/Developers" onClick={() => navbarHandler()}>Developers</NavLink>
+          <NavLink to="/AboutUs" onClick={() => clickNavbar()}>AboutUs</NavLink>
+          <NavLink to="/Developers" onClick={() => clickNavbar()}>Developers</NavLink>
         </div>
       </nav>
       <div
