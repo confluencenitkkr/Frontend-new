@@ -87,7 +87,7 @@ const Gallery = (props) => {
             </a>
           </div>
 
-          <div className="img_wrapper slow5">
+          <div className="img_wrapper slow2">
             <a>
               <img
                 src="https://res.cloudinary.com/dryfxhged/image/upload/v1665440380/public/images/kd8jesodilkho5o8u0fy.jpg"

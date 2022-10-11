@@ -9,7 +9,7 @@
 
 .home_circle_img_pro{
   position: absolute;
-  right: -28vw;
+  right: -20vw;
   top: 16vh;
   height: 80vh;
   animation: circle_rotation 30s infinite forwards;

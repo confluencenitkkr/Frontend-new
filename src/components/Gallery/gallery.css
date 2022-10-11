@@ -159,3 +159,103 @@
     translateY(-8vw);
 }
 }
+
+@media screen and (max-width: 465px) {
+  .horizontal_scroll_wrapper{
+    height: 100vh;
+    width: 100vw;
+    transform: none;
+  }
+
+  .img_wrapper{
+    transform: translateZ(0.1px) scale(0.72) translateX(10vh)
+    translateY(15vh);
+  }
+
+  
+.slow {
+  transform: translateZ(-0.2px) scale(1) translateX(15vw) translateY(10vw);
+}
+.slow1 {
+  transform: translateZ(0.5px) scale(0.3) translateX(30vw)
+    translateY(10vw);
+}
+.slow2 {
+  transform: translateZ(-0.3px) scale(1) translateX(-10vw)
+  translateY(8vw);
+}
+.slow3 {
+  transform: translateZ(0.2px) scale(0.65) translateX(2vw)
+    translateY(10vw);
+}
+.faster {
+  transform:translateZ(0.15px) scale(0.65) translateX(20vw)
+  translateY(5vw);
+}
+.faster1 {
+  transform: translateZ(0.05px) scale(0.8) translateX(0vw)
+    translateY(-10vw);
+}
+.faster2 {
+  transform: translateZ(0.02px) scale(1) translateX(5vw)
+    translateY(-5vw);
+}
+.slow4 {
+  transform: translateZ(0.15px) scale(0.7) translateX(2vw)
+    translateY(-5vw);
+}
+.slow5 {
+  transform: translateZ(0.4px) scale(0.55) translateX(-8vw)
+    translateY(-8vw);
+}
+}
+
+@media screen and (max-width: 376px) {
+  .horizontal_scroll_wrapper{
+    height: 100vh;
+    width: 100vw;
+    transform: none;
+  }
+
+  .img_wrapper{
+    transform: translateZ(0.1px) scale(0.72) translateX(3vh)
+    translateY(15vh);
+  }
+
+  
+.slow {
+  transform: translateZ(-0.2px) scale(0.9) translateX(15vw) translateY(10vw);
+}
+.slow1 {
+  transform: translateZ(0.5px) scale(0.3) translateX(30vw)
+    translateY(10vw);
+}
+.slow2 {
+  transform: translateZ(-0.3px) scale(1) translateX(-10vw)
+  translateY(8vw);
+}
+.slow3 {
+  transform: translateZ(0.2px) scale(0.65) translateX(2vw)
+    translateY(10vw);
+}
+.faster {
+  transform:translateZ(0.15px) scale(0.65) translateX(-7vw)
+  translateY(5vw);
+}
+.faster1 {
+  transform: translateZ(0.05px) scale(0.8) translateX(0vw)
+    translateY(-10vw);
+}
+.faster2 {
+  transform: translateZ(0.02px) scale(0.75) translateX(5vw)
+    translateY(-5vw);
+}
+.slow4 {
+  transform: translateZ(0.15px) scale(0.7) translateX(2vw)
+    translateY(-5vw);
+}
+.slow5 {
+  transform: translateZ(0.4px) scale(0.40) translateX(-8vw)
+    translateY(-8vw);
+}
+}
