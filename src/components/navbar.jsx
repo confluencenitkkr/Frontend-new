@@ -35,33 +35,63 @@ const Navbar = () => {
   };
 
   const clickNavbar = () => {
-    if(showMediaIcons){
+    if (showMediaIcons) {
       navbarHandler();
     }
-  }
+  };
+
+  let sidebar_logo =  <img
+  src="/images/bgMedia/logo.png"
+  alt=""
+  className="sidebar_logo"
+/>
 
   return (
     <>
       <Backdrop backdropClicked={backdropClicked} isBackdrop={isBackdrop} />
 
+      { sidebar_logo }
       <nav className="main_container_navbar_pro" id="main_container_navbar_pro">
-        {/* <img src="/images/bgMedia/logo.png" alt="" className="nav_logo_img_pro"/> */}
-        <img
-          src="/images/bgMedia/paperDesign.png"
-          alt=""
-          className="nav_img_paper_pro"
-        />
-        <img src="/images/bgMedia/ribbon.png" className="nav_img_navbar_pro" />
-        <p className="sidebar_heading_nav">Confluence</p>
+        <div className="img_wrapper_nav">
+          <img
+            src="/images/bgMedia/logo.png"
+            alt=""
+            className="nav_logo_img_pro"
+          />
+          <img
+            src="/images/bgMedia/paperDesign.png"
+            alt=""
+            className="nav_img_paper_pro"
+          />
+          <img
+            src="/images/bgMedia/ribbon.png"
+            className="nav_img_navbar_pro"
+          />
+          <p className="sidebar_heading_nav">Confluence</p>
+        </div>
         <div className="navItem1_navbar_pro">
-          <NavLink to="/" onClick={() => clickNavbar()}>Home</NavLink>
-          <NavLink to="/Gallery" onClick={() => clickNavbar()}>Gallery</NavLink>
-          <NavLink to="/Featured" onClick={() => clickNavbar()}>Featured</NavLink>
-          <NavLink to="/Sponsors" onClick={() => clickNavbar()}>Sponsors</NavLink>
-          <NavLink to="/Events" onClick={() => clickNavbar()}>Events</NavLink>
+          <NavLink to="/" onClick={() => clickNavbar()}>
+            Home
+          </NavLink>
+          <NavLink to="/Gallery" onClick={() => clickNavbar()}>
+            Gallery
+          </NavLink>
+          <NavLink to="/Featured" onClick={() => clickNavbar()}>
+            Featured
+          </NavLink>
+          <NavLink to="/Sponsors" onClick={() => clickNavbar()}>
+            Sponsors
+          </NavLink>
+          <NavLink to="/Events" onClick={() => clickNavbar()}>
+            Events
+          </NavLink>
 
-          <NavLink to="/AboutUs" onClick={() => clickNavbar()}>AboutUs</NavLink>
-          <NavLink to="/Developers" onClick={() => clickNavbar()}>Developers</NavLink>
+          <NavLink to="/AboutUs" onClick={() => clickNavbar()}>
+            AboutUs
+          </NavLink>
+          <NavLink to="/Developers" onClick={() => clickNavbar()}>
+            Developers
+          </NavLink>
         </div>
       </nav>
       <div

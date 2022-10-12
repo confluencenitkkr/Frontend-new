@@ -23,6 +23,15 @@
   font-family: Poppins, sans-serif;
 }
 
+.img_wrapper_nav{
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .nav_img_navbar_pro {
   position: absolute;
   width: 80%;
@@ -32,10 +41,23 @@
 
 .nav_logo_img_pro {
   position: absolute;
-  z-index: 1;
-  height: 15vh;
-  left: 0;
+  z-index: 3;
   transform: rotateZ(-20deg);
+  width: 16vw;
+  left: 8vw;
+  margin-top: 1%;
+  min-width: 150px;
+}
+
+.sidebar_logo{
+  display: none;
+  z-index: 3;
+  transform: rotateZ(-20deg);
+  width: 25vw;
+  min-width: 150px;
+  top: -5vh;
+    left: -6vw;
+  position: fixed;
 }
 
 .nav_img_paper_pro {
@@ -46,21 +68,8 @@
   object-fit: cover;
 }
 
-.logo {
-  width: 20%;
-  margin-top: 10px;
-  display: flex;
-  align-items: center;
-}
-
-.logo img {
-  height: 9vh;
-  min-height: 40px;
-  width: auto;
-  border-radius: 40px;
-}
-
 .navItem1_navbar_pro {
+  position: absolute;
   width: 65%;
   display: flex;
   justify-content: space-around;
@@ -121,7 +130,7 @@
 
 @media (max-width: 998px) {
   .main_container_navbar_pro {
-    font-size: 13px;
+    font-size: 12px;
   }
 
   .navItem1_navbar_pro {
@@ -140,14 +149,19 @@
     justify-content: space-around;
   }
 
-  .navItem1_navbar_pro a {
-    color: transparent;
+  .sidebar_logo{
+    display: block;
+    top: -6vh;
+    left: -5vw;
   }
 
   .nav_img_navbar_pro {
     top: 0;
     width: 90%;
     object-fit: cover;
+    height: 9.5vh;
+    min-height: 40px;
+    width: auto;
   }
 
   .sidebar_heading_nav {
@@ -171,27 +185,25 @@
     transition: all ease 0.4s;
   }
 
-  .sidebar a {
-    color: #b3b3b3;
-  }
-
-  .sidebar img {
-    height: 9.5vh;
-    min-height: 40px;
-    width: auto;
-  }
-
-  .logo {
-    height: 10%;
-    justify-content: center;
+  .nav_logo_img_pro{
+    left: 200vw;
   }
 
   .navItem1_navbar_pro {
     flex-direction: column;
     height: 55%;
+    width: 100%;
     justify-self: unset;
     margin-bottom: 60%;
     margin-top: 30%;
+  }
+
+  .sidebar a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    color: #b3b3b3;
   }
 
   .social_media_navbar_pro {
@@ -204,10 +216,20 @@
   .navItem1_navbar_pro {
     margin-top: 25%;
   }
+
+  .sidebar_logo{
+    top: -5vh;
+    left: -5vw;
+  }
 }
 
 @media (max-width: 450px) {
   .navItem1_navbar_pro {
     margin-top: 10%;
+  }
+
+  .sidebar_logo{
+    top: -5vh;
+    left: -6vw;
   }
 }
