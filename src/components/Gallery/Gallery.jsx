@@ -60,7 +60,7 @@ const Gallery = (props) => {
             </a>
           </div>
 
-          <div className="img_wrapper faster">
+          <div className="img_wrapper slow4">
             <a>
               <img
                 src="https://res.cloudinary.com/dryfxhged/image/upload/v1665440372/public/images/cwfaf2lylypzqilnxlva.jpg"
@@ -69,7 +69,7 @@ const Gallery = (props) => {
             </a>
           </div>
 
-          <div className="img_wrapper slow4">
+          <div className="img_wrapper slow">
             <a>
               <img
                 src="https://res.cloudinary.com/dryfxhged/image/upload/v1665440372/public/images/iwrxajblwqupwojirfnj.jpg"
@@ -151,7 +151,7 @@ const Gallery = (props) => {
               />
             </a>
           </div>
-          <div className="img_wrapper faster">
+          <div className="img_wrapper faster2">
             <a>
               <img
                 src="https://res.cloudinary.com/dryfxhged/image/upload/v1665440385/public/images/tydmrb3uj2wbctehrove.jpg"
