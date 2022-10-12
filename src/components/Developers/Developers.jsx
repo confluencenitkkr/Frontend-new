@@ -1,5 +1,6 @@
 import React from "react";
 import "../../styles/Developers.css";
+import behance from "../../utils/behance.svg";
 
 const Developers = () => {
   const developers = [
@@ -58,7 +59,7 @@ const Developers = () => {
     },
 
     {
-      name: "karan",
+      name: "Karan",
       image: "https://iili.io/Zf4jFs.md.jpg",
       role: "Front-end Developer",
       linkedin: "https://www.linkedin.com/in/karan-gupta-97571b202/",
@@ -66,7 +67,7 @@ const Developers = () => {
     },
 
     {
-      name: "lakshay",
+      name: "Lakshay",
       image:
         "https://i.ibb.co/9nzJrWR/4dfabe32-2ea6-4246-b807-623a370f97bc-1.jpg",
       role: "Full Stack Developer",
@@ -75,7 +76,7 @@ const Developers = () => {
     },
 
     {
-      name: "himanshu",
+      name: "Himanshu",
       image: "https://iili.io/ZfQAnp.md.jpg",
       role: "Front-end Developer",
       linkedin: "https://www.linkedin.com/in/himanshu-623879224",
@@ -96,7 +97,7 @@ const Developers = () => {
           {developers.length > 0
             ? developers.map((e, index) => {
                 return (
-                  <div class="col-xl-3 col-sm-6 mb-5 dev-card">
+                  <div class="col-xl-3 col-sm-6 mb-5 dev-card" key={index}>
                     <div class="bg-white rounded shadow-sm py-5 px-4">
                       <div
                         style={{
@@ -122,17 +123,27 @@ const Developers = () => {
                       <span class="small text-uppercase text-muted">
                         {e.role}
                       </span>
-                      <ul class="social mb-0 list-inline mt-3">
-                        <li class="list-inline-item">
-                          <a href={e.github} class="social-link">
-                            <i class="bi bi-github"></i>
-                          </a>
-                        </li>
+                      <ul class="social mb-0 list-inline mt-3" style={{
+                            display: "flex",
+                            justifyContent: "center"
+                      }}>
+                        {index == 6 ? (
+                          <li class="list-inline-item">
+                            <a href={e.github} target="_blank" class="social-link">
+                              <img src={behance} alt="" />
+                            </a>
+                          </li>
+                        ) : (
+                          <li class="list-inline-item">
+                            <a href={e.github} target="_blank" class="social-link">
+                              <i class="bi bi-github"></i>
+                            </a>
+                          </li>
+                        )}
 
                         <li class="list-inline-item">
-                          <a href={e.linkedin} class="social-link">
-                          <i class="bi bi-linkedin"></i>
-
+                          <a href={e.linkedin} target="_blank" class="social-link">
+                            <i class="bi bi-linkedin"></i>
                           </a>
                         </li>
                       </ul>

@@ -51,7 +51,7 @@
 
 .sidebar_logo{
   display: none;
-  z-index: 3;
+  z-index: 120;
   transform: rotateZ(-20deg);
   width: 25vw;
   min-width: 150px;
