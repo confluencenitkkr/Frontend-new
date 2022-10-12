@@ -6,6 +6,17 @@ import "../../styles/Developers.css";
 import data from "../../config/usaState.json";
 import eventsActions from "../../actions/events.Actions";
 import logo from "../../styles/images/photog.jpg";
+import image1 from "../../styles/images/conflu.png";
+import image2 from "../../styles/images/photo.jpg";
+import image3 from "../../styles/images/colours.jpg";
+import image4 from "../../styles/images/elad.jpg";
+import image5 from "../../styles/images/fa.jpg";
+import image6 from "../../styles/images/htc.jpg";
+import image7 from "../../styles/images/hlad.jpg";
+import image8 from "../../styles/images/ava.jpg";
+import image9 from "../../styles/images/spic.jpg";
+import image10 from "../../styles/images/sponsi.jpg";
+import image11 from "../../styles/images/mad.jpg";
 
 
 const Categories = () => {
@@ -170,8 +181,7 @@ const Categories = () => {
                         gyroscope={true}
                         transitionSpeed={1000}
                       >
-                        <div className="card_container_wrapper"></div>
-                        {/* <div class="event-list"> */}
+                        {/* <div className="card_container_wrapper"></div> */}
                         <img
                           src={e.image}
                           alt=""
