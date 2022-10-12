@@ -198,6 +198,17 @@
     display: flex;
     z-index: 101;
   }
+
+  .hamburger-menu{
+    height: 5vh;
+    position: absolute;
+    z-index: 101;
+    justify-content: end;
+    right: 0;
+    margin-right: 5%;
+    margin-top: 9%;
+    /********Implement Colour if liked********/
+  }
 }
 
 @media (max-width: 650px) {
