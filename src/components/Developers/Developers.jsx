@@ -12,15 +12,14 @@ const Developers = () => {
     },
     {
       name: "Kshitiz Pratap Singh ",
-      image: "https://i.ibb.co/D5zp66d/IMG-20211104-152222-575-01.jpg",
+      image: "https://iili.io/ZfrS4a.md.jpg",
       role: "Front-end Developer",
       linkedin: "https://www.linkedin.com/in/kshitiz-pratap-singh-00b57b209",
       github: "https://github.com/KshitizPratap",
     },
     {
       name: "Nihar ",
-      image:
-        "https://i.ibb.co/9nzJrWR/4dfabe32-2ea6-4246-b807-623a370f97bc-1.jpg",
+      image: "https://iili.io/ZfrD4s.md.jpg",
       role: "Full Stack Developer",
       linkedin: "http://www.linkedin.com/in/nihar-meena",
       github: "https://github.com/niharx",
@@ -36,8 +35,7 @@ const Developers = () => {
     },
     {
       name: "Nikhil",
-      image:
-        "https://i.ibb.co/9nzJrWR/4dfabe32-2ea6-4246-b807-623a370f97bc-1.jpg",
+      image: "https://iili.io/Zfjlyu.md.jpg",
       role: "Front-end Developer",
       linkedin: "https://www.linkedin.com/in/nikhil-mittal-a54903186",
       github: "https://github.com/nikhilmittalx",
@@ -45,40 +43,40 @@ const Developers = () => {
 
     {
       name: "Pransu",
-      image:
-        "https://i.ibb.co/9nzJrWR/4dfabe32-2ea6-4246-b807-623a370f97bc-1.jpg",
+      image: "https://iili.io/ZfrEBe.md.jpg",
       role: "Front-end Developer",
       linkedin: "https://www.linkedin.com/in/pransu-yadav-a082891b8",
       github: "https://github.com/Pransu-code",
     },
 
     {
-      name: "lakshay",
-      image:
-        "https://i.ibb.co/jvffFhZ/IMG20210116210210-00-01-1-compressed.jpg",
-      role: "Full Stack Developer",
-      linkedin: "https://www.linkedin.com/in/lakshay-rose-514518206",
-      github: "https://github.com/Daemon-25",
-    },
-    {
       name: "Dev bansal",
-      image: "https://i.ibb.co/D8TNqvw/IMG-20220420-WA0130-2-1.jpg",
+      image: "https://iili.io/ZfkSrQ.jpg",
       role: "UI/UX Designer",
       linkedin: "https://www.linkedin.com/in/dev-bansal-753061209",
-      behance: "https://www.behance.net/devbansal2",
+      github: "https://www.behance.net/devbansal2",
     },
+
     {
       name: "karan",
-      image:
-        "https://i.ibb.co/rdWtMK2/4154ba60-d0ee-4cd2-b97d-1d1b5d58c650.jpg",
+      image: "https://iili.io/Zf4jFs.md.jpg",
       role: "Front-end Developer",
       linkedin: "https://www.linkedin.com/in/karan-gupta-97571b202/",
       github: "https://github.com/guptakaran9896",
     },
+
+    {
+      name: "lakshay",
+      image:
+        "https://i.ibb.co/9nzJrWR/4dfabe32-2ea6-4246-b807-623a370f97bc-1.jpg",
+      role: "Full Stack Developer",
+      linkedin: "https://www.linkedin.com/in/lakshay-rose-514518206",
+      github: "https://github.com/Daemon-25",
+    },
+
     {
       name: "himanshu",
-      image:
-        "https://i.ibb.co/jMBdMPp/2440ba39-56fe-414c-a24d-096a0f5df586-11zon-1.jpg",
+      image: "https://iili.io/ZfQAnp.md.jpg",
       role: "Front-end Developer",
       linkedin: "https://www.linkedin.com/in/himanshu-623879224",
       github: "https://github.com/Himansh0u01",
@@ -113,6 +111,7 @@ const Developers = () => {
                           src={e.image}
                           alt=""
                           width="100"
+                          height="100"
                           class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
                           style={{
                             minHeight: "80px",
