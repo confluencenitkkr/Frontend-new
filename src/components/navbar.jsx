@@ -40,17 +40,17 @@ const Navbar = () => {
     }
   };
 
-  let sidebar_logo =  <img
-  src="/images/bgMedia/logo.png"
-  alt=""
-  className="sidebar_logo"
-/>
+  let sidebar_logo = (
+    <NavLink to="/" onClick={() => clickNavbar()}>
+      <img src="/images/bgMedia/logo.png" alt="" className="sidebar_logo" />
+    </NavLink>
+  );
 
   return (
     <>
       <Backdrop backdropClicked={backdropClicked} isBackdrop={isBackdrop} />
 
-      { sidebar_logo }
+      {sidebar_logo}
       <nav className="main_container_navbar_pro" id="main_container_navbar_pro">
         <div className="img_wrapper_nav">
           <img
