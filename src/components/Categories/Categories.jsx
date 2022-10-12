@@ -172,10 +172,11 @@ const Categories = () => {
                       >
                         {/* <div class="event-list"> */}
                         <img
-                          src="https://i.ibb.co/kJ0cp1x/a-tryst-with-magic.png"
+                          src={e.image}
                           alt=""
                           width="100"
                           class="heloo"
+                          className=""
                         />
                         <img src={logo} alt="" className="inner-element" />
                         <div class="card-name ">{e.eventName}</div>
