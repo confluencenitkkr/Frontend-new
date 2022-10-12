@@ -8,6 +8,7 @@ const Schedule = () => {
     "images/avatar/s_bg.jpg",
     "images/avatar/k.jpg",
     "images/avatar/l.jpg",
+    "images/avatar/limelight.jpg",
     "images/avatar/g.jpg",
     "images/avatar/f.jpg",
     "images/avatar/n.jpg",
@@ -99,11 +100,26 @@ const Schedule = () => {
                 <img className="timeline__img" src="images/avatar/l.jpg" />
                 <h2 className="timeline__content-title">LIBAS</h2>
                 <p className="timeline__content-desc">
-                  Its a Major Group dance competition based on Hip Hop
-                  theme.Over years Groove Armada has become established as one
-                  of the NITKKR’s best-loved and biggest dance acts. Best dance
-                  groups from the colleges of all around india do participate in
-                  this competition.
+                  Libas, the most fashionable event of confluence is back and
+                  better than ever. Bring out your most colorful costumes, wear
+                  the confidence on your face and strut like the world is your
+                  stage. Libas is a Fashion Parade event where the teams put on
+                  a theme based show of about 10 mins displaying their line of
+                  clothing, props, talent and charisma.
+                </p>
+              </div>
+            </div>
+
+            <div className="timeline-item" data-text="DAY 2">
+              <div className="timeline__content">
+                <img
+                  className="timeline__img"
+                  src="images/avatar/limelight.jpg"
+                />
+                <h2 className="timeline__content-title">LimeLight</h2>
+                <p className="timeline__content-desc">
+                  FASHION IS A LOVE AFFAIR WITH YOURSELF. PHOTOGRAPHY WITH LIFE.
+                  WHEN BLENDED TOGETHER THEY ARE BOUND TO CREATE AN IMPACT.
                 </p>
               </div>
             </div>
