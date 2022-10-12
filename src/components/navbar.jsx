@@ -3,8 +3,8 @@ import "../../src/styles/NavBar.css";
 import { NavLink } from "react-router-dom";
 import Backdrop from "../utils/Backdrop/backdrop";
 import { useEffect } from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
   const [showMediaIcons, setShowMediaIcons] = useState(false);
@@ -47,6 +47,10 @@ const Navbar = () => {
       <img src="/images/bgMedia/logo.png" alt="" className="sidebar_logo" />
     </NavLink>
   );
+
+  let hamburgerIcon = !isBackdrop ? (
+    <i class="bi-list fa-2x"></i>
+  ) : null;
 
   return (
     <>
@@ -102,8 +106,8 @@ const Navbar = () => {
         onClick={() => navbarHandler()}
       >
         <img src="/images/bgMedia/ribbon_drop.png" alt="" />
+        { hamburgerIcon }
       </div>
-      <FontAwesomeIcon icon={faBars} className="hamburger-menu" onClick={() => navbarHandler()}/>
     </>
   );
 };

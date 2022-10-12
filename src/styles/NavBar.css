@@ -99,13 +99,15 @@
   position: fixed;
   right: 2vw;
   top: 2vh;
-  transform: rotate(90deg);
   transition: all ease 0.1s;
+  justify-content: center;
+  align-items: center;
 }
 
 .social_media_navbar_pro img {
   height: 10vh;
   cursor: pointer;
+  transform: rotate(90deg);
 }
 
 .sidebar_heading_nav {
@@ -155,8 +157,8 @@
 
   .sidebar_logo{
     display: block;
-    top: -6vh;
-    left: -5vw;
+    top: -30px;
+    left: -25px
   }
 
   .nav_img_navbar_pro {
@@ -215,15 +217,12 @@
     z-index: 101;
   }
 
-  .hamburger-menu{
-    height: 5vh;
+  .social_media_navbar_pro i{
     position: absolute;
-    z-index: 101;
-    justify-content: end;
-    right: 0;
-    margin-right: 5%;
-    margin-top: 9%;
-    /********Implement Colour if liked********/
+    margin-left: 10px;
+    color: #ffffffd4;
+    margin-top: 5px;
+
   }
 }
 
@@ -231,20 +230,10 @@
   .navItem1_navbar_pro {
     margin-top: 25%;
   }
-
-  .sidebar_logo{
-    top: -5vh;
-    left: -5vw;
-  }
 }
 
 @media (max-width: 450px) {
   .navItem1_navbar_pro {
     margin-top: 10%;
-  }
-
-  .sidebar_logo{
-    top: -5vh;
-    left: -9vw;
   }
 }

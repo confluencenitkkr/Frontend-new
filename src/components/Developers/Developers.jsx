@@ -1,5 +1,4 @@
 import React from "react";
-import img from "../../styles/images/ayuhh.jpg";
 import "../../styles/Developers.css";
 
 const Developers = () => {
@@ -127,7 +126,7 @@ const Developers = () => {
                         </li>
                         <li class="list-inline-item">
                           <a href={e.linkedin} class="social-link">
-                            <i class="bi bi-linkedin"></i>
+                            <i class="bi-list"></i>
                           </a>
                         </li>
                       </ul>
