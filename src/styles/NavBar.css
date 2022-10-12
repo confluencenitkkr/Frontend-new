@@ -130,11 +130,15 @@
 
 @media (max-width: 998px) {
   .main_container_navbar_pro {
-    font-size: 12px;
+    font-size: 11.5px;
   }
 
   .navItem1_navbar_pro {
     margin-top: 1.75vh;
+  }
+
+  .nav_logo_img_pro{
+    left: 7vw;
   }
 }
 
