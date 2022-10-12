@@ -69,7 +69,7 @@ const Schedule = () => {
             <div className="timeline-item" data-text="">
               <div className="timeline__content">
                 <div className="featured_img_wrapper">
-                <img className="timeline__img" src="images/avatar/s.jpg" />
+                  <img className="timeline__img" src="images/avatar/s.jpg" />
                 </div>
                 <h2 className="timeline__content-title">Star Night </h2>
                 <p className="timeline__content-desc">
@@ -85,9 +85,9 @@ const Schedule = () => {
             <div className="timeline-item" data-text="DAY 1">
               <div className="timeline__content">
                 <div className="featured_img_wrapper">
-                <img className="timeline__img" src="images/avatar/k.jpg" />
+                  <img className="timeline__img" src="images/avatar/k.jpg" />
                 </div>
-                
+
                 <h2 className="timeline__content-title">काव्यांजलि</h2>
                 <p className="timeline__content-desc">
                   {" "}
@@ -103,7 +103,7 @@ const Schedule = () => {
             <div className="timeline-item" data-text="DAY 2">
               <div className="timeline__content">
                 <div className="featured_img_wrapper">
-                <img className="timeline__img" src="images/avatar/l.jpg" />
+                  <img className="timeline__img" src="images/avatar/l.jpg" />
                 </div>
                 <h2 className="timeline__content-title">LIBAS</h2>
                 <p className="timeline__content-desc">
@@ -119,12 +119,16 @@ const Schedule = () => {
 
             <div className="timeline-item" data-text="DAY 2">
               <div className="timeline__content">
+              <div className="featured_img_wrapper">
                 <img
                   className="timeline__img"
                   src="images/avatar/limelight.jpg"
                 />
+                </div>
                 <h2 className="timeline__content-title">LimeLight</h2>
-                <p className="timeline__content-desc">
+                <p className="timeline__content-desc" style={{
+                  textTransform:"capitalize"
+                }}>
                   FASHION IS A LOVE AFFAIR WITH YOURSELF. PHOTOGRAPHY WITH LIFE.
                   WHEN BLENDED TOGETHER THEY ARE BOUND TO CREATE AN IMPACT.
                 </p>
@@ -134,8 +138,7 @@ const Schedule = () => {
             <div className="timeline-item" data-text="DAY 3">
               <div className="timeline__content">
                 <div className="featured_img_wrapper">
-                <img className="timeline__img" src="images/avatar/g.jpg" />
-
+                  <img className="timeline__img" src="images/avatar/g.jpg" />
                 </div>
                 <h2 className="timeline__content-title">Groove Armada</h2>
                 <p className="timeline__content-desc">
@@ -151,7 +154,7 @@ const Schedule = () => {
             <div className="timeline-item" data-text="DAY 3">
               <div className="timeline__content">
                 <div className="featured_img_wrapper">
-                <img className="timeline__img" src="images/avatar/f.jpg" />
+                  <img className="timeline__img" src="images/avatar/f.jpg" />
                 </div>
                 <h2 className="timeline__content-title">Folk Dance</h2>
                 <p className="timeline__content-desc">
@@ -169,7 +172,7 @@ const Schedule = () => {
             <div className="timeline-item" data-text="DAY 3">
               <div className="timeline__content">
                 <div className="featured_img_wrapper">
-                <img className="timeline__img" src="images/avatar/n.jpg" />
+                  <img className="timeline__img" src="images/avatar/n.jpg" />
                 </div>
                 <h2 className="timeline__content-title">Nukkad </h2>
                 <p className="timeline__content-desc">

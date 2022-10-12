@@ -94,20 +94,19 @@ const Navbar = () => {
             Featured
           </Link>
           <Link
-            to="/Sponsors"
-            onClick={() => clickNavbar()}
-            className={url == "Sponsors" ? "active" : ""}
-          >
-            Sponsors
-          </Link>
-          <Link
             to="/Events"
             onClick={() => clickNavbar()}
             className={url == "Events" ? "active" : ""}
           >
             Events
           </Link>
-
+          <Link
+            to="/Sponsors"
+            onClick={() => clickNavbar()}
+            className={url == "Sponsors" ? "active" : ""}
+          >
+            Sponsors
+          </Link>
           <Link
             to="/AboutUs"
             onClick={() => clickNavbar()}
