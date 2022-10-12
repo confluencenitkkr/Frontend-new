@@ -19,6 +19,40 @@ import image10 from "../../styles/images/sponsi.jpg";
 import image11 from "../../styles/images/mad.jpg";
 
 
+const selectLog=(club)=>{
+  let image;
+  switch(club){
+    case "Photography Club":
+    image=image2;
+    break
+    case "Music & Dramatics Club":
+      image=image11;
+      break
+      case "Fine Arts & Modelling":
+        image=image5;
+        break
+        case "Audio Visual Aids Club":
+          image=image8;
+          break
+          case "Hiking & trekking Club":
+            image=image6;
+            break
+            case "Spicmacay":
+              image=image9;
+              break
+              case "Post Graduate Club":
+                image=image1;
+                break
+                case "Lit & Deb Club English/Hindi":
+                image=image1;
+                break
+                case "Colors":
+                  image=image3;
+                  break
+      
+    
+  }
+}
 const Categories = () => {
   const [dataa, setData] = useState([]);
   const [load, setLoad] = useState(false);
@@ -163,6 +197,38 @@ const Categories = () => {
                   ""
                 )}
                 {dataa.map((e, index) => {
+                  let image;
+                  switch(e.clubName){
+                    case "Photography Club":
+                    image=image2;
+                    break
+                    case "Music & Dramatics Club":
+                      image=image11;
+                      break
+                      case "Fine Arts & Modelling":
+                        image=image5;
+                        break
+                        case "Audio Visual Aids Club":
+                          image=image8;
+                          break
+                          case "Hiking & trekking Club":
+                            image=image6;
+                            break
+                            case "Spicmacay":
+                              image=image9;
+                              break
+                              case "Post Graduate Club":
+                                image=image1;
+                                break
+                                case "Lit & Deb Club English/Hindi":
+                                image=image7;
+                                break
+                                case "Colors":
+                                  image=image3;
+                                  break
+                      
+                    
+                  }
                   return (
                     <div
                       class="col-xl-3 col-sm-6 mb-5 card_container"
@@ -188,7 +254,7 @@ const Categories = () => {
                           width="100"
                           className="heloo"
                         />
-                        <img src={logo} alt="" className="inner-element" />
+                        <img src={image?image:"/images/bgMedia/logo.png"} alt="" className="inner-element" />
                         <div class="card-name ">{e.eventName}</div>
                       </Tilt>
                     </div>
