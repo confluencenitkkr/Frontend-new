@@ -47,7 +47,7 @@ const Navbar = () => {
   );
 
   let hamburgerIcon = !isBackdrop ? (
-    <i class="bi-list fa-2x"></i>
+    <i class="bi-list"></i>
   ) : null;
 
   return (

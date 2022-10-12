@@ -221,8 +221,7 @@
     position: absolute;
     margin-left: 10px;
     color: #ffffffd4;
-    margin-top: 5px;
-
+    scale: 2;
   }
 }
 
