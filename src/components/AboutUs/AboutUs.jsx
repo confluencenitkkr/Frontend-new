@@ -18,7 +18,6 @@ const AboutUs = () => {
         tiltMaxAngleX={15}
         tiltMaxAngleY={15}
         perspective={800}
-        gyroscope={true}
         transitionSpeed={1000}
       >
       <div id="polina" className="pol">
