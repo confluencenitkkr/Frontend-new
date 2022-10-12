@@ -38,16 +38,11 @@
 }
 .card-name {
   position: relative;
-  bottom: 12%;
+  bottom: 10%;
   font-size: 17px;
-  color: black;
   /* font-family: 'Sacramento', cursive; */
   }
 
-.card_container::after{
-  content: "";
-  background: rgba(0, 0, 0, 0) linear-gradient(rgba(39, 48, 83, 0.1) 0%, rgb(109 37 27) 100%) repeat scroll 0% 0%;
-}
 .event-list {
   box-shadow: 0 0 10px grey;
   /* background-image: url("./images/ayuhh.jpg"); */
@@ -100,8 +95,11 @@ section {
 .heloo {
   height: 200px;
   width: 259px;
-  background-color: black;
+  object-fit: contain;
+    margin-top: 8%;
+    border-radius: 4px;
 }
+
 .inner-element {
   border-radius: 100%;
   position: relative;
@@ -116,11 +114,21 @@ section {
   background-color: white;
   width: 80%;
   height: 100%;
-  padding: 2%;
   /* margin: 3%; */
   transform-style: preserve-3d;
   transform: perspective(1000px);
 }
+
+.card_container_wrapper{
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(rgb(108 58 12) 100%, rgba(39, 48, 83, 0.1) 0%) repeat scroll 0% 0%;
+    opacity: 0.12;
+  position: absolute;
+  border-radius: 4px;
+
+}
+
 @media only screen and (max-width: 768px) {
   .categories-page {
     padding-top: 5vh;

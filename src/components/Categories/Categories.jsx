@@ -170,20 +170,16 @@ const Categories = () => {
                         gyroscope={true}
                         transitionSpeed={1000}
                       >
+                        {/* <div className="card_container_wrapper"></div> */}
                         {/* <div class="event-list"> */}
                         <img
                           src={e.image}
                           alt=""
                           width="100"
-                          class="heloo"
-                          className=""
+                          className="heloo"
                         />
                         <img src={logo} alt="" className="inner-element" />
                         <div class="card-name ">{e.eventName}</div>
-                        {/* <div class="read-more" style={{ cursor: "pointer" }}>
-                          Read More
-                        </div> */}
-                        {/* </div> */}
                       </Tilt>
                     </div>
                   );
