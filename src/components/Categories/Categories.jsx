@@ -170,7 +170,7 @@ const Categories = () => {
                         gyroscope={true}
                         transitionSpeed={1000}
                       >
-                        {/* <div className="card_container_wrapper"></div> */}
+                        <div className="card_container_wrapper"></div>
                         {/* <div class="event-list"> */}
                         <img
                           src={e.image}
