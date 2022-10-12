@@ -127,7 +127,7 @@ const Developers = () => {
                             display: "flex",
                             justifyContent: "center"
                       }}>
-                        {index == 6 ? (
+                        {e.role == "UI/UX Designer" ? (
                           <li class="list-inline-item">
                             <a href={e.github} target="_blank" class="social-link">
                               <img src={behance} alt="" />
