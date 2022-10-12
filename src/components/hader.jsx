@@ -15,6 +15,8 @@ import welcomepng from "../styles/images/welcome.png";
 
 const Header = () => {
   let location = useLocation();
+
+  console.log(location.pathname);
   const CLIENT_ID =
     "192073990165-k8uk1edbbhb0lm03lqb7ikvf3ibqotr5.apps.googleusercontent.com";
 

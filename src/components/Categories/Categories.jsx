@@ -202,7 +202,7 @@ const Categories = () => {
                         tiltMaxAngleX={30}
                         tiltMaxAngleY={30}
                         perspective={800}
-                        gyroscope={true}
+                        // gyroscope={true}
                         transitionSpeed={1000}
                       >
                         {/* <div className="card_container_wrapper"></div> */}

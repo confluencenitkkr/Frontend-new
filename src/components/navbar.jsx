@@ -3,8 +3,6 @@ import "../../src/styles/NavBar.css";
 import { NavLink } from "react-router-dom";
 import Backdrop from "../utils/Backdrop/backdrop";
 import { useEffect } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
   const [showMediaIcons, setShowMediaIcons] = useState(false);
