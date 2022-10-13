@@ -17,11 +17,14 @@ import image8 from "../../styles/images/ava.jpg";
 import image9 from "../../styles/images/spic.jpg";
 import image10 from "../../styles/images/sponsi.jpg";
 import image11 from "../../styles/images/mad.jpg";
+import Modal from "../Events/Events";
 
 const Categories = () => {
   const [dataa, setData] = useState([]);
   const [load, setLoad] = useState(false);
+  const [show, setShow] = useState(false);
   const [club, setClub] = useState("");
+  const [modalData, setModalData] = useState({});
 
   useEffect(() => {
     let main_container = document.getElementById("category_main_container");
@@ -40,7 +43,6 @@ const Categories = () => {
     return data;
   };
   const handleChange = (newValue, actionMeta) => {
-    console.log(newValue);
     setClub(newValue.label);
   };
   const history = useNavigate();
@@ -55,26 +57,34 @@ const Categories = () => {
       } else {
         setData(res.data);
         setLoad(false);
-        console.log(res);
       }
     });
   };
   const fetch1 = (text) => {
-    console.log(text);
     eventsActions.Search(text, (err, res) => {
       if (err) {
       } else {
         setData(res.data);
-        console.log(res);
       }
     });
   };
   const viewEvent = (id) => {
     history(`/EventView/${id}`);
   };
+
+  const showHandler = () => {
+    setShow((show) => !show);
+  };
+
+  const modalHandler = (e) => {
+    showHandler();
+    setModalData(e);
+  };
+
   return (
     <>
       <section class="" id="category_main_container">
+        <Modal showModal={show} data={modalData} showHandle={showHandler} />
         <div class="container categories-page">
           <div class="row mt-4">
             <div class="col-lg-6">
@@ -91,7 +101,6 @@ const Categories = () => {
                   placeholder="Club Name"
                   onChange={(e) => {
                     e.preventDefault();
-                    console.log(e.target.value);
                     setClub(e.target.value);
                     fetch1(e.target.value);
                   }}
@@ -191,10 +200,7 @@ const Categories = () => {
                     <div
                       class="col-xl-3 col-sm-6 mb-5 card_container"
                       style={{ cursor: "pointer" }}
-                      onClick={(a) => {
-                        a.preventDefault();
-                        viewEvent(e._id);
-                      }}
+                      onClick={() => modalHandler(e)}
                     >
                       <Tilt
                         className="parallax-effect"
@@ -213,7 +219,8 @@ const Categories = () => {
                           className="heloo"
                           onError={({ currentTarget }) => {
                             currentTarget.onerror = null; // prevents looping
-                            currentTarget.src="/images/bgMedia/default_poster.jpeg";
+                            currentTarget.src =
+                              "/images/bgMedia/default_poster.jpeg";
                           }}
                         />
                         <img

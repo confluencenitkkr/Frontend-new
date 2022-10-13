@@ -1,190 +1,53 @@
 import React, { useState, useEffect } from "react";
-import { useParams } from 'react-router-dom'
-import '../../styles/Events.css';
+import { useParams } from "react-router-dom";
+import "../../styles/Events.css";
 import eventsActions from "../../actions/events.Actions";
+import { Modal } from "reactstrap";
+
 const Events = (props) => {
   let { id } = useParams();
-  const [data, setData] = useState([]);
-  const image = "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGV2ZW50fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-  useEffect(() => {
-    fetch();
-  }, [])
-  const fetch = () => {
-    console.log(id)
-    eventsActions.getEventId(id, (err, res) => {
-      if (err) {
+  // const [description, setDescription] = useState("")
 
-      } else {
-        console.log(res.data);
-        setData(res.data);
-      }
-    })
+  let data = props.data;
+  console.log(data);
 
-  }
   return (
-    <div class="page-event">
-      <div class="cover">
-        <div class="heading">events</div>
-      </div>
-      <div class="container">
-        <div class="upcoming-sec">
-          <div class="heading">Confluence Events</div>
-        </div>
-        <div class="upcoming-event-list">
-          <div class="event-block">
-            <div class="row">
-              <div class="col-lg-2 sec-1">
-                <table>
-                  <tr>
-                    <td>
-                      <div class="month">April</div>
-                      <div class="month-date-devider"></div>
-                      <div class="date">{data.date ? data.date.slice(-2) : 22}</div>
-                    </td>
-                    <td class="title">{data.eventName}</td>
-                  </tr>
-                </table>
+    //
+    <Modal
+      isOpen={props.showModal}
+      toggle={props.showHandle}
+      className="authentication-modal modal-dialog modal-dialog-centered modal-xl"
+    >
+      <div className="auth-modal-wrp" id="modal">
+        <div className="row">
+          <div className="col-lg-6 p-0">
+            <div className="auth-modal-artwork">
+              <div className="event_time">
+                {data.date} at {data.time ? data.time : "11:00 AM"}
               </div>
-              <div class="col-lg-5 sec-2">
-                <img src={image} />
-              </div>
-              <div class="col-lg-5 sec-3">
-                <div class="title">{data.eventName}</div>
-                <div class="venue">
-                  <table>
-                    <tr>
-                      <td><i class="fa fa-map-marker"></i></td>
-                      <td>
-                        <div>{data.venue}</div>
-                        <div class="dim-color">
-                          {/* <a href="https://www.google.co.in" target="blank">Get Directions</a> */}
-                        </div>
-                      </td>
-                    </tr>
-                  </table>
-                </div>
-                <div class="time">
-                  <table>
-                    <tr>
-                      <td><i class="fa fa-clock-o"></i></td>
-                      <td>
-                        <div>{data.date} at {data.time ? data.time : "11:00 AM"}</div>
-                        <div data-livestamp="1517054400" class="dim-color"></div>
-                      </td>
-                    </tr>
-                  </table>
-                </div>
-                <div class="sort-story"> cooridnator:  {data.cooridnatorName} /  {data.cooridnatorName2}  <br />
-                  phone No:  {data.cooridnatorNumber} /  {data.cooridnatorNumber}<br />
-
-                </div>
-                {/* <div class="group-of-btn">
-              <a target="blank" class="btn book-ticket" onClick={() =>{}}>Register</a>
-            </div> */}
-              </div>
+              <img src={data.image} className="poster" alt="" />
+              <div className="event_date">
+                <div class="month">October</div>
+                <div class="month-date-devider"></div>
+                <div class="date">{data.date ? data.date.slice(-2) : 22}</div>
+              </div>{" "}
+              */}
             </div>
           </div>
-        </div>
-        <div class="upcoming-event-list">
-          <div class="event-block">
-            <div class="row">
-              {/* <div class="col-lg-1 sec-1">
-            <table>
-              <tr>
-                <td>
-                  <div class="month"></div>
-                  <div class="month-date-devider"></div>
-                  <div class="date"></div>
-                </td>
-                <td class="title">Description</td>
-              </tr>
-            </table>
-          </div> */}
-              <div class="col-lg-6 sec-3">
-                <div class="title">Description</div>
-                <div class="venue">
-                  <table>
-                    <tr>
-                      <td><i class="fa fa-map-marker"></i></td>
-                      <td>
-                        <div>Description</div>
-                        <div class="dim-color">
-                          <h1></h1>
-
-                        </div>
-                      </td>
-                    </tr>
-                  </table>
-                </div>
-                <div class="time">
-                  <table>
-                    <tr>
-                      <td><i class="fa fa-clock-o"></i></td>
-                      <td>
-                        <div></div>
-                        <div data-livestamp="1517054400" class="dim-color"></div>
-                      </td>
-                    </tr>
-                  </table>
-                </div>
-                <div class="sort-story">
+          <div className="col-lg-6 p-0">
+            <div className="auth-modal-content">
+              <div className="w-100">
+                <h2>{data.eventName}</h2>
+                <div className="auth-input-wrp" id="event_description">
                   {data.description}
-
                 </div>
-                {/* <div class="group-of-btn">
-              <a href="https://www.google.com" target="blank" class="btn book-ticket">Book Your Entry Pass</a>
-            </div>           */}
-              </div>
-              <div class="col-lg-6 sec-3">
-                <div class="title">{data.eventName}</div>
-                <div class="venue">
-                  <table>
-                    <tr>
-                      <td><i class="fa fa-map-marker"></i></td>
-                      <td>
-                        <div>Rule</div>
-                        <div class="dim-color">
-                          <h1></h1>
-                          <h1></h1>
-                        </div>
-                      </td>
-                    </tr>
-                  </table>
-                </div>
-                <div class="time">
-                  <table>
-                    <tr>
-                      <td><i class="fa fa-clock-o"></i></td>
-                      <td>
-                        <div></div>
-                        <div data-livestamp="1517054400" class="dim-color"></div>
-                      </td>
-                    </tr>
-                  </table>
-                </div>
-                <div class="sort-story"><p>{
-                  /* data.rule?(data.rule).replaceAll(/\n/g, "<br />"):console.log("data.rule is null") */
-                  data.rule && data.rule.split("\n").map((e) => {
-                    return (
-                      <p>{e}</p>
-                    )
-                  })
-                }</p>
-                </div>
-                {/* <div class="group-of-btn">
-              <a href="https://www.google.com" target="blank" class="btn book-ticket">Book Your Entry Pass</a>
-            </div> */}
               </div>
             </div>
           </div>
-          
-        </div>
-        <div class="register">
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSf95bI_yFu9k3_m-S2HObgrZnQJ9hi9qFoKYEEFdQBF4DPcWA/viewform?usp=sf_link" target="_blank" rel="noreferrer"><button type="button" class="btn register-btn">Register</button></a>
         </div>
       </div>
-    </div>
-  )
+    </Modal>
+  );
 };
 
 export default Events;
