@@ -14,14 +14,6 @@ const AboutUs = () => {
         <source src={bg} type="video/gif" className="sourcee" />
       </video>
 
-      <Tilt
-        className="parallax_effect"
-        glareMaxOpacity={0.9}
-        tiltMaxAngleX={15}
-        tiltMaxAngleY={15}
-        perspective={800}
-        transitionSpeed={1000}
-      >
       <div id="polina" className="pol">
         <h1 className="h1_text">About Us</h1>
         <p className="p_text">
@@ -34,7 +26,6 @@ const AboutUs = () => {
           Colours, Spic, MAD, Sponsy, FineArts, HTC and AVA.
         </p>
       </div>
-      </Tilt>
     </div>
   );
 };

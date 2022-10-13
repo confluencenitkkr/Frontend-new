@@ -200,7 +200,7 @@ const Categories = () => {
                     <div
                       class="col-xl-3 col-sm-6 mb-5 card_container"
                       style={{ cursor: "pointer" }}
-                      onClick={() => modalHandler(e)}
+                      // onClick={() => modalHandler(e)}
                     >
                       <Tilt
                         className="parallax-effect"
