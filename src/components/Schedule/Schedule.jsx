@@ -8,7 +8,6 @@ const Schedule = () => {
     "images/avatar/s_bg.jpg",
     "images/avatar/k.jpg",
     "images/avatar/l.jpg",
-    "images/avatar/limelight.jpg",
     "images/avatar/g.jpg",
     "images/avatar/f.jpg",
     "images/avatar/n.jpg",
