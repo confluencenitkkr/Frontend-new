@@ -45,11 +45,13 @@ const Sponsors = () => {
 
   list.map((e) => {
     if (e.role === "Title") {
-      titleSponsor.push(e);
+      // titleSponsor.push(e);
+      otherSponsor.push(e);
     } else if (e.role === "Co Title") {
       coTitleSponsor.push(e);
     } else {
       otherSponsor.push(e);
+      // titleSponsor.push(e);
     }
   });
 
@@ -66,7 +68,7 @@ const Sponsors = () => {
           <div class="row text-center  ">
            
                 <div className="sponsor-title">
-                  <h1>Title Sponsor</h1>
+                  <h1></h1>
                 </div>
         
            
@@ -104,7 +106,7 @@ const Sponsors = () => {
             {coTitleSponsor.length !== 0 ? (
               <>
                 <div className="sponsor-title">
-                  <h1>Co-Title Sponsor</h1>
+                  <h1>Sponsors</h1>
                 </div>
               </>
             ) : (
@@ -113,14 +115,14 @@ const Sponsors = () => {
 
             {coTitleSponsor?.map((e) => {
               return (
-                <div class="col-xl-3 col-sm-6 mb-5  justify-content-md-center widthfull">
+                <div class="col-xl-3 col-sm-6 mb-5 justify-content-center">
                   <div class="sponsor-division">
                     <div
                       class="spons-image"
                       style={{ backgroundImage: `url(${background})` }}
                     >
                       <a
-                        href={e.redirectURL}
+                        href={e.reDirectUrl}
                         type="button"
                         layout="sponsor"
                         target="_blank"

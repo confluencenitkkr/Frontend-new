@@ -303,97 +303,97 @@ const Header = () => {
 
 export default Header;
 
-// <Modal
-// isOpen={login}
-// toggle={() => {
-//   setLogin(false);
-//   setsign(false);
-// }}
-// className="authentication-modal modal-dialog modal-dialog-centered modal-xl"
-// >
-// <ToastContainer />
-// <div className="auth-modal-wrp">
-//   <div className="row">
-//     <div className="col-lg-6 p-0">
-//       <div className="auth-modal-artwork">
-//         <img src={welcomepng} className="img img-fluid" alt="" />
-//       </div>
-//     </div>
-//     <div className="col-lg-6 p-0">
-//       <div className="auth-modal-content">
-//         <div className="w-100">
-//           <div className="auth-modal-logo">
-//             <img src={image1} className="img img-fluid" alt="" />
-//           </div>
-//           <h2>Please Sign in to Confluence</h2>
-//           <div className="auth-input-wrp">
-//             <label for="">Enter Email</label>
-//             <input
-//               type="text"
-//               name="Email"
-//               onChange={(e) => {
-//                 e.preventDefault();
-//                 console.log(e.target.value);
-//                 setEmail(e.target.value);
-//               }}
-//               value={email}
-//               className="form-control"
-//               placeholder=""
-//             />
-//             <label for="">Enter password</label>
-//             <input
-//               type="password"
-//               name="mobileNo"
-//               // onChange={}
-//               className="form-control"
-//               placeholder=""
-//               onChange={(e) => {
-//                 e.preventDefault();
-//                 console.log(e.target.value);
-//                 setPassword(e.target.value);
-//               }}
-//             />
-//             <button
-//               role="button"
-//               data-bs-target="#verifyOTPmodal"
-//               data-bs-toggle="modal"
-//               data-bs-dismiss="modal"
-//               className="btn auth-main-btn"
-//               type="button"
-//               onClick={() => {
-//                 log();
-//               }}
-//             >
-//               Login
-//             </button>
-//           </div>
-//           <p>Or Sign in with</p>
-//           <ul>
-//             <li className="pe-2">
-//             </li>
-//           </ul>
-//           <h5>
-//             Don’t have account ?{" "}
-//             <a
-//               role="button"
-//               data-bs-target="#createAccmodal"
-//               data-bs-toggle="modal"
-//               data-bs-dismiss="modal"
-//               onClick={(e) => {
-//                 e.preventDefault();
-//                 setsign(true);
-//                 setLogin(false);
-//               }}
-//             >
-//               Create now
-//             </a>
-//           </h5>
-//         </div>
-//       </div>
-//     </div>
-//   </div>
-// </div>
-// </Modal>
+{/* <Modal
+isOpen={login}
+toggle={() => {
+  setLogin(false);
+  setsign(false);
+}}
+className="authentication-modal modal-dialog modal-dialog-centered modal-xl"
+>
+<ToastContainer />
+<div className="auth-modal-wrp">
+  <div className="row">
+    <div className="col-lg-6 p-0">
+      <div className="auth-modal-artwork">
+        <img src={welcomepng} className="img img-fluid" alt="" />
+      </div>
+    </div>
+    <div className="col-lg-6 p-0">
+      <div className="auth-modal-content">
+        <div className="w-100">
+          <div className="auth-modal-logo">
+            <img src={image1} className="img img-fluid" alt="" />
+          </div>
+          <h2>Please Sign in to Confluence</h2>
+          <div className="auth-input-wrp">
+            <label for="">Enter Email</label>
+            <input
+              type="text"
+              name="Email"
+              onChange={(e) => {
+                e.preventDefault();
+                console.log(e.target.value);
+                setEmail(e.target.value);
+              }}
+              value={email}
+              className="form-control"
+              placeholder=""
+            />
+            <label for="">Enter password</label>
+            <input
+              type="password"
+              name="mobileNo"
+              // onChange={}
+              className="form-control"
+              placeholder=""
+              onChange={(e) => {
+                e.preventDefault();
+                console.log(e.target.value);
+                setPassword(e.target.value);
+              }}
+            />
+            <button
+              role="button"
+              data-bs-target="#verifyOTPmodal"
+              data-bs-toggle="modal"
+              data-bs-dismiss="modal"
+              className="btn auth-main-btn"
+              type="button"
+              onClick={() => {
+                log();
+              }}
+            >
+              Login
+            </button>
+          </div>
+          <p>Or Sign in with</p>
+          <ul>
+            <li className="pe-2">
+            </li>
+          </ul>
+          <h5>
+            Don’t have account ?{" "}
+            <a
+              role="button"
+              data-bs-target="#createAccmodal"
+              data-bs-toggle="modal"
+              data-bs-dismiss="modal"
+              onClick={(e) => {
+                e.preventDefault();
+                setsign(true);
+                setLogin(false);
+              }}
+            >
+              Create now
+            </a>
+          </h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</Modal> */}
 // <Modal
 // isOpen={sign}
 // toggle={() => {
