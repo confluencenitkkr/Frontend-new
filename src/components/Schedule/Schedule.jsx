@@ -117,23 +117,6 @@ const Schedule = () => {
               </div>
             </div>
 
-            <div className="timeline-item" data-text="DAY 2">
-              <div className="timeline__content">
-              <div className="featured_img_wrapper">
-                <img
-                  className="timeline__img"
-                  src="images/avatar/limelight.jpg"
-                />
-                </div>
-                <h2 className="timeline__content-title">LimeLight</h2>
-                <p className="timeline__content-desc" style={{
-                  textTransform:"capitalize"
-                }}>
-                  FASHION IS A LOVE AFFAIR WITH YOURSELF. PHOTOGRAPHY WITH LIFE.
-                  WHEN BLENDED TOGETHER THEY ARE BOUND TO CREATE AN IMPACT.
-                </p>
-              </div>
-            </div>
 
             <div className="timeline-item" data-text="DAY 3">
               <div className="timeline__content">
