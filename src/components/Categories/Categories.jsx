@@ -33,15 +33,13 @@ const Categories = () => {
 
     setLoad(true);
 
-    if(localStorage.getItem("eventData") == null)
-    {
+    if (localStorage.getItem("eventData") == null) {
       fetch();
-    }
-    else{
+    } else {
       let d = localStorage.getItem("eventData");
       d = JSON.parse(d);
       setData(d);
-      setLoad(false)
+      setLoad(false);
     }
   }, []);
 
@@ -103,26 +101,6 @@ const Categories = () => {
                     return <option value={e}>{e}</option>;
                   })}{" "}
                 </select>
-
-                {/* </select>  
-                    {dataa.length > 0 ? (
-                <Select
-                  placeholder="Club Name"
-                  isClearable
-                  onChange={handleChange}
-                  classNamePrefix="form-select"
-                  options={dataa}
-                />
-              ) : (
-                <Select
-                  placeholder="cat"
-                  isClearable
-                  onChange={handleChange}
-                  classNamePrefix="form-select"
-                  class="form-select"
-                  options={[]}
-                />
-              )} */}
                 <img src="JJN" class="img img-fluid" alt="" />
               </div>
             </div>

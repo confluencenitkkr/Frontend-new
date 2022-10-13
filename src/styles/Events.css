@@ -27,18 +27,114 @@
   font-size: 20px;
 }
 
-.date {
-  font-size: 20px;
+/* @media screen and (min-device-width: 250px) and (max-device-width: 992px) {
+  .auth-modal-artwork{
+    height: 50% !important;
+    padding: 0 !important;
+  }
+
+  .poster{
+    height: 90%;
+    width: 90%;
+    object-fit: contain;
+  }
+} */
+
+.modal_events_main_container {
+  height: 80vh;
+  width: 60vw;
+  position: fixed;
+  z-index: 120;
+  margin-top: 10vh;
+  margin-left: 20vw;
+  border-radius: 8px;
+
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
-.event_time img {
-  height: 80%;
+.poster_wrapper_event_modal {
+  height: 80vh;
+  width: 30vw;
+  border-radius: 8px 0 0 8px;
+  background-color: #e4f7f3;
+  padding: 5%;
 }
 
-.poster{
-  height: 50%;
+.description_wrapper_event_modal {
+  height: 80vh;
+  width: 30vw;
+  background-color: white;
+  border-radius: 0 8px 8px 0;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  color: black;
+  padding: 5% 10%;
 }
 
-.modal-content{
-  width: 70%;
+.poster_wrapper_event_modal img{
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  border-radius: 8px;
+
+}
+
+.heading_wrapper_event_modal{
+  font-size: 30px;
+}
+
+.detail_wrapper_event_modal{
+  overflow: auto;
+
+}
+
+@media (max-width: 768px) {
+  .modal_events_main_container {
+    width: 80vw;
+    margin-left: 10vw;
+    flex-direction: column;
+  }
+
+  .poster_wrapper_event_modal{
+    width: 80vw;
+    height: 40vh;
+    border-radius: 8px 8px 0 0;
+
+  }
+
+  .description_wrapper_event_modal{
+    width: 80vw;
+    height: 40vh;
+    border-radius: 0 0 8px 8px;
+  }
+
+
+  .detail_wrapper_event_modal{
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 600px) {
+  .detail_wrapper_event_modal{
+    font-size: 12px;
+  }
+
+  .heading_wrapper_event_modal{
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 425px) {
+  .detail_wrapper_event_modal{
+    font-size: 10px;
+  }
+
+  .heading_wrapper_event_modal{
+    font-size: 20px;
+  }
 }
