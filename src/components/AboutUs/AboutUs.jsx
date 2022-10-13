@@ -1,8 +1,9 @@
 import React from "react";
 import "../../styles/AboutUs1.css";
 import Tilt from "react-parallax-tilt";
-import bg2 from "./bg2.mp4";
-import bg2_1 from "./bg2_1.webm";
+import bg2 from "./vid 1.mp4";
+import bg2_1 from "./vid 1.webm";
+import bg from "./bg.gif";
 
 const AboutUs = () => {
   return (
@@ -10,6 +11,7 @@ const AboutUs = () => {
       <video id="bgvid" className="vid_about_us" playsinline autoPlay muted loop>
         <source src={bg2} type="video/mp4" className="sourcee" />
         <source src={bg2_1} type="video/webm" className="sourcee" />
+        <source src={bg} type="video/gif" className="sourcee" />
       </video>
 
       <Tilt
