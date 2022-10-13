@@ -9,7 +9,7 @@ const Events = (props) => {
   // const [description, setDescription] = useState("")
 
   let data = props.data;
-  console.log(data);
+  // console.log(data);
 
   return (
     //
@@ -18,7 +18,7 @@ const Events = (props) => {
       toggle={props.showHandle}
       className="authentication-modal modal-dialog modal-dialog-centered modal-xl"
     >
-      {/* <div className="auth-modal-wrp" id="modal">
+      <div className="auth-modal-wrp" id="modal">
         <div className="row">
           <div className="col-lg-6 p-0">
             <div className="auth-modal-artwork">
@@ -45,18 +45,7 @@ const Events = (props) => {
             </div>
           </div>
         </div>
-      </div> */}
-
-      <div className="main_container_event">
-        <div className="img_wrapper_event">
-          <img src="" alt="" />
-          <div className="date_time_event"></div>
-        </div>
-        <div className="content_wrapper_event">
-          <div className="heading_event"></div>
-          <div className="content_description_event"></div>
-        </div>
-      </div>
+      </div>      
     </Modal>
   );
 };

@@ -35,8 +35,10 @@
   height: 80%;
 }
 
-.main_container_event{
-  position: fixed;
-  height: 80vh;
-  width: 50vw;
+.poster{
+  height: 50%;
+}
+
+.modal-content{
+  width: 70%;
 }

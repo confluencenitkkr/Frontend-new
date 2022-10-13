@@ -30,32 +30,28 @@ const Categories = () => {
     let main_container = document.getElementById("category_main_container");
     main_container.style.background =
       'url("/images/bgMedia/bg.jpg") 50% repeat';
+
+    setLoad(true);
+
+    if(localStorage.getItem("eventData") == null)
+    {
+      fetch();
+    }
+    else{
+      let d = localStorage.getItem("eventData");
+      d = JSON.parse(d);
+      setData(d);
+      setLoad(false)
+    }
   }, []);
 
-  const optionMaker = (arr) => {
-    let data = [];
-    arr.map((e) => {
-      data.push({
-        value: e,
-        label: e,
-      });
-    });
-    return data;
-  };
-  const handleChange = (newValue, actionMeta) => {
-    setClub(newValue.label);
-  };
-  const history = useNavigate();
-  useEffect(() => {
-    setLoad(true);
-    fetch();
-  }, []);
   const fetch = () => {
     let text = "";
     eventsActions.getEvent(text, (err, res) => {
       if (err) {
       } else {
         setData(res.data);
+        localStorage.setItem("eventData", JSON.stringify(res.data));
         setLoad(false);
       }
     });
@@ -67,9 +63,6 @@ const Categories = () => {
         setData(res.data);
       }
     });
-  };
-  const viewEvent = (id) => {
-    history(`/EventView/${id}`);
   };
 
   const showHandler = () => {
@@ -200,7 +193,7 @@ const Categories = () => {
                     <div
                       class="col-xl-3 col-sm-6 mb-5 card_container"
                       style={{ cursor: "pointer" }}
-                      // onClick={() => modalHandler(e)}
+                      onClick={() => modalHandler(e)}
                     >
                       <Tilt
                         className="parallax-effect"
