@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 import "../../src/styles/NavBar.css";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import Backdrop from "../utils/Backdrop/backdrop";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [showMediaIcons, setShowMediaIcons] = useState(false);
   const [isBackdrop, setIsBackdrop] = useState(false);
 
-  let url = window.location.href.split("/");
-  url = url[url.length - 1];
+  let url = useLocation().pathname.split("/")[1];
 
   useEffect(() => {
     let main_container = document.getElementById("main_container_navbar_pro");
@@ -46,9 +46,7 @@ const Navbar = () => {
     </NavLink>
   );
 
-  let hamburgerIcon = !isBackdrop ? (
-    <i class="bi-list"></i>
-  ) : null;
+  let hamburgerIcon = !isBackdrop ? <i class="bi-list"></i> : null;
 
   return (
     <>
@@ -74,28 +72,55 @@ const Navbar = () => {
           <p className="sidebar_heading_nav">Confluence</p>
         </div>
         <div className="navItem1_navbar_pro">
-          <NavLink to="/" onClick={() => clickNavbar()}>
+          <Link
+            to="/"
+            onClick={() => clickNavbar()}
+            className={url == "" ? "active" : ""}
+          >
             Home
-          </NavLink>
-          <NavLink to="/Gallery" onClick={() => clickNavbar()}>
+          </Link>
+          <Link
+            to="/Gallery"
+            onClick={() => clickNavbar()}
+            className={url == "Gallery" ? "active" : ""}
+          >
             Gallery
-          </NavLink>
-          <NavLink to="/Featured" onClick={() => clickNavbar()}>
+          </Link>
+          <Link
+            to="/Featured"
+            onClick={() => clickNavbar()}
+            className={url == "Featured" ? "active" : ""}
+          >
             Featured
-          </NavLink>
-          <NavLink to="/Sponsors" onClick={() => clickNavbar()}>
-            Sponsors
-          </NavLink>
-          <NavLink to="/Events" onClick={() => clickNavbar()}>
+          </Link>
+          <Link
+            to="/Events"
+            onClick={() => clickNavbar()}
+            className={url == "Events" ? "active" : ""}
+          >
             Events
-          </NavLink>
-
-          <NavLink to="/AboutUs" onClick={() => clickNavbar()}>
+          </Link>
+          <Link
+            to="/Sponsors"
+            onClick={() => clickNavbar()}
+            className={url == "Sponsors" ? "active" : ""}
+          >
+            Sponsors
+          </Link>
+          <Link
+            to="/AboutUs"
+            onClick={() => clickNavbar()}
+            className={url == "AboutUs" ? "active" : ""}
+          >
             AboutUs
-          </NavLink>
-          <NavLink to="/Developers" onClick={() => clickNavbar()}>
+          </Link>
+          <Link
+            to="/Developers"
+            onClick={() => clickNavbar()}
+            className={url == "Developers" ? "active" : ""}
+          >
             Developers
-          </NavLink>
+          </Link>
         </div>
       </nav>
       <div
@@ -104,7 +129,7 @@ const Navbar = () => {
         onClick={() => navbarHandler()}
       >
         <img src="/images/bgMedia/ribbon_drop.png" alt="" />
-        { hamburgerIcon }
+        {hamburgerIcon}
       </div>
     </>
   );

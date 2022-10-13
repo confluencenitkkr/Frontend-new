@@ -1,14 +1,16 @@
 import React, { useEffect } from "react";
+
 import "../../styles/Schedule.css";
+import bg from "../../styles/images/photo.jpg";
 
 const Schedule = () => {
   const imgArr = [
     "images/avatar/s_bg.jpg",
     "images/avatar/k.jpg",
-    "images/avatar/f.jpg",
-    "images/avatar/c.jpg",
-    "images/avatar/g.jpg",
     "images/avatar/l.jpg",
+    "images/avatar/limelight.jpg",
+    "images/avatar/g.jpg",
+    "images/avatar/f.jpg",
     "images/avatar/n.jpg",
   ];
 
@@ -43,7 +45,7 @@ const Schedule = () => {
         item.classList.remove("timeline-item--active");
       }
 
-      sum += height;
+      sum += height - 20;
     }
   };
 
@@ -59,19 +61,18 @@ const Schedule = () => {
       <div id="mainContainerSche">
         <div className="timeline-container" id="timeline-1">
           <div className="timeline-header">
-            <h2 className="timeline-header__title">Featured Events</h2>
-            <h3 className="timeline-header__subtitle">Of the confluence</h3>
+            <h2 className="timeline-header__title">Schedules</h2>
+            <h3 className="timeline-header__subtitle">For the confluence</h3>
           </div>
 
           <div className="timeline">
-            <div className="timeline-item" data-text="DAY 1">
+            <div className="timeline-item" data-text="">
               <div className="timeline__content">
-                <div className="img_wrapper_schedule">
+                <div className="featured_img_wrapper">
                   <img className="timeline__img" src="images/avatar/s.jpg" />
                 </div>
                 <h2 className="timeline__content-title">Star Night </h2>
                 <p className="timeline__content-desc">
-                  {" "}
                   The major attraction of Confluence, THE STAR NIGHT, which has
                   been graced by stars like:
                   <li>Nikhil D'souza</li>
@@ -81,11 +82,12 @@ const Schedule = () => {
                 </p>
               </div>
             </div>
-            <div className="timeline-item special_timeline" data-text="DAY 2">
+            <div className="timeline-item" data-text="DAY 1">
               <div className="timeline__content">
-                <div className="img_wrapper_schedule">
+                <div className="featured_img_wrapper">
                   <img className="timeline__img" src="images/avatar/k.jpg" />
                 </div>
+
                 <h2 className="timeline__content-title">काव्यांजलि</h2>
                 <p className="timeline__content-desc">
                   {" "}
@@ -97,9 +99,44 @@ const Schedule = () => {
                 </p>
               </div>
             </div>
+
+            <div className="timeline-item" data-text="DAY 2">
+              <div className="timeline__content">
+                <div className="featured_img_wrapper">
+                  <img className="timeline__img" src="images/avatar/l.jpg" />
+                </div>
+                <h2 className="timeline__content-title">LIBAS</h2>
+                <p className="timeline__content-desc">
+                  Libas, the most fashionable event of confluence is back and
+                  better than ever. Bring out your most colorful costumes, wear
+                  the confidence on your face and strut like the world is your
+                  stage. Libas is a Fashion Parade event where the teams put on
+                  a theme based show of about 10 mins displaying their line of
+                  clothing, props, talent and charisma.
+                </p>
+              </div>
+            </div>
+
+
             <div className="timeline-item" data-text="DAY 3">
               <div className="timeline__content">
-                <div className="img_wrapper_schedule">
+                <div className="featured_img_wrapper">
+                  <img className="timeline__img" src="images/avatar/g.jpg" />
+                </div>
+                <h2 className="timeline__content-title">Groove Armada</h2>
+                <p className="timeline__content-desc">
+                  Its a Major Group dance competition based on Hip Hop
+                  theme.Over years Groove Armada has become established as one
+                  of the NITKKR’s best-loved and biggest dance acts. Best dance
+                  groups from the colleges of all around india do participate in
+                  this competition.
+                </p>
+              </div>
+            </div>
+
+            <div className="timeline-item" data-text="DAY 3">
+              <div className="timeline__content">
+                <div className="featured_img_wrapper">
                   <img className="timeline__img" src="images/avatar/f.jpg" />
                 </div>
                 <h2 className="timeline__content-title">Folk Dance</h2>
@@ -114,103 +151,13 @@ const Schedule = () => {
                 </p>
               </div>
             </div>
-            <div className="timeline-item" data-text="DAY 4">
-              <div className="timeline__content">
-                <div className="img_wrapper_schedule">
-                  <img className="timeline__img" src="images/avatar/c.jpg" />
-                </div>
-                <h2 className="timeline__content-title">Choreo Dance</h2>
-                <p className="timeline__content-desc">
-                  {" "}
-                  It's a form of theatrical performance and presentation in
-                  outdoor public spaces without a specific paying audience. It
-                  shows an exciting Play of characters representing a social
-                  taboo.
-                </p>
-              </div>
-            </div>
-            <div className="timeline-item" data-text="DAY 4">
-              <div className="timeline__content">
-                <div className="img_wrapper_schedule">
-                  <img className="timeline__img" src="images/avatar/g.jpg" />
-                </div>
 
-                <h2 className="timeline__content-title">Groove Armada</h2>
-                <p className="timeline__content-desc">
-                  Its a Major Group dance competition based on Hip Hop
-                  theme.Over years Groove Armada has become established as one
-                  of the NITKKR’s best-loved and biggest dance acts. Best dance
-                  groups from the colleges of all around india do participate in
-                  this competition.
-                </p>
-              </div>
-            </div>
-
-            <div className="timeline-item" data-text="DAY 4">
+            <div className="timeline-item" data-text="DAY 3">
               <div className="timeline__content">
-                <div className="img_wrapper_schedule">
-                  <img className="timeline__img" src="images/avatar/l.jpg" />
-                </div>
-
-                <h2 className="timeline__content-title">LIBAS</h2>
-                <p className="timeline__content-desc">
-                  Its a Major Group dance competition based on Hip Hop
-                  theme.Over years Groove Armada has become established as one
-                  of the NITKKR’s best-loved and biggest dance acts. Best dance
-                  groups from the colleges of all around india do participate in
-                  this competition.
-                </p>
-              </div>
-            </div>
-
-            {/* <div className="timeline-item" data-text="DAY 4">
-              <div className="timeline__content">
-                <img className="timeline__img" src="images/avatar/d_bg.jpg" />
-                <h2 className="timeline__content-title">LIME LIGHT</h2>
-                <p className="timeline__content-desc">
-                  For all the budding fashion photographers,this is the event to
-                  look out for.Choose your own model, clothing, background or
-                  whatever fits in your definition of THE GREAT picture and you
-                  just might get termed as the college's most wonderful
-                  photographer.
-                </p>
-              </div>
-            </div>
-
-            <div className="timeline-item" data-text="DAY 4">
-              <div className="timeline__content">
-                <img className="timeline__img" src="images/avatar/d_bg.jpg" />
-                <h2 className="timeline__content-title">Battle of Bands</h2>
-                <p className="timeline__content-desc">
-                  Its a Major Group dance competition based on Hip Hop
-                  theme.Over years Groove Armada has become established as one
-                  of the NITKKR’s best-loved and biggest dance acts. Best dance
-                  groups from the colleges of all around india do participate in
-                  this competition.
-                </p>
-              </div>
-            </div>
-
-            <div className="timeline-item" data-text="DAY 4">
-              <div className="timeline__content">
-                <img className="timeline__img" src="images/avatar/d_bg.jpg" />
-                <h2 className="timeline__content-title">Cinematography</h2>
-                <p className="timeline__content-desc">
-                  Bring out the director in you in this short film making event
-                  ,Participants need to make a short film of their own.One of
-                  The most anticipated events of Confluence, which witnesses
-                  immense external participation
-                </p>
-              </div>
-            </div> */}
-
-            <div className="timeline-item" data-text="DAY 4">
-              <div className="timeline__content">
-                <div className="img_wrapper_schedule">
+                <div className="featured_img_wrapper">
                   <img className="timeline__img" src="images/avatar/n.jpg" />
                 </div>
-
-                <h2 className="timeline__content-title">Nukkad Natak</h2>
+                <h2 className="timeline__content-title">Nukkad </h2>
                 <p className="timeline__content-desc">
                   Its a Major Group dance competition based on Hip Hop
                   theme.Over years Groove Armada has become established as one

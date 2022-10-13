@@ -6,6 +6,7 @@ import {
   Routes,
   Route,
   Navigate,
+  useLocation,
 } from "react-router-dom";
 
 import AboutUs from "./components/AboutUs/AboutUs";
@@ -19,13 +20,14 @@ import NotAuth from "./components/NotAuth/NotAuth";
 import Error404 from "./components/Error404/Error404";
 // import Navbar from "./components/Footerr/footerr";
 import Team from "./components/Team_Confluence/team";
-import Header from "./components/hader";
+// import Header from "./components/hader";
 import Gallery from "./components/Gallery/Gallery";
 import "./styles/Events.css";
 import "./styles/css/main.css";
 // import "./styles/css/bootstrap.min.css";
 import "./styles/css/responsive.css";
 import Navbar from './components/navbar'
+import Download from './components/downloadButton/downloadButton'
 
 function App() {
 
@@ -33,7 +35,7 @@ function App() {
     let main_container = document.getElementById("main_container_app");
     main_container.style.background =
       'url("/images/bgMedia/bg.jpg") 50% repeat';
-  });
+  }, []);
 
   return (
     <div className="main_container_app1" id="main_container_app">
@@ -65,6 +67,7 @@ function App() {
           />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
+
       </Router>
     </div>
   );

@@ -1,5 +1,6 @@
 import React from "react";
 import "../../styles/Developers.css";
+import behance from "../../utils/behance.svg";
 
 const Developers = () => {
   const developers = [
@@ -7,72 +8,79 @@ const Developers = () => {
       name: "Ayush ",
       image: "https://i.ibb.co/D5zp66d/IMG-20211104-152222-575-01.jpg",
       role: "Full STACK DEVELOPER",
-      insta: "https://www.instagram.com/ayush_mina/",
       linkedin: "linkedin.com/in/aayush-meena-729298135/",
-      github: "https://github.com/ayushmina/",
+      github: "https://github.com/ayushmina",
     },
     {
-      name: "Lakshay",
-      image:
-        "https://i.ibb.co/9nzJrWR/4dfabe32-2ea6-4246-b807-623a370f97bc-1.jpg",
-      role: "Full Stack Developer",
-      insta: "https://www.instagram.com/lakshay_._rose/",
-      linkedin: "https://www.linkedin.com/in/lakshay-rose-514518206/",
-      github: "https://github.com/Daemon25",
+      name: "Kshitiz Pratap Singh ",
+      image: "https://iili.io/ZfrS4a.md.jpg",
+      role: "Front-end Developer",
+      linkedin: "https://www.linkedin.com/in/kshitiz-pratap-singh-00b57b209",
+      github: "https://github.com/KshitizPratap",
     },
+    {
+      name: "Nihar ",
+      image: "https://iili.io/ZfrD4s.md.jpg",
+      role: "Full Stack Developer",
+      linkedin: "http://www.linkedin.com/in/nihar-meena",
+      github: "https://github.com/niharx",
+    },
+
     {
       name: "Abhishek Kumar",
       image:
         "https://res.cloudinary.com/dmwoknpni/image/upload/v1659725808/img_gjpmmz.jpg",
       role: "Full Stack Developer",
-      insta: "https://www.instagram.com/abhi_05_30/",
       linkedin: "https://www.linkedin.com/in/abhii30/",
       github: "https://github.com/abhii30",
     },
     {
-      name: "Meenakshi",
-      image: "https://i.ibb.co/hgDMcgQ/IMG-20220421-WA0019-1.jpg",
+      name: "Nikhil",
+      image: "https://iili.io/Zfjlyu.md.jpg",
       role: "Front-end Developer",
-      insta: "https://www.instagram.com/meenakshi_suthar_08/",
-      linkedin: "https://www.linkedin.com/in/meenakshi-suthar-921967229/",
-      github: "https://github.com/meenakshisuthar/meenakshisuthar",
+      linkedin: "https://www.linkedin.com/in/nikhil-mittal-a54903186",
+      github: "https://github.com/nikhilmittalx",
     },
 
     {
-      name: "Dev Bansal",
-      image:
-        "https://i.ibb.co/jvffFhZ/IMG20210116210210-00-01-1-compressed.jpg",
-      role: "UI/UX Designer",
-      insta: "https://instagram.com/devbansal76?igshid=YmMyMTA2M2Y=",
-      linkedin: "https://www.linkedin.com/in/dev-bansal-753061209",
-      github: "",
-    },
-    {
       name: "Pransu",
-      image: "https://i.ibb.co/D8TNqvw/IMG-20220420-WA0130-2-1.jpg",
-      role: "UI/UX Designer",
-      insta: "https://instagram.com/pransu65?igshid=YmMyMTA2M2Y=",
+      image: "https://iili.io/ZfrEBe.md.jpg",
+      role: "Front-end Developer",
       linkedin: "https://www.linkedin.com/in/pransu-yadav-a082891b8",
       github: "https://github.com/Pransu-code",
     },
+
     {
-      name: "Ankit",
-      image:
-        "https://i.ibb.co/rdWtMK2/4154ba60-d0ee-4cd2-b97d-1d1b5d58c650.jpg",
-      role: "Front-end Developer",
-      insta:
-        "https://www.instagram.com/invites/contact/?i=16refs6ma8cl8&utm_content=4dd2fq7",
-      linkedin: "https://www.linkedin.com/in/ankit-k-1aa4521bb",
-      github: "https://github.com/ankitk84",
+      name: "Dev bansal",
+      image: "https://iili.io/ZfkSrQ.jpg",
+      role: "UI/UX Designer",
+      linkedin: "https://www.linkedin.com/in/dev-bansal-753061209",
+      github: "https://www.behance.net/devbansal2",
     },
+
     {
-      name: "Raghav Garg",
-      image:
-        "https://i.ibb.co/jMBdMPp/2440ba39-56fe-414c-a24d-096a0f5df586-11zon-1.jpg",
+      name: "Karan",
+      image: "https://iili.io/Zf4jFs.md.jpg",
       role: "Front-end Developer",
-      insta: "https://www.instagram.com/raghav_garg04",
-      linkedin: "https://www.linkedin.com/in/raghav-garg-66356a220",
-      github: "https://github.com/raghav0407",
+      linkedin: "https://www.linkedin.com/in/karan-gupta-97571b202/",
+      github: "https://github.com/guptakaran9896",
+    },
+
+    {
+      name: "Lakshay",
+      image:
+        "https://i.ibb.co/9nzJrWR/4dfabe32-2ea6-4246-b807-623a370f97bc-1.jpg",
+      role: "Full Stack Developer",
+      linkedin: "https://www.linkedin.com/in/lakshay-rose-514518206",
+      github: "https://github.com/Daemon-25",
+    },
+
+    {
+      name: "Himanshu",
+      image: "https://iili.io/ZfQAnp.md.jpg",
+      role: "Front-end Developer",
+      linkedin: "https://www.linkedin.com/in/himanshu-623879224",
+      github: "https://github.com/Himansh0u01",
     },
   ];
 
@@ -89,45 +97,53 @@ const Developers = () => {
           {developers.length > 0
             ? developers.map((e, index) => {
                 return (
-                  <div class="col-xl-3 col-sm-6 mb-5 dev-card">
+                  <div class="col-xl-3 col-sm-6 mb-5 dev-card" key={index}>
                     <div class="bg-white rounded shadow-sm py-5 px-4">
-                      <div style={{
-                        height : "100px",
-                        width:"100%",
-                        display:"flex",
-                        justifyContent:"center",
-                        alignItems:"center"
-                      }}>
-                      <img
-                        src={e.image}
-                        alt=""
-                        width="100"
-                        
-                        class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
+                      <div
                         style={{
-                          minHeight:"80px"
+                          height: "100px",
+                          width: "100%",
+                          display: "flex",
+                          justifyContent: "center",
+                          alignItems: "center",
                         }}
-                      />
+                      >
+                        <img
+                          src={e.image}
+                          alt=""
+                          width="100"
+                          height="100"
+                          class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
+                          style={{
+                            minHeight: "80px",
+                          }}
+                        />
                       </div>
                       <h5 class="mb-0  text-dark">{e.name}</h5>
                       <span class="small text-uppercase text-muted">
                         {e.role}
                       </span>
-                      <ul class="social mb-0 list-inline mt-3">
-                        <li class="list-inline-item">
-                          <a href={e.github} class="social-link">
-                            <i class="bi bi-github"></i>
-                          </a>
-                        </li>
-                        <li class="list-inline-item">
-                          <a href={e.insta} class="social-link">
-                            <i class="bi bi-instagram"></i>
-                          </a>
-                        </li>
-                        <li class="list-inline-item">
-                          <a href={e.linkedin} class="social-link">
-                          <i class="bi bi-linkedin"></i>
+                      <ul class="social mb-0 list-inline mt-3" style={{
+                            display: "flex",
+                            justifyContent: "center"
+                      }}>
+                        {e.role == "UI/UX Designer" ? (
+                          <li class="list-inline-item">
+                            <a href={e.github} target="_blank" class="social-link">
+                              <img src={behance} alt="" />
+                            </a>
+                          </li>
+                        ) : (
+                          <li class="list-inline-item">
+                            <a href={e.github} target="_blank" class="social-link">
+                              <i class="bi bi-github"></i>
+                            </a>
+                          </li>
+                        )}
 
+                        <li class="list-inline-item">
+                          <a href={e.linkedin} target="_blank" class="social-link">
+                            <i class="bi bi-linkedin"></i>
                           </a>
                         </li>
                       </ul>

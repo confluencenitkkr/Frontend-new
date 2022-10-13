@@ -70,6 +70,17 @@
   font-weight: 500;
   line-height: 25px;
 }
+
+.featured_img_wrapper{
+  padding: 1vh;
+  background-color: white;
+  filter: saturate(40%) sepia(30%) hue-rotate(5deg);
+}
+
+.featured_img_wrapper:hover{
+  filter:none;
+}
+
 .timeline:before {
   position: absolute;
   left: 50%;

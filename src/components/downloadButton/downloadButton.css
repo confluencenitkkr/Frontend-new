@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.download_button {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 120;
+  height: 22vh;
+  width: 22vh;
+}
+
+.download_para_wrapper {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto";
+}
+
+.schedule_para {
+  position: absolute;
+  width: 27vh;
+  height: 21vh;
+  border-radius: 50%;
+  font-weight: bold;
+  color: #47220e;
+  animation: spinZ 20s linear infinite;
+  text-align: center;
+}
+.download_para_wrapper span {
+  position: absolute;
+  display: inline-block;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  font-size: 15px;
+  transition: all 0.5s cubic-bezier(0, 0, 0, 1);
+}
+
+@keyframes spinZ {
+  0% {
+    transform: rotateZ(360deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
+
+.download_button img {
+  height: 20vh;
+  cursor: pointer;
+  position: absolute;
+  top: -5px;
+  right: 4px;
+}
+
+@media (max-width: 850px) {
+  .download_button p {
+    display: none;
+  }
+}

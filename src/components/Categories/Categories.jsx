@@ -205,8 +205,8 @@ const Categories = () => {
                       <Tilt
                         className="parallax-effect"
                         glareMaxOpacity={0.9}
-                        tiltMaxAngleX={30}
-                        tiltMaxAngleY={30}
+                        tiltMaxAngleX={10}
+                        tiltMaxAngleY={10}
                         perspective={800}
                         // gyroscope={true}
                         transitionSpeed={1000}
