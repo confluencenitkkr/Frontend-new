@@ -18,7 +18,7 @@ const Events = (props) => {
       toggle={props.showHandle}
       className="authentication-modal modal-dialog modal-dialog-centered modal-xl"
     >
-      <div className="auth-modal-wrp" id="modal">
+      {/* <div className="auth-modal-wrp" id="modal">
         <div className="row">
           <div className="col-lg-6 p-0">
             <div className="auth-modal-artwork">
@@ -27,23 +27,34 @@ const Events = (props) => {
               </div>
               <img src={data.image} className="poster" alt="" />
               <div className="event_date">
-                <div class="month">October</div>
-                <div class="month-date-devider"></div>
-                <div class="date">{data.date ? data.date.slice(-2) : 22}</div>
+                <div class="month">
+                  October {data.date ? data.date.slice(-2) : 22}
+                </div>
               </div>{" "}
-              */}
             </div>
           </div>
           <div className="col-lg-6 p-0">
             <div className="auth-modal-content">
               <div className="w-100">
-                <h2>{data.eventName}</h2>
+                <h2 className="event_name">{data.eventname}</h2>
                 <div className="auth-input-wrp" id="event_description">
+                  DESCRIPTION
                   {data.description}
                 </div>
               </div>
             </div>
           </div>
+        </div>
+      </div> */}
+
+      <div className="main_container_event">
+        <div className="img_wrapper_event">
+          <img src="" alt="" />
+          <div className="date_time_event"></div>
+        </div>
+        <div className="content_wrapper_event">
+          <div className="heading_event"></div>
+          <div className="content_description_event"></div>
         </div>
       </div>
     </Modal>

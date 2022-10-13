@@ -12,8 +12,31 @@
 
 .event_date {
   position: absolute;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  margin-top: 63%;
+  color: black;
+}
+.event_date .event_name {
+  color: black;
 }
 
 #event_description {
   color: black;
+  font-size: 20px;
+}
+
+.date {
+  font-size: 20px;
+}
+
+.event_time img {
+  height: 80%;
+}
+
+.main_container_event{
+  position: fixed;
+  height: 80vh;
+  width: 50vw;
 }
