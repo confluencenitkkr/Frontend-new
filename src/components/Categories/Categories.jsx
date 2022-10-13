@@ -170,7 +170,8 @@ const Categories = () => {
                   return (
                     <div
                       class="col-xl-3 col-sm-6 mb-5 card_container"
-                      style={{ cursor: "pointer" }}
+                      style={{ cursor: "pointer", display: "flex",
+                      justifyContent: "center" }}
                       onClick={() => modalHandler(e)}
                     >
                       <Tilt
